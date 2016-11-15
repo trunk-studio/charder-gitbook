@@ -1,1 +1,1 @@
-This file serves as an introduction to your Knowledge Base, it is displayed on the homepage of your website. Use it to provide more context to your visitors.
+本教材由創科資訊團隊製作，提供啟德電子股份有限公司於「敏捷軟體開發培訓」課程中使用，如果您有相關培訓需求請與創科資訊聯繫。
