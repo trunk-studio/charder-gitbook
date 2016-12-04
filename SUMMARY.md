@@ -2,7 +2,8 @@
 
 ## 課程規劃
 
-* [總覽](outline.md)
+* [計畫內容](objective.md)
+* [培訓內容大綱](outline.md)
 
 ## 講義
 
