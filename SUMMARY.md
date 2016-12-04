@@ -14,4 +14,4 @@
 
 ## Sails.js
 
-* [基礎入門](sails/basic/README.md)
+* [基礎入門](sailsjs/basic/README.md)
