@@ -12,6 +12,6 @@
 * [第三週](week/3/README.md)
 * [第四週](week/4/README.md)
 
-## Sails.js Web Development
+## Sails.js
 
 * [基礎入門](sails/basic/README.md)
