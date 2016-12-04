@@ -1,7 +1,7 @@
 # Summary
 
-* [Introduction](README.md)
 * [課程規劃]()
+  * [Introduction](README.md)
   * [計畫內容](objective.md)
   * [培訓內容大綱](outline.md)
 * [講義]()
