@@ -1,6 +1,6 @@
 # Sails.js 基礎
 
-![](squiddy.png)
+![](assets/squiddy.png)
 
 
 安裝
