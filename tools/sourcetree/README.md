@@ -1,6 +1,6 @@
 # SourceTree
 
-![](https://www.sourcetreeapp.com/images/logoSourceTree.png)
+![](./SourceTreeNewIcon.png)
 
 ## 軟體下載
 
