@@ -19,5 +19,6 @@
 * [GitHub 入門](/vcs/github/README.md)
 
 
-## Sails.js
-* [基礎入門](sailsjs/basic/README.md)
+
+<!-- ## Sails.js
+* [基礎入門](sailsjs/basic/README.md) -->
