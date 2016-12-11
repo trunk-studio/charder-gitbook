@@ -22,9 +22,6 @@
 * [Upstream Pull Request: 跨檔案庫 Pull Request 操作](./vcs/git/upstream-pull-request/README.md)
 * [Fork Upstream 編修衝突](./vcs/git/fork-upstream-conflict/README.md)
 
-\#\# Sails.js
+## Sails.js
 
 * [基礎入門](sailsjs/basic/README.md)
-
-
-
