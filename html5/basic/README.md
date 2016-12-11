@@ -10,9 +10,9 @@
 
 * 支援本機儲存
 * 支援 CSS3
-* 更多的表單元素：url, email
-* 更多的新的元素：nav, footer
-* 更多的多媒體支援 video, svg, canvas
+* 更多的表單元素，例如 url、email
+* 更多的新的元素，例如 nav、footer
+* 更多的多媒體支援 video、SVG、canvas
 * 有更佳的容錯性，例如自動補上缺少的必要標籤，使用者可避免看到網站撰寫的錯誤。
 
 **與HTML 4的不同之處**
