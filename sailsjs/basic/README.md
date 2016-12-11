@@ -4,7 +4,7 @@
 
 ![](assets/squiddy.png)
 
-Sails.js 主要是使用 Express 的核心，再整合其他常用的 Express middleware 並搭配常用的模組，約定大於配置的的目標為發展導向。所以我們只要使用 Sails.js 框架，即可達到簡單並快速的建構一個具有 MVC 架構的網站，內含的模組跟功能。
+Sails.js 主要是使用 Express 的核心，再整合其他常用的 Express middleware 並搭配常用的模組，約定大於配置的目標為發展導向。所以我們只要使用 Sails.js 框架，即可達到簡單並快速的建構一個具有 MVC 架構的網站，內含的模組跟功能。
 
 * socket.io
 * 多種選配的資料庫 adapter
@@ -22,11 +22,10 @@ Sails.js 主要是使用 Express 的核心，再整合其他常用的 Express mi
 
 `sails new testProject`
 
-最後啟動整個專案
+啟動整個專案
 
 `cd testProject && npm start`
 
-![](assets/success-console.png)
 
 **延伸閱讀**
 
