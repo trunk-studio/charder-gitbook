@@ -26,7 +26,7 @@ Sails.js 主要是使用 Express 的核心，再整合其他常用的 Express mi
 
 `cd testProject && npm start`
 
-![](assets/success-console.md)
+![](assets/success-console.png)
 
 **延伸閱讀**
 
