@@ -22,9 +22,10 @@
 * [Upstream Pull Request: 跨檔案庫 Pull Request 操作](vcs/git/upstream-pull-request/README.md)
 * [Fork Upstream 編修衝突](vcs/git/fork-upstream-conflict/README.md)
 
-## Sails.js
+## 網站框架 Sails.js
 
-* [基礎入門](sailsjs/basic/README.md)
+* [認識 Sails](sailsjs/README.md)
+* [安裝](sailsjs/install/README.md)
 
 ## HTML5 與 CSS3 基礎介紹
 
