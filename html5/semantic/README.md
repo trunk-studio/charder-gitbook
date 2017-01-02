@@ -2,12 +2,13 @@
 
 語意化的網路是可以讓電腦能夠更加理解網頁的內容，對於像是搜尋引擎的優化（SEO）或是推薦系統可以有很大的幫助。
 
-* New tags：新的標籤，像是<header>、<section> 等
-* Application tags：也是新的標籤，像是<meter>、<progress> 等
+* New tags：新的標籤，像是 `<header>`、`<section>` 等
+* Application tags：也是新的標籤，像是 `<meter>`、`<progress>` 等
 * Microdata：加入語意的資料讓搜尋引擎等網站可以正確顯示
-* Form type：<form> 可以加入的 type 便多了，包含 email 和 tel 等屬性，瀏覽器會協助進行資料格式的驗證
+* Form type：`<form>` 可以加入的 type 便多了，包含 email 和 tel 等屬性，瀏覽器會協助進行資料格式的驗證
 * 有特殊意義的元素，由名稱可以了解到它與其他內容的差異。
 * 語意元素全部都是 block elements
+
 
 | 名稱            |        描述     |
 | :------------- | :-------------  |
