@@ -18,7 +18,7 @@
 * [Pull Request](vcs/git/pull-request/README.md)
 * [編修衝突](vcs/git/conflict/README.md)
 * [工具 - SourceTree](tools/sourcetree/README.md)
-* [GitHub Flow: 專案版本控管策略說明](cs/git/githubflow//README.md)
+* [GitHub Flow: 專案版本控管策略說明](cs/git/githubflow/README.md)
 * [Upstream Pull Request: 跨檔案庫 Pull Request 操作](vcs/git/upstream-pull-request/README.md)
 * [Fork Upstream 編修衝突](vcs/git/fork-upstream-conflict/README.md)
 
@@ -29,4 +29,5 @@
 
 ## HTML5 與 CSS3 基礎介紹
 
-* [HTML5 基礎入門](html5/basic/README.md)
+* [HTML5 入門](html5/README.md)
+* [語意化](html5/semantic/README.md)
