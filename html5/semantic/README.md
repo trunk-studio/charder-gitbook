@@ -17,6 +17,8 @@ site://your.domain.name
 
 ### 語意元素表
 
+![](../assets/layout.gif)
+
 | 名稱            |        描述     |
 | :------------- | :-------------  |
 | article        | 通常擁有自己的標題 |
