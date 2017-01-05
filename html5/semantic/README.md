@@ -42,7 +42,7 @@
 </figure>
 ```
 
-* [demo](http://www.w3schools.com/TAgs/tryit.asp?filename=tryhtml5_figcaption)
+![html5_figcaption](http://i.imgur.com/zMczYU3.png)
 
 
 **練習題**
