@@ -41,6 +41,48 @@ site://your.domain.name
 | summary        | 定義 `<details>` 元素之可見標題 |
 | time           | 適合用來表示時間     |
 
+### 演變
+
+**轉換後**
+
+```html
+<body>
+    <div id="header">
+        ...
+    </div>
+    <div id="main">
+        ...
+        <div id="subitem">
+            ...
+        </div>
+        ...
+    </div>
+    <div id="footer">
+        ...
+    </div>
+</body>  
+```
+
+**轉換後**
+
+```html
+<body>
+    <header>
+        ...
+    </header>
+    <article>
+        ...
+        <section>
+            ...
+        </section>
+        ...
+    </article>
+    <footer>
+        ...
+    </footer>
+</body>
+```
+
 ### figure
 
 ```html

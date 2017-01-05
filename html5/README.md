@@ -1,12 +1,22 @@
 # 認識 HTML5
 
-![](assets/html5.png)
+**什麼是一個好的網站是什麼？**
+
+<!--
+* 容易被找到
+* 清楚傳達要給客戶的第一印象
+* 希望對方找到的資訊是我們想要傳達的
+* 結構組織優良的選單設計
+* 優化搜尋引擎檢索（SEO）與 Facebook 的分享（SMO）
+* 不希望出現非預期的內容
+* 兼顧各種不同螢幕的顯示
+-->
 
 **什麼是HTML5**
 
 * HTML5 是 HTML 新版的修訂版本
 * 由 W3C、WHATWG 完成標準制定
-* 目標是取代1999年所製定的 HTML 4.01 和 XHTML 1.0 標準，期望能符合現在的網路需求。
+* 目標是取代 1999 年所製定的 HTML 4.01 和 XHTML 1.0 標準，期望能符合現在的網路需求。
 
 **廣義來說**
 
@@ -19,11 +29,11 @@
 | :------------- | :------------- |
 | `<acronym>`     | 用於定義縮寫或簡稱 |
 | `<applet>`      | 用於定義嵌入的 applet |
-| `<basefont>`    | 用於指定網頁檔案中所有文字的預設色彩、大小及字型 |
-| `<big>`         | 用於定義大型文字 |
-| `<center>`      | 用於定義置中文字 |
+| `<basefont>`    | (用 CSS 取代)用於指定網頁檔案中所有文字的預設色彩、大小及字型 |
+| `<big>`         | (用 CSS 取代)用於定義大型文字 |
+| `<center>`      | (用 CSS 取代)用於定義置中文字 |
 | `<dir>`         | 用於定義未編號項目清單 |
-| `<font>`        | 用於定義文字的字型、色彩及大小 |
+| `<font>`        | (用 CSS 取代)用於定義文字的字型、色彩及大小 |
 | `<frame>`       | 定義頁框之一個視窗（框架）    |
 | `<frameset>`     | 定義頁框之設定 |
 | `<noframes>`     | 用於定義不支援頁框網頁之使用者所顯示之替代內容 |
@@ -33,5 +43,7 @@
 
 **延伸閱讀**
 
+* [Wayback Machine](https://archive.org/web/)
 * [w3school en html5](http://www.w3schools.com/html/html5_intro.asp)
 * [wiki html5](https://zh.wikipedia.org/wiki/HTML5)
+* [Tutorials Point](https://www.tutorialspoint.com/html5/index.htm)
