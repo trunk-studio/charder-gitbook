@@ -22,13 +22,24 @@
 
 * email
 * url
-* date
 * number
+* range
+* Date pickers
+  * date - 選取日、月、年
+  * month - 選取月、年
+  * week - 選取周和年
+  * time - 選取時間（小時和分鐘）
+  * datetime - 選取時間、日、月、年（UTC 時間）
+  * datetime-local - 選取時間、日、月、年（本地時間）
+* search
 * tel
 
-**填入格式檢查**
+**加入HTML5屬性**
 
-* 修改警告訊息內容
+* placeholder：提供可描述輸入字段預期值的提示信息
+* max
+* min
+* pattern: e.g `pattern="[A-Za-z]{3}"`
 
 **練習題**
 

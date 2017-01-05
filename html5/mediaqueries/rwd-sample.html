@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+@media screen and (max-width: 699px){
+  input, textarea {
+    width:100%;
+    background: lightgreen;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 700px) {
+  label{
+    width:20%;
+  }
+  input, textarea {
+    width:80%;
+  }
+}
+
+body {
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<form action="#">
+  <fieldset>
+    <legend>客戶滿意度調查表</legend>
+    <label>公司名稱:</label><input type="text" name="company" placeholder="貴公司的名稱"><br>
+    <label>姓名:</label><input type="text" name="fullname"><br>
+    <label>信箱:</label><input type="email" name="email"><br>
+    <label>電話:</label><input type="tel" name="tel"><br>
+    <label>年齡:</label><input type="number" name="age" min="1" max="100" ><br>
+    <label>blog:</label><input type="url" name="url"><br>
+    <label>購買日期:</label><input type="date" name="date"><br>
+    <label>意見:</label><textarea name="comment" rows="4" cols="50"></textarea><br>
+    <input type="submit" value="送出表單">
+  </fieldset>
+</form>
+</body>
+</html>

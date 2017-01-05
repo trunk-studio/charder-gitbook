@@ -24,5 +24,6 @@
 
 **延伸閱讀**
 
+* [w3schools css3](http://www.w3schools.com/css/css3_intro.asp)
 * [CSS4 selector 測試](http://css4-selectors.com/browser-selector-test/)
 * [W3C Selectors Level 4 - W3C Working Draft 2](https://www.w3.org/TR/selectors4/)

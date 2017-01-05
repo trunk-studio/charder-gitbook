@@ -34,6 +34,8 @@ https://online.carrefour.com.tw/
 
 **範例二**
 
+最大到 400px
+
 ```css
 @media all and(max-width:400px){
     #back{
@@ -53,8 +55,6 @@ https://online.carrefour.com.tw/
 }
 ```
 
-http://www.w3schools.com/css/css3_mediaqueries_ex.asp
-
 **練習題**
 
-* 將「聯絡我們」表單，改成可以相容 RWD 格式。
+* 將「客戶滿意度調查表」，改成 RWD 格式。
