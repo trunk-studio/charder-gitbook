@@ -31,3 +31,7 @@ CSS3 支援了字體的嵌入、版面的排版，以及動畫功能。
 ### JavaScript
 
 在比較 JavaScript 的基本面也新增了 DOM 的 API、和瀏覽器上下頁的紀錄修改。
+
+**延伸閱讀**
+
+* [html5 筆記](https://alincode.gitbooks.io/learning-html5/content/)

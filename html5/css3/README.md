@@ -17,12 +17,13 @@
 | 2012        | CSS3                                       |
 |             | 媒體查詢                                    |
 |             | 加強版選擇器                                 |
-<!--
-|             | 階層式(cascading)與繼承                      |
--->
 |             | 模板佈局                                    |
 |             | 轉換(transform)                             |
 |             | 漸變(transition)                            |
+
+<!--
+|             | 階層式(cascading)與繼承                      |
+-->
 
 
 * [轉換 demo](http://www.w3schools.com/css/css3_3dtransforms.asp)

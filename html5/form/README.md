@@ -46,6 +46,7 @@
 * placeholder：提供可描述輸入字段預期值的提示信息
 * max
 * min
+
 <!--
 * pattern: e.g `pattern="[A-Za-z]{3}"`
 -->
