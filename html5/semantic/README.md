@@ -9,12 +9,6 @@
 * 有特殊意義的元素，由名稱可以了解到它與其他內容的差異。
 * 語意元素全部都是 block elements
 
-### 查詢哪些資料被 Google 檢索
-
-```
-site://your.domain.name
-```
-
 ### 語意元素表
 
 ![](../assets/layout.gif)

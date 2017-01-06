@@ -1,24 +1,31 @@
 # 表單 (form)
 
-* 註冊一個 [codepen](https://codepen.io/)
-
 **html5基本宣告**
 
 ```
 <!DOCTYPE html>
 <html>
+<head>
+<title>標題</title>
+</head>
 <body>
 <form action="#">
-  公司名稱: <input type="text" name="company"><br>
-  姓名:</label><input type="text" name="fullname"><br>
-  意見:</label><textarea name="comment" rows="4" cols="50"><br>
-  <input type="submit" value="送出表單">
+  <fieldset>
+    <legend>客戶滿意度調查表</legend>
+    <label for="company">公司名稱:</label><input type="text" name="company" id="company"><br>
+    <label for="name">姓名:</label><input type="text" name="fullname" id="name"><br>
+    <label for="comment">意見:</label><textarea name="comment" rows="4" cols="50" id="comment"></textarea><br>
+  </fieldset>
 </form>
 </body>
 </html>
 ```
 
 **加入新的 input type**
+
+```
+<input type="email" name="email">
+```
 
 * email
 * url
@@ -39,7 +46,9 @@
 * placeholder：提供可描述輸入字段預期值的提示信息
 * max
 * min
+<!--
 * pattern: e.g `pattern="[A-Za-z]{3}"`
+-->
 
 **練習題**
 
@@ -72,3 +81,7 @@ label{
   width:70px;
 }
 -->
+
+**問題**
+
+* 錯誤檢查的驗證時間點是？
