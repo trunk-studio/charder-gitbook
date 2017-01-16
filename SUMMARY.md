@@ -40,9 +40,9 @@
 ## Bootstrap RWD 前端開發框架
 
 * [Bootstrap 入門](bootstrap/README.md)
-* [建立響應式佈局](bootstrap/rwd-layout/README.md)
-* [網格](bootstrap/grid/README.md)
+* [網格(Grid)](bootstrap/grid/README.md)
+* [佈局(Layout)](bootstrap/layout/README.md)
 * [Bootstrap CSS](bootstrap/css/README.md)
-* [元件](bootstrap/components/README.md)
+* [元件(Component)](bootstrap/components/README.md)
 * [Bootstrap JS](bootstrap/js/README.md)
-* [CSS 預處理器](bootstrap/css-processor/README.md)
+* [CSS 預處理器 (Processor)](bootstrap/css-processor/README.md)
