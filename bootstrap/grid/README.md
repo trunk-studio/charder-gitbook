@@ -20,6 +20,17 @@
 * col-sm-6
 * col-xs-12
 
+```html
+<div class="row">
+  <div class="col-sm-6" style="background-color:yellow;">
+    區塊一
+  </div>
+  <div class="col-sm-6" style="background-color:pink;">
+    區塊二
+  </div>
+</div>
+```
+
 ### Offsetting columns
 
 * col-md-offset-4
@@ -50,5 +61,6 @@
 
 **延伸閱讀**
 
-* [Bootstrap - Grid](http://getbootstrap.com/css/#grid)
-* [Bootstrap Grid Example](http://getbootstrap.com/examples/grid/)
+* [Bootstrap - CSS Grid](http://getbootstrap.com/css/#grid)
+* [Bootstrap - Grid Example](http://getbootstrap.com/examples/grid/)
+* [w3schools - Bootstrap Grid System](http://www.w3schools.com/bootstrap/bootstrap_grid_system.asp)
