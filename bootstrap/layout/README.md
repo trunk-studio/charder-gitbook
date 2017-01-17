@@ -1,9 +1,8 @@
-# 建立響應式佈局
+# Bootstrap 佈局 (Layout)
 
 **container**
 
 * fixed-width
-* [Narrow Jumbotron Template for Bootstrap](http://getbootstrap.com/examples/jumbotron-narrow/)
 
 ```html
 <div class="container">
