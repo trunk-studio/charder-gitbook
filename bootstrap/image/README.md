@@ -25,3 +25,7 @@
 **練習題**
 
 * 建立一個一列三欄的圖文區塊
+
+**延伸閱讀**
+
+* [Bootstrap Images](http://www.w3schools.com/bootstrap/bootstrap_images.asp)
