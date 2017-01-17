@@ -11,7 +11,7 @@
 | xs             | 768 px 以下       | 手機  |
 | sm             | 768 px ~ 992 px  | 平板  |
 | md             | 992 px ~ 1200 px | 桌機  |
-| lg             | 1200 px 以上      | 投影機  |
+| lg             | 1200 px 以上      | 投影機 / 電視 |
 
 ### 基本 class
 
@@ -22,10 +22,10 @@
 
 ```html
 <div class="row">
-  <div class="col-sm-6" style="background-color:yellow;">
+  <div class="col-sm-6">
     區塊一
   </div>
-  <div class="col-sm-6" style="background-color:pink;">
+  <div class="col-sm-6">
     區塊二
   </div>
 </div>
