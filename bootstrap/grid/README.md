@@ -81,7 +81,7 @@
 
 * 建立一個圖片區塊和一個文字區塊，當 md 尺寸時，圖片在左邊，當 xs 處寸時，圖片在右邊。
 
-### Nesting columns
+### 巢狀 (Nesting columns)
 
 ![](assets/nesting-columns.png)
 
