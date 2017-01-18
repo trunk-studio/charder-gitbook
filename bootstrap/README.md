@@ -1,5 +1,11 @@
 # Bootstrap 入門
 
+<!--
+* 回顧上次上課的內容，抽查小考。
+  * 語意元素
+  * Media query
+-->
+
 * Twitter 在 2010 年 8 月已開發原始碼的方式，釋出 Bootstrap。
 * 是一個行動優先設計的前端框架
 * 範圍包含了 HTML、CSS、Javascript
@@ -75,6 +81,10 @@ bootstrap/
   </body>
 </html>
 ```
+
+**練習題**
+
+* 建立一個自己名字的資料夾叫 xxx-bootstrap-demo，在剛剛新建的資料夾下，建立 bootstap 基本樣板，取名叫 index.html，並上傳到 git repo。
 
 **延伸閱讀**
 

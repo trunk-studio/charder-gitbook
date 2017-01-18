@@ -1,10 +1,14 @@
-# Typography
+# 文字編排 (Typography)
+
+<!--
+複習 term 的命名
+-->
 
 ### 標題 (Headings)
 
 * h1 ~ h6
 
-### Body copy
+### 段落
 
 * lead
 
@@ -13,16 +17,16 @@
 <p class="lead">...</p>
 ```
 
-### Inline text elements
+### Inline 文字元素
 
-* mark
-* del
-* s
-* ins
-* u
+* mark：高亮顯示
+* del：刪除的文字
+* s：刪除線
+* ins：插入的文字
+* u：下底線
 * small
-* strong
-* em
+* strong：粗體
+* em：斜體
 
 ### 對齊類別 (Alignment classes)
 
@@ -73,7 +77,7 @@ Capitalized Text.
 </address>
 ```
 
-### Blockquotes
+### 引用 (Blockquotes)
 
 靠左
 
@@ -93,9 +97,9 @@ Capitalized Text.
 </blockquote>
 ```
 
-### List
+### 清單 (List)
 
-**無序列表**
+**無序清單**
 
 * ul > li
 * ul.list-unstyled > li
@@ -106,11 +110,11 @@ Capitalized Text.
 </ul>
 ```
 
-**有序列表**
+**有序清單**
 
 * ol > li
 
-**Inline**
+**Inline 清單**
 
 ```
 <ul class="list-inline">
@@ -118,7 +122,7 @@ Capitalized Text.
 </ul>
 ```
 
-**Description**
+**描述清單**
 
 ![](./assets/dl.png)
 
@@ -138,6 +142,11 @@ Capitalized Text.
 </dl>
 ```
 
-**延伸閱讀**
+### 練習題
 
-[Bootstrap - Typography](http://getbootstrap.com/css/#type)
+* 善用元素撰寫一個排版整齊的頁面
+
+### 延伸閱讀
+
+* [Bootstrap - Typography](http://getbootstrap.com/css/#type)
+* [HTML5 筆記 - 名詞定義](https://alincode.gitbooks.io/learning-html5/content/concept/term.html)

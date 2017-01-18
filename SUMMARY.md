@@ -40,11 +40,12 @@
 ## Bootstrap RWD 前端開發框架
 
 * [Bootstrap 入門](bootstrap/README.md)
+* [文字編排 (Typography)](bootstrap/typography/README.md)
 * [網格 (Grid)](bootstrap/grid/README.md)
-* [Typography](bootstrap/typography/README.md)
 * [佈局 (Layout)](bootstrap/layout/README.md)
 * [圖片 (Image)](bootstrap/image/README.md)
 * [ICON (Glyphicons)](bootstrap/glyphicons/README.md)
 * [元件 (Component)](bootstrap/components/README.md)
 * [Bootstrap JS](bootstrap/js/README.md)
 * [CSS 預處理器 (Processor)](bootstrap/css-processor/README.md)
+* [佈景主題 (theme)](bootstrap/theme/README.md)
