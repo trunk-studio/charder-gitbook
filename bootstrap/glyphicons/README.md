@@ -1,5 +1,7 @@
 # ICON (Glyphicons)
 
+![icon](./assets/icon.png)
+
 * Don't mix with other components
 * Only for use on empty elements
 
