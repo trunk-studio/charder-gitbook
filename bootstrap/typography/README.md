@@ -24,7 +24,7 @@
 * s：刪除線
 * ins：插入的文字
 * u：下底線
-* small
+* small: element is used to create a lighter, secondary text in any heading
 * strong：粗體
 * em：斜體
 
@@ -144,9 +144,10 @@ Capitalized Text.
 
 ### 練習題
 
-* 善用元素撰寫一個排版整齊的頁面
+* 找一段文章使用適合的元素或類別，撰寫一個排版整齊的頁面。
 
 ### 延伸閱讀
 
 * [Bootstrap - Typography](http://getbootstrap.com/css/#type)
+* [w3school - bootstrap typography](http://www.w3schools.com/bootstrap/bootstrap_typography.asp)
 * [HTML5 筆記 - 名詞定義](https://alincode.gitbooks.io/learning-html5/content/concept/term.html)
