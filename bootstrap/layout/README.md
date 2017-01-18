@@ -1,5 +1,7 @@
 # Bootstrap 佈局 (Layout)
 
+![layout](./assets/layout.gif)
+
 ### container 類別
 
 * fixed-width

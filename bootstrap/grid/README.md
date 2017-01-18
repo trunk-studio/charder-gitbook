@@ -113,11 +113,7 @@
 
 * 更細部的切版
 
-### 練習題
-
-* 實作具有 RWD 的兩列三欄式顯示區塊
-
-**延伸閱讀**
+### 延伸閱讀
 
 * [Bootstrap - CSS Grid](http://getbootstrap.com/css/#grid)
 * [Bootstrap - Grid Example](http://getbootstrap.com/examples/grid/)

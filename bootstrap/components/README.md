@@ -47,6 +47,8 @@
 
 ## 練習題
 
+![sample](./assets/sample.png)
+
 * 建立一個完整 layout 的網站
 
 **延伸閱讀**
