@@ -2,12 +2,12 @@
 
 ![Bootstrap Image](./assets/image.png)
 
-**class**
+**類別**
 
-* img-rounded
-* img-circle
-* img-thumbnail
-* img-responsive
+* img-rounded (圓角)
+* img-circle (圓框)
+* img-thumbnail (加外框)
+* img-responsive：圖片會佔其容器的全部寬度，而高度會按比例調整。
 
 **圖文區塊**
 

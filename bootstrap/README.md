@@ -8,7 +8,7 @@
 
 * Twitter 在 2010 年 8 月已開發原始碼的方式，釋出 Bootstrap。
 * 是一個行動優先設計的前端框架
-* 範圍包含了 HTML、CSS、Javascript
+* 總體結構包含：CSS、元件、Javascript、自訂架構
 
 **視埠 (viewport)**
 
@@ -17,6 +17,11 @@
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
+
+**版本**
+
+* 預編譯版
+* 原始版
 
 **認識檔案結構**
 

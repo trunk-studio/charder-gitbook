@@ -45,7 +45,7 @@
 * [佈局 (Layout)](bootstrap/layout/README.md)
 * [元件 (Component)](bootstrap/components/README.md)
 * [圖片 (Image)](bootstrap/image/README.md)
-* [ICON (Glyphicons)](bootstrap/glyphicons/README.md)
+* [圖示字型 (Glyphicons)](bootstrap/glyphicons/README.md)
 * [Bootstrap JS](bootstrap/js/README.md)
 * [CSS 預處理器 (Processor)](bootstrap/css-processor/README.md)
 * [佈景主題 (theme)](bootstrap/theme/README.md)

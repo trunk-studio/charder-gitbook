@@ -1,9 +1,13 @@
-# ICON (Glyphicons)
+# 圖示字型 (Glyphicons)
 
 ![icon](./assets/icon.png)
 
 * Don't mix with other components
 * Only for use on empty elements
+
+<!--
+為什麼會從 icon 演變到圖示字型？
+-->
 
 **語法**
 
