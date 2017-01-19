@@ -6,6 +6,12 @@
   * Media query
 -->
 
+**前置工作**
+
+* 安裝 [Download Visual Studio Code - Mac, Linux, Windows](https://code.visualstudio.com/download)
+
+**Bootstrap 是什麼？**
+
 * Twitter 在 2010 年 8 月已開發原始碼的方式，釋出 Bootstrap。
 * 是一個行動優先設計的前端框架
 * 總體結構包含：CSS、元件、Javascript、自訂架構
@@ -22,6 +28,10 @@
 
 * 預編譯版
 * 原始版
+
+<!--
+去官網下載下來解說
+-->
 
 **認識檔案結構**
 
@@ -89,7 +99,7 @@ bootstrap/
 
 **練習題**
 
-* 建立一個自己名字的資料夾叫 xxx-bootstrap-demo，在剛剛新建的資料夾下，建立 bootstap 基本樣板，取名叫 index.html，並上傳到 git repo。
+* 建立一個自己名字的資料夾叫 ooxx，在剛剛新建的資料夾下，建立 Bootstrap 基本樣板，取名叫 index.html，並上傳到 git repo。
 
 **延伸閱讀**
 

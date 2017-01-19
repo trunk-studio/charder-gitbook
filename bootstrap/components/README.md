@@ -2,7 +2,17 @@
 
 ![components](http://getbootstrap.com/assets/img/components.png)
 
-**導覽列 (Navigation Bar)**
+### 導覽列 (Navigation Bar)
+
+**類別**
+
+* navbar
+* navbar-default
+* navbar-inverse
+* navbar-header
+* navbar-brand
+* navbar-nav
+
 
 ```html
 <nav class="navbar navbar-default">
@@ -23,14 +33,17 @@
 </nav>
 ```
 
+[官方文件傳送門](http://getbootstrap.com/components/#navbar)
+
+
 **導覽列 (Navigation Bar) 與下拉式選單 (Dropdown)**
 
 ```html
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu1<span class="caret"></span></a>
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">母分類<span class="caret"></span></a>
   <ul class="dropdown-menu">
-    <li><a href="#">Sub Menu1</a></li>
-    <li><a href="#">Sub Menu2</a></li>
+    <li><a href="#">子分類 1</a></li>
+    <li><a href="#">子分類 2</a></li>
   </ul>
 </li>
 ```
@@ -50,6 +63,14 @@
 ![sample](./assets/sample.png)
 
 * 建立一個完整 layout 的網站
+
+<!--
+
+預告下次上課，我們將介紹更多的元件，及 Javascript，將我們的網頁動起來，並帶到一點 CSS 預處理器的觀念。
+
+-->
+
+**表單 (Form)**
 
 **延伸閱讀**
 

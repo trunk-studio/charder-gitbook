@@ -1,7 +1,8 @@
 # 文字編排 (Typography)
 
 <!--
-複習 term 的命名
+先複習 term 的命名，在開始講。
+[HTML5 筆記 - 名詞定義](https://alincode.gitbooks.io/learning-html5/content/concept/term.html)
 -->
 
 ### 標題 (Headings)
@@ -149,5 +150,4 @@ Capitalized Text.
 ### 延伸閱讀
 
 * [Bootstrap - Typography](http://getbootstrap.com/css/#type)
-* [w3school - bootstrap typography](http://www.w3schools.com/bootstrap/bootstrap_typography.asp)
-* [HTML5 筆記 - 名詞定義](https://alincode.gitbooks.io/learning-html5/content/concept/term.html)
+* [w3school - Bootstrap Typography](http://www.w3schools.com/bootstrap/bootstrap_typography.asp)
