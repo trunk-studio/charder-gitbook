@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>ex08</title>
+        <title>ex09</title>
 
         <!-- Bootstrap CSS -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -19,27 +19,24 @@
     <body>
 
         <!--
-            修正 navbar 置右
-            修正圖片 RWD
+            加漢堡包
         -->
 
-        <!--
-         navbar-fixed-top
-        -->
-        
         <nav class="navbar navbar-default">
             <div class="container">
                 <!--
-                    換成漢堡包格式
+                    解說漢堡包組成 
                 -->
                 <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                     <a class="navbar-brand" href="#">OOO 股份有限公司</a>
                 </div>
-                <!--
-                    加 collapse navbar-collapse，跟 button 對應的 id
-                    刪 navbar
-                -->
-                <div class="navbar navbar-right">
+                <div class="navbar-right collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li><a href="#">首頁</a></li>
                         <li><a href="#">服務項目</a></li>

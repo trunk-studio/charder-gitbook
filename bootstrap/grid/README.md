@@ -86,10 +86,6 @@
 
 * 在不同 size 的裝置時，想顯示不同排序順序。
 
-**練習題**
-
-* 建立一個圖片區塊和一個文字區塊，當 md 尺寸時，圖片在左邊，當 xs 處寸時，圖片在右邊。
-
 ### 巢狀 (Nesting columns)
 
 ![](assets/nesting-columns.png)

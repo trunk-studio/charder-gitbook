@@ -36,10 +36,6 @@
 </div>
 ```
 
-<!--
-* 讓我們直接來看個下方的示範
--->
-
 **延伸閱讀**
 
 * [container-fluid 範例](http://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_grid_container-fluid&stacked=h)

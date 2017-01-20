@@ -12,6 +12,8 @@
 * navbar-header
 * navbar-brand
 * navbar-nav
+* navbar-right
+* navbar-left
 
 
 ```html
@@ -58,21 +60,24 @@
 </div>
 ```
 
+[官方文件傳送門](http://getbootstrap.com/components/#jumbotron)
+
 ## 練習題
 
 ![sample](./assets/sample.png)
 
 * 建立一個完整 layout 的網站
+  * 包 container
+  * 加 navbar
+  * 加 image RWD
+  * 加下拉 navbar
+  * 加漢堡包
+  * 加 icon
 
 <!--
 
-預告下次上課，我們將介紹更多的元件，及 Javascript，將我們的網頁動起來，並帶到一點 CSS 預處理器的觀念。
+預告下次上課，我們將介紹更多的元件，及更多的練習題，並開始使用 Javascript，將我們的網頁動起來，並帶到一點 CSS 預處理器的觀念。
 
 -->
 
-**表單 (Form)**
-
 **延伸閱讀**
-
-* [Bootstrap - Navigation Bar](http://getbootstrap.com/components/#navbar)
-* [Bootstrap - Jumbotron](http://getbootstrap.com/components/#jumbotron)
