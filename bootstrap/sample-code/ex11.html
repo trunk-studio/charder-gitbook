@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>ex09</title>
+        <title>ex10</title>
 
         <!-- Bootstrap CSS -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -19,15 +19,11 @@
     <body>
 
         <!--
-            加漢堡包
+            navbar 加下拉選單
         -->
 
         <nav class="navbar navbar-default">
             <div class="container">
-                <!--
-                    解說漢堡包組成 data-toggle, data-target, icon-bar, sr-only
-                    css: collapsed, collapse, navbar-collapse
-                -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
@@ -39,13 +35,25 @@
                 </div>
                 <div class="navbar-right collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
+                        <li><a href="#"><span class="glyphicon glyphicon-th-large"></span> 首頁</a></li>
+                        
                         <!--
-                            加入 icon
+                            css: dropdown-toggle
+                            data-toggle: dropdown
+                            role: button
                         -->
-                        <li><a href="#">首頁</a></li>
-                        <li><a href="#">服務項目</a></li>
-                        <li><a href="#">案例分享</a></li>
-                        <li><a href="#">聯繫方式</a></li>
+                        
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-briefcase"></span> 服務項目<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">軟體開發</a></li>
+                                <li><a href="#">系統整合</a></li>
+                                <li><a href="#">企業培訓</a></li>
+                                <li><a href="#">校園研習</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span class="glyphicon glyphicon-list-alt"></span> 案例分享</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> 聯繫方式</a></li>
                     </ul>
                 </div>
             </div>
