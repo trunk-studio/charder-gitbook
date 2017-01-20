@@ -22,7 +22,7 @@
     <div class="navbar-header">
       <a class="navbar-brand" href="#">LOGO</a>
     </div>
-    <div class="navbar">
+    <div class="navbar-left">
       <ul class="nav navbar-nav">
         <li><a href="#">Menu1</a></li>
         <li><a href="#">Menu2</a></li>
