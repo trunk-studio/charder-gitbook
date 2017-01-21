@@ -46,10 +46,10 @@
 * 使用 Cordova 與 Phonegap 實作 Hybrid App
 * Hybrid App 前端與 RESTful API 後端程式整合實務
 
-**資安課程**
+**自動化測試課程**
 
-* 預防 SQL Injection 與 XSS 攻擊的網站程式設計
-* Linux / UNIX 網路與資安防護工具基礎
+* Web 自動化測試 - 使用 WebDriverIO 框架
+* 行動裝置自動化測試 - 使用 Appium 框架
 
 **JavaScript 基礎課程**
 
@@ -69,7 +69,7 @@
 * Sails.js MVC 網站開發框架
 * Sails.js RESTful API 程式實作
 
-**自動化測試課程**
+**資安課程**
 
-* Web 自動化測試 - 使用 WebDriverIO 框架
-* 行動裝置自動化測試 - 使用 Appium 框架
+* 預防 SQL Injection 與 XSS 攻擊的網站程式設計
+* Linux / UNIX 網路與資安防護工具基礎
