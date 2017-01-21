@@ -1,6 +1,6 @@
 # 佈景主題 (Theme)
 
-**購買佈景主題**
+**購買其他佈景主題**
 
 * [WrapBootstrap - Bootstrap Themes & Templates](https://wrapbootstrap.com/)
 * [Bootstrap HTML5 Website Templates - TemplateGarden](https://www.templategarden.com/)
@@ -12,8 +12,11 @@
 
 * [HTML5 UP! Responsive HTML5 and CSS3 Site Templates](https://html5up.net/)
 
-
 **免費板型**
 
 * [SB Admin 2 - Free Bootstrap Admin Theme - Start Bootstrap](https://startbootstrap.com/template-overviews/sb-admin-2/)
 * [20 Free Bootstrap 3 Admin Dashboard Templates 2016 - Colorlib](https://colorlib.com/wp/free-bootstrap-admin-dashboard-templates/)
+
+**延伸閱讀**
+
+* [Theme Template for Bootstrap](https://kkbruce.tw/bs3/Examples/theme)

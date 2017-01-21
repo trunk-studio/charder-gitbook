@@ -5,6 +5,31 @@
 [HTML5 筆記 - 名詞定義](https://alincode.gitbooks.io/learning-html5/content/concept/term.html)
 -->
 
+**名詞定義**
+
+* 元素 element 或 標籤 tag
+* 屬性 attribute 或 特性 properties
+* 參數 attribute-value
+* 事件 event
+
+**語法**
+
+```html
+<element attribute="attribute-value">
+```
+
+**範例**
+
+class 和 id 都是我們的屬性，onclick 是我們的事件。
+
+```html
+<div class="nickname" id="nicknameId" onclick="">alincode</div>
+```
+
+**提醒**
+
+* 使用正確的語意元素
+
 ### 標題 (Headings)
 
 * h1 ~ h6
@@ -143,7 +168,7 @@ Capitalized Text.
 </dl>
 ```
 
-### 補充
+### 補充一
 
 有時候你需要 Bootstrap h2 的 css 樣式，但卻不想使用 h2 元素的時候，你可以把 h2 當 css 名稱使用。
 
@@ -156,6 +181,10 @@ Capitalized Text.
 ```html
 <div class="h2"></div>
 ```
+
+### 補充二
+
+* *-inverse
 
 ### 練習題
 

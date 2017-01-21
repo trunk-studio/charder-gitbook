@@ -30,9 +30,17 @@
 * HTML5 與 CSS3 基礎介紹
 * Bootstrap RWD 前端開發框架
 
+**CSS 進階課程**
+
+* CSS 預處理器
+* CSS Variable、Mixin、Module、Object-Orientation
+* LESS - The Dynamic Stylesheet Language
+* Sass - Syntactically Awesome Stylesheets
+* Compass - Sass-based Stylesheet Framework
+
 **JQuery課程**
 
-* jQuery 前端互動式網頁設計
+* JQuery 前端互動式網頁設計
 * Chrome Debugger 網頁除錯工具
 
 **資料庫課程**
@@ -46,7 +54,7 @@
 * 使用 Cordova 與 Phonegap 實作 Hybrid App
 * Hybrid App 前端與 RESTful API 後端程式整合實務
 
-**自動化測試課程**
+**前端自動化測試課程**
 
 * Web 自動化測試 - 使用 WebDriverIO 框架
 * 行動裝置自動化測試 - 使用 Appium 框架
@@ -55,6 +63,9 @@
 
 * JavaScript 程式設計基礎
 * this, call, apply, function, callback, closure, for-each …
+
+**JavaScript 進階課程**
+
 * JavaScript MapReduce
 * JavaScript ES6 新語法實務
 * arrow function, async/await, let, …
@@ -64,10 +75,10 @@
 
 * Node.js 與 NPM 工具簡介
 * JavaScript 資料庫存取 - 使用 Sequalize.js
-* 自動化建置與測試 - 使用 Gulp 與 Grunt 工具
-* JavaScript 自動化測試 - 使用 Mocha 框架
 * Sails.js MVC 網站開發框架
 * Sails.js RESTful API 程式實作
+* 自動化建置與測試 - 使用 Gulp 與 Grunt 工具
+* JavaScript 後端自動化測試 - 使用 Mocha 框架
 
 **資安課程**
 
