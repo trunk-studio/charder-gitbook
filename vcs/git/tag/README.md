@@ -1,8 +1,8 @@
 # 標籤
 
-Git中，標籤有兩種類型：輕量標籤(lightweight tag)和標示標籤(annotated tag)。
+Git中，標籤有兩種類型：輕量標籤 (lightweight tag) 和標示標籤 (annotated tag)。
 
-常用於 master 之 production release(正式發佈) 版號。
+常用於 master 之 production release (正式發佈) 版號。
 
 ## 輕量標籤
 
@@ -31,7 +31,7 @@ Git中，標籤有兩種類型：輕量標籤(lightweight tag)和標示標籤(an
 
 ## 開啟編輯器邊寫註解
 
-`git tag -a <tagname>``
+`git tag -a <tagname>`
 
 ## 直接編寫註解
 

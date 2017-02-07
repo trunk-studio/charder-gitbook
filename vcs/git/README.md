@@ -53,6 +53,9 @@ Linus Torvalds（Linux Kernel 與 Git 作者）稱 Git 是「來自地獄的資�
 
 * [連猴子都能懂的 Git 入門指南](https://backlogtool.com/git-guide/tw/)
 * [25個線上實際操作學習 Git、Github](https://blog.longwin.com.tw/2013/01/git-github-code-school-2013/)
+* [保哥 30 天 Git 教學](https://github.com/doggy8088/Learn-Git-in-30-days/blob/master/zh-tw/README.md)
+* [Git 官方繁體教學](https://git-scm.com/book/zh-tw/v1)
+* [Pro Git](https://gitbookio.gitbooks.io/progit/en/)
 
 Git版本控制系統的操作可以藉由指令或是GUI的操作達到我們想要的目的。
 
