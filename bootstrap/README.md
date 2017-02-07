@@ -81,6 +81,7 @@ bootstrap/
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <!-- 確保 IE 是使用最新的呈現模式，而不是相容性模式。 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -117,3 +118,4 @@ bootstrap/
 * [Bootstrap · The world’s most popular mobile-first and responsive front-end framework.](http://getbootstrap.com/)
 * [Bootstrap 3 中文手冊 · 世界最受歡迎的行動優先和自適應前端框架。 - KKBruce](https://kkbruce.tw/bs3)
 * [Bootstrap 3 Tutorial](http://www.w3schools.com/bootstrap/default.asp)
+* [漫談 CSS 架構方法 - 以 OOCSS, SMACSS, BEM 為例](http://www.slideshare.net/kurotanshi/css-oocss-smacss-bem)

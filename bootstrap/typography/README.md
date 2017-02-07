@@ -1,4 +1,4 @@
-# 文字編排 (Typography)
+# 排版 (Typography)
 
 <!--
 先複習 term 的命名，在開始講。
