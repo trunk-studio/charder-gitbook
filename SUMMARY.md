@@ -50,9 +50,12 @@
 * [JS 概念](bootstrap/js/README.md)
 * [JS 下拉選單](bootstrap/js-dropdown/README.md)
 * [JS 輪播效果](bootstrap/js-carousel/README.md)
-* [JS 頁籤](bootstrap/js-tab/README.md)
-* [JS 折疊與手風琴效果](bootstrap/js-dropdown/README.md)
-* [JS 互動視窗](bootstrap/js-modal/README.md)
 * [物件導向 CSS](bootstrap/oocss/README.md)
 * [CSS 預處理器 (Processor)](bootstrap/css-processor/README.md)
 * [佈景主題 (Theme)](bootstrap/theme/README.md)
+
+<!--
+* [JS 折疊與手風琴效果](bootstrap/js-collapse/README.md)
+* [JS 頁籤](bootstrap/js-tab/README.md)
+* [JS 互動視窗](bootstrap/js-modal/README.md)
+-->

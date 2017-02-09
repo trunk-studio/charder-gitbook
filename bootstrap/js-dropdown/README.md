@@ -66,6 +66,8 @@ $('.dropdown-toggle').dropdown();
 * hide.bs.dropdown
 * hidden.bs.dropdown
 
+[官方文件傳送門](http://getbootstrap.com/javascript/#dropdowns)
+
 ### 範例
 
 **Button 元素的 Dropdown**
