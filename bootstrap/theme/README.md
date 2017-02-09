@@ -1,5 +1,9 @@
 # 佈景主題 (Theme)
 
+### 什麼是 Theme
+
+Theme 是定義畫面上所有「主視覺」，例如整體配色。
+
 **購買其他佈景主題**
 
 * [WrapBootstrap - Bootstrap Themes & Templates](https://wrapbootstrap.com/)

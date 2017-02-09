@@ -37,47 +37,79 @@
 
 [官方文件傳送門](http://getbootstrap.com/components/#navbar)
 
-
-**導覽列 (Navigation Bar) 與下拉式選單 (Dropdown)**
+### Breadcrumbs 麵包屑
 
 ```html
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">母分類<span class="caret"></span></a>
-  <ul class="dropdown-menu">
-    <li><a href="#">子分類 1</a></li>
-    <li><a href="#">子分類 2</a></li>
-  </ul>
-</li>
+<ol class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Library</a></li>
+  <li class="active">Data</li>
+</ol>
 ```
 
-**Jumbotron**
+[官方文件傳送門](http://getbootstrap.com/components/#breadcrumbs)
+
+### Thumbnails
 
 ```html
-<div class="jumbotron">
-  <h1>jumbotron title</h1>
-  <p>desc</p>
-  <p><a class="btn btn-primary btn-lg" href="#" role="button">more</a></p>
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="..." alt="...">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
 </div>
 ```
 
-[官方文件傳送門](http://getbootstrap.com/components/#jumbotron)
+[官方文件傳送門](http://getbootstrap.com/components/#thumbnails)
+
+### 分頁 Pagination
+
+```
+<nav aria-label="Page navigation">
+  <ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+```
+
+[官方文件傳送門](http://getbootstrap.com/components/#pagination-default)
 
 ## 練習題
 
-![sample](./assets/sample.png)
-
 * 建立一個完整 layout 的網站
-  * 包 container
-  * 加 navbar
-  * 加 image RWD
-  * 加漢堡包
-  * 加 icon
-  * navbar 加下拉選單
+  * 新聞頁
+    * 包 container
+    * 加 navbar
+    * 加 image RWD
+    * 加漢堡包
+    * 加 icon
+    * 加麵包屑
+  * 商品列表頁
+    * Thumbnails
+    * 分頁 (Pagination)
 
 <!--
 
 預告下次上課，我們將介紹更多的元件，及更多的練習，並開始使用 Javascript，將我們的網頁動起來，並帶到一點 CSS 預處理器的觀念，及如何使用佈景主題。
 
 -->
-
-**延伸閱讀**

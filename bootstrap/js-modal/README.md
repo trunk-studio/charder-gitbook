@@ -5,7 +5,7 @@
 * 不支援同時多重視窗 (Multiple open modals not supported)
 * 建議將 html 放置在 body 的直接子元素，避免影響到其他元件。
 
-### 基本 modal 結構
+### 基本結構
 
 ![](./assets/modal.png)
 
@@ -88,7 +88,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 })
 ```
 
-### 文件閱讀方式
+### 文件
 
 * [官方文件](http://getbootstrap.com/javascript/#modals-related-target)
 * [w3cschool bootstrap modal](http://www.w3schools.com/bootstrap/bootstrap_ref_js_modal.asp)
