@@ -41,9 +41,9 @@ person2.sayHello(); // "Hello, I'm Bob"
   需要有 h1 一樣的顯示效果，但內容物並不是與 h1 相同含義
 -->
 
-
 ### 延伸閱讀
 
 * [漫談 CSS 架構方法 - 以 OOCSS, SMACSS, BEM 為例](http://www.slideshare.net/kurotanshi/css-oocss-smacss-bem)
+* [Pure - CSS framework](https://purecss.io/)
 * [劣以為的 OOCSS 和 SMACSS 以及其他 CSS 規範 - @ChingHanHo](http://blog.chh.tw/posts/oocss-smacss-and-css-guidelines/)
 * [如何逐步提升CSS的可利用性、模組化](http://www.slideshare.net/sfismy/css-21022273)

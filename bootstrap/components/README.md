@@ -130,17 +130,13 @@
   * 新聞頁
     * 包 container
     * 加 navbar
-    * 加 image RWD
+    * 加 image RWD  (上次教到這裡)
     * 加漢堡包
     * 加 icon
     * 加麵包屑
+    * 加 navbar dropdown
   * 商品列表頁
     * Thumbnails
     * 分頁 (Pagination)，需置中
     * List group
-
-<!--
-
-預告下次上課，我們將介紹更多的元件，及更多的練習，並開始使用 Javascript，將我們的網頁動起來，並帶到一點 CSS 預處理器的觀念，及如何使用佈景主題。
-
--->
+    * 新增 Carousel 和 Panel
