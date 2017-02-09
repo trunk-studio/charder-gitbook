@@ -72,8 +72,6 @@ $('.dropdown-toggle').dropdown();
 
 ![](./assets/button-dropdown.png)
 
-[w3cschool bootstrap - button dropdown demo](http://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_ref_js_dropdown&stacked=h)
-
 ```
 <div class="dropdown">
     <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Dropdown Example
@@ -87,6 +85,8 @@ $('.dropdown-toggle').dropdown();
     </ul>
   </div>
 ```
+
+[w3cschool bootstrap - button dropdown demo](http://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_ref_js_dropdown&stacked=h)
 
 **Navbar 和 Dropdown**
 

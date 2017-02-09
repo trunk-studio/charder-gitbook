@@ -49,6 +49,7 @@
 * [圖示字型 (Glyphicons)](bootstrap/glyphicons/README.md)
 * [JS 概念](bootstrap/js/README.md)
 * [JS 下拉選單](bootstrap/js-dropdown/README.md)
+* [JS 輪播效果](bootstrap/js-carousel/README.md)
 * [JS 頁籤](bootstrap/js-tab/README.md)
 * [JS 折疊與手風琴效果](bootstrap/js-dropdown/README.md)
 * [JS 互動視窗](bootstrap/js-modal/README.md)

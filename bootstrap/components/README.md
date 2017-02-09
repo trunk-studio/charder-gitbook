@@ -70,7 +70,7 @@
 
 ### 分頁 Pagination
 
-```
+```html
 <nav aria-label="Page navigation">
   <ul class="pagination">
     <li>
@@ -94,6 +94,36 @@
 
 [官方文件傳送門](http://getbootstrap.com/components/#pagination-default)
 
+### List group
+
+```html
+<!-- Linked items -->
+<div class="list-group">
+  <a href="#" class="list-group-item active">
+    Cras justo odio
+  </a>
+  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+  <a href="#" class="list-group-item">Morbi leo risus</a>
+  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+  <a href="#" class="list-group-item">Vestibulum at eros</a>
+</div>
+```
+
+[官方文件傳送門](http://getbootstrap.com/components/#list-group)
+
+### Panel 面板
+
+```html
+<div class="panel panel-default">
+  <div class="panel-body">
+    Panel content
+  </div>
+  <div class="panel-footer">Panel footer</div>
+</div>
+```
+
+[官方文件傳送門](http://getbootstrap.com/components/#panels)
+
 ## 練習題
 
 * 建立一個完整 layout 的網站
@@ -106,7 +136,8 @@
     * 加麵包屑
   * 商品列表頁
     * Thumbnails
-    * 分頁 (Pagination)
+    * 分頁 (Pagination)，需置中
+    * List group
 
 <!--
 

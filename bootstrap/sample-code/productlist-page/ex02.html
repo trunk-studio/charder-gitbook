@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>ex01</title>
+        <title>ex02</title>
 
         <!-- Bootstrap CSS -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -19,7 +19,7 @@
     <body>
 
       <!--
-        新增 Thumbnails
+        新增 Pagination，並置中。
       -->
 
         <nav class="navbar navbar-default">
@@ -52,12 +52,13 @@
             </div>
         </nav>
 
-        <ol class="breadcrumb">
-          <li><a href="#">首頁</a></li>
-          <li class="active">商品列表</li>
-        </ol>
-
         <section class="container">
+
+          <ol class="breadcrumb">
+            <li><a href="#">首頁</a></li>
+            <li class="active">商品列表</li>
+          </ol>
+
           <div class="row">
             <div class="col-sm-4 col-md-3">
               <div class="thumbnail">
@@ -109,6 +110,32 @@
             </div>
           </div>
         </section>
+
+        <nav aria-label="Page navigation">
+          <section class="container">
+            <div class="row">
+              <div class="col-md-offset-5 col-md-4 col-xs-offset-4 col-xs-6">
+                <ul class="pagination">
+                  <li>
+                    <a href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li>
+                    <a href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </nav>
 
         <!-- jQuery -->
         <script src="http://code.jquery.com/jquery.js"></script>

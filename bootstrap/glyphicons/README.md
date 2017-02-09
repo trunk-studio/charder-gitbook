@@ -5,10 +5,6 @@
 * Don't mix with other components
 * Only for use on empty elements
 
-<!--
-為什麼會從 icon 演變到圖示字型？
--->
-
 **語法**
 
 ```
@@ -22,6 +18,11 @@
   <span class="glyphicon glyphicon-search"></span> Search
 </button>
 ```
+
+### 問答題
+
+* 在沒有圖示字型的時候，是怎麼做的？
+* 為什麼會從 icon 演變到圖示字型？
 
 **延伸閱讀**
 

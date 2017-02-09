@@ -43,6 +43,8 @@
 </div>
 ```
 
+[官方文件傳送門](http://getbootstrap.com/javascript/#carousel)
+
 ### 延伸閱讀
 
 * [w3cschool bootstap - carousel](http://www.w3schools.com/bootstrap/bootstrap_ref_js_carousel.asp)
