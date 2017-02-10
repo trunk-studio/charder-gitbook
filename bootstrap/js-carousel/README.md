@@ -3,6 +3,10 @@
 
 ### 基本結構
 
+* Indicators
+* Wrapper for slides
+* Controls
+
 ![](./assets/carousel.png)
 
 ```
@@ -31,7 +35,7 @@
     ...
   </div>
 
-  <!-- Controls -->
+  <!-- Controls-->
   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>

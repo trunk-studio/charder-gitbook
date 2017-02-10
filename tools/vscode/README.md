@@ -13,6 +13,13 @@
 
 <!-- 介紹儀表板內的功能區塊 -->
 
+### 編輯器環境
+
+* 主選單 (Menu)
+* 側邊欄 (Sidebar)
+* 編輯器視窗 (Editors)
+* 狀態列 (Status Bar)
+
 ### 外掛
 
 * [官方 marketplace](https://marketplace.visualstudio.com/)
