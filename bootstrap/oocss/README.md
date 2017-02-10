@@ -2,7 +2,7 @@
 
 ### 程式語言中的物件導向
 
-```
+```js
 var Person = function (firstName) {
   this.firstName = firstName;
 };
@@ -23,13 +23,13 @@ person2.sayHello(); // "Hello, I'm Bob"
 
 ### 在 Bootstrap 的世界裡
 
-```
+```html
 <h1>title</h1>
 ```
 
 或
 
-```
+```html
 <div class="h1">title</div>
 ```
 
@@ -40,6 +40,8 @@ person2.sayHello(); // "Hello, I'm Bob"
 <!--
   需要有 h1 一樣的顯示效果，但內容物並不是與 h1 相同含義
 -->
+
+<!--看 Bootstrap css 原始碼-->
 
 ### 延伸閱讀
 
