@@ -6,12 +6,10 @@
 * 內建 debug GUI 工具
 * 整合表情符號 😄🤔
 
-<!--
-### Mac 在 command line 開啟 VS code
+### 在 command line 開啟 VS code
 
-* 安裝 shell command
-* code .
--->
+* 安裝 shell command (Mac 才要)
+* code . 或 code [路徑位置]
 
 <!-- 介紹儀表板內的功能區塊 -->
 
@@ -31,6 +29,8 @@
 * bs3-col
 * bs3-form
 * bs3-input
+
+<!--介紹使用方式-->
 
 ### 使用者設定
 
@@ -71,5 +71,6 @@
 
 * [官網](https://code.visualstudio.com/)
 * [Visual Studio Code 快速上手指南](http://www.slideshare.net/shengyou/visual-studio-code-62532711)
+* [使用 Visual Studio Code 建構 JavaScript 應用程式](http://www.slideshare.net/WillHuangTW/visual-studio-code-javascript)
 * [Golang 深入研究 Visual Studio Code for Golang](http://www.evanlin.com/dive-with-vscode-golang/)
 * [Visual Studio Code Key Bindings](https://code.visualstudio.com/docs/customization/keybindings)
