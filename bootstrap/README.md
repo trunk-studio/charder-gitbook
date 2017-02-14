@@ -30,6 +30,13 @@
 
 裝置或監視器在網頁的可見區域。
 
+* width：可設定數值，或者指定為 device-width
+* height：可設定數值，或者指定為 device-height
+* initial-scale：第一次進入頁面的初始比例，最小0.25，最大5
+* minimum-scale：允許縮小最小比例，最小0.25，最大5
+* maximum-scale：允許放大最大比例，最小0.25，最大5
+* user-scalable：允許使用者縮放，1 or 0 (yes or no)
+
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
