@@ -39,10 +39,6 @@ person2.sayHello(); // "Hello, I'm Bob"
     * media-shadow
 * 容器與內容分離
 
-**注意事項**
-
-* 減少使用子選擇器
-
 ### 在 Bootstrap 的世界裡
 
 ```html

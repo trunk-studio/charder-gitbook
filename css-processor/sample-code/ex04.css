@@ -1,0 +1,36 @@
+.btn, .btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger, .btn-danger-light, .btn-danger-dark {
+  padding: 10px;
+  font-size: 14px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background: #286090;
+}
+
+.btn-success {
+  background: #449d44;
+}
+
+.btn-info {
+  background: #31b0d5;
+}
+
+.btn-warning {
+  background: #ec971f;
+}
+
+.btn-danger {
+  background: #c9302c;
+}
+
+.btn-danger-light {
+  background: #ff6058;
+}
+
+.btn-danger-dark {
+  background: #651816;
+}

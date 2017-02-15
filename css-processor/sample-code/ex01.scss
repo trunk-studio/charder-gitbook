@@ -1,0 +1,21 @@
+$primary-color: #286090;
+$success-color: #449d44;
+$info-color: #31b0d5;
+$warning-color: #ec971f;
+$danger-color: #c9302c;
+
+.btn-primary {
+  background: $primary-color;
+}
+.btn-success {
+  background: $success-color;
+}
+.btn-info {
+  background: $info-color;
+}
+.btn-warning {
+  background: $warning-color;
+}
+.btn-danger {
+  background: $danger-color;
+}

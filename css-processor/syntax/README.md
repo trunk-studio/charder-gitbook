@@ -4,11 +4,13 @@
 
 ## 變數 (Variables)
 
+用 `$` 符號自訂變數
+
 ```
 $primary-color: #333;
 
 body {
-  color: $primary-color;
+  background: $primary-color;
 }
 ```
 
@@ -16,16 +18,16 @@ body {
 
 * 重複性的值
 
-**練習題**
+**練習題 ex01: 定義五個網站主要配色的變數，並建立 5 個相對應的 Button 類別。**
 
-* 使用變數定義五個網站的主要配色，並建立 5 個相對應的 Button。
+![](assets/ex01.png)
 
 ```html
-<button class="btn-primary"/>
-<button class="btn-success"/>
-<button class="btn-info"/>
-<button class="btn-warning"/>
-<button class="btn-danger"/>
+<button class="btn-primary">primary</button>
+<button class="btn-success">success</button>
+<button class="btn-info"/>info</button>
+<button class="btn-warning">warning</button>
+<button class="btn-danger">danger</button>
 ```
 
 ## 繼承 (Extend/Inheritance)
@@ -77,9 +79,17 @@ body {
 }
 ```
 
-**練習題**
+**練習題 ex02**
 
-* 定義一個 btn 類別，值為 `border: 5px`，讓之前建立的五個 Button 都繼承 btn。
+定義一個 btn 類別，值為
+
+```css
+padding: 10px;
+font-size: 14px;
+border-radius: 4px;
+```
+
+讓之前建立的五個 Button 都繼承 btn。
 
 ## 混合 (Mixins)
 
@@ -107,6 +117,8 @@ body {
   border-radius: 10px;
 }
 ```
+
+**練習題 ex03:支援所有 browser**
 
 ## 巢狀 (Nesting)
 
@@ -150,11 +162,7 @@ nav a {
 }
 ```
 
-**練習題**
-
-* 用 SCSS 的巢狀語法，定義 `.menu`、`.menu li`、`.menu a`。
-
-## (Partials)
+## Partials
 
 ```
 // _simple.scss
@@ -240,11 +248,11 @@ aside[role="complementary"] {
 }
 ```
 
-**練習題**
+**練習題 ex04**
 
-* btn-dark 跟 btn-light 兩種樣式的 button，btn-light 的色碼比 btn-dark 亮 1.3 倍。
+* 新增 btn-danger-light 跟 btn-danger-dark 兩種類別，btn-danger-light 的色碼是 btn-danger 乘 2，btn-danger-dark 的色碼是 btn-danger 乘 0.5。
 
-## 函示 (function)
+<!--## 函示 (function)
 
 **SCSS**
 
@@ -260,7 +268,7 @@ aside[role="complementary"] {
 #main {
   background: #ff8000;
 }
-```
+```-->
 
 ### 延伸閱讀
 

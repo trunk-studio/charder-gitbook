@@ -56,7 +56,7 @@
 
 * [概念](css-processor/README.md)
 * [物件導向 CSS](css-processor/oocss/README.md)
-* [環境 / 安裝](css-processor/install/README.md)
+* [環境安裝](css-processor/install/README.md)
 * [語法](css-processor/syntax/README.md))
 
 <!--

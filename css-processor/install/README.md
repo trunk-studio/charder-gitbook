@@ -1,5 +1,12 @@
 # 環境安裝
 
+### 必要條件
+
+* ruby
+* gem
+
+### 安裝指令
+
 ```
 gem install sass
 ```
@@ -13,5 +20,3 @@ gem install sass
 
 * [Compile Sass, Less, Jade, CoffeeScript on Mac, Windows & Linux with Live Browser Reload](https://prepros.io/)：GUI 工具
 * [Install Sass](http://sass-lang.com/install)
-
-**延伸閱讀**

@@ -1,0 +1,39 @@
+$primary-color: #286090;
+$success-color: #449d44;
+$info-color: #31b0d5;
+$warning-color: #ec971f;
+$danger-color: #c9302c;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.btn {
+  padding: 10px;
+  font-size: 14px;
+  @include border-radius(4px);
+}
+
+.btn-primary {
+  @extend .btn;
+  background: $primary-color;
+}
+.btn-success {
+  @extend .btn;
+  background: $success-color;
+}
+.btn-info {
+  @extend .btn;
+  background: $info-color;
+}
+.btn-warning {
+  @extend .btn;
+  background: $warning-color;
+}
+.btn-danger {
+  @extend .btn;
+  background: $danger-color;
+}
