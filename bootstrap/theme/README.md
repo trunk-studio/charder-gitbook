@@ -4,6 +4,13 @@
 
 Theme 是定義畫面上所有「主視覺」，例如整體配色。
 
+### 編寫自己的 theme
+
+<!--
+流程一 建立按鈕變數
+在_variables.scss透過全域顏色變數新增各按鈕變數：
+-->
+
 **購買其他佈景主題**
 
 * [WrapBootstrap - Bootstrap Themes & Templates](https://wrapbootstrap.com/)

@@ -132,7 +132,8 @@ $('#myModal').modal('show')
 
 ```
 $('#myModal').on('hidden.bs.modal', function (e) {
-  // do something...
+  e.target; // 將要啟用的 target
+  e.relatedTarget;  // 之前啟用一個 target
 })
 ```
 
