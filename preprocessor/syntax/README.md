@@ -2,7 +2,7 @@
 
 提供原生 CSS 不足的語法，以達到易閱讀和可維護性。
 
-## 變數 (Variables)
+### 變數 (Variables)
 
 用 `$` 符號自訂變數
 
@@ -30,7 +30,7 @@ body {
 <button class="btn-danger">danger</button>
 ```
 
-## 繼承 (Extend/Inheritance)
+### 繼承 (Extend/Inheritance)
 
 **SCSS**
 
@@ -91,7 +91,7 @@ border-radius: 4px;
 
 讓之前建立的五個 Button 都繼承 btn。
 
-## 混合 (Mixins)
+### 混合 (Mixins)
 
 跟 Extend 類似，但可以帶入參數。
 
@@ -120,7 +120,7 @@ border-radius: 4px;
 
 **練習題 ex03:支援所有 browser**
 
-## 巢狀 (Nesting)
+### 巢狀 (Nesting)
 
 **SCSS**
 
@@ -162,7 +162,7 @@ nav a {
 }
 ```
 
-## Partials
+### Partials
 
 ```
 // _simple.scss
@@ -180,7 +180,7 @@ nav a {
 @import 'margin'; //  _margin.scss
 ```
 
-## 合併 (Import)
+### 合併 (Import)
 
 * 在檔案名稱前面加個下底線 (_)，就不會轉成獨立的 CSS。
 
@@ -211,7 +211,7 @@ body {
 
 * 將檔案切割細分，以利維護。
 
-## 運算 (Operators)
+### 運算 (Operators)
 
 **SCSS**
 

@@ -52,12 +52,12 @@
 * [JS 輪播效果](bootstrap/js-carousel/README.md)
 * [佈景主題 (Theme)](bootstrap/theme/README.md)
 
-## CSS 處理器 (Processor)
+## CSS 預處理器 (CSS Preprocessor)
 
-* [概念](css-processor/README.md)
-* [物件導向 CSS](css-processor/oocss/README.md)
-* [環境安裝](css-processor/install/README.md)
-* [語法](css-processor/syntax/README.md))
+* [物件導向 CSS](preprocessor/oocss/README.md)
+* [概念](preprocessor/README.md)
+* [環境安裝](preprocessor/install/README.md)
+* [語法](preprocessor/syntax/README.md))
 
 <!--
 * [JS 折疊與手風琴效果](bootstrap/js-collapse/README.md)
