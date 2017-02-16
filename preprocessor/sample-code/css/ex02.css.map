@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAMA,sEAAK;EACH,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;EACf,aAAa,EAAE,GAAG;;AAGpB,YAAa;EAEX,UAAU,EAdI,OAAO;;AAgBvB,YAAa;EAEX,UAAU,EAjBI,OAAO;;AAmBvB,SAAU;EAER,UAAU,EApBC,OAAO;;AAsBpB,YAAa;EAEX,UAAU,EAvBI,OAAO;;AAyBvB,WAAY;EAEV,UAAU,EA1BG,OAAO",
+"sources": ["../scss/ex02.scss"],
+"names": [],
+"file": "ex02.css"
+}

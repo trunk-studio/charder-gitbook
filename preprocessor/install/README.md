@@ -11,6 +11,13 @@
 gem install sass
 ```
 
+### 轉換 SCSS 成 CSS
+
+```
+sass --watch input.sass:output.css
+sass --watch input-dir:output-dir
+```
+
 ### Online Compiler
 
 * [SassMeister | The Sass Playground!](http://www.sassmeister.com/)

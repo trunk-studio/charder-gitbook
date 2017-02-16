@@ -118,7 +118,7 @@ border-radius: 4px;
 }
 ```
 
-**練習題 ex03:支援所有 browser**
+**練習題 ex03:讓將 border-radius 加入前綴瀏覽器支援**
 
 ### 巢狀 (Nesting)
 

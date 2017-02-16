@@ -4,25 +4,21 @@
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
-  border-radius: 4px;
-}
+  border-radius: 4px; }
 
 .btn-primary {
-  background: #286090;
-}
+  background: #286090; }
 
 .btn-success {
-  background: #449d44;
-}
+  background: #449d44; }
 
 .btn-info {
-  background: #31b0d5;
-}
+  background: #31b0d5; }
 
 .btn-warning {
-  background: #ec971f;
-}
+  background: #ec971f; }
 
 .btn-danger {
-  background: #c9302c;
-}
+  background: #c9302c; }
+
+/*# sourceMappingURL=ex03.css.map */

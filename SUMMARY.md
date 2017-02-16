@@ -45,6 +45,7 @@
 * [網格 (Grid)](bootstrap/grid/README.md)
 * [佈局 (Layout)](bootstrap/layout/README.md)
 * [元件 (Component)](bootstrap/components/README.md)
+* [Navbar Fixed Top](bootstrap/navbar-fixed-top/README.md)
 * [圖片 (Image)](bootstrap/image/README.md)
 * [圖示字型 (Glyphicons)](bootstrap/glyphicons/README.md)
 * [JS 概念](bootstrap/js/README.md)
