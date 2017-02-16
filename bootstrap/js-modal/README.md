@@ -33,7 +33,9 @@
 </div>
 ```
 
-* [w3cschool demo](http://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_ref_js_modal&stacked=h)
+[官方文件傳送門](http://getbootstrap.com/javascript/#modals)
+
+<!--* [w3cschool demo](http://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_ref_js_modal&stacked=h)-->
 
 ### 控制視窗大小 (Optional sizes)
 
@@ -136,9 +138,3 @@ $('#myModal').on('hidden.bs.modal', function (e) {
   e.relatedTarget;  // 之前啟用一個 target
 })
 ```
-
-### 範例
-
-**範例一：Login Modal**
-
-[w3cschool Login Modal demo](http://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_ref_js_modal2&stacked=h)

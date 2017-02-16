@@ -37,6 +37,14 @@
 
 [官方文件傳送門](http://getbootstrap.com/components/#navbar)
 
+### Navbar Button
+
+```
+<button type="button" class="btn btn-default navbar-btn">Sign in</button>
+```
+
+[Bootstrap - Components navbar buttons](http://getbootstrap.com/components/#navbar-buttons)
+
 <!--漢堡包也在這-->
 
 ### Breadcrumbs 麵包屑
@@ -142,3 +150,5 @@
     * 分頁 (Pagination)，需置中
     * List group
     * 新增 Carousel 和 Panel
+    * 新增 Navbar Button 和基本可動的 modal
+    * 將 modal 內容，改寫成 login 表單
