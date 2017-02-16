@@ -26,6 +26,8 @@
 
 ### Font Awesome
 
+[ICON 總覽](http://fontawesome.io/cheatsheet/)
+
 **CDN**
 
 ```html
@@ -41,5 +43,6 @@
 **延伸閱讀**
 
 * [Font Awesome, the iconic font and CSS toolkit](http://fontawesome.io/)
+* [BootCSS - Font Awesome](http://www.bootcss.com/p/font-awesome/)
 * [Bootstrap - Glyphicons](http://getbootstrap.com/components/#glyphicons)
 * [w3schools 的 Bootstrap Glyphicons 範例](http://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_glyphs&stacked=h)
