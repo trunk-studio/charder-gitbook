@@ -180,6 +180,16 @@ nav a {
 @import 'margin'; //  _margin.scss
 ```
 
+```
+// normal-layout.css
+@import 'simple'; //  _simple.scss
+```
+
+```
+// jumbotron-layout.css
+@import 'jumbotron'; //  _jumbotron.scss
+```
+
 ### 合併 (Import)
 
 * 在檔案名稱前面加個下底線 (_)，就不會轉成獨立的 CSS。

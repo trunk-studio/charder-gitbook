@@ -149,6 +149,6 @@
     * Thumbnails
     * 分頁 (Pagination)，需置中
     * List group
-    * 新增 Carousel 和 Panel
+    * 新增 Carousel 和 Panel （結束後，先跳到 CSS 預處理器章節)
     * 新增 Navbar Button 和基本可動的 modal
     * 將 modal 內容，改寫成 login 表單
