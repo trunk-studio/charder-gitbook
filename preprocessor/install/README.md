@@ -5,10 +5,18 @@
 * ruby
 * gem
 
-### 安裝指令
+### 安裝 SASS
 
 ```
 gem install sass
+```
+
+### 安裝 SCSS 版的 Bootstrap
+
+* [Github - Bootstrap SCSS](https://github.com/twbs/bootstrap-sass)
+
+```
+npm i bootstrap-scss
 ```
 
 ### 轉換 SCSS 成 CSS
@@ -26,4 +34,5 @@ sass --watch input-dir:output-dir
 ### 工具
 
 * [Compile Sass, Less, Jade, CoffeeScript on Mac, Windows & Linux with Live Browser Reload](https://prepros.io/)：GUI 工具
+* [Koala is a GUI application for Less, Sass, Compass and CoffeeScript compilation](http://koala-app.com/)
 * [Install Sass](http://sass-lang.com/install)
