@@ -1,0 +1,20 @@
+{
+  "name": "custom-theme",
+  "homepage": "https://github.com/trunk-studio/charder-gitbook",
+  "authors": [
+    "alincode <alincode@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}
