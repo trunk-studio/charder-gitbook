@@ -16,3 +16,4 @@ _book
 *.pdf
 
 .sass-cache/
+bootstrap/sample-code/custom-theme/bower_components/
