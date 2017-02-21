@@ -1,0 +1,17 @@
+.navbar {
+    margin-bottom: 0px;
+    background: $brand-warning;
+    .fa {
+        font-size: 18px;
+    }
+}
+
+.landing {
+    background: url(../img/cover.jpg) no-repeat -70px;
+    height: 800px;
+    padding-top: 100px;
+    .container {
+        background: #fff;
+        opacity: 0.5;
+    }
+}

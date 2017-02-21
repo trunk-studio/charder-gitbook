@@ -30,6 +30,23 @@ body {
 <button class="btn-danger">danger</button>
 ```
 
+```css
+.btn-primary {
+  background: #286090; }
+
+.btn-success {
+  background: #449d44; }
+
+.btn-info {
+  background: #31b0d5; }
+
+.btn-warning {
+  background: #ec971f; }
+
+.btn-danger {
+  background: #c9302c; }
+```
+
 ### 繼承 (Extend/Inheritance)
 
 **SCSS**
@@ -159,6 +176,67 @@ nav a {
   display: block;
   padding: 6px 12px;
   text-decoration: none;
+}
+```
+
+**SCSS**
+
+```
+li {
+  font: {
+    family: serif;
+    weight: bold;
+    size: 1.3em;
+  }
+}
+```
+
+**CSS**
+
+```css
+li {
+  font-family: serif;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+```
+
+### if
+
+```
+@if lightness($color) > 30% {
+  background-color: black;
+}
+@else {
+  background-color: white;
+}
+```
+
+### For Loop
+
+* @for
+* @each
+* @while
+
+```
+@for $i from 1 through 3 {
+  span:nth-child(#{$i}) {
+    color:red;
+  }
+}
+```
+
+```css
+span:nth-child(1) {
+  color: red;
+}
+
+span:nth-child(2) {
+  color: red;
+}
+
+span:nth-child(3) {
+  color: red;
 }
 ```
 

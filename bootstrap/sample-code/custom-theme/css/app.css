@@ -8130,4 +8130,16 @@ button.close {
   overflow: visible;
   clip: auto; }
 
-/*# sourceMappingURL=app.css.map */
+.navbar {
+  margin-bottom: 0px;
+  background: #f0ad4e; }
+  .navbar .fa {
+    font-size: 18px; }
+
+.landing {
+  background: url(../img/cover.jpg) no-repeat -70px;
+  height: 800px;
+  padding-top: 100px; }
+  .landing .container {
+    background: #fff;
+    opacity: 0.5; }

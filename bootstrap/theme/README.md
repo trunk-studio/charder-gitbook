@@ -1,12 +1,14 @@
 # 佈景主題 (Theme)
 
+[Bootstrap Theme - Source Code](https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_theme.scss)
+
 ### 什麼是佈景主題
 
 Theme 是定義畫面上所有「主視覺」，例如整體配色。
 
 ### 選擇佈景主題原則
 
-* 確認版型支援 bootstrap，並是期望中的版本。
+* 確認版型支援 Bootstrap，並是期望中的版本。
 * 版型在所有裝置大小的呈現結果都滿意
 
 ## 客製化佈景主題
@@ -26,9 +28,13 @@ http://getbootstrap.com/customize/
 
 [Bootstrap Live Customizer](http://bootstrap-live-customizer.com/)
 
-### 編寫自己的佈景主題
+### 練習題
 
-**購買其他佈景主題**
+* 建立一個 Landing page，建立自己的 Theme。
+
+### 其他資源
+
+**購買佈景主題**
 
 * [Responsive Bootstrap Templates & Themes | ShapeBootstrap](https://shapebootstrap.net/)
 * [WrapBootstrap - Bootstrap Themes & Templates](https://wrapbootstrap.com/)
