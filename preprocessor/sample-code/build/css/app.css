@@ -1,0 +1,46 @@
+.button {
+  background: red; }
+
+col-md-1 {
+  width: 10px; }
+
+col-md-2 {
+  width: 20px; }
+
+col-md-3 {
+  width: 30px; }
+
+col-md-4 {
+  width: 40px; }
+
+col-md-5 {
+  width: 50px; }
+
+col-md-6 {
+  width: 60px; }
+
+col-md-7 {
+  width: 70px; }
+
+col-md-8 {
+  width: 80px; }
+
+col-md-9 {
+  width: 90px; }
+
+col-md-10 {
+  width: 100px; }
+
+col-md-11 {
+  width: 110px; }
+
+col-md-12 {
+  width: 120px; }
+
+.header {
+  padding: 10px; }
+
+.footer {
+  padding: 20px; }
+
+/*# sourceMappingURL=app.css.map */

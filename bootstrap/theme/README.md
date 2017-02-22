@@ -4,9 +4,26 @@
 
 ### 什麼是佈景主題
 
-Theme 是定義畫面上所有「主視覺」，例如整體配色。
+Theme 是定義會影響到網站主體視覺的設定，例如
 
-### 選擇佈景主題原則
+* menu 的視覺
+* navbar 的視覺
+* border-radius、陰影(box-shadow)、border-color
+* 整體配色：background-color, panel-default-heading-bg
+* alert-styles: $alert-success-bg, $alert-info-bg, $alert-warning-bg, $alert-danger-bg
+
+### 安裝 SCSS 版的 Bootstrap
+
+* [Github - Bootstrap SCSS](https://github.com/twbs/bootstrap-sass)
+
+```
+npm i bootstrap-sass
+bower i bootstrap-sass
+```
+
+<!--用 NPM 安裝的沒有附 JQuery？-->
+
+### 挑選佈景主題原則
 
 * 確認版型支援 Bootstrap，並是期望中的版本。
 * 版型在所有裝置大小的呈現結果都滿意
@@ -19,18 +36,24 @@ http://getbootstrap.com/customize/
 
 * config.json
 
-### 方法二：自行編譯 SCSS / LESS
+### 方法二：自行編譯
 
-* `_variables.less`
-* `_variables.scss`
+```
+@import "customVariable"; // copy from _variable.scss
+// all of import
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+// 處理 image url
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-compass";
+@import "custom";
+```
 
-### 選用其他官方的免費佈景主題
+### 選用其他免費佈景主題
 
 [Bootstrap Live Customizer](http://bootstrap-live-customizer.com/)
 
 ### 練習題
 
-* 建立一個 Landing page，建立自己的 Theme。
+* 建立自己的 Theme
 
 ### 其他資源
 
