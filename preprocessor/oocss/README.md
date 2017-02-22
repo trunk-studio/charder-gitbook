@@ -172,7 +172,61 @@ menu__item
 tab--active
 ```
 
-> 資料來源：[BEM — Block Element Modifier](http://getbem.com/introduction/) 
+> 資料來源：[BEM — Block Element Modifier](http://getbem.com/introduction/)
+
+## 活用學到的 CSS pattern 設計下方圖片的 CSS
+
+![](assets/modal.png)
+
+### OOCSS 
+
+* 結構
+    * module：modal, button
+    * sub module：modal-header, modal-content, modal-footer
+* 外觀：
+    * button-primary
+* 容器
+    * container, container-fluid
+
+### SMACSS
+
+```
+scss/
+|- _base/
+|  |- _variables.scss
+|  |- _presets.scss
+|  |- _headings.scss
+|  |- ...
+
+|- _layouts/
+|  |- _l-base.scss
+|  |- _l-grid.scss
+
+|- _modules/
+|  |- _m-buttons.scss
+|  |- _m-modals.scss
+
+|- _states/
+|  |- _s-buttons.scss
+|- app.scss
+
+css/
+|- app.css
+```
+
+### BEM
+
+* B
+    * modal
+    * button
+* E
+    * modal__button
+    * modal__header
+    * modal__content
+    * modal__footer
+* M
+    * button--hover
+    * button--lg, button--md, button--sm, button--xs
 
 ### 延伸閱讀
 

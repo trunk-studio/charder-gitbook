@@ -18,15 +18,6 @@
 }
 ```
 
-* 練習題：重新改寫成繼承
+練習題：重新改寫成繼承
 
-### 練習題：利用學到的 CSS pattern 設計下方圖片的 CSS
-
-![](assets/modal.png)
-
-<!--
-* modal component
-* modal header, content, footer
-* button active, button no-active
-* button-lg, button-sm, button-md, button-xs
--->
+* [SASS: differences between mixins, extends and placeholders](http://krasimirtsonev.com/blog/article/SASS-mixins-extends-and-placeholders-differences-use-cases)

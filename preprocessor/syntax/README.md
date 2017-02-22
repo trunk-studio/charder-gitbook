@@ -18,41 +18,6 @@ body {
 }
 ```
 
-### 練習題
-
-* ex01: 使用變數功能，將 CSS 改成彈性比較高的 SCSS 語法
-
-![](assets/ex01.png)
-
-**HTML**
-
-```html
-<button class="btn-primary">primary</button>
-<button class="btn-success">success</button>
-<button class="btn-info"/>info</button>
-<button class="btn-warning">warning</button>
-<button class="btn-danger">danger</button>
-```
-
-**CSS**
-
-```css
-.btn-primary {
-  background: #286090; }
-
-.btn-success {
-  background: #449d44; }
-
-.btn-info {
-  background: #31b0d5; }
-
-.btn-warning {
-  background: #ec971f; }
-
-.btn-danger {
-  background: #c9302c; }
-```
-
 ## 繼承 (Extend/Inheritance)
 
 **SCSS**
@@ -102,20 +67,6 @@ body {
 }
 ```
 
-### 練習題
-
-* ex02：定義一個 btn 類別，值為
-
-```css
-.btn {
-  padding: 10px;
-  font-size: 14px;
-  border-radius: 4px;
-}
-```
-
-讓之前建立的五個 Button 都繼承 btn。
-
 ## 混合 (Mixins)
 
 跟 Extend 類似，但可以帶入參數。
@@ -142,10 +93,6 @@ body {
   border-radius: 10px;
 }
 ```
-
-### 練習題
-
-* ex03:讓將 border-radius 加入前綴瀏覽器支援
 
 ## 巢狀 (Nesting)
 
@@ -306,10 +253,6 @@ aside[role="complementary"] {
 }
 ```
 
-### 練習題
-
-* ex04：新增 btn-danger-light 跟 btn-danger-dark 兩種類別，btn-danger-light 的色碼是 btn-danger 乘 2，btn-danger-dark 的色碼是 btn-danger 乘 0.5。
-
 ## 函示 (function)
 
 * mix
@@ -437,6 +380,8 @@ span:nth-child(3) {
 ```
 
 ## 練習題
+
+![](assets/ex01.png)
 
 ```
 <button class="btn-primary">primary</button>

@@ -48,4 +48,3 @@ CSS 並不是一個語言，沒有變數跟迴圈，難維護
 * [程式人雜誌 - CSS 的變種： LESS 與 SASS](http://programmermagazine.github.io/201409/htm/focus2.html)
 * [gonsakon - Sass & Susy教學手冊](https://github.com/gonsakon/Learn-Sass-in-90-days)
 * [30天掌握Sass語法 - (1)什麼是SASS？它真的能加速我寫CSS的效率嗎？](http://ithelp.ithome.com.tw/articles/10126703)
-* [SASS: differences between mixins, extends and placeholders](http://krasimirtsonev.com/blog/article/SASS-mixins-extends-and-placeholders-differences-use-cases)
