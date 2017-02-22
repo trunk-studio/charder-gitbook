@@ -1,4 +1,4 @@
-# 可改善
+# 錯誤示範
 
 ### 範例一
 
@@ -6,13 +6,10 @@
 
 ```
  @mixin app-background() {
-    background-image: url($app-image-path + "/background.jpg");
+    background-image: url("/background.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-```
-
-```
 .page-background {
     @include app-background();
     left: 0;
@@ -21,7 +18,7 @@
 }
 ```
 
-**改良後**
+* 練習題：重新改寫成繼承
 
 ### 練習題：利用學到的 CSS pattern 設計下方圖片的 CSS
 

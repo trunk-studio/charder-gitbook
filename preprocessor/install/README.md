@@ -11,6 +11,8 @@
 gem install sass
 ```
 
+或使用 GUI 工具
+
 ### 安裝 SCSS 版的 Bootstrap
 
 * [Github - Bootstrap SCSS](https://github.com/twbs/bootstrap-sass)

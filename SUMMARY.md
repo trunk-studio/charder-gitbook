@@ -53,6 +53,7 @@
 * [JS 輪播效果](bootstrap/js-carousel/README.md)
 * [JS 互動視窗](bootstrap/js-modal/README.md)
 * [佈景主題 (Theme)](bootstrap/theme/README.md)
+* [實用補充](bootstrap/tips/README.md)
 
 ## CSS 預處理器 (CSS Preprocessor)
 
@@ -60,7 +61,7 @@
 * [概念](preprocessor/README.md)
 * [環境安裝](preprocessor/install/README.md)
 * [語法](preprocessor/syntax/README.md)
-* [可改善範例](preprocessor/not-good/README.md)
+* [錯誤示範](preprocessor/not-good/README.md)
 
 <!--
 * [JS 折疊與手風琴效果](bootstrap/js-collapse/README.md)

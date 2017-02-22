@@ -6,6 +6,10 @@
 
 用 `$` 符號自訂變數
 
+**使用情境**
+
+* 重複性的值
+
 ```
 $primary-color: #333;
 
@@ -13,10 +17,6 @@ body {
   background: $primary-color;
 }
 ```
-
-**使用情境**
-
-* 重複性的值
 
 ### 練習題
 
@@ -368,6 +368,122 @@ span:nth-child(3) {
   color: red;
 }
 ```
+
+### 符號 (Ampersand)
+
+[The Sass Ampersand | CSS-Tricks](https://css-tricks.com/the-sass-ampersand/)
+
+#### 用法一
+
+**SCSS**
+
+```scss
+.btn-danger {
+  color: blue;
+
+  &.disabled {
+    color: red;
+  }
+}
+```
+
+**CSS**
+
+```css
+.btn-danger {
+  color: blue;
+}
+.btn-danger.disabled {
+  color: red;
+}
+```
+
+#### 用法二
+
+**SCSS**
+
+```scss
+.button {
+  .page-about & { 
+    background: red;
+  }
+}
+```
+
+**CSS**
+
+```css
+.page-about .button {
+  background: red;
+}
+```
+
+### 用法三
+
+**SCSS**
+
+```scss
+.btn {
+  &-primary {}
+  &-secondary {}
+}
+```
+
+**CSS**
+
+```css
+.btn-primary {}
+.btn-secondary {}
+```
+
+## 練習題
+
+```
+<button class="btn-primary">primary</button>
+<button class="btn-success">success</button>
+<button class="btn-info"/>info</button>
+<button class="btn-warning">warning</button>
+<button class="btn-danger">danger</button>
+<button class="btn-danger-light">danger light</button>
+<button class="btn-danger-dark">danger dark</button>
+```
+
+* ex01: 將 background 的值，變成獨立的變數，讓其他類別也可以使用。
+
+```
+.btn-primary {
+  background: #286090;
+}
+.btn-success {
+  background: #449d44;
+}
+.btn-info {
+  background: #31b0d5;
+}
+.btn-warning {
+  background: #ec971f;
+}
+.btn-danger {
+  background: #c9302c;
+}
+```
+
+* ex02: 使用 Mixins 將 border-radius 的程式碼解構。
+
+```
+.btn, .btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger {
+  padding: 10px;
+  font-size: 14px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+```
+
+* ex03: 使用繼承功能，將 btn 之間的關係解構。
+* ex04: btn-danger-light 和 btn-danger-dark 類別，他們的顏色是從 btn-danger 的色碼計算而來。
+* ex05: 使用符號 ＆，將諸多類別名稱之間的關聯解構。
 
 ## 延伸閱讀
 
