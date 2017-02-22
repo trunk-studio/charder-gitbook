@@ -2,7 +2,7 @@
 
 提供原生 CSS 不足的語法，以達到易閱讀和可維護性。
 
-### 變數 (Variables)
+## 變數 (Variables)
 
 用 `$` 符號自訂變數
 
@@ -18,9 +18,13 @@ body {
 
 * 重複性的值
 
-**練習題 ex01: 定義五個網站主要配色的變數，並建立 5 個相對應的 Button 類別。**
+### 練習題
+
+* ex01: 使用變數功能，將 CSS 改成彈性比較高的 SCSS 語法
 
 ![](assets/ex01.png)
+
+**HTML**
 
 ```html
 <button class="btn-primary">primary</button>
@@ -29,6 +33,8 @@ body {
 <button class="btn-warning">warning</button>
 <button class="btn-danger">danger</button>
 ```
+
+**CSS**
 
 ```css
 .btn-primary {
@@ -47,7 +53,7 @@ body {
   background: #c9302c; }
 ```
 
-### 繼承 (Extend/Inheritance)
+## 繼承 (Extend/Inheritance)
 
 **SCSS**
 
@@ -96,19 +102,21 @@ body {
 }
 ```
 
-**練習題 ex02**
+### 練習題
 
-定義一個 btn 類別，值為
+* ex02：定義一個 btn 類別，值為
 
 ```css
-padding: 10px;
-font-size: 14px;
-border-radius: 4px;
+.btn {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 4px;
+}
 ```
 
 讓之前建立的五個 Button 都繼承 btn。
 
-### 混合 (Mixins)
+## 混合 (Mixins)
 
 跟 Extend 類似，但可以帶入參數。
 
@@ -135,9 +143,11 @@ border-radius: 4px;
 }
 ```
 
-**練習題 ex03:讓將 border-radius 加入前綴瀏覽器支援**
+### 練習題
 
-### 巢狀 (Nesting)
+* ex03:讓將 border-radius 加入前綴瀏覽器支援
+
+## 巢狀 (Nesting)
 
 **SCSS**
 
@@ -201,46 +211,7 @@ li {
 }
 ```
 
-### if
-
-```
-@if lightness($color) > 30% {
-  background-color: black;
-}
-@else {
-  background-color: white;
-}
-```
-
-### For Loop
-
-* @for
-* @each
-* @while
-
-```
-@for $i from 1 through 3 {
-  span:nth-child(#{$i}) {
-    color:red;
-  }
-}
-```
-
-```css
-span:nth-child(1) {
-  color: red;
-}
-
-span:nth-child(2) {
-  color: red;
-}
-
-span:nth-child(3) {
-  color: red;
-}
-```
-
-### Partials
+## Partials
 
 ```
 // _simple.scss
@@ -268,9 +239,13 @@ span:nth-child(3) {
 @import 'jumbotron'; //  _jumbotron.scss
 ```
 
-### 合併 (Import)
+## 合併 (Import)
 
 * 在檔案名稱前面加個下底線 (_)，就不會轉成獨立的 CSS。
+
+**使用情境**
+
+* 將檔案切割細分，以利維護。
 
 ```
 // _reset.scss
@@ -295,17 +270,12 @@ body {
 }
 ```
 
-**使用情境**
-
-* 將檔案切割細分，以利維護。
-
-### 運算 (Operators)
+## 運算 (Operators)
 
 **SCSS**
 
 ```
 .container { width: 100%; }
-
 
 article[role="main"] {
   float: left;
@@ -336,11 +306,13 @@ aside[role="complementary"] {
 }
 ```
 
-**練習題 ex04**
+### 練習題
 
-* 新增 btn-danger-light 跟 btn-danger-dark 兩種類別，btn-danger-light 的色碼是 btn-danger 乘 2，btn-danger-dark 的色碼是 btn-danger 乘 0.5。
+* ex04：新增 btn-danger-light 跟 btn-danger-dark 兩種類別，btn-danger-light 的色碼是 btn-danger 乘 2，btn-danger-dark 的色碼是 btn-danger 乘 0.5。
 
-<!--## 函示 (function)
+## 函示 (function)
+
+* mix
 
 **SCSS**
 
@@ -356,9 +328,48 @@ aside[role="complementary"] {
 #main {
   background: #ff8000;
 }
-```-->
+```
 
-### 延伸閱讀
+## if
+
+```
+@if lightness($color) > 30% {
+  background-color: black;
+}
+@else {
+  background-color: white;
+}
+```
+
+## For Loop
+
+* @for
+* @each
+* @while
+
+```
+@for $i from 1 through 3 {
+  span:nth-child(#{$i}) {
+    color:red;
+  }
+}
+```
+
+```css
+span:nth-child(1) {
+  color: red;
+}
+
+span:nth-child(2) {
+  color: red;
+}
+
+span:nth-child(3) {
+  color: red;
+}
+```
+
+## 延伸閱讀
 
 * [SASS Guide](http://sass-lang.com/guide)
 * [SASS 官方文件](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)
