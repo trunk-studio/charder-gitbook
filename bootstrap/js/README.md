@@ -41,6 +41,18 @@
 * data-slide
 * data-ride
 
+## 擴充 JS
+
+```
+bower install bootstrap-treeview
+```
+
+* 添加 bootstrap-treeview.min.js
+* 添加 bootstrap-treeview.min.css
+
+* [GitHub - jonmiles/bootstrap-treeview: Tree View for Twitter Bootstrap -](https://github.com/jonmiles/bootstrap-treeview)
+* [Bootstrap Tree View](https://jonmiles.github.io/bootstrap-treeview/)
+
 ### 延伸閱讀
 
 * [Bootstrap - Javascript](http://getbootstrap.com/javascript/)
