@@ -1,0 +1,7 @@
+$col-width: 10px;
+
+@for $i from 1 through 12 {
+  col-md-#{$i}{
+    width: $col-width * $i;
+  }
+}

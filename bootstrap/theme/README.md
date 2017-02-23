@@ -2,6 +2,8 @@
 
 [Bootstrap Theme - Source Code](https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_theme.scss)
 
+<!--互動問題：layout vs theme-->
+
 ### 什麼是佈景主題
 
 Theme 是定義會影響到網站主體視覺的設定，例如
@@ -21,6 +23,9 @@ npm i bootstrap-sass
 bower i bootstrap-sass
 ```
 
+**延伸閱讀**
+
+* [Bower 管理網站套件的好工具 | 小惡魔 - 電腦技術 - 工作筆記 - AppleBOY](https://blog.wu-boy.com/2013/01/bower-is-a-package-manager-for-the-web/)
 <!--用 NPM 安裝的沒有附 JQuery？-->
 
 ### 挑選佈景主題原則
@@ -38,8 +43,13 @@ http://getbootstrap.com/customize/
 
 ### 方法二：自行編譯
 
+1. index.html
+1. download _bootswatch.scss, _variables.scss
+1. bower i bootstrap-sass
+1. create all.scss
+
 ```
-@import "customVariable"; // copy from _variable.scss
+@import "myVariable"; // copy from _variable.scss
 // all of import
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 // 處理 image url
@@ -47,13 +57,11 @@ http://getbootstrap.com/customize/
 @import "custom";
 ```
 
-### 選用其他免費佈景主題
-
-[Bootstrap Live Customizer](http://bootstrap-live-customizer.com/)
+1. build sass
 
 ### 練習題
 
-* 建立自己的 Theme
+* 編譯客製化佈景主題，並修改其中變數。
 
 ### 其他資源
 
@@ -74,6 +82,10 @@ http://getbootstrap.com/customize/
 * [Bootswatch: Free themes for Bootstrap](https://bootswatch.com/)
 * [SB Admin 2 - Free Bootstrap Admin Theme - Start Bootstrap](https://startbootstrap.com/template-overviews/sb-admin-2/)
 * [20 Free Bootstrap 3 Admin Dashboard Templates 2016 - Colorlib](https://colorlib.com/wp/free-bootstrap-admin-dashboard-templates/)
+
+### 線上工具
+
+[Bootstrap Live Customizer](http://bootstrap-live-customizer.com/)
 
 **延伸閱讀**
 
