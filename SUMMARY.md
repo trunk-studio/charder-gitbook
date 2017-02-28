@@ -55,6 +55,11 @@
 * [佈景主題 (Theme)](bootstrap/theme/README.md)
 * [實用補充](bootstrap/tips/README.md)
 
+<!--
+* [JS 折疊與手風琴效果](bootstrap/js-collapse/README.md)
+* [JS 頁籤](bootstrap/js-tab/README.md)
+-->
+
 ## CSS 預處理器 (CSS Preprocessor)
 
 * [物件導向 CSS](preprocessor/oocss/README.md)
@@ -63,8 +68,13 @@
 * [語法](preprocessor/syntax/README.md)
 * [錯誤示範](preprocessor/not-good/README.md)
 
-<!--
-* [JS 折疊與手風琴效果](bootstrap/js-collapse/README.md)
-* [JS 頁籤](bootstrap/js-tab/README.md)
+## API 設計
 
--->
+* [API 設計概念](api-design/README.md)
+* [REST 的設計理念與架構](api-design/rest/README.md)
+* [RESTful 實踐常見慣例](api-design/restful/README.md)
+* [補充](api-design/mise/README.md)
+<!-- * [API 安全](api-design/security/README.md)
+* [API 文件](api-design/document/README.md)
+* [API 管理](api-design/management/README.md)
+* [GraphQL](api-design/graphql/README.md) -->
