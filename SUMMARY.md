@@ -74,7 +74,10 @@
 * [REST 的設計理念與架構](api-design/rest/README.md)
 * [RESTful 實踐常見慣例](api-design/restful/README.md)
 * [補充](api-design/mise/README.md)
-<!-- * [API 安全](api-design/security/README.md)
+
+<!--
+* [API 安全](api-design/security/README.md)
 * [API 文件](api-design/document/README.md)
 * [API 管理](api-design/management/README.md)
-* [GraphQL](api-design/graphql/README.md) -->
+* [GraphQL](api-design/graphql/README.md)
+-->
