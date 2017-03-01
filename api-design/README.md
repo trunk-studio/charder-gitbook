@@ -1,20 +1,52 @@
 # API 設計
 
-* API：Application Programming Interface
-* LSUD（Large set of Unknown Developers）：網站設計出來的 API 是直接給大眾使用的，並沒有分族群
-* SSKD（Small set of Known Developers）：設計 API 的人清楚知道是哪些程式設計師要來使用這個 API，所以會為這些人量身打造適合他們使用的 API。
+
+**什麼是API**
+
+* 全名 Application Programming Interface，應用程式介面
+* 由前端工程師所提出 Clientina Utvenklarsson
+* 良好的介面設計
+  * 可以降低系統各部分的相互依賴
+  * 提高組成單元的內聚性
+  * 降低組成單元間的耦合程度
+  * 提高系統的維護性和擴充功能性。
+* API 本身是抽象的，它僅定義了一個介面，而不涉及應用程式在實際實現過程中的具體操作。
+
+https://en.wikipedia.org/wiki/Application_programming_interface
+
+**什麼是對 API 重要的事**
+
+* 可以正常執行
+* API 跟 API 文件一致
+* 易維護
+* 易擴充
+* API 版本化
+* API 一旦公開 release 後，interface 不可能再修改。
+* 設計前跟使用者溝通
+
+**API design lifecycle**
+
+* feedback
+* design
+* prototype
+* implementation
+* delivery
 
 ### RESTful API
 
-**REST**
+**REST 是什麼**
 
 * 是 Representational State Transfer 的縮寫。
-* 是Roy Thomas Fielding 在他 2000 年的博士論文中提出的。Fielding 是 HTTP協議（1.0版和1.1版）的主要設計者，及Apache基金會的第一任主席。所以一經發表後馬上就引起了關注。
-* 是一個設計風格，不是標準。
+* 是一種架構風格，不是標準。
+* 是 Roy Thomas Fielding 在他 2000 年的博士論文中提出的。Fielding 是 HTTP協議（1.0版和1.1版）的主要設計者，及Apache基金會的第一任主席。所以一經發表後馬上就引起了關注。
 
 **RESTful**
 
 如果一個架構符合 REST 原則，就稱它為 RESTful 架構。
+
+**什麼時候會需要 RESTful API 架構**
+
+* 當有數組資源要被多種不同平台使用時
 
 ### GraphQL
 

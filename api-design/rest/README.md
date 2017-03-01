@@ -1,8 +1,15 @@
 # REST 的設計理念與架構
 
-* 資源（Resources）
-* 表現層（Representation）
-* 狀態轉化（State Transfer）
+* Resources
+  * URI
+  * Uniform Interface
+    * Methods
+    * Representation
+* Protocol
+  * Client-Server
+  * Stateless
+  * Cacheable
+  * Layered
 
 ### 資源（Resources）
 
@@ -69,3 +76,11 @@ https://api.github.com/
 ### 缺點
 
 * 在取得複雜資料時，會產生大量的查詢次數。
+
+
+### REST IS NOT...
+
+* REST is not pretty URLs
+* REST is not HTTP Verbs
+* REST is not CRUD
+* REST is not JSON

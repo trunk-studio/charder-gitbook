@@ -1,6 +1,30 @@
-# RESTful 實踐常見慣例
+# RESTful 常見慣例
+
+這裡範例是以 Web API 設計為主
 
 <!-- HTTP Request 由「HTTP Method 動詞 + URL 名詞 + Content Types 格式」所組成 -->
+
+### 比較
+
+**舊設計風格**
+
+```
+/getAllUsers
+/getUser/1
+/createUser
+/updateUser/1
+/deleteUser/1
+```
+
+**RESTful 設計風格**
+
+```
+GET /users
+GET /users/1
+POST /users
+PUT /users/1
+DELETE /users/1
+```
 
 ### URI
 
@@ -13,7 +37,7 @@ get /v1.0/users/1 (O)
 
 **操作唯一 Resource 時，URL 使用單數名詞。**
 
-亦即對 client 而言只有一份的資源）用單數名詞。例如 GitHub watching API 中的GET /user/subscriptions，其中 user 是指目前驗證的使用者，所以用單數。
+對 Client 而言，只有一份的資源時用單數名詞。例如 GitHub watching API 中的 GET /user/subscriptions，其中 user 是指目前驗證的使用者，所以用單數。
 
 [Watching | GitHub Developer Guide](https://developer.github.com/v3/activity/watching/#list-repositories-being-watched)
 
@@ -56,7 +80,7 @@ get /search/users/nickname/alin (X)
 get /search/users?nickname=alin (O)
 ```
 
-### 使用 HTTP Methods 操作你的 Resources
+### 使用 HTTP Methods 操作 Resources
 
 * safe：該操作不會改變伺服器端的資源狀態
 * idempotent：該操作不管做 1 遍或做 n 遍，都會得到同樣的資源狀態結果，但不一定得到同樣的回傳值，例如第 2 次 DELETE 請求可能回傳404，但可以放心重傳。
@@ -84,29 +108,6 @@ get /search/users?nickname=alin (O)
 | delete /users/1      | 單筆刪除                     |
 | get /users/1/albums/1| 取得 userId=1 的第一本相簿資料 |
 
-
-**練習題**
-
-* 改良以下的 URL 設計
-
-<!--
-getmysqltime -> get /time
-getswver -> get /sw/version
-getpri-matno -> get /pri/matno
-chkstationmacisexist -> get check/station/mac
-writestation-testitem -> post station/test/item
-chkmatnoisfix
-getparaname -> parameters
-getnonfix-paradata ->
-getfix-paradata ->
-registerpdid -> post /register/pid
-chkpdidisexist -> get /check/pid
-writeerorcode-pdid -> post /error-code/pid
-getfixjudgeresult -> get fix/judge/result
-writetestlist -> post /info/
-writetetestdietial -> post /info/detail
- -->
-
 ### Query 參數
 
 * 沒有特別規定，可以底線分隔或使用駝峰命名，須保持一致風格。
@@ -116,23 +117,27 @@ writetetestdietial -> post /info/detail
 /v1.0/users?limit=25&offset=50
 ```
 
+**練習題**
+
+* 設計一個 [TODO list](http://gcloud-todos.appspot.com/examples/angularjs/#/) 的 API，並具有會員機制。
+
 ### Request Format
 
 * application/x-www-form-urlencoded (網頁表單預設，不能上傳檔案)
-* multipart/form-data (可以上傳檔案)
 * application/json (這不能上傳檔案)
+* multipart/form-data (可以上傳檔案)
 
 ### Response Format
 
-放到 Header 裡面 Accept: application/json
+* 放到 Header 裡面 Accept: application/json (推薦)
 
 或
 
-放到 URL 裡面，例如 `GET /users.json`
+* 放到 URL 裡面，例如 `GET /users.json`
 
 優先選擇 JSON 格式，特別是會用到 javascript 來處理 response 時，因為 JSON 本就是 javascirpt 的預設處理格式。
 
-### Provide filtering, sorting, field selection and paging for collections
+<!--
 
 **Filtering**
 
@@ -140,13 +145,20 @@ writetetestdietial -> post /info/detail
 
 **Field selection**
 
-**分頁 (Paging)**
+-->
+
+### 分頁 (Paging)
+
+```
+/v1.0/users?limit=25&offset=50
+```
 
 ### 版本管理
 
-* 不是每一次修改都要改 API 的版號，盡量將 API 可以做成向後相容，就不需要跳版本。例如：
-新增一個欄位屬性，是向後相容的。
-* 修改屬性名稱、刪除欄位、修改格式等等，會造成不向後相容。client app 抓不到該欄位可能會當機。
+* 不是每一次修改都要改 API 的版號，盡量將 API 可以做成向後相容，就不需要跳版本。例如：新增一個欄位屬性，是向後相容的。
+* 修改屬性名稱、刪除欄位、修改格式等等，會造成無法向後相容，出現 Error。
+
+<!-- 什麼是向後相容 vs 向下相容 -->
 
 ```
 api.yourdomain/v1.0/users
@@ -156,7 +168,7 @@ yourdomain/api/v1.0/users
 或
 
 ```
-api.yourdomain/users?version=1.0
+api.yourdomain/users?v=1.0
 ```
 
 或
@@ -218,6 +230,13 @@ Status Code:401 Unauthorized
 
 ### Caching
 
+```
+Server: Apache
+Etag: "........."
+Content-Type: text/html
+Cache-Control: max-ago=3600
+```
+
 ### Restful level
 
 [Richardson Maturity Model](https://martinfowler.com/articles/richardsonMaturityModel.html)
@@ -227,11 +246,60 @@ Status Code:401 Unauthorized
 * Level 2 - HTTP Verbs
 * Level 3 - Hypermedia Controls
 
+### Stateless 實作方式
+
+* 使用 Tokens 在 Client 端維護狀態
+
+### 練習題
+
+* 以下的 API，改用 RESTful 風格設計。
+
+```
+第一組
+/getmysqltime
+/getswver
+/getpri-matno
+/chkstationmacisexist
+/writestation-testitem
+
+第二組
+/chkmatnoisfix
+/getparaname
+/getnonfix-paradata
+/getfix-paradata
+/registerpdid
+
+第三組
+/chkpdidisexist
+/writeerorcode-pdid
+/getfixjudgeresult
+/writetestlist
+/writetetestdietial
+```
+
+<!--
+getmysqltime -> get /time
+getswver -> get /sw/version
+getpri-matno -> get /pri/matno
+chkstationmacisexist -> get check/station/mac
+writestation-testitem -> post station/test/item
+chkmatnoisfix
+getparaname -> parameters
+getnonfix-paradata ->
+getfix-paradata ->
+registerpdid -> post /register/pid
+chkpdidisexist -> get /check/pid
+writeerorcode-pdid -> post /error-code/pid
+getfixjudgeresult -> get fix/judge/result
+writetestlist -> post /info/
+writetetestdietial -> post /info/detail
+ -->
+
 ### 實踐 RESTful 的 API
 
-[GitHub API v3 | GitHub Developer Guide](https://developer.github.com/v3/)
-[REST API reference - PayPal Developer](https://developer.paypal.com/docs/api/)
-[REST APIs — Twitter Developers](https://dev.twitter.com/rest/public)
+* [GitHub API v3 | GitHub Developer Guide](https://developer.github.com/v3/)
+* [REST API reference - PayPal Developer](https://developer.paypal.com/docs/api/)
+* [REST APIs — Twitter Developers](https://dev.twitter.com/rest/public)
 
 ### 延伸閱讀
 

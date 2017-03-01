@@ -45,9 +45,7 @@
 
 * CSS 預處理器
 * CSS Variable、Mixin、Module、Object-Orientation
-* LESS - The Dynamic Stylesheet Language
 * Sass - Syntactically Awesome Stylesheets
-* Compass - Sass-based Stylesheet Framework
 
 **JQuery課程**
 
@@ -95,3 +93,22 @@
 
 * 預防 SQL Injection 與 XSS 攻擊的網站程式設計
 * Linux / UNIX 網路與資安防護工具基礎
+
+**API 設計 - 第一週**
+
+* 介紹什麼是 API
+* API 生命週期
+* Web API 兩大設計主流介紹
+* REST 的設計理念與架構
+* RESTful 常見慣例
+* API 文件設計
+
+**API 設計 - 第二週**
+
+* API 測試 - Postman
+* API 安全
+* API 管理
+  * 流量管理
+  * 分析
+  * 生命週期管理
+* API 未來展望
