@@ -1,10 +1,9 @@
 # API 設計
 
 
-**什麼是API**
+**什麼是 API**
 
 * 全名 Application Programming Interface，應用程式介面
-* 由前端工程師所提出 Clientina Utvenklarsson
 * 良好的介面設計
   * 可以降低系統各部分的相互依賴
   * 提高組成單元的內聚性
@@ -24,7 +23,7 @@ https://en.wikipedia.org/wiki/Application_programming_interface
 * API 一旦公開 release 後，interface 不可能再修改。
 * 設計前跟使用者溝通
 
-**API design lifecycle**
+**API 生命週期**
 
 * feedback
 * design

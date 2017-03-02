@@ -79,6 +79,8 @@ java -jar modules/swagger-codegen-cli/target/swagger-codegen-cli.jar generate -i
 
 ### 規範標準 (specification)
 
+<!-- 下週在教編修 swagger doc -->
+
 [Swagger  Specification](http://swagger.io/specification/)
 
 **範例**
