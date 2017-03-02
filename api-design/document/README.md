@@ -39,7 +39,7 @@
 
 * swagger 的線上編輯器，匯入匯出及格式轉換工具，到產生 client / server side code
 
-<!-- demo 使用方式 -->
+<!-- demo 使用方式，留 5 分鐘讓他們玩玩看 -->
 
 ### Swagger UI
 

@@ -119,15 +119,25 @@ get /search/users?nickname=alin (O)
 
 **練習題**
 
-* 設計一個 [TODO list](http://gcloud-todos.appspot.com/examples/angularjs/#/) 的 API，並具有會員機制。
+* 設計一個 [TODO list](http://gcloud-todos.appspot.com/examples/angularjs/#/) 的 僅前台用的 API，並具有會員機制。
 
-### Request Format
+<!--
+```
+get /todos/1
+post /users/1/todos
+patch /users/1/todos/1
+patch /users/1/todos
+delete /users/1/todos/1
+delete /users/1/todos
+``` -->
+
+### Request 格式
 
 * application/x-www-form-urlencoded (網頁表單預設，不能上傳檔案)
 * application/json (這不能上傳檔案)
 * multipart/form-data (可以上傳檔案)
 
-### Response Format
+### Response 格式
 
 * 放到 Header 裡面 Accept: application/json (推薦)
 
@@ -137,15 +147,24 @@ get /search/users?nickname=alin (O)
 
 優先選擇 JSON 格式，特別是會用到 javascript 來處理 response 時，因為 JSON 本就是 javascirpt 的預設處理格式。
 
-<!--
 
-**Filtering**
+### Filtering
 
-**排序 (Sorting)**
+```
+GET /tickets?level=vip
+```
 
-**Field selection**
+### 排序 (Sorting)
 
--->
+```
+GET /tickets?sort=-priority,created_at
+```
+
+### Field selection
+
+```
+GET /tickets?fields=id,subject,customer_name,updated_at
+```
 
 ### 分頁 (Paging)
 
@@ -256,43 +275,52 @@ Cache-Control: max-ago=3600
 
 ```
 第一組
+
 /getmysqltime
 /getswver
+/updateswver
 /getpri-matno
-/chkstationmacisexist
-/writestation-testitem
+/getmatnoinfo
+/login
 
 第二組
+
+/chkstationmacisexist
+/writestation-testitem
 /chkmatnoisfix
 /getparaname
 /getnonfix-paradata
 /getfix-paradata
-/registerpdid
 
 第三組
+
+/registerpdid
 /chkpdidisexist
-/writeerorcode-pdid
 /getfixjudgeresult
+/writeerorcode-pdid
 /writetestlist
 /writetetestdietial
 ```
 
 <!--
-getmysqltime -> get /time
-getswver -> get /sw/version
-getpri-matno -> get /pri/matno
-chkstationmacisexist -> get check/station/mac
-writestation-testitem -> post station/test/item
-chkmatnoisfix
-getparaname -> parameters
-getnonfix-paradata ->
-getfix-paradata ->
-registerpdid -> post /register/pid
-chkpdidisexist -> get /check/pid
-writeerorcode-pdid -> post /error-code/pid
-getfixjudgeresult -> get fix/judge/result
-writetestlist -> post /info/
-writetetestdietial -> post /info/detail
+/getmysqltime -> get /times?mysql=
+/getswver -> get /swVersion
+/updateswver -> patch /swVersion
+/getpri-matno -> get /partNumber?filter=
+/getmatnoinfo -> get /partNumber/123456/info
+/login -> post /login or patch /login
+/chkstationmacisexist -> get /stationMac/1/check
+/writestation-testitem -> post /stationMac/1?type=test
+/chkmatnoisfix -> get /partNumber/123456/check?fixture=true
+/getparaname -> get /parameters?fixture=true
+/getnonfix-paradata -> get /parameters?fixture=false
+/getfix-paradata -> get /parameters?fixture=true
+/registerpdid -> post /products/register
+/chkpdidisexist -> get /products/123456/check
+/getfixjudgeresult -> get /fixtures/123456/judgeResults
+/writeerorcode-pdid -> post /products/123456/errors
+/writetestlist -> post /stations/123456/results?type=test
+/writetetestdietial -> post /stations/results
  -->
 
 ### 實踐 RESTful 的 API
