@@ -82,17 +82,6 @@ get /search/users?nickname=alin (O)
 
 ### 使用 HTTP Methods 操作 Resources
 
-* safe：該操作不會改變伺服器端的資源狀態
-* idempotent：該操作不管做 1 遍或做 n 遍，都會得到同樣的資源狀態結果，但不一定得到同樣的回傳值，例如第 2 次 DELETE 請求可能回傳404，但可以放心重傳。
-
-| HTTP Methods | 意義                        |
-| :----------- | :-------------------------- |
-| GET          | 讀取資源 (safe & idempotent) |
-| POST         | 新增資源                     |
-| PUT          | 替換資源 (idempotent)        |
-| PATCH        | 更新資源部份內容              |
-| DELETE       | 刪除資源 (idempotent)        |
-
 **CRUD 範例**
 
 | Resource URI         | 意義                        |
@@ -119,17 +108,19 @@ get /search/users?nickname=alin (O)
 
 **練習題**
 
-* 設計一個 [TODO list](http://gcloud-todos.appspot.com/examples/angularjs/#/) 的 僅前台用的 API，並具有會員機制。
+* 設計一個 [TODO](http://gcloud-todos.appspot.com/examples/angularjs/#/) 的 僅前台用的 API，並具有會員機制。
 
 <!--
 ```
-get /todos/1
+post /register?account=&password=
+patch /login?account=&password=
+patch /users/1?nickname=...
 post /users/1/todos
 patch /users/1/todos/1
-patch /users/1/todos
 delete /users/1/todos/1
-delete /users/1/todos
-``` -->
+get /users/1/todos
+```
+-->
 
 ### Request 格式
 
@@ -146,7 +137,6 @@ delete /users/1/todos
 * 放到 URL 裡面，例如 `GET /users.json`
 
 優先選擇 JSON 格式，特別是會用到 javascript 來處理 response 時，因為 JSON 本就是 javascirpt 的預設處理格式。
-
 
 ### Filtering
 

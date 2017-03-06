@@ -1,6 +1,5 @@
 # API 設計
 
-
 **什麼是 API**
 
 * 全名 Application Programming Interface，應用程式介面
