@@ -204,7 +204,7 @@ Accept: api.yourdomain+json; version=1.0
 | 4xx       | client error 應用層級錯誤   |
 | 5xx       | server error 非預期的錯誤   |
 
-[List of HTTP status codes - Wikipedia](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)Ω
+[List of HTTP status codes - Wikipedia](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
 
 ### 錯誤代碼
 
