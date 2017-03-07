@@ -73,12 +73,12 @@
 * [API 設計概念](api-design/README.md)
 * [REST 的設計理念與架構](api-design/rest/README.md)
 * [RESTful 常見慣例](api-design/restful/README.md)
-* [API 文件管理 with Swagger](api-design/document/README.md)
 * [補充 - HTTP method](api-design/mise/http-methods.md)
+* [API 文件管理 with Swagger](api-design/document/README.md)
+* [API 安全](api-design/security/README.md)
+* [API 管理](api-design/management/README.md)
 
 <!--
 * [補充](api-design/mise/README.md)
-* [API 安全](api-design/security/README.md)
-* [API 管理](api-design/management/README.md)
 * [GraphQL](api-design/graphql/README.md)
 -->

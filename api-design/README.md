@@ -54,3 +54,4 @@ https://en.wikipedia.org/wiki/Application_programming_interface
 
 * [从达标到卓越 —— API 设计之道 | Taobao FED | 淘宝前端团队](http://taobaofed.org/blog/2017/02/16/a-guide-to-api-design/)
 * [REST - 維基百科，自由的百科全書](https://zh.wikipedia.org/wiki/REST)
+* [HTTP API Design · GitBook](https://www.gitbook.com/book/geemus/http-api-design/details)

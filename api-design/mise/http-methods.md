@@ -53,6 +53,10 @@ HTTP 1.1 定義了以下一系列的常見的 methods，為了分離 clients 和
 
 資料來源: [REST cook book - What are idempotent and/or safe methods?](http://restcookbook.com/HTTP%20Methods/idempotency/)
 
+**Cacheable Methods**
+
+Request methods can be defined as "cacheable" to indicate that responses to them are allowed to be stored for future reuse; for specific requirements see [RFC7234](https://tools.ietf.org/html/rfc7234).  In general, safe methods that do not depend on a current or authoritative response are defined as cacheable; this specification defines GET, HEAD, and POST as cacheable, although the overwhelming majority of cache implementations only support GET and HEAD.
+
 ### Compare GET vs. POST
 
 * GET 可以被加入瀏覽器歷史紀錄，反之 POST 不行。
@@ -108,5 +112,5 @@ HTTP 1.1 定義了以下一系列的常見的 methods，為了分離 clients 和
 
 ### 延伸閱讀
 
-* [常見的HTTP Method的不同性質分析：Get,Post和其他4種Method的差別 | Learning by Hacking](http://data-sci.info/2015/10/24/%E5%B8%B8%E8%A6%8B%E7%9A%84http-method%E7%9A%84%E4%B8%8D%E5%90%8C%E6%80%A7%E8%B3%AA%E5%88%86%E6%9E%90%EF%BC%9Agetpost%E5%92%8C%E5%85%B6%E4%BB%964%E7%A8%AEmethod%E7%9A%84%E5%B7%AE%E5%88%A5/)
+* [常見的 HTTP Method 的不同性質分析：Get, Post 和其他4種 Method 的差別 | Learning by Hacking](http://data-sci.info/2015/10/24/%E5%B8%B8%E8%A6%8B%E7%9A%84http-method%E7%9A%84%E4%B8%8D%E5%90%8C%E6%80%A7%E8%B3%AA%E5%88%86%E6%9E%90%EF%BC%9Agetpost%E5%92%8C%E5%85%B6%E4%BB%964%E7%A8%AEmethod%E7%9A%84%E5%B7%AE%E5%88%A5/)
 * [真。淺談 RESTful API by Triton Ho | 閃亮亮大師之路](http://blog.dj1020.net/%E7%9C%9F%E3%80%82%E6%B7%BA%E8%AB%87_RESTful_API_by_Triton_Ho/)

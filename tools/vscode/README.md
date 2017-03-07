@@ -54,7 +54,7 @@
 * Command + Shift + X：檢視擴充功能
 * Command + F：尋找目前檔案內的字
 * Shift + G: 移至第 N 行
-* Control + `：開啟終端機
+* Control + \`：開啟終端機
 * Control + Command + 空白鍵：開啟表情符號
 * Command + `+`：放大
 * Command + `-`：縮小
@@ -81,3 +81,4 @@
 * [使用 Visual Studio Code 建構 JavaScript 應用程式](http://www.slideshare.net/WillHuangTW/visual-studio-code-javascript)
 * [Golang 深入研究 Visual Studio Code for Golang](http://www.evanlin.com/dive-with-vscode-golang/)
 * [Visual Studio Code Key Bindings](https://code.visualstudio.com/docs/customization/keybindings)
+* [VSCode 拓展插件推荐 - 提高 Node 和 Vue 开发效率](https://github.com/varHarrie/Dawn-Blossoms/issues/10?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)

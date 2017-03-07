@@ -108,7 +108,17 @@ get /search/users?nickname=alin (O)
 
 **練習題**
 
-* 設計一個 [TODO](http://gcloud-todos.appspot.com/examples/angularjs/#/) 的 僅前台用的 API，並具有會員機制。
+設計一個[待辦事項](http://gcloud-todos.appspot.com/examples/angularjs/#/) 的線上服務，前台所使用的 API。
+
+功能如下：
+
+* 會員可以註冊
+* 會員可以登入
+* 會員可以新增待辦事項
+* 會員可以修改待辦事項
+* 會員可以刪除待辦事項
+* 會員可以查看自己的待辦事項
+* 待辦事項可以設定提醒時間
 
 <!--
 ```
@@ -200,6 +210,14 @@ Accept: api.yourdomain+json; version=1.0
 
 [Restful API 中的错误处理 | Scarletsky](http://scarletsky.github.io/2016/11/30/error-handling-in-restful-api/)
 
+### 多筆錯誤訊息範例
+
+```
+Request URL: ....
+Request Method:GET
+Status Code: 400
+```
+
 ```
 {
   "errors": [
@@ -213,8 +231,15 @@ Accept: api.yourdomain+json; version=1.0
 }
 ```
 
+### 單筆錯誤訊息範例
+
 ```
-// 400 Bad Request
+Request URL: ....
+Request Method:GET
+Status Code: 400
+```
+
+```
 {
   "message": "You submitted an invalid state. Valid state values are 'internal' or 'external'",
   "errorCode": 352,
@@ -222,10 +247,8 @@ Accept: api.yourdomain+json; version=1.0
 }
 ```
 
-https://api.github.com/user
-
 ```
-Request URL:https://api.github.com/user
+Request URL: https://api.github.com/user
 Request Method:GET
 Status Code:401 Unauthorized
 ```
@@ -237,15 +260,6 @@ Status Code:401 Unauthorized
 }
 ```
 
-### Caching
-
-```
-Server: Apache
-Etag: "........."
-Content-Type: text/html
-Cache-Control: max-ago=3600
-```
-
 ### Restful level
 
 [Richardson Maturity Model](https://martinfowler.com/articles/richardsonMaturityModel.html)
@@ -254,10 +268,6 @@ Cache-Control: max-ago=3600
 * Level 1 - Resources
 * Level 2 - HTTP Verbs
 * Level 3 - Hypermedia Controls
-
-### Stateless 實作方式
-
-* 使用 Tokens 在 Client 端維護狀態
 
 ### 練習題
 
@@ -324,7 +334,7 @@ Cache-Control: max-ago=3600
 * [Gitbook - HTTP API 設計指南](https://kcyeu.gitbooks.io/http-api-design-guide-tc/content/)
 * [ihower App 開發基礎講義 - 給初學者的應用程式開發基礎知識](https://ihower.tw/cs/web-apis.html)
 * [GitHub - aisuhua/restful-api-design-references: RESTful API 设计参考文献列表，可帮助你更加彻底的了解REST风格的接口设计。](https://github.com/aisuhua/restful-api-design-references)
-
+* [IBM developerWorks - 基於 REST 的 Web 服務：基礎](http://www.ibm.com/developerworks/cn/webservices/ws-restful/)
 
 
 <!-- ### Best Practices

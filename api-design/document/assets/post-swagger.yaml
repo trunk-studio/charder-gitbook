@@ -1,0 +1,152 @@
+# swagger 的版本 (必填)
+swagger: '2.0'
+
+# 定義基本資訊 (必填)
+info:
+  version: '1.0.0'
+  title: Fake Online REST API
+  description: 這是一個假的 API 文件範例
+  contact:
+    name: 劉艾霖
+    email: alincode@gmail.com
+    url: http://alincode.github.io/blog
+
+host: jsonplaceholder.typicode.com
+
+basePath: /
+
+schemes:
+  - http
+  - https
+
+consumes:
+  - application/json
+
+produces:
+  - application/json
+
+# 定義你的 Paths (必填)
+paths:
+
+  /posts:
+    get:
+      description: 取得所有 post 資料
+      responses:
+        '200':
+          description: 成功回應
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/post'
+        default:
+          description: 錯誤回應
+          schema:
+            $ref: '#/definitions/errorModel'
+
+    post:
+      description: 新增 post 資料
+      parameters:
+        - name: post
+          in: body
+          description: Pet to add to the store
+          required: true
+          schema:
+            $ref: '#/definitions/newPost'
+      responses:
+        '200':
+          description: 成功回應
+          schema:
+            $ref: '#/definitions/post'
+        default:
+          description: 錯誤回應
+          schema:
+            $ref: '#/definitions/errorModel'
+
+  /posts/{id}:
+    get:
+      description: 取得特定 post 資料
+      parameters:
+        - name: id
+          in: path
+          description: post 的 id
+          required: true
+          type: integer
+          format: int64
+      responses:
+        '200':
+          description: 成功回應
+          schema:
+            $ref: '#/definitions/post'
+        default:
+          description: 錯誤回應
+          schema:
+            $ref: '#/definitions/errorModel'
+
+    delete:
+      description: 刪除一筆 post
+      parameters:
+        - name: id
+          in: path
+          description: post 的 id
+          required: true
+          type: integer
+          format: int64
+      responses:
+        '204':
+          description: 成功回應
+        default:
+          description: 錯誤回應
+          schema:
+            $ref: '#/definitions/errorModel'
+
+
+definitions:
+
+  post:
+    type: object
+    required:
+      - id
+      - userId
+      - title
+      - body
+    properties:
+      id:
+        type: integer
+        format: int64
+      userId:
+        type: integer
+        format: int64
+      title:
+        type: string
+      body:
+        type: string
+
+  newPost:
+    type: object
+    required:
+      - userId
+      - title
+      - body
+    properties:
+      id:
+        type: integer
+        format: int64
+      userId:
+        type: integer
+        format: int64
+      title:
+        type: string
+      body:
+        type: string
+
+  errorModel:
+    type: object
+    required:
+      - code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+      message:
+        type: string
