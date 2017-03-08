@@ -27,6 +27,12 @@
 * [API Blueprint | API Blueprint](https://apiblueprint.org/)
 * [Github apiaryio - api blueprint](https://github.com/apiaryio/api-blueprint)
 
+### Swagger 有哪些功能
+
+* generator code
+* 動態文件產生器
+* 動態 API 的呼叫介面
+
 ### 誰有使用 Swagger
 
 * Paypal
@@ -160,4 +166,5 @@ securityDefinitions:
 [使用 Swagger 文档化和定义 RESTful * API](http://www.ibm.com/developerworks/cn/web/wa-use-swagger-to-document-and-define-restful-apis/index.html)
 * [Swagger API文档编写格式指南 | 研发100](http://120.26.63.93/topic/4/swagger-api%E6%96%87%E6%A1%A3%E7%BC%96%E5%86%99%E6%A0%BC%E5%BC%8F%E6%8C%87%E5%8D%97)
 * [Swagger入门教程 - JoiT - 博客园](http://www.cnblogs.com/JoiT/p/6378086.html)
+* [Swagger tutorial | I’d Rather Be Writing](http://idratherbewriting.com/pubapis_swagger/)
 * [GitHub - typicode/jsonplaceholder: A simple online fake REST API server](https://github.com/typicode/jsonplaceholder)
