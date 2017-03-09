@@ -76,6 +76,9 @@
 * [補充 - HTTP method](api-design/mise/http-methods.md)
 * [API 文件管理 with Swagger](api-design/document/README.md)
 * [API 安全](api-design/security/README.md)
+* [基本驗證](api-design/security/basic-auth/README.md)
+* [OAuth](api-design/security/oauth/README.md)
+* [JWT](api-design/security/jwt/README.md)
 * [API 管理](api-design/management/README.md)
 
 <!--
