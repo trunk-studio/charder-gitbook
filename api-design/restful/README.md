@@ -1,12 +1,20 @@
-# RESTful 常見慣例
+# RESTful 建議設計方式
 
 這裡範例是以 Web API 設計為主
 
 <!-- HTTP Request 由「HTTP Method 動詞 + URL 名詞 + Content Types 格式」所組成 -->
 
-### 比較
+**什麼是 RESTful？**
 
-**舊設計風格**
+一個架構符合 REST 原則，就稱它為 RESTful 架構。
+
+**什麼時候會需要 RESTful API 架構？**
+
+當有數組資源要被多種不同平台使用時
+
+**舊設計風格 vs. RESTful 設計風格**
+
+舊設計風格
 
 ```
 /getAllUsers
@@ -16,7 +24,7 @@
 /deleteUser/1
 ```
 
-**RESTful 設計風格**
+RESTful 設計風格
 
 ```
 GET /users
@@ -26,13 +34,17 @@ PUT /users/1
 DELETE /users/1
 ```
 
-### URI
+## 統一介面
+
+### 唯一資源識別方法
+
+URL + HTTP methods = 唯一資源識別方法
 
 **操作一般 Resource 時，URL 使用複數名詞。**
 
 ```
-get /v1.0/user/1 (X)
-get /v1.0/users/1 (O)
+/v1.0/user/1 (X)
+/v1.0/users/1 (O)
 ```
 
 **操作唯一 Resource 時，URL 使用單數名詞。**
@@ -41,7 +53,7 @@ get /v1.0/users/1 (O)
 
 [Watching | GitHub Developer Guide](https://developer.github.com/v3/activity/watching/#list-repositories-being-watched)
 
-**如果某些動作是HTTP動詞表示不了的，你就應該把動作做成一種資源。**
+**如果某些動作是 HTTP 動詞表示不了的，你就應該把動作做成一種資源。**
 
 ```
 POST /accounts/1/transfer/500/to/2
@@ -63,8 +75,6 @@ GET /translate?from=de_DE&to=en_US&text=Hallo
 GET /calculate?para2=23&para2=432
 ```
 
-**若 method type 是 get 的 API，只單純取得資料，不能改變資料的狀態。**
-
 **使用 sub-resources**
 
 ```
@@ -80,7 +90,35 @@ get /search/users/nickname/alin (X)
 get /search/users?nickname=alin (O)
 ```
 
-### 使用 HTTP Methods 操作 Resources
+#### Query 參數
+
+### Filtering
+
+```
+GET /tickets?level=vip
+```
+
+### 排序 (Sorting)
+
+```
+GET /tickets?sort=-priority,created_at
+```
+
+### Field selection
+
+```
+GET /tickets?fields=id,subject,customer_name,updated_at
+```
+
+### 分頁 (Paging)
+
+```
+/v1.0/users?limit=25&offset=50
+```
+
+### 自我描述
+
+使用 HTTP Methods 操作 Resources
 
 **CRUD 範例**
 
@@ -132,133 +170,27 @@ get /users/1/todos
 ```
 -->
 
-### Request 格式
+### 資源有多種呈現方式
 
-* application/x-www-form-urlencoded (網頁表單預設，不能上傳檔案)
-* application/json (這不能上傳檔案)
-* multipart/form-data (可以上傳檔案)
-
-### Response 格式
-
-* 放到 Header 裡面 Accept: application/json (推薦)
-
-或
+#### Request 格式
 
 * 放到 URL 裡面，例如 `GET /users.json`
-
-優先選擇 JSON 格式，特別是會用到 javascript 來處理 response 時，因為 JSON 本就是 javascirpt 的預設處理格式。
-
-### Filtering
-
-```
-GET /tickets?level=vip
-```
-
-### 排序 (Sorting)
+* 放到 Header 裡面 Accept: application/json (推薦)
+  * application/json (這不能上傳檔案)
+  * application/x-www-form-urlencoded (網頁表單預設，不能上傳檔案)
+  * multipart/form-data (可以上傳檔案)
 
 ```
-GET /tickets?sort=-priority,created_at
+GET /users
 ```
 
-### Field selection
+#### Response 格式
 
-```
-GET /tickets?fields=id,subject,customer_name,updated_at
-```
+* raw
+* json
+* xml
 
-### 分頁 (Paging)
-
-```
-/v1.0/users?limit=25&offset=50
-```
-
-### 版本管理
-
-* 不是每一次修改都要改 API 的版號，盡量將 API 可以做成向後相容，就不需要跳版本。例如：新增一個欄位屬性，是向後相容的。
-* 修改屬性名稱、刪除欄位、修改格式等等，會造成無法向後相容，出現 Error。
-
-<!-- 什麼是向後相容 vs 向下相容 -->
-
-```
-api.yourdomain/v1.0/users
-yourdomain/api/v1.0/users
-```
-
-或
-
-```
-api.yourdomain/users?v=1.0
-```
-
-或
-
-```
-Accept: api.yourdomain+json; version=1.0
-```
-
-### HTTP 狀態碼
-
-| 狀態碼     | 意義                       |
-| :-------- | :------------------------ |
-| 2xx       | 成功                       |
-| 4xx       | client error 應用層級錯誤   |
-| 5xx       | server error 非預期的錯誤   |
-
-[List of HTTP status codes - Wikipedia](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
-
-### 錯誤代碼
-
-[Restful API 中的错误处理 | Scarletsky](http://scarletsky.github.io/2016/11/30/error-handling-in-restful-api/)
-
-### 多筆錯誤訊息範例
-
-```
-Request URL: ....
-Request Method:GET
-Status Code: 400
-```
-
-```
-{
-  "errors": [
-   {
-    "userMessage": "Sorry, the requested resource does not exist",
-    "internalMessage": "No car found in the database",
-    "code": 34,
-    "more info": "http://dev.mwaysolutions.com/blog/api/v1/errors/12345"
-   }
-  ]
-}
-```
-
-### 單筆錯誤訊息範例
-
-```
-Request URL: ....
-Request Method:GET
-Status Code: 400
-```
-
-```
-{
-  "message": "You submitted an invalid state. Valid state values are 'internal' or 'external'",
-  "errorCode": 352,
-  "additionalInformation" : "http://www.domain.com/rest/errorcode/352"
-}
-```
-
-```
-Request URL: https://api.github.com/user
-Request Method:GET
-Status Code:401 Unauthorized
-```
-
-```
-{
-  "message": "Requires authentication",
-  "documentation_url": "https://developer.github.com/v3"
-}
-```
+<!-- 優先選擇 JSON 格式，特別是會用到 javascript 來處理 response 時，因為 JSON 本就是 javascirpt 的預設處理格式。 -->
 
 ### Restful level
 

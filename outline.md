@@ -104,7 +104,7 @@
 
 **API 設計 - 第二週**
 
-* API Framework
+* 建立現代化的 API 文件
 * Postman
 * API 安全
 * API 未來展望
