@@ -5,8 +5,9 @@
 **新聞**
 
 * [【獨家】被駭攏係假！　遠通APP漏洞惹禍 | 即時新聞 | 20140115 | 蘋果日報](http://www.appledaily.com.tw/realtimenews/article/new/20140115/327006/)
-* [使用者體驗 « api.logdown.com](http://api.logdown.com/posts/175888/the-user-experience)
 * [OAuth - 維基百科，自由的百科全書](https://zh.wikipedia.org/wiki/OAuth)
+
+<!-- Apache 防止 DDoS 攻擊 -->
 
 ### Session 認證所產生的問題
 
@@ -14,17 +15,12 @@
 * 在分佈式的應用上，相應的限制了負載均衡器的能力。
 * 因為是基於 cookie 來進行用戶識別的, cookie 如果被攔截，使用者就會很容易受到 CSRF 攻擊。
 
-### API Keys vs. Username/Password 驗證
+### API Keys(Token) vs. Username/Password 驗證
 
-<!-- * Entropy
-* Independence
-* Speed
-* Reduced Exposure
-* Traceability
-* Traceability
-* Rotation -->
-
-* 帳號密碼每暴露一次，就多一次機會有可能被側錄。
+* 獨立 (Independence)
+* 速度 (Speed)
+* 減少暴露 (Reduced Exposure)：每暴露一次，就多一次機會有可能被側錄。
+* 可追蹤 (Traceability)
 
 **延伸閱讀**
 
@@ -129,12 +125,11 @@ Aladdin:open sesame
 * [OAuth 2.0 — OAuth](https://oauth.net/2/)
 * [阮一峰 - 理解OAuth 2.0](http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html)
 * [Yu-Cheng Chuang - 簡單易懂的 OAuth 2.0](https://speakerdeck.com/chitsaou/jian-dan-yi-dong-de-oauth-2-dot-0)
+* [各大網站 OAuth 2.0 實作差異 - Yu-Cheng Chuang’s Blog](https://blog.yorkxin.org/2013/09/30/oauth2-implementation-differences-among-famous-sites)
 
 ### JWT (Jason Web Tokens)
 
-<!-- 在沒有 JWT 錢的做法是？ -->
-
-**JWT是什麼？**
+**JWT 是什麼？**
 
 > JSON Web Token (JWT) is a compact URL-safe means of representing claims to be transferred between two parties. The claims in a JWT are encoded as a JSON object that is digitally signed using JSON Web Signature (JWS).
 - RFC7519 https://tools.ietf.org/html/rfc7519
@@ -146,7 +141,12 @@ JWT 是一種安全標準，基本就是 client 提供帳號和密碼給認證 s
 
 ![JWT](assets/jwt.png)
 
-可分為三個結構
+**問題**
+
+* 基本認證 vs. JWT 差在哪？
+* 在沒有 JWT 前的做法是？
+
+**結構可分為三個部分**
 
 * 表頭 (Headers)
 * 附加資料 (Claims / Payload)
@@ -197,33 +197,29 @@ Authorization: Bearer <token>
 
 ### 常見的攻擊
 
-#### Query Injection
-
-**安全的做法**
-
 #### CSRF / XSRF 攻擊
 
 **CSRF 是什麼**
 
-* Cross-Site Request Forgery
+* 全名叫 Cross-Site Request Forgery
 * 是一種點擊攻擊(Click Attack)與連線控制(Session Riding)，或稱連線綁架(Session Hijacking)
 * 利用路由信息協議 (Routing Information Protocol；RIP) 的漏洞，以及 DNS (Domain Name Server) 下毒的方式，讓使用者在連往目的網頁前，先被帶到駭客伺服器。
+
+<!-- CSRF (Cross-site request forgery) 是一種攻擊手段，壞人讓受害使用者的 User-Agent 跟隨惡意的 URI （例如會以誤導的連結、圖片、轉址等形式提供給 User-Agent）跑到信任的伺服器（通常是透過一個合法的 session cookie 來達成）。 -->
+
+<!-- Forgery: n. 偽造 -->
 
 **安全的做法**
 
 * 檢查 Referer 欄位：通常來說，Referer 欄位應和請求的地址位於同一域名下。
-* 不保存驗證機制在 cookie，例如「記住我功能」。
+* 不使用 cookie 作為驗證機制，例如「記住我功能」。如果一定要用 cookie，請用短時效 cookie。
+* 在 Submit Form 中加入隨機亂數，並在處理表單時進行驗證。
 <!-- Auth every request + no sessions = no XSRF attacks -->
 
 **延伸閱讀**
 
 * [跨站請求偽造 - 維基百科，自由的百科全書](https://zh.wikipedia.org/wiki/%E8%B7%A8%E7%AB%99%E8%AF%B7%E6%B1%82%E4%BC%AA%E9%80%A0)
 * [跨站假要求(Cross-Site Request Forgery；CSRF/XSRF)](http://www.digitimes.com.tw/tw/dt/n/shwnws.asp?Cat=&id=122887)
-
-<!--
-### 專有名詞
-
-* TLS -->
 
 ### 延伸閱讀
 

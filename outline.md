@@ -101,14 +101,10 @@
 * Web API 兩大設計主流介紹
 * REST 的設計理念與架構
 * RESTful 常見慣例
-* API 文件設計
 
 **API 設計 - 第二週**
 
-* API 測試 - Postman
+* API Framework
+* Postman
 * API 安全
-* API 管理
-  * 流量管理
-  * 分析
-  * 生命週期管理
 * API 未來展望
