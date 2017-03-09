@@ -15,7 +15,7 @@
 * 在分佈式的應用上，相應的限制了負載均衡器的能力。
 * 因為是基於 cookie 來進行用戶識別的, cookie 如果被攔截，使用者就會很容易受到 CSRF 攻擊。
 
-### API Keys(Token) vs. Username/Password 驗證
+### API Keys vs. Username/Password 驗證
 
 * 獨立 (Independence)
 * 速度 (Speed)
@@ -31,10 +31,10 @@
 * 盡量使用 SSL 連線
 * 選用一種認證機制
 
-### 常見驗證機制
+### 常見認證機制
 
 * 基本認證 (Basic Authentication)
-* OAuth 2.0
+* JWT
 
 ### 延伸閱讀
 

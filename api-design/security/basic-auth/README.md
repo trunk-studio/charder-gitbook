@@ -1,4 +1,4 @@
-# 驗證框架 - 基本認證 (Basic Authentication)
+# 認證框架 - 基本認證 (Basic Authentication)
 
 ![basic-authentication](https://docs.microsoft.com/en-us/aspnet/web-api/overview/security/basic-authentication/_static/image1.png)
 

@@ -41,7 +41,7 @@ JWT 是一種安全標準，基本就是 client 提供帳號和密碼給認證 s
 
 **實作**
 
-* 選用 JWT 認證的 library
+* 選用 Library
 * 設定 CORS
 
 ```
@@ -57,11 +57,13 @@ Authorization: Bearer <token>
 * 盡量使用 https 傳遞資料
 * 不要將敏感訊息附加在 payload 中
 
+**JWT vs. OAuth 2.0**
+
+* JWT 是一種認證協議，OAuth2 是一種授權框架(提供了一套詳細的授權機制)。
+
+問題：認證 vs. 授權
+
 **延伸閱讀**
 
 * [JSON Web Token - Wikipedia](https://en.wikipedia.org/wiki/JSON_Web_Token)
 * [JSON Web Tokens - jwt.io](https://jwt.io/)
-
-### JWT vs. OAuth2
-
-* JWT 是一種認證協議，OAuth2 是一種授權框架(提供了一套詳細的授權機制)。

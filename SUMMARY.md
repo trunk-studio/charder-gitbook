@@ -76,14 +76,14 @@
 * [補充 - HTTP method](api-design/mise/http-methods.md)
 * [建立現代化的 API 文件 with Swagger](api-design/document/README.md)
 * [API 安全](api-design/security/README.md)
-* [驗證框架 - 基本驗證](api-design/security/basic-auth/README.md)
-* [驗證框架 - OAuth 2.0](api-design/security/oauth/README.md)
-* [JWT](api-design/security/jwt/README.md)
+* [認證 - 基本認證](api-design/security/basic-auth/README.md)
+* [認證 - JWT](api-design/security/jwt/README.md)
 * [API 例外狀況處理](api-design/security/error/README.md)
 * [API 版本管理](api-design/security/version/README.md)
 * [API 管理](api-design/management/README.md)
 
 <!--
+* [授權框架 - OAuth 2.0](api-design/security/oauth/README.md)
 * [補充](api-design/mise/README.md)
 * [GraphQL](api-design/graphql/README.md)
 -->
