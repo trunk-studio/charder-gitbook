@@ -83,34 +83,37 @@ get /users/1/albums/1
 
 **盡量不要用縮寫，除非它是普羅大眾都知道的縮寫。**
 
-**以 path parameter 傳送必要資訊，query parameter 傳送選擇性資料。**
+
+#### Query 參數
+
+* 沒有特別規定，可以底線分隔或使用駝峰命名，須保持一致風格。
+* 但建議使用駝峰命名，符合大部分程式語言的 code style。
+* 以 path 參數傳送必要資訊，query 參數傳送選擇性資料。
 
 ```
 get /search/users/nickname/alin (X)
 get /search/users?nickname=alin (O)
 ```
 
-#### Query 參數
-
-### Filtering
+**Filtering**
 
 ```
 GET /tickets?level=vip
 ```
 
-### 排序 (Sorting)
+**排序 (Sorting)**
 
 ```
 GET /tickets?sort=-priority,created_at
 ```
 
-### Field selection
+**Field selection**
 
 ```
 GET /tickets?fields=id,subject,customer_name,updated_at
 ```
 
-### 分頁 (Paging)
+**分頁 (Paging)**
 
 ```
 /v1.0/users?limit=25&offset=50
@@ -134,41 +137,6 @@ GET /tickets?fields=id,subject,customer_name,updated_at
 | delete /users        | 批次刪除                     |
 | delete /users/1      | 單筆刪除                     |
 | get /users/1/albums/1| 取得 userId=1 的第一本相簿資料 |
-
-### Query 參數
-
-* 沒有特別規定，可以底線分隔或使用駝峰命名，須保持一致風格。
-* 但建議使用駝峰命名，符合大部分程式語言的 code style。
-
-```
-/v1.0/users?limit=25&offset=50
-```
-
-**練習題**
-
-設計一個[待辦事項](http://gcloud-todos.appspot.com/examples/angularjs/#/) 的線上服務，前台所使用的 API。
-
-功能如下：
-
-* 會員可以註冊
-* 會員可以登入
-* 會員可以新增待辦事項
-* 會員可以修改待辦事項
-* 會員可以刪除待辦事項
-* 會員可以查看自己的待辦事項
-* 待辦事項可以設定提醒時間
-
-<!--
-```
-post /register?account=&password=
-patch /login?account=&password=
-patch /users/1?nickname=...
-post /users/1/todos
-patch /users/1/todos/1
-delete /users/1/todos/1
-get /users/1/todos
-```
--->
 
 ### 資源有多種呈現方式
 
@@ -202,6 +170,30 @@ GET /users
 * Level 3 - Hypermedia Controls
 
 ### 練習題
+
+* 設計一個[待辦事項](http://gcloud-todos.appspot.com/examples/angularjs/#/) 的線上服務，前台所使用的 API。
+
+功能如下：
+
+* 會員可以註冊
+* 會員可以登入
+* 會員可以新增待辦事項
+* 會員可以修改待辦事項
+* 會員可以刪除待辦事項
+* 會員可以查看自己的待辦事項
+* 待辦事項可以設定提醒時間
+
+<!--
+```
+post /register?account=&password=
+patch /login?account=&password=
+patch /users/1?nickname=...
+post /users/1/todos
+patch /users/1/todos/1
+delete /users/1/todos/1
+get /users/1/todos
+```
+-->
 
 * 以下的 API，改用 RESTful 風格設計。
 
@@ -254,6 +246,7 @@ GET /users
 /writetestlist -> post /stations/123456/results?type=test
 /writetetestdietial -> post /stations/results
  -->
+
 
 ### 實踐 RESTful 的 API
 
