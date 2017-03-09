@@ -26,11 +26,6 @@
 
 * [API Token 入門](https://www.slideshare.net/chickenwu/api-token)
 
-### 實踐步驟
-
-* 盡量使用 SSL 連線
-* 選用一種認證機制
-
 ### 常見認證機制
 
 * 基本認證 (Basic Authentication)

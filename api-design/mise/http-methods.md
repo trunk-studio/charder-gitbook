@@ -61,21 +61,36 @@ Request methods can be defined as "cacheable" to indicate that responses to them
 
 * GET 可以被加入瀏覽器歷史紀錄，反之 POST 不行。
 * GET 可以被加入瀏覽器書籤，反之 POST 不行。
-* POST 相對比 GET 安全性高，因為不會被 cache，也不會顯示在瀏覽器歷史紀錄中，及 web server log 中。
+* POST 相對比 GET 安全性高，因為不會被 cache，也不會顯示在瀏覽器歷史紀錄中，及 server log 中。
 * GET 不能用來傳送需要安全性高的資料
 * GET 應該只被用在取得資料
 * GET 有資料長度的限制，因為 URL 的長度最大只資源 2048 characters。
 * GET 參數會顯示在 URL 上，反之 POST 不會。
-
-<!-- 如果用 HTTP GET 來傳送密碼，會被 cache。 -->
+<!-- 如果用 HTTP GET 來傳送密碼，會被記錄在 log -->
 
 資料來源: [w3c school - HTTP Methods: GET vs. POST](https://www.w3schools.com/tags/ref_httpmethods.asp)
 
+**問題**
+
+* 應該用 HTTP GET 來傳的參數，用 HTTP POST 來傳，會導致什麼問題？
+
+<!-- 無法被放置在 HTML 超連結中 -->
+<!-- 不會在瀏覽器留下紀錄 -->
+<!-- 不被加入書籤 -->
+<!-- 應該被記錄在 server log 的參數資訊，沒被 log 住 -->
+<!-- 違反 HTTP 協定的定義，Client 跟 Server 之間沒有共識，無法良好的溝通。 -->
+
 ### PUT VS PATCH
 
-* PUT: 更新全部內容
+* PUT: 更新全部內容，若資料之前不存在，則新增一筆。
 * PATCH: 這是後來才追加的 mehtod，更新資源部份內容。
   * [RFC 5789 - PATCH Method for HTTP](https://tools.ietf.org/html/rfc5789)
+
+**問題**
+
+* HTTP PUT 會用到的情境是？
+
+<!--  /subscribe/已知ID -->
 
 ### POST VS PUT
 

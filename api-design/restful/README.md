@@ -171,7 +171,7 @@ GET /users
 
 ### 練習題
 
-* 設計一個[待辦事項](http://gcloud-todos.appspot.com/examples/angularjs/#/) 的線上服務，前台所使用的 API。
+1. 設計一個[待辦事項](http://gcloud-todos.appspot.com/examples/angularjs/#/) 的線上服務，前台所使用的 API。
 
 功能如下：
 
@@ -195,7 +195,7 @@ get /users/1/todos
 ```
 -->
 
-* 以下的 API，改用 RESTful 風格設計。
+1. 以下的 API，改用 RESTful 風格設計。
 
 ```
 第一組
