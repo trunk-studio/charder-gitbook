@@ -83,7 +83,6 @@
 * [API 管理](api-design/management/README.md)
 
 <!--
-* [授權框架 - OAuth 2.0](api-design/security/oauth/README.md)
 * [補充](api-design/mise/README.md)
 * [GraphQL](api-design/graphql/README.md)
 -->

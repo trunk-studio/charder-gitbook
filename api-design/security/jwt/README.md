@@ -5,17 +5,16 @@
 > JSON Web Token (JWT) is a compact URL-safe means of representing claims to be transferred between two parties. The claims in a JWT are encoded as a JSON object that is digitally signed using JSON Web Signature (JWS).
 - RFC7519 https://tools.ietf.org/html/rfc7519
 
-JWT 是一種安全標準，基本就是 client 提供帳號和密碼給認證 server，server 驗證成功，會產生一個 Token 塞在 Response 中，client 可以使用這個 Token 存取 Server 上的資源(資料)。
+JWT 是一個 Web Token，可以攜帶 JSON 格式的資料替兩方傳輸資料，攜帶的資料是使用數位簽證 JWS 加密過。
 
 > The suggested pronunciation of JWT is the same as the English word
 "jot".
 
+建議發音念 jot
+
 ![JWT](assets/jwt.png)
 
-**問題**
-
-* 基本認證 vs. JWT 差在哪？
-* 在沒有 JWT 前的做法是？
+[JSON Web Tokens - jwt.io](https://jwt.io/)
 
 **結構可分為三個部分**
 
@@ -23,34 +22,42 @@ JWT 是一種安全標準，基本就是 client 提供帳號和密碼給認證 s
 * 附加資料 (Claims / Payload)
 * 簽證 (Signature)
 
+**問題**
+
+* 基本認證 vs. JWT 差在哪？
+* 在沒有 JWT 前的做法是？
+
+<!-- 基本認證只有做 base64 encoding，JWT 除了做 base64 encoding 之外，還有加密，還可以攜帶資料。 -->
+
 **優點**
 
 * JSON 格式通用性高
 * payload 機制可以附帶一些非敏感訊息的資料
 * token 佔的空間很小，容易傳輸。
-* 因為不是 Session 的機制，不會有 load balancer 的瓶頸。
+* 因為不是 Session 的機制，不會有 Loading Balancer 的瓶頸。
 
 **缺點**
 
 * Token 有長度限制
 
+<!-- 為什麼？ -->
+
 **使用情境**
 
 * 任何需要 Token 機制的地方
-* 無狀態的分散式 API
+  * 限制軟體授權時間
+  * 裝置綁定 / 登入
+  * 固定效期的序號卡
+* 無狀態 (stateless) 的分散式 API
 
 **實作**
 
-* 選用 Library
-* 設定 CORS
-
-```
-Access-Control-Allow-Origin: *
-```
+* 在 Server 確認過 Client 身份後，發一組 JWT 格式的 Token 給 Client，下次 Client 要在跟 Server 要資料的時候，就只要將 Token 放在 request header 中，Server 驗證 Token 後就可以確認身份。
 
 ```
 Authorization: Bearer <token>
 ```
+
 **注意事項**
 
 * 保護好私鑰
@@ -59,7 +66,7 @@ Authorization: Bearer <token>
 
 **JWT vs. OAuth 2.0**
 
-* JWT 是一種認證協議，OAuth2 是一種授權框架(提供了一套詳細的授權機制)。
+* JWT 是一種認證協議，OAuth 2.0 是一種授權框架。
 
 問題：認證 vs. 授權
 

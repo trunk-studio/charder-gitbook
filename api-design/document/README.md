@@ -41,9 +41,7 @@
 
 ### Swagger 工具鍊
 
-<!-- * Swagger UI：Generate Client
-* Swagger CodeGen：Generate Server Stub -->
-
+* Swagger Code Generator
 * Swagger Editor, server code generator, client code generator:
   * swagger 的線上編輯器，可匯入匯出或格式轉換工具，並產生 client / server side 的程式碼下載，支援多種語言。
 * Swagger UI:
