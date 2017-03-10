@@ -45,9 +45,13 @@ HTTP 1.1 定義了以下一系列的常見的 methods，為了分離 clients 和
 
 > Safe methods are HTTP methods that do not modify resources. For instance, using GET or HEAD on a resource URL, should NEVER change the resource.
 
-**Idempotent Methods**
+它不會改變 resources 的 HTTP mehtods，我們就叫它是 Safe mehtods。例如 GET 或 HEAD 從不改變 resources。
 
-> An idempotent HTTP method is a HTTP method that can be called many times without different outcomes. It would not matter if the method is called only once, or ten times over. The result should be the same. Again, this only applies to the result, not the resource itself. This still can be manipulated (like an update-timestamp, provided this information is not shared in the (current) resource representation.
+**Idempotent(冪等) Methods**
+
+> An idempotent HTTP method is a HTTP method that can be called many times without different outcomes. It would not matter if the method is called only once, or ten times over. The result should be the same. Again, this only applies to the result, not the resource itself. This still can be manipulated like an update-timestamp, provided this information is not shared in the (current) resource representation.
+
+一個 HTTP mehtod 可以被呼叫多次，每次都會取得相容的結果，我們就叫它是 idempotent HTTP method。不論被呼叫一次或多次，結果都會相同。這只適用在回應結果不是，不是指 resource 本身。仍然可以控制像是 update-timestamp，提供此資訊但不能在資源呈現時共享。
 
 <!-- idempotent 的意思是如果相同的操作一再重複執行，結果還是跟第一遍的結果一樣，根據 HTTP 的規格，只有 POST、PATCH、CONNECT 不是 idempotent，POST 再執行一遍，會再新增一筆資料，PATCH 則是有不能保證 idempotent 的可能性。Idempotent 特性，則是會影響可否 Retry。 -->
 
@@ -55,7 +59,9 @@ HTTP 1.1 定義了以下一系列的常見的 methods，為了分離 clients 和
 
 **Cacheable Methods**
 
-Request methods can be defined as "cacheable" to indicate that responses to them are allowed to be stored for future reuse; for specific requirements see [RFC7234](https://tools.ietf.org/html/rfc7234).  In general, safe methods that do not depend on a current or authoritative response are defined as cacheable; this specification defines GET, HEAD, and POST as cacheable, although the overwhelming majority of cache implementations only support GET and HEAD.
+> Request methods can be defined as "cacheable" to indicate that responses to them are allowed to be stored for future reuse; for specific requirements see [RFC7234](https://tools.ietf.org/html/rfc7234).  In general, safe methods that do not depend on a current or authoritative response are defined as cacheable; this specification defines GET, HEAD, and POST as cacheable, although the overwhelming majority of cache implementations only support GET and HEAD.
+
+Request methods 可以被 cache 並允許儲存作為未來重複使用的規定在於 [RFC7234](https://tools.ietf.org/html/rfc7234)。一般來說，safe methods 跟 cacheable 沒有絕對關聯，在規格中定義了 GET, HEAD, and POST 可以被 cache，但大多數的 cache 指支援 GET 和 HEAD。
 
 ### Compare GET vs. POST
 
@@ -78,9 +84,9 @@ Request methods can be defined as "cacheable" to indicate that responses to them
 <!-- 不會在瀏覽器留下紀錄 -->
 <!-- 不被加入書籤 -->
 <!-- 應該被記錄在 server log 的參數資訊，沒被 log 住 -->
-<!-- 違反 HTTP 協定的定義，Client 跟 Server 之間沒有共識，無法良好的溝通。 -->
+<!-- 違反 HTTP 協定的定義，無法切割 Client 和 Server 之間的相依性。 -->
 
-### PUT VS PATCH
+### Compare PUT vs. PATCH
 
 * PUT: 更新全部內容，若資料之前不存在，則新增一筆。
 * PATCH: 這是後來才追加的 mehtod，更新資源部份內容。
@@ -92,7 +98,7 @@ Request methods can be defined as "cacheable" to indicate that responses to them
 
 <!--  /subscribe/已知ID -->
 
-### POST VS PUT
+### Compare PUT vs. POST
 
 **延伸閱讀**
 
@@ -100,16 +106,16 @@ Request methods can be defined as "cacheable" to indicate that responses to them
 
 ### RFC 7230 ~ 7237
 
-* RFC 7230: Message Syntax and Routing
-* RFC 7231: Semantics and Content
-* RFC 7232: Conditional Requests
-* RFC 7233: Range Request
-* RFC 7234: Caching
-* RFC 7235: Authentication
-* RFC 7236: Initial HTTP Authentication Scheme Registrations
-* RFC 7237: Initial HTTP Method Registrations
-* RFC 7238: the 308 status code
-* RFC 7239: Forwarded HTTP extension
+* [RFC 7230](https://tools.ietf.org/html/rfc7230): Message Syntax and Routing
+* [RFC 7231](https://tools.ietf.org/html/rfc7231): Semantics and Content
+* [RFC 7232](https://tools.ietf.org/html/rfc7232): Conditional Requests
+* [RFC 7233](https://tools.ietf.org/html/rfc7233): Range Request
+* [RFC 7234](https://tools.ietf.org/html/rfc7234): Caching
+* [RFC 7235](https://tools.ietf.org/html/rfc7235): Authentication
+* [RFC 7236](https://tools.ietf.org/html/rfc7236): Initial HTTP Authentication Scheme Registrations
+* [RFC 7237](https://tools.ietf.org/html/rfc7237): Initial HTTP Method Registrations
+* [RFC 7238](https://tools.ietf.org/html/rfc7238): the 308 status code
+* [RFC 7239](https://tools.ietf.org/html/rfc7239): Forwarded HTTP extension
 
 **更動範圍說明(只列出重點項目)**
 
