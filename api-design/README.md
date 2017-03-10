@@ -1,4 +1,4 @@
-# API 設計
+# API 設計概念
 
 **什麼是 API**
 
@@ -14,11 +14,11 @@ https://en.wikipedia.org/wiki/Application_programming_interface
 
 **什麼是對 API 重要的事**
 
+* 設計前跟使用者溝通
 * 可以正常執行
-* API 跟 API 文件一致
 * 易維護 / 擴充
 * API 版本化
-* 設計前跟使用者溝通
+* API 跟 API 文件一致
 
 **API 生命週期**
 

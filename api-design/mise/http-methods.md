@@ -1,4 +1,4 @@
-# HTTP Method
+# HTTP Methods
 
 | HTTP Methods | 意義                                             |
 | :----------- | :----------------------------------------------- |
@@ -19,11 +19,12 @@
 
 **延伸閱讀**
 
+* [RFC(Request For Comments) - 維基百科，自由的百科全書](https://zh.wikipedia.org/wiki/RFC)
 * [Hypertext Transfer Protocol — HTTP/1.1](https://www.w3.org/Protocols/rfc2616/rfc2616.html)
 * [HTTP/1.1协议更新：RFC 2616遭废弃](http://www.infoq.com/cn/news/2014/06/http-11-updated)
 * [HTTP - Hypertext Transfer Protocol Overview](https://www.w3.org/Protocols/)
 
-### 定義
+### HTTP Methods 定義
 
 > The set of common methods for HTTP/1.1 is defined below. Although this set can be expanded, additional methods cannot be assumed to share the same semantics for separately extended clients and servers. >>>  [HTTP/1.1: Method Definitions](https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html)
 
@@ -51,7 +52,7 @@ HTTP 1.1 定義了以下一系列的常見的 methods，為了分離 clients 和
 
 > An idempotent HTTP method is a HTTP method that can be called many times without different outcomes. It would not matter if the method is called only once, or ten times over. The result should be the same. Again, this only applies to the result, not the resource itself. This still can be manipulated like an update-timestamp, provided this information is not shared in the (current) resource representation.
 
-一個 HTTP mehtod 可以被呼叫多次，每次都會取得相容的結果，我們就叫它是 idempotent HTTP method。不論被呼叫一次或多次，結果都會相同。這只適用在回應結果不是，不是指 resource 本身。仍然可以控制像是 update-timestamp，提供此資訊但不能在資源呈現時共享。
+一個 HTTP mehtod 可以被呼叫多次，每次都會取得相同的結果，我們就叫它是 idempotent HTTP method。不論被呼叫一次或多次，結果都會相同。這只適用在回應結果，不是指 resource 本身。仍然可以控制像是 update-timestamp，提供此資訊但不能在資源呈現時共享。
 
 <!-- idempotent 的意思是如果相同的操作一再重複執行，結果還是跟第一遍的結果一樣，根據 HTTP 的規格，只有 POST、PATCH、CONNECT 不是 idempotent，POST 再執行一遍，會再新增一筆資料，PATCH 則是有不能保證 idempotent 的可能性。Idempotent 特性，則是會影響可否 Retry。 -->
 
@@ -61,7 +62,7 @@ HTTP 1.1 定義了以下一系列的常見的 methods，為了分離 clients 和
 
 > Request methods can be defined as "cacheable" to indicate that responses to them are allowed to be stored for future reuse; for specific requirements see [RFC7234](https://tools.ietf.org/html/rfc7234).  In general, safe methods that do not depend on a current or authoritative response are defined as cacheable; this specification defines GET, HEAD, and POST as cacheable, although the overwhelming majority of cache implementations only support GET and HEAD.
 
-Request methods 可以被 cache 並允許儲存作為未來重複使用的規定在於 [RFC7234](https://tools.ietf.org/html/rfc7234)。一般來說，safe methods 跟 cacheable 沒有絕對關聯，在規格中定義了 GET, HEAD, and POST 可以被 cache，但大多數的 cache 指支援 GET 和 HEAD。
+當 Request methods 可以被 cache 並允許儲存作為未來重複使用就叫 Cacheable Methods，規範在 [RFC7234](https://tools.ietf.org/html/rfc7234)。一般來說，多數的 cache 指支援 GET 和 HEAD，但 Safe Methods 跟 Cacheable Methods 沒有絕對關係。
 
 ### Compare GET vs. POST
 
@@ -72,7 +73,6 @@ Request methods 可以被 cache 並允許儲存作為未來重複使用的規定
 * GET 應該只被用在取得資料
 * GET 有資料長度的限制，因為 URL 的長度最大只資源 2048 characters。
 * GET 參數會顯示在 URL 上，反之 POST 不會。
-<!-- 如果用 HTTP GET 來傳送密碼，會被記錄在 log -->
 
 資料來源: [w3c school - HTTP Methods: GET vs. POST](https://www.w3schools.com/tags/ref_httpmethods.asp)
 
@@ -85,6 +85,10 @@ Request methods 可以被 cache 並允許儲存作為未來重複使用的規定
 <!-- 不被加入書籤 -->
 <!-- 應該被記錄在 server log 的參數資訊，沒被 log 住 -->
 <!-- 違反 HTTP 協定的定義，無法切割 Client 和 Server 之間的相依性。 -->
+
+* 反之，應該用 HTTP POST 來傳的參數，用 HTTP GET 來傳，會導致什麼問題？
+
+<!-- 如果用 HTTP GET 來傳送密碼，會被記錄在 log -->
 
 ### Compare PUT vs. PATCH
 
@@ -126,7 +130,7 @@ Request methods 可以被 cache 並允許儲存作為未來重複使用的規定
 1. 服務器不再被強制要求處理所有 `Content-*` 請求頭內容
 1. PUT請求頭禁止使用Content-Range
 1. 如果引用頁不存在，建議在請求頭裡使用 about:blank 這個URI，以便對「沒有引用頁」和「我不想發送引用頁」加以區別
-1. 狀態碼 204, 404, 405, 414 和501現在可以緩存了（cachable）
+1. 狀態碼 204, 404, 405, 414 和 501 現在可以緩存了（cachable）
 1. 狀態碼 301 和 302 現在允許用戶代理（user-agent）將請求方式從POST改為GET。雖然原標準不允許，但人們其實早就在這樣做了，標準適應現實，這是個很好的例子。
 1. 請求頭的 Location 現在可以包含相對URI和片段標識符（fragment identifiers）
 1. Content-MD5 被移除
