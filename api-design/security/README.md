@@ -10,24 +10,21 @@
 
 * [電子商務賣家一定要懂的個資法,Information Security 資安人科技網](http://www.informationsecurity.com.tw/article/article_detail.aspx?tv=&aid=6121&pages=2)
 
-### Session vs. Cookie
-
-
 ### 建議的做法
 
 * 任何透過網路的傳輸，都使用 HTTPS
-  * 防止 MITM
+  * 防止 [MITM (中間人攻擊)]((https://zh.wikipedia.org/wiki/%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB))
 * 永遠檢查使用者輸入值
-  * 防止 Injection Flaws - SQL Injection
-  * 防止 XSS
+  * 防止 [SQL Injection](https://www.owasp.org/index.php/SQL_Injection)
+  * 防止 [XSS (跨網站指令碼)](https://zh.wikipedia.org/wiki/%E8%B7%A8%E7%B6%B2%E7%AB%99%E6%8C%87%E4%BB%A4%E7%A2%BC)
 * 情況允許的話。檢查 Referer 欄位
-  * 防止 CSRF - 僅內部使用的 API Referer 應該有固定 domain 的 pattern。
-<!-- Auth every request + no sessions = no XSRF attacks -->
+  * 防止 [CSRF (跨站請求偽造)](https://zh.wikipedia.org/wiki/%E8%B7%A8%E7%AB%99%E8%AF%B7%E6%B1%82%E4%BC%AA%E9%80%A0)
+  * 僅內部使用的 API Referer 應該有固定 domain 的 pattern。
 * 使用可靠的 security libraries
   * 已經內建一些機制
 * 用 API key 的機制取代 Username / Password 機制
-* 盡量不使用 cookie 作為驗證機制，例如「記住我功能」。如果一定要用 cookie，請用短時效 cookie。
-* 在 Submit Form 中加入隨機亂數，並在處理表單時進行驗證。
+* 盡量不使用 cookie 作為驗證機制，如果一定要用 cookie，請用短時效 cookie。
+<!-- Auth every request + no sessions = no XSRF attacks -->
 
 ### 延伸閱讀
 

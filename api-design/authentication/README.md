@@ -15,7 +15,7 @@
 
 ### API Keys vs. Username/Password 驗證
 
-* 獨立 (Independence)
+* 可獨立存在 (Independence)
 * 速度 (Speed)
 * 減少暴露 (Reduced Exposure)：每暴露一次，就多一次機會有可能被側錄。
 * 可追蹤 (Traceability)

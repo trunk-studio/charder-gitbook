@@ -80,23 +80,19 @@
 * [基本認證](api-design/authentication/basic.md)
 * [session 認證](api-design/authentication/session.md)
 * [API 認證設計 - JWT](api-design/authentication/jwt.md)
-* [回顧](api-design/review.md)
+* [補充 - HTTP methods](api-design/mise/http-methods.md)
+* [補充](api-design/mise/README.md)
 
-## 補充基礎知識
-
-* [HTTP methods](api-design/mise/http-methods.md)
+<!-- * [API 安全](api-design/security/README.md) -->
 
 <!--
-* [API 安全](api-design/security/README.md)
 * [XSS 攻擊](api-design/security/attack/xss.md)
-* [DDOS 攻擊](api-design/security/attack/dos.md)
-* [MITM 攻擊](api-design/security/attack/mitm.md)
+* [DOS 攻擊](api-design/security/attack/dos.md)
 * [CSRF 攻擊](api-design/security/attack/csrf.md)
 * [SQL Injection](api-design/security/attack/sql-injection.md)
  -->
 
 <!--
-* [API 管理](api-design/management/README.md)
 * [補充](api-design/mise/README.md)
 * [GraphQL](api-design/graphql/README.md)
 -->

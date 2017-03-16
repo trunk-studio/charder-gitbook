@@ -1,48 +1,49 @@
 # 補充
 
-* API 應該是 stateless，也就是一項工作單元不應由二個或二個以上 API 組成。
-* REST API 所呈現的資源，是從應用面及 client 角度來思考，並不需要和後端的資源儲存形式（例如資料庫schema）維持一對一的關係。
-* XML-RPC -> SOAP -> RESTful API -> GraphQL
-
-API testing
-API mock
-
-### The future of API design: The orchestration layer
-
-* LSUDs（Large set of Unknown Developers）：網站設計出來的 API 是直接給大眾使用的，並沒有分族群
-* SSKDs（Small set of Known Developers）：設計 API 的人清楚知道是哪些程式設計師要來使用這個 API，所以會為這些人量身打造適合他們使用的 API。
-
-http://www.danieljacobson.com/blog/306
-
-
-### "API FIRST" development
-
-* Build your REST platform first.
-* Rest platform must be "stateless"
-* Your first "app" should be the API test.
-* Build your app or website on top of the those API's.
-
-### Why "API-FIRST" ?
-
-### SSO
-
 ### Atomic (原子性)
 
-不能用兩個(或以上)的 API 呼叫去完成一個動作，每一個動作都必需是 atomic，一個完整執行後的 API call 不能讓伺服器端數據停留在不一致的狀態。例如 User A 轉帳 100 給 User B 付錢買火車票。
+* 一個完整的動作不應由二個或二個以上API組成，每一個動作都必需是 Atomic，一個完整執行後的 API 呼叫，不能讓伺服器端資料停留在不一致的狀態。
 
-post timestamp 也是要存進 redis 或資料庫中囉？ Yes, 放 Redis 就行了，設個 5 分鐘即可。也不用開保護，通常真的遺失也沒關係。
-如何測試 atomic api -> 應該是由商業邏輯來定義，所以在談 user requirement 中，會需要不斷的問客戶問題！ex: 轉帳轉到一半斷線的話怎麼辦？
-
-API應該是 stateless，也就是一項工作單元不應由二個或二個以上API組成。這也引申出一個有趣的問題：REST API 如何支援transaction
-
-兩個不同的 API 應該要怎麼實踐
+<!-- 例如 User A 轉帳 100 給 User B 付錢買火車票。 -->
+<!-- 但不代表，要把兩個 request api get 結合在一起，我們有 cache 機制。 -->
+<!-- 重點在於若兩個 request，其中一個失敗了，會不會導致資料狀態不全。 -->
+<!-- 如何測試 atomic api -> 應該是由商業邏輯來定義，所以在談 user requirement 中，會需要不斷的問客戶問題！ex: 轉帳轉到一半斷線的話怎麼辦？ -->
 
 ### 處理重複的 request
 
-伺服器端要懂如何處理重複的 request 用 POST 建立新物件時，把客戶端的 timestamp 也放進 API request 中。就可以讓伺服器端辨別是不是收到重複的 HTTP POST。
+server 要懂如何處理重複的 post request，在用 POST 建立新物件時，client 端要把 timestamp 也放進 API request 中，這樣 server 端就可以辨別是不是收到重複的 post request。
+
+<!--
+post timestamp 也是要存進 redis 或資料庫中囉？ Redis 就行了，設個 5 分鐘即可。也不用開保護，通常真的遺失也沒關係。
+-->
 
 ### 不要把 API 設計成 DB 一對一的 CRUD
 
-應該要以前台的角度去思考 Resource 定義。
+REST API 所呈現的資源，是從應用面 client 角度來思考，不需要和後端的資源儲存形式（例如資料庫schema）維持一對一的關係。
 
-REST API所呈現的資源，是從應用面及client角度來思考，並不需要和後端的資源儲存形式（例如資料庫schema）維持一對一的關係。
+### 為什麼 API 設計的基本知識對你很重要?
+
+**PM**
+<!--
+* 了解整個 API 的設計運作過程，降低與 RD 的觀念上的差距。
+* 為什麼 API 不能草率設計？
+* 為什麼要版本控制？
+* 為什麼 RD 堅持要我申請 HTTPS？
+* 瞭解安全性的重要性
+ -->
+
+**前端工程師**
+
+<!--
+* API 是 application process interface，代表是前端跟後端的溝通。
+* 需求是由前端開出，當瞭解了後端實作需要的東西時，雙方討論才有基礎共識。
+ -->
+
+**後端工程師**
+<!--
+* 現在主流的設計方法
+* 如何突破系統的瓶頸
+* 注意實作要避免的細節
+* 學習怎麼跟 PM 解釋，PM 覺得不重要的東西其實很重要。
+* 安全性
+ -->

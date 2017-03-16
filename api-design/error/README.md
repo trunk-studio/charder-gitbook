@@ -81,6 +81,8 @@ Status Code:401 Unauthorized
 
 ### 錯誤追蹤工具
 
+<!--  主動式追 bug -->
+
 * [Rollbar - Error Tracking Software for Ruby, Python, JavaScript, more](https://rollbar.com/)
 * [Sentry.io - Track errors with modern exception logging for JavaScript, Python, Ruby, Java, and Node.js](https://sentry.io/welcome/)
 
@@ -111,6 +113,17 @@ rollbar.init("your-access-token", {
 
 rollbar.reportMessage("Hello world!");
 ```
+
+**問題**
+
+* 為什麼需要錯誤追蹤工具？
+
+<!--
+* Error 淹沒在一堆 log 中不好查，甚至可能被洗掉了。
+* log 裡面記錄的東西資訊很少，又沒有很好的介面可以查詢。
+* 有些訊息應該被 client 端就被拋出，這樣才能完整的資訊。
+* 沒有整合通知
+ -->
 
 ### 延伸閱讀
 
