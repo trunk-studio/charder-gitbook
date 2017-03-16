@@ -81,7 +81,7 @@
 * [session 認證](api-design/authentication/session.md)
 * [API 認證設計 - JWT](api-design/authentication/jwt.md)
 * [補充 - HTTP methods](api-design/mise/http-methods.md)
-* [補充](api-design/mise/README.md)
+* [補充 - 原子 / 無狀態](api-design/mise/README.md)
 
 <!-- * [API 安全](api-design/security/README.md) -->
 

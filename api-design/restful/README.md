@@ -256,7 +256,6 @@ get /users/1/todos
 /writetetestdietial -> post /stations/results
  -->
 
-
 ### 實踐 RESTful 的 API
 
 * [GitHub API v3 | GitHub Developer Guide](https://developer.github.com/v3/)
@@ -269,9 +268,3 @@ get /users/1/todos
 * [ihower App 開發基礎講義 - 給初學者的應用程式開發基礎知識](https://ihower.tw/cs/web-apis.html)
 * [GitHub - aisuhua/restful-api-design-references: RESTful API 设计参考文献列表，可帮助你更加彻底的了解REST风格的接口设计。](https://github.com/aisuhua/restful-api-design-references)
 * [IBM developerWorks - 基於 REST 的 Web 服務：基礎](http://www.ibm.com/developerworks/cn/webservices/ws-restful/)
-
-
-<!-- ### Best Practices
-
-* [mwaysolutions - 10 Best Practices for Better RESTful API](http://blog.mwaysolutions.com/2014/06/05/10-best-practices-for-better-restful-api/)
-https://blog.philipphauer.de/restful-api-design-best-practices/ -->
