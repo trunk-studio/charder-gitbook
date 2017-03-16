@@ -49,13 +49,21 @@
 * 每個 request 包含足夠的訊息
 * 任何一個 session 狀態，須由 client 自行處理。
 
+<!--
+不同的API呼叫之間是沒有前後文關係的，具有無狀態性。因為網路的不穩定性
+
+1. 每次的 Request 必須帶有足夠的資訊讓伺服器端可以處理，例如帶有 token 可以讓伺服器識別是哪一個用戶
+2. 每一個 Request 操作都必須是 atomic 的，不應該用兩個 requests 去完成一個應該一起完成或一起失敗的動作，就像 DB 的 transaction 一樣。
+ -->
+
 ### 可實作快取（Cacheable）
 
 快取機制可以在 Client 或 Server 中實作
 
 ### 分層架構（Layered System）
 
-每個組件只能看到與其交互的鄰層
+* 每個組件只能看到與其交互的鄰層
+* Load balancer
 
 ### 統一介面（Uniform Interface)
 

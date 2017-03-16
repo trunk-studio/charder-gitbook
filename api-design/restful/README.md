@@ -55,6 +55,11 @@ URL + HTTP methods = 唯一資源識別方法
 
 **如果某些動作是 HTTP 動詞表示不了的，你就應該把動作做成一種資源。**
 
+<!--
+動名詞(Gerunds)也算是名詞的一種, ex: /MoneyTransfers
+(POST) Create a “MoneyTransfers” object, 內容是把錢從 A 轉到 B
+ -->
+
 ```
 POST /accounts/1/transfer/500/to/2
 ```
@@ -67,6 +72,10 @@ Host: 127.0.0.1
 　　
 from=1&to=2&amount=500.00
 ```
+
+**如果 API 有多個 table 的關聯**
+
+* 把它當成獨立的 Resource
 
 **操作非 Resource (Utility API)時，使用動詞。**
 

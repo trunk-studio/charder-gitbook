@@ -14,12 +14,6 @@
   * [Apiary demo](http://docs.pandurangpatil.apiary.io/#reference/user/user-collection/list-all-users?console=1)
   * 以 [Markdown](https://zh.wikipedia.org/wiki/Markdown) 格式撰寫
 
-  <!--
-  以臺中交通資訊API為例，哪些地方有改善的空間？
-  版號管理
-  參數風格不一致
-  -->
-
 **延伸閱讀**
 
 * [Markdown editing with Visual Studio Code](https://code.visualstudio.com/Docs/languages/markdown)
@@ -59,7 +53,14 @@
 
 * 從瀏覽器以視覺化的方式，測試以 Swagger 定義的 REST API。
 * 內建的測試功能，可讓您以圖形方式來探索 API、測試 API 和檢查結果。
-* 對應到 ide 下載的 Generate Server code
+
+**自訂Swagger UI 頁面**
+
+1. 先抓 source code [Github - swagger-ui](https://github.com/swagger-api/swagger-ui)
+1. 將編譯好的 swagger.json 放置在 dist 目錄下
+1. index.html 裡可以設定語系
+1. 更改 index.html 下的 url 改成自己的檔案位置 http://www.your-domain/swagger.json
+1. 將 dist 整個資料夾部署到 http server
 
 ### Swagger CodeGen
 
@@ -83,7 +84,7 @@ java -jar modules/swagger-codegen-cli/target/swagger-codegen-cli.jar generate -i
 
 * [Server stub generator HOWTO · swagger-api/swagger-codegen Wiki · GitHub](https://github.com/swagger-api/swagger-codegen/wiki/Server-stub-generator-HOWTO#nodejs)
 
-### 如何開始
+### 若完全無 API 的狀態，從何開始？
 
 * 先用 IDE 編寫好 Swagger definition
 * 之後匯出 JSON 檔
@@ -91,7 +92,9 @@ java -jar modules/swagger-codegen-cli/target/swagger-codegen-cli.jar generate -i
 
 ### Swagger 文件說明 (specification)
 
-[Swagger  Specification](http://swagger.io/specification/)
+* [Swagger  Specification](http://swagger.io/specification/)
+* [Swagger API文档编写格式指南 | 研发100](http://120.26.63.93/topic/4/swagger-api%E6%96%87%E6%A1%A3%E7%BC%96%E5%86%99%E6%A0%BC%E5%BC%8F%E6%8C%87%E5%8D%97)
+
 
 **必要的欄位**
 
@@ -131,7 +134,6 @@ securityDefinitions:
       read_pets: read your pets
 ```
 
-
 <!-- ### 好處 / 優點 -->
 
 ### Swagger Hub
@@ -159,10 +161,10 @@ securityDefinitions:
 
 ### 延伸閱讀
 
+* [SwaggerHub and Open Source Comparison](https://swaggerhub.com/swagger-open-source-comparison/)
 * [API & SDK Design #4, API 上線前的準備 - Swagger + Azure API Apps · 安德魯的部落格](http://columns.chicken-house.net/2016/11/27/microservice6/)
 * [Swagger - Rest API 的描述語言](https://zhuanlan.zhihu.com/p/21353795)
 [使用 Swagger 文档化和定义 RESTful * API](http://www.ibm.com/developerworks/cn/web/wa-use-swagger-to-document-and-define-restful-apis/index.html)
-* [Swagger API文档编写格式指南 | 研发100](http://120.26.63.93/topic/4/swagger-api%E6%96%87%E6%A1%A3%E7%BC%96%E5%86%99%E6%A0%BC%E5%BC%8F%E6%8C%87%E5%8D%97)
 * [Swagger入门教程 - JoiT - 博客园](http://www.cnblogs.com/JoiT/p/6378086.html)
 * [Swagger tutorial | I’d Rather Be Writing](http://idratherbewriting.com/pubapis_swagger/)
 * [GitHub - typicode/jsonplaceholder: A simple online fake REST API server](https://github.com/typicode/jsonplaceholder)

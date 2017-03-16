@@ -73,16 +73,30 @@
 * [API 設計概念](api-design/README.md)
 * [REST 設計理念與架構](api-design/rest/README.md)
 * [RESTful 建議設計方式](api-design/restful/README.md)
-* [補充 - HTTP methods](api-design/mise/http-methods.md)
-* [API 例外狀況處理](api-design/error/README.md)
-* [API 版本管理](api-design/version/README.md)
 * [建立現代化的 API 文件 with Swagger](api-design/document/README.md)
-* [API 安全](api-design/security/README.md)
-* [認證 - 基本認證](api-design/security/basic-auth/README.md)
-* [認證 - JWT](api-design/security/jwt/README.md)
-* [API 管理](api-design/management/README.md)
+* [API 錯誤處理](api-design/error/README.md)
+* [API 版本管理](api-design/version/README.md)
+* [設計認證基礎](api-design/authentication/README.md)
+* [基本認證](api-design/authentication/basic.md)
+* [session 認證](api-design/authentication/session.md)
+* [API 認證設計 - JWT](api-design/authentication/jwt.md)
+* [回顧](api-design/review.md)
+
+## 補充基礎知識
+
+* [HTTP methods](api-design/mise/http-methods.md)
 
 <!--
+* [API 安全](api-design/security/README.md)
+* [XSS 攻擊](api-design/security/attack/xss.md)
+* [DDOS 攻擊](api-design/security/attack/dos.md)
+* [MITM 攻擊](api-design/security/attack/mitm.md)
+* [CSRF 攻擊](api-design/security/attack/csrf.md)
+* [SQL Injection](api-design/security/attack/sql-injection.md)
+ -->
+
+<!--
+* [API 管理](api-design/management/README.md)
 * [補充](api-design/mise/README.md)
 * [GraphQL](api-design/graphql/README.md)
 -->
