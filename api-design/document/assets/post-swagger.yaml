@@ -31,6 +31,7 @@ paths:
   /posts:
     get:
       description: 取得所有 post 資料
+      # 定義你的 responses （必填）
       responses:
         '200':
           description: 成功回應
@@ -50,11 +51,18 @@ paths:
           in: body
           description: Pet to add to the store
           required: true
+          # 當 in 得值為 body 時，schema 為必填
           schema:
             $ref: '#/definitions/newPost'
       responses:
         '200':
           description: 成功回應
+          examples:
+            application/json:
+              id: 1
+              userId: 123
+              title: your title
+              body: your content
           schema:
             $ref: '#/definitions/post'
         default:
@@ -70,6 +78,7 @@ paths:
           in: path
           description: post 的 id
           required: true
+           # 當 in 得值非 body 時，type 為必填
           type: integer
           format: int64
       responses:
@@ -100,6 +109,7 @@ paths:
             $ref: '#/definitions/errorModel'
 
 
+# 定義 model-view schema
 definitions:
 
   post:

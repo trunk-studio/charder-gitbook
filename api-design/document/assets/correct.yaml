@@ -1,0 +1,60 @@
+# Example YAML to get you started quickly.
+# Be aware that YAML has indentation based scoping.
+# Code completion support is available so start typing for available options.
+swagger: '2.0'
+
+# This is your document metadata
+info:
+  version: "0.0.1"
+  title: Scale test API
+
+# Describe your paths here
+paths:
+  # This is a path endpoint. Change it.
+  /login:
+    # This is a HTTP operation
+    post:
+      # Describe this verb here. Note: you can use markdown
+      description: |
+        使用者登入機制
+      # This is array of GET operation parameters:
+      parameters:
+        # An example parameter that is in query and is required
+        - name: loginModel
+          in: body
+          description: login model data
+          required: true
+          schema:
+            $ref: '#/definitions/loginModel'
+
+      # Expected responses for this operation:
+      responses:
+        # Response code
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
+          schema:
+            $ref: '#/definitions/errorModel'
+definitions:
+  loginModel:
+    type: object
+    required:
+      - account
+      - password
+    properties:
+      account:
+        type: string
+      password:
+        type: string
+  errorModel:
+    type: object
+    required:
+      - code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+      message:
+        type: string

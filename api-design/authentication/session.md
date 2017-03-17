@@ -1,5 +1,7 @@
 # Session 認證
 
+<!-- 有架構圖在 assets 目錄裡 -->
+
 ### 缺點
 
 * 通常 Session 都是保存在伺服器記憶體中，隨著 Session 的增長，server 的 loading 會明顯增長。

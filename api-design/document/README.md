@@ -164,7 +164,7 @@ securityDefinitions:
 * [SwaggerHub and Open Source Comparison](https://swaggerhub.com/swagger-open-source-comparison/)
 * [API & SDK Design #4, API 上線前的準備 - Swagger + Azure API Apps · 安德魯的部落格](http://columns.chicken-house.net/2016/11/27/microservice6/)
 * [Swagger - Rest API 的描述語言](https://zhuanlan.zhihu.com/p/21353795)
-[使用 Swagger 文档化和定义 RESTful * API](http://www.ibm.com/developerworks/cn/web/wa-use-swagger-to-document-and-define-restful-apis/index.html)
+* [使用 Swagger 文档化和定义 RESTful  API](http://www.ibm.com/developerworks/cn/web/wa-use-swagger-to-document-and-define-restful-apis/index.html)
 * [Swagger入门教程 - JoiT - 博客园](http://www.cnblogs.com/JoiT/p/6378086.html)
 * [Swagger tutorial | I’d Rather Be Writing](http://idratherbewriting.com/pubapis_swagger/)
 * [GitHub - typicode/jsonplaceholder: A simple online fake REST API server](https://github.com/typicode/jsonplaceholder)

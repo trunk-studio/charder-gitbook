@@ -1,0 +1,165 @@
+# swagger 的版本 (必填)
+swagger: '2.0'
+
+# 定義基本資訊 (必填)
+info:
+  version: '1.0.0'
+  title: Fake Online REST API
+  description: 這是一個假的 API 文件範例
+  contact:
+    name: 劉艾霖
+    email: alincode@gmail.com
+    url: http://alincode.github.io/blog
+
+host: e-traffic.taichung.gov.tw
+
+basePath: /DataAPI/api
+
+schemes:
+  - http
+  - https
+
+consumes:
+  - application/json
+
+produces:
+  - application/json
+
+# 定義你的 Paths (必填)
+paths:
+
+  /BusDynamicAPI/{id}:
+    get:
+      description: 取得公車動態位置
+      parameters:
+        - name: id
+          in: path
+          description: 路線編號
+          required: true
+          type: integer
+        - name: direction
+          in: query
+          description: 去回(0-去程，1-回程)
+          required: true
+          type: string
+
+      # 定義你的 responses （必填）
+      responses:
+        '200':
+          description: 成功回應
+          schema:
+            $ref: '#/definitions/BusDynamic'
+            
+  /BusRouteAPI/{id}:
+    get:
+      description: 取得公車路線清單
+      parameters:
+        - name: id
+          in: path
+          description: 路線編號
+          required: true
+          type: integer
+        - name: direction
+          in: query
+          description: 去回(0-去程，1-回程)
+          required: true
+          type: string
+      responses:
+        '200':
+          description: 成功回應
+          schema:
+            $ref: '#/definitions/BusRoute'
+
+
+# 定義 model-view schema
+definitions:
+
+  BusDynamic:
+    type: object
+    required:
+      - RouteID
+      - Direction
+      - Dynamic
+    properties:
+      RouteID:
+        type: integer
+        format: int64
+      Direction:
+        type: integer
+        format: int64
+      Dynamic:
+        type: array
+        items:
+          $ref: '#/definitions/Dynamic'
+        
+  Dynamic:
+    type: object
+    required:
+      - PlateNumb
+      - GPS_Time
+      - X
+      - Y
+    properties:
+      PlateNumb:
+        type: string
+      GPS_Time:
+        type: string
+      X:
+        type: string
+      Y:
+        type: string
+   
+  BusRoute:
+    type: object
+    required:
+      - RouteID
+      - Direction
+      - Stops
+    properties:
+      RouteID:
+        type: integer
+        format: int64
+      Direction:
+        type: integer
+        format: int64
+      Stops:
+        type: array
+        items:
+          $ref: '#/definitions/Stops'
+
+  Stops:
+    type: object
+    required:
+      - StopSequence
+      - StopID
+      - StopName
+      - X
+      - Y
+      - PlateNumb
+      - EstimateTime
+      - NextBusTime
+      - SourceDateTime
+    properties:
+      StopSequence:
+        type: integer
+        format: int64
+      StopID:
+        type: integer
+        format: int64
+      StopName:
+        type: string
+      X:
+        type: string
+      Y:
+        type: string
+      PlateNumb:
+        type: string
+      EstimateTime:
+        type: integer
+        format: int64
+      NextBusTime:
+        type: string
+      SourceDateTime:
+        type: string
+        
+        
