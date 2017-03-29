@@ -18,7 +18,6 @@
 | bower | 前端 JS | 扁平化 |
 | npm   | 後端 JS | 樹狀  |
 
-
 **安裝 bower**
 
 ```
@@ -27,16 +26,28 @@ npm install bower -g
 
 ### 常用指令
 
+* [API · Bower](https://bower.io/docs/api/)
+
 ```
 bower init
 bower install
 bower install bootstrap
+// 離線安裝
+bower install bootstrap --offline
 bower uninstall bootstrap
 bower update bootstrap
 bower search bootstrap
+bower lookup bootstrap
 bower list
 bower -help
 bower -v
+```
+
+#### cache
+
+```
+bower cache list
+bower cache clean
 ```
 
 ### bower.json
