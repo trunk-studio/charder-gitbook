@@ -86,6 +86,7 @@
 ## JS 常用工具
 
 * [NPM](js/tools/npm.md)
+* [Bower](js/tools/bower.md)
 
 <!-- * [API 安全](api-design/security/README.md) -->
 
