@@ -1,5 +1,8 @@
 # NPM
 
+* [npm - 維基百科，自由的百科全書](https://zh.wikipedia.org/wiki/Npm)
+* [NPM - npm is the package manager for JavaScript ](https://www.npmjs.com/)
+
 <svg viewBox="0 0 18 7">
 	<path fill="#CB3837" d="M0,0v6h5v1h4v-1h9v-6"></path>
 	<path fill="#FFF" d="M1,1v4h2v-3h1v3h1v-4h1v5h2v-4h1v2h-1v1h2v-4h1v4h2v-3h1v3h1v-3h1v3h1v-4"></path>
@@ -11,11 +14,6 @@
 **使用情境**
 
 * 管理專案中使用的錯綜複雜的外部套件，主要以後端和工具為主。
-
-**參考資料**
-
-* [npm - 維基百科，自由的百科全書](https://zh.wikipedia.org/wiki/Npm)
-* [NPM - npm is the package manager for JavaScript ](https://www.npmjs.com/)
 
 ## 查看常用指令
 
@@ -215,7 +213,6 @@ prefix = "/Users/ailinliu/.nvm/versions/node/v6.9.4"
 
 1. 使用 `npm init` 指令新增一個專案
 1. 設定環境變數，將初始化作者信箱 `init-author-email` 跟初始化作者名稱 `init-author-name`，改成專屬於自己的值，並新增一個專案。
-1. 
 
 ### 更新 NPM 到最新版
 
@@ -226,9 +223,9 @@ prefix = "/Users/ailinliu/.nvm/versions/node/v6.9.4"
 npm install npm@latest -g
 ```
 
-<!--
+### 參考資料
+
 * [npm 基本用法和实用技巧](https://github.com/theicebear/npm-basic-usage)
--->
 
 
 <!-- 還可以再新增一在發佈 npm 的教材 -->
