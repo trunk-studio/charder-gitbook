@@ -47,6 +47,42 @@
 * CSS Variable、Mixin、Module、Object-Orientation
 * Sass - Syntactically Awesome Stylesheets
 
+**API 設計 (9小時)**
+
+* API 基本設計概念
+* REST 設計理念與架構
+* RESTful 建議設計方式
+* 建立現代化的 API 文件 with Swagger
+* API 錯誤處理與版本管理
+* 設計認證基礎
+* JWT
+
+**JS 常用工具**
+
+* NPM 工具介紹
+* Bower 工具介紹
+
+**JavaScript 基礎課程**
+
+* JavaScript 程式設計基礎
+* this, call, apply, function, callback, closure, for-each …
+
+**JavaScript 進階課程**
+
+* JavaScript MapReduce
+* JavaScript ES6 新語法實務
+* arrow function, async/await, let, …
+* JavaScript Promise 流程控制實務
+
+**NodeJS 課程**
+
+* Node.js
+* JavaScript 資料庫存取 - 使用 Sequalize.js
+* Sails.js MVC 網站開發框架
+* Sails.js RESTful API 程式實作
+* 自動化建置與測試 - 使用 Gulp 與 Grunt 工具
+* JavaScript 後端自動化測試 - 使用 Mocha 框架
+
 **JQuery課程**
 
 * JQuery 前端互動式網頁設計
@@ -68,43 +104,8 @@
 * Web 自動化測試 - 使用 WebDriverIO 框架
 * 行動裝置自動化測試 - 使用 Appium 框架
 
-**JavaScript 基礎課程**
-
-* JavaScript 程式設計基礎
-* this, call, apply, function, callback, closure, for-each …
-
-**JavaScript 進階課程**
-
-* JavaScript MapReduce
-* JavaScript ES6 新語法實務
-* arrow function, async/await, let, …
-* JavaScript Promise 流程控制實務
-
-**NodeJS 課程**
-
-* Node.js 與 NPM 工具簡介
-* JavaScript 資料庫存取 - 使用 Sequalize.js
-* Sails.js MVC 網站開發框架
-* Sails.js RESTful API 程式實作
-* 自動化建置與測試 - 使用 Gulp 與 Grunt 工具
-* JavaScript 後端自動化測試 - 使用 Mocha 框架
-
 **資安課程**
 
 * 預防 SQL Injection 與 XSS 攻擊的網站程式設計
 * Linux / UNIX 網路與資安防護工具基礎
 
-**API 設計 - 第一週**
-
-* 介紹什麼是 API
-* API 生命週期
-* Web API 兩大設計主流介紹
-* REST 的設計理念與架構
-* RESTful 常見慣例
-
-**API 設計 - 第二週**
-
-* 建立現代化的 API 文件
-* Postman
-* API 安全
-* API 未來展望
