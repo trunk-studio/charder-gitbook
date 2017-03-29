@@ -2,8 +2,6 @@
 
 * 前端套件管理工具
 * 預設目錄在 bower_components
-* bower.json
-* .bowerrc
 
 <!-- bowerbrid -->
 
@@ -69,6 +67,14 @@ bower cache clean
     'test',
     'tests'
   ]
+}
+```
+
+### .bowerrc
+
+```json
+{
+  "directory": "app/lib"
 }
 ```
 
