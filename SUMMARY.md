@@ -88,6 +88,11 @@
 * [NPM](js/tools/npm.md)
 * [Bower](js/tools/bower.md)
 
+## JS 程式設計
+
+* [變數](js/foundation/var.md)
+* [callback](js/foundation/callback.md)
+
 <!-- * [API 安全](api-design/security/README.md) -->
 
 <!--
