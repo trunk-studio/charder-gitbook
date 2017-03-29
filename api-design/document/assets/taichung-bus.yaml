@@ -4,7 +4,7 @@ swagger: '2.0'
 # 定義基本資訊 (必填)
 info:
   version: '1.0.0'
-  title: Fake Online REST API
+  title: 假的台中巴士 API
   description: 這是一個假的 API 文件範例
   contact:
     name: 劉艾霖
@@ -49,7 +49,7 @@ paths:
           description: 成功回應
           schema:
             $ref: '#/definitions/BusDynamic'
-            
+
   /BusRouteAPI/{id}:
     get:
       description: 取得公車路線清單
@@ -91,7 +91,7 @@ definitions:
         type: array
         items:
           $ref: '#/definitions/Dynamic'
-        
+
   Dynamic:
     type: object
     required:
@@ -108,7 +108,7 @@ definitions:
         type: string
       Y:
         type: string
-   
+
   BusRoute:
     type: object
     required:
@@ -161,5 +161,3 @@ definitions:
         type: string
       SourceDateTime:
         type: string
-        
-        
