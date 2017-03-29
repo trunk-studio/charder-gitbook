@@ -8,6 +8,10 @@
 * 全名叫 Node Package Manager 是 Node.js 預設的軟體套件管理系統。但現在不只有 Node.js 的套件會放在上面，基本已經變成了 JS Open Source 軟體套件集散地。
 * 只要是 Public packages，使用者都可以免費發佈在 NPM。
 
+**使用情境**
+
+* 管理專案中使用的錯綜複雜的外部套件，主要以後端和工具為主。
+
 **參考資料**
 
 * [npm - 維基百科，自由的百科全書](https://zh.wikipedia.org/wiki/Npm)
@@ -32,18 +36,6 @@ npm -l
 npm -v
 ```
 
-**查看全域 NPM 的配置**
-
-```
-npm config list -l
-```
-
-**查看使用者 NPM 的配置**
-
-```
-npm config list
-```
-
 ## 初始化 NPM
 
 語法
@@ -61,47 +53,53 @@ npm init -f
 * 如果你加了 `-y` 或 `-f` 參數，代表你將認同使用預設的設定值來產生 `package.json` 檔。
 * [init | nam Documentation](https://docs.npmjs.com/cli/init)
 
-### package.json
-
-<!-- 
-說明 package 的用途 -->
-
-```
-{
-  "name": "xx",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "nodemon": "^1.11.0"
-  },
-  "devDependencies": {
-    "mocha": "^1.11.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "alincode <alincode@gmail.com>",
-  "license": "ISC"
-}
-```
-
 ## 設置環境變數
 
+**設定**
+
+* config 關鍵字可省略
+
 ```
-npm set init-author-name 'alincode'
-npm set init-author-email 'alincode@gmail.com'
-npm set init-author-url 'http://yourdomain.com'
-npm set init-license 'MIT'
+npm config set init-author-name 'alincode'
+npm config set init-author-email 'alincode@gmail.com'
+npm config set init-author-url 'http://yourdomain.com'
+npm config set init-license 'MIT'
 
 // 鎖死版本號
-npm set save-exact true
+npm config set save-exact true
 ```
 
-<!--
+**取得**
+
+* config 關鍵字可省略
+
+```
+npm config get init-author-name
+```
+
+**刪除**
+
+npm config delete init-author-name
+
+**查看全域 NPM 的配置**
+
+```
+npm config list -l
+```
+
+**查看使用者 NPM 的配置**
+
+```
 npm config list
--->
+```
+
+**在編輯器開啟設定檔**
+
+```
+npm config edit
+npm config edit -g
+npm config edit --global
+```
 
 ### 搜尋套件
 
@@ -155,7 +153,7 @@ npm install --save nodemon
 npm install -S nodemon
 
 // 安裝到專案，並將依賴寫入至 devDependencies
-npm install --dev-save nodemon
+npm install --save-dev nodemon
 npm install --D nodemon
 
 // version or tag
@@ -185,6 +183,23 @@ NODE_ENV=production npm install
 npm uninstall -g nodemon
 npm uninstall --save nodemon
 npm uninstall --dev-save nodemon
+```
+
+### 更新套件
+
+* 它會先到 remote repo 確認最新版本，然後確認 local 版本，如果 local 版本不存在，或 remote repo 版本較新，就會開始安裝套件。
+
+```
+npm update
+npm update nodemon
+```
+
+### 連結套件
+
+<!--使用在安裝放在 local 的套件 -->
+
+```
+npm link sandbox /Users/ailinliu/sandbox-module
 ```
 
 ### 解決全域安裝權限問題
