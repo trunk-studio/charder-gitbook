@@ -65,14 +65,22 @@
 **JavaScript 基礎課程**
 
 * JavaScript 程式設計基礎
-* this, call, apply, function, callback, closure, for-each …
+  * 介紹
+  * 基本型別
+  * 變數作用域
+  * Nan
+  * Null vs undefined
+* 函示
+* 物件
+
+<!--* this, call, apply, function, callback, closure, for-each …-->
 
 **JavaScript 進階課程**
 
 * JavaScript MapReduce
 * JavaScript ES6 新語法實務
 * arrow function, async/await, let, …
-* JavaScript Promise 流程控制實務
+* Promise 流程控制實務
 
 **NodeJS 課程**
 
