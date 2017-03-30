@@ -22,11 +22,6 @@
 * [Upstream Pull Request: 跨檔案庫 Pull Request 操作](vcs/git/upstream-pull-request/README.md)
 * [Fork Upstream 編修衝突](vcs/git/fork-upstream-conflict/README.md)
 
-## Sails.js MVC 網站開發框架
-
-* [認識 Sails](sailsjs/README.md)
-* [安裝 Sails](sailsjs/install/README.md)
-
 ## HTML5 與 CSS3 基礎
 
 * [HTML5 入門](html5/README.md)
@@ -83,17 +78,29 @@
 * [補充 - HTTP methods](api-design/mise/http-methods.md)
 * [補充 - 原子 / 無狀態](api-design/mise/README.md)
 
-## JS 常用工具
+<!-- * [API 安全](api-design/security/README.md) -->
+
+## JavaScript 常用工具
 
 * [NPM](js/tools/npm.md)
+* [NPM package.json](js/tools/npm-package.md)
 * [Bower](js/tools/bower.md)
 
-## JS 程式設計
+## JavaScript 基礎課程
 
-* [變數](js/foundation/var.md)
-* [callback](js/foundation/callback.md)
+* [介紹](js/foundation/README.md)
+* [基本型別與變數](js/foundation/type-and-var.md)
+* [變數作用域](js/foundation/var-scope.md)
+* [Nan](js/foundation/nan.md)
+* [Null vs undefined](js/foundation/null-and-undefined.md)
+* [函示](js/foundation/function.md)
+* [Callback](js/foundation/callback.md)
 
-<!-- * [API 安全](api-design/security/README.md) -->
+<!--
+* [物件](js/foundation/object.md)
+* [Promise](js/foundation/promise.md)
+-->
+
 
 <!--
 * [XSS 攻擊](api-design/security/attack/xss.md)
