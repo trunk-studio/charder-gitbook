@@ -1,6 +1,6 @@
 # Bower
 
-* 前端套件管理工具
+* 是 Twitter 團隊開發的一套前端套件管理工具
 * 預設目錄在 bower_components
 
 <!-- bowerbrid -->
@@ -24,7 +24,7 @@ npm install bower -g
 
 ### 常用指令
 
-* [API · Bower](https://bower.io/docs/api/)
+* [Bower - Commands](https://bower.io/docs/api/)
 
 ```
 bower init
@@ -50,6 +50,8 @@ bower cache clean
 
 ### bower.json
 
+專案有關的配置
+
 ```json
 {
   name: 'xx',
@@ -72,9 +74,45 @@ bower cache clean
 
 ### .bowerrc
 
+環境有關的配置
+
+* directory
+* scripts
+
 ```json
 {
-  "directory": "app/lib"
+  "cwd": "~/.my-project",
+  "directory": "bower_components",
+  "registry": "https://bower.herokuapp.com",
+  "shorthand-resolver": "git://github.com//.git",
+  "proxy": "http://proxy.local",
+  "https-proxy": "http://proxy.local",
+  "ca": "/var/certificate.pem",
+  "color": true,
+  "timeout": 60000,
+  "save": true,
+  "save-exact": true,
+  "strict-ssl": true,
+  "storage": {
+    "packages" : "~/.bower/packages",
+    "registry" : "~/.bower/registry",
+    "links" : "~/.bower/links"
+  },
+  "interactive": true,
+  "resolvers": [
+    "mercurial-bower-resolver"
+  ],
+  "shallowCloneHosts": [
+    "myGitHost.example.com"
+  ],
+  "scripts": {
+    "preinstall": "",
+    "postinstall": "",
+    "preuninstall": ""
+  },
+  "ignoredDependencies": [
+    "jquery"
+  ]
 }
 ```
 
