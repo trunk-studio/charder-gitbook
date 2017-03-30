@@ -1,4 +1,4 @@
-# Package.json
+# NPM Package.json
 
 * [package.json | nam Documentation](https://docs.npmjs.com/files/package.json)
 * [package.json文件 — JavaScript 标准参考教程（alpha）](http://javascript.ruanyifeng.com/nodejs/packagejson.html)

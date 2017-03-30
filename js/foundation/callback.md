@@ -27,6 +27,8 @@ step2();
 
 <!-- 只印出 step2 -->
 
+**將函式傳給函式**
+
 ```js
 function step1(message, callback){
   console.log('step1');

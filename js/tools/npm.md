@@ -1,13 +1,12 @@
 # NPM
 
-* [npm - 維基百科，自由的百科全書](https://zh.wikipedia.org/wiki/Npm)
-* [NPM - npm is the package manager for JavaScript ](https://www.npmjs.com/)
-
 <svg viewBox="0 0 18 7">
 	<path fill="#CB3837" d="M0,0v6h5v1h4v-1h9v-6"></path>
 	<path fill="#FFF" d="M1,1v4h2v-3h1v3h1v-4h1v5h2v-4h1v2h-1v1h2v-4h1v4h2v-3h1v3h1v-3h1v3h1v-4"></path>
 </svg>
 
+* [npm - 維基百科，自由的百科全書](https://zh.wikipedia.org/wiki/Npm)
+* [NPM - npm is the package manager for JavaScript ](https://www.npmjs.com/)
 * 全名叫 Node Package Manager 是 Node.js 預設的軟體套件管理系統。但現在不只有 Node.js 的套件會放在上面，基本已經變成了 JS Open Source 軟體套件集散地。
 * 只要是 Public packages，使用者都可以免費發佈在 NPM。
 
@@ -36,20 +35,22 @@ npm -v
 
 ## 初始化 NPM
 
-語法
+* 如果你加了 `-y` 或 `-f` 參數，代表你將認同使用預設的設定值來產生 `package.json` 檔。
+* [init | nam Documentation](https://docs.npmjs.com/cli/init)
+
+**語法**
 
 ```
 npm init [-f|--force|-y|--yes]
 ```
+
+**範例**
 
 ```
 npm init
 npm init -y
 npm init -f
 ```
-
-* 如果你加了 `-y` 或 `-f` 參數，代表你將認同使用預設的設定值來產生 `package.json` 檔。
-* [init | nam Documentation](https://docs.npmjs.com/cli/init)
 
 ## 設置環境變數
 
