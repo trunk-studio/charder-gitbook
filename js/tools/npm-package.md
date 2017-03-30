@@ -5,7 +5,6 @@
 
 <!-- 
 * 說明 package.json 的用途
-* 示範有 package.json 跟沒有時，npm install 的差異。
 -->
 
 ```

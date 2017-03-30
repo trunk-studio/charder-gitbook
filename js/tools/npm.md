@@ -7,7 +7,7 @@
 
 * [npm - 維基百科，自由的百科全書](https://zh.wikipedia.org/wiki/Npm)
 * [NPM - npm is the package manager for JavaScript ](https://www.npmjs.com/)
-* 全名叫 Node Package Manager 是 Node.js 預設的軟體套件管理系統。但現在不只有 Node.js 的套件會放在上面，基本已經變成了 JS Open Source 軟體套件集散地。
+* 全名叫 Node Package Manager 是 Node.js 預設的軟體套件管理系統。但現在不只有 Node.js 的套件會放在上面（例如 [Pure](https://www.npmjs.com/package/purecss) ），基本已經變成了 JS Open Source 軟體套件集散地。
 * 只要是 Public packages，使用者都可以免費發佈在 NPM。
 
 **使用情境**
@@ -51,6 +51,10 @@ npm init
 npm init -y
 npm init -f
 ```
+
+**練習題**
+
+使用 `npm init` 指令新增一個專案
 
 ## 設置環境變數
 
@@ -100,9 +104,15 @@ npm config edit -g
 npm config edit --global
 ```
 
+**練習題**
+
+設定環境變數，將初始化作者信箱 `init-author-email` 跟初始化作者名稱 `init-author-name`，改成專屬於自己的值，並新增一個專案。
+
 ### 搜尋套件
 
-<!--當你一開始不知道有什麼套件可以使用時，可以直接下命令搜尋，接著...-->
+<!--
+例如 npm search sails
+-->
 
 * [search | nam Documentation](https://docs.npmjs.com/cli/search)
 * 別名有 s, se, find
@@ -162,10 +172,14 @@ npm i nodemon@1.6.0
 npm i https://github.com/expressjs/express.git
 ```
 
-**指定環境**
+**參數**
 
-* production
-* development (預設)
+* -g
+* --save：production
+* --save-dev：development (預設)
+* 什麼都沒加的情況
+
+<!-- 示範有 -g -S 的情況，及沒有加 --save 的情況。 -->
 
 ```
 npm install --production
@@ -193,13 +207,19 @@ npm update
 npm update nodemon
 ```
 
+**練習題**
+
+使用 NPM 安裝 Bootstrap
+
 ### 連結套件
 
-<!--使用在安裝放在 local 的套件 -->
+* 使用情境：安裝放在 local 的套件
 
 ```
 npm link sandbox /Users/ailinliu/sandbox-module
 ```
+
+<!-- 省略了發佈 npm 的部分，等到上 NodeJS 的時候在教。 -->
 
 ### 解決全域安裝權限問題
 
@@ -209,11 +229,6 @@ npm link sandbox /Users/ailinliu/sandbox-module
 ```
 prefix = "/Users/ailinliu/.nvm/versions/node/v6.9.4"
 ```
-
-### 練習題
-
-1. 使用 `npm init` 指令新增一個專案
-1. 設定環境變數，將初始化作者信箱 `init-author-email` 跟初始化作者名稱 `init-author-name`，改成專屬於自己的值，並新增一個專案。
 
 ### 更新 NPM 到最新版
 
@@ -227,6 +242,3 @@ npm install npm@latest -g
 ### 參考資料
 
 * [npm 基本用法和实用技巧](https://github.com/theicebear/npm-basic-usage)
-
-
-<!-- 還可以再新增一在發佈 npm 的教材 -->

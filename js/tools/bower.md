@@ -14,7 +14,7 @@
 | 名稱   | 主要支援  | 結構 |
 | ----- | -------- | ------ |
 | bower | 前端 JS | 扁平化 |
-| npm   | 後端 JS | 樹狀  |
+| npm   | 後端 JS | 樹狀   |
 
 **安裝 bower**
 
@@ -39,11 +39,6 @@ bower lookup bootstrap
 bower list
 bower -help
 bower -v
-```
-
-#### cache
-
-```
 bower cache list
 bower cache clean
 ```
@@ -78,6 +73,7 @@ bower cache clean
 
 * directory
 * scripts
+* [resolvers](https://bower.io/docs/pluggable-resolvers/)
 
 ```json
 {
@@ -115,6 +111,12 @@ bower cache clean
   ]
 }
 ```
+
+**練習題**
+
+* 更改安裝路徑
+
+### 前端使用方式
 
 ```html
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
