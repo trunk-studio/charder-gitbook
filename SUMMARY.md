@@ -5,11 +5,6 @@
 * [計畫內容](objective.md)
 * [培訓內容大綱](outline.md)
 
-## 團隊協作工具
-
-* [Slack](tools/slack/README.md)
-* [Zoom 雲端視訊會議](tools/zoom/README.md)
-
 ## 版本控制系統
 
 * [認識版本控制系統](vcs/README.md)
@@ -80,6 +75,11 @@
 * [補充 - 原子 / 無狀態](api-design/mise/README.md)
 
 <!-- * [API 安全](api-design/security/README.md) -->
+
+## 團隊協作工具
+
+* [Slack](tools/slack/README.md)
+* [Zoom 雲端視訊會議](tools/zoom/README.md)
 
 ## JavaScript 常用工具
 

@@ -1,8 +1,7 @@
-# [Zoom 雲端視訊會議](https://zoomnow.net/)
-
 ![zoom](https://zoomnow.net/images/zoom_tw_logoRGB.png)
 
-雲端多人視訊會議軟體
+* [https://zoomnow.net/](https://zoomnow.net/)
+* 雲端多人視訊會議軟體
 
 ### 優點
 
