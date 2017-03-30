@@ -77,6 +77,7 @@
 ### 延伸閱讀
 
 * [官網](https://code.visualstudio.com/)
+* [Node.js Tutorial in VS Code](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial)
 * [Visual Studio Code 快速上手指南](http://www.slideshare.net/shengyou/visual-studio-code-62532711)
 * [使用 Visual Studio Code 建構 JavaScript 應用程式](http://www.slideshare.net/WillHuangTW/visual-studio-code-javascript)
 * [Golang 深入研究 Visual Studio Code for Golang](http://www.evanlin.com/dive-with-vscode-golang/)

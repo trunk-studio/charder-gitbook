@@ -8,6 +8,7 @@
 ## 團隊協作工具
 
 * [Slack](tools/slack/README.md)
+* [Zoom 雲端視訊會議](tools/zoom/README.md)
 
 ## 版本控制系統
 
