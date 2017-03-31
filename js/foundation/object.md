@@ -102,3 +102,6 @@
     });
 
 dog 底下有 getName、setName，沒有 _name，而且 method 裡可以使用 this！
+
+
+[JavaScript 物件導向介紹 - JavaScript | MDN](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)

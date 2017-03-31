@@ -11,7 +11,7 @@ console.log(a);
 
 ### undefined (未定義)
 
-* * javascript 是在給值時才決定型態，所以在沒給值的情況下就會現 `undefined`。
+* javascript 是在給值時才決定型態，所以在沒給值的情況下就會現 `undefined`。
 
 ```js
 var value;

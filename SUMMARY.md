@@ -84,7 +84,6 @@
 ## JavaScript 常用工具
 
 * [NPM](js/tools/npm.md)
-* [NPM package.json](js/tools/npm-package.md)
 * [Bower](js/tools/bower.md)
 
 ## JavaScript 基礎課程
