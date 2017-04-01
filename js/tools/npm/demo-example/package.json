@@ -1,0 +1,22 @@
+{
+  "name": "tools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node demo-npm-config.js",
+    "test": "echo 'execute npm test script' && exit 1",
+    "preinstall": "echo 'execute npm preinstall script'",
+    "install": "echo 'execute npm install script'",
+    "postinstall": "echo 'execute npm postinstall script'"
+  },
+  "config": {
+    "port": "8080"
+  },
+  "keywords": [],
+  "author": "alincode <alincode@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "color": "^0.1.0"
+  }
+}

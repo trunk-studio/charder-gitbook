@@ -32,6 +32,7 @@ bower install
 bower install bootstrap
 // 離線安裝
 bower install bootstrap --offline
+
 bower uninstall bootstrap
 bower update bootstrap
 bower search bootstrap
@@ -49,7 +50,7 @@ bower cache clean
 
 ```json
 {
-  name: 'xx',
+  name: 'demo',
   authors: [
     'alincode <alincode@gmail.com>'
   ],
@@ -121,3 +122,10 @@ bower cache clean
 ```html
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 ```
+
+### Bower "Git not in the PATH" error
+
+![](https://cloud.githubusercontent.com/assets/10702007/10532690/d2e8991a-7386-11e5-9a57-613c7f92e84e.png)
+
+* 安裝 [Git for Windows](https://git-for-windows.github.io/)
+* [GitHub - bower/bower: A package manager for the web](https://github.com/bower/bower#windows-users)
