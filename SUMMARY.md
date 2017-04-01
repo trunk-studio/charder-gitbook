@@ -83,7 +83,14 @@
 
 ## JavaScript 常用工具
 
-* [NPM](js/tools/npm.md)
+* [NPM 介紹](js/tools/npm/README.md)
+* [NPM 初始化專案](js/tools/npm/init.md)
+* [NPM Package.json](js/tools/npm/package.md)
+* [NPM 套件管理](js/tools/npm/install.md)
+* [NPM 版本管理](js/tools/npm/version.md)
+* [NPM script](js/tools/npm/script.md)
+* [NPM config](js/tools/npm/config.md)
+* [NPM 實用補充](js/tools/npm/mise.md)
 * [Bower](js/tools/bower.md)
 
 ## JavaScript 基礎課程
