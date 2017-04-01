@@ -29,6 +29,8 @@ NODE_ENV=production npm install
 
 **安裝指定套件到全域**
 
+* 常用於安裝工具型套件
+
 ```
 npm install -g nodemon
 ```

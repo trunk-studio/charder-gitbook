@@ -113,14 +113,37 @@ bower cache clean
 }
 ```
 
-**練習題**
-
-* 更改安裝路徑
-
 ### 前端使用方式
 
 ```html
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
+```
+
+### 練習題
+
+* 建立 bower 專案檔
+
+```
+cd your-project-folder
+bower init
+```
+
+* 將安裝路徑從 bower_components 更改路徑為 lib。
+
+```
+rm -rf bower_components
+touch .bowerrc
+vi .bowerrc
+```
+
+```json
+{
+  "directory": "lib"
+}
+```
+
+```
+bower install
 ```
 
 ### Bower "Git not in the PATH" error
