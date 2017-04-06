@@ -129,16 +129,14 @@
 * [Promise](js/foundation/mise/promise.md)
 * [轉譯語言](js/foundation/mise/compiler.md)
 * [Reflection 和 Extend](js/foundation/mise/reflection-and-extend.md)
-* [Private](js/foundation/mise/private.md)
-* [Hook](js/foundation/mise/hook.md)
 * [Async](js/foundation/mise/async.md)
 * [傳值和傳址](js/foundation/mise/by-value-and-ref.md)
 
 <!--
+* [Hook](js/foundation/mise/hook.md)
+* [Private](js/foundation/mise/private.md)
 * [函數程式設計](js/foundation/functional-programming.md)
-* [物件](js/foundation/object.md)
 -->
-
 
 <!--
 * [XSS 攻擊](api-design/security/attack/xss.md)

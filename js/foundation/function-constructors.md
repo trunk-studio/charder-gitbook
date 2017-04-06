@@ -6,13 +6,14 @@
 * 函數建構子是被用來增加新物件的屬性和方法
 
 ```js
-function Person({
+function Person(){
 	console.log(this);
 	this.firstname = 'ailin';
 	this.lastname = 'liou';
 	console.log('This function is invoked.');
 }
 
+//  類別的實例 (Instance)
 var john = new Person();
 console.log(john);
 ```
