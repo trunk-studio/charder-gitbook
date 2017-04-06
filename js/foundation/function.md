@@ -1,5 +1,18 @@
 # 函示 (Function)
 
+* 具有 lexical scooping 的一級函式 (first class) 物件。
+* 是一種特殊型態的物件，可以被呼叫 (invocable)。
+* 函式也是物件的一種，所以函式可以有**屬性**跟**方法**。
+
+```js
+function greet() {
+	console.log(‘哈囉’);
+}
+greet.language = ‘中文’;
+console.log(greet);
+console.log(greet.language);
+```
+
 **匿名函示(anonymous function)**
 
 * 匿名函示指本身沒有直接宣告或命名過
@@ -20,22 +33,6 @@ var sayHi = function(){
 var sayHi = function hi(){
   console.log('hi');
 }
-```
-
-**立即函式**
-
-* 也算匿名函式
-* 會立刻執行
-* 變數生命週期只存在於函數內，不用擔心會留下全域變數。
-
-```js
-(function () {
-  var name = 'alincode';
-  console.log('Hi,', name);
-}());
-
-// ReferenceError: name is not defined
-console.log(name);
 ```
 
 ## 建立函數的方式
@@ -104,7 +101,7 @@ var add = new Function('a','b', 'return a + b');
 add(1,2);
 ```
 
-## 回傳值 & 參數
+### 回傳值
 
 ```js
 // 沒有回傳值的函式
@@ -119,7 +116,6 @@ function getFullName(firstName, lastName){
 
 // 呼叫函式
 printFullName('alin', 'liou');
-printFullName('alin'); // 會發生什麼事？
 console.log(getFullName('alin', 'liou'));
 ```
 
@@ -127,12 +123,6 @@ console.log(getFullName('alin', 'liou'));
 output:
 ailin liou
 ailin undefined
--->
-
-<!--
-
-### 常用內建
-
 -->
 
 ### 延伸閱讀

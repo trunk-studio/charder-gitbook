@@ -17,35 +17,30 @@ console.log(a);
 var value;
 console.log(value);
 ```
+<!-- undefined -->
+<!-- 還有一種情況是 ReferenceError: value is not defined 跟 undefined 不同。-->
 
 ```js
-function getFullName(firstName, lastName){
-  return firstName + ' ' + lastName;
+function printFullName(firstName, lastName){
+  console.log(firstName + ' ' + lastName);
 }
 
 printFullName('alin');
 ```
 
+<!--  alin undefined -->
+
 ### 比較
 
 ```js
-console.log(null == undefined);
 console.log(null === undefined);
+console.log(null == undefined);
 ```
-
-<!--
-output:
-true = false && false，會先轉成 boolean 在比較。
-false
--->
+<!-- false, true -->
+<!-- 第二個會先轉成 boolean 在比較 -->
 
 ```js
 console.log(typeof null);
 console.log(typeof undefined);
 ```
-
-<!--
-output:
-object
-undefined
--->
+<!-- object, undefined -->

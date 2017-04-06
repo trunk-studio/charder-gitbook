@@ -18,3 +18,5 @@ _book
 .sass-cache/
 bootstrap/sample-code/custom-theme/bower_components/
 bootstrap/sample-code/05_extend-ex-answer/bower_components/
+
+.vscode

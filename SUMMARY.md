@@ -96,16 +96,48 @@
 ## JavaScript 基礎課程
 
 * [介紹](js/foundation/README.md)
-* [基本型別與變數](js/foundation/type-and-var.md)
-* [變數作用域](js/foundation/var-scope.md)
+* [基本型別](js/foundation/type.md)
+* [範圍](js/foundation/scope.md)
+* [提升](js/foundation/hoisting.md)
+* [範圍鏈](js/foundation/the-scope-chain.md)
+* [強制轉型](js/foundation/coercion.md)
+* [比較](js/foundation/comparison.md)
 * [Nan](js/foundation/nan.md)
 * [Null vs undefined](js/foundation/null-and-undefined.md)
-* [函示](js/foundation/function.md)
-* [Callback](js/foundation/callback.md)
+* [陣列](js/foundation/array.md)
+* [預設值](js/foundation/default-value.md)
+* [物件實體](js/foundation/object-literals.md)
+* [函式](js/foundation/function.md)
+* [函式陳述句 vs 函式表示式](js/foundation/function-statement-and-expression.md)
+* [call, apply, bind 函式](js/foundation/call-apply-bind-function.md)
+* [arguments](js/foundation/arguments.md)
+* [this](js/foundation/this.md)
+* [立即函式](js/foundation/llfe.md)
+* [Callback 函式](js/foundation/callback.md)
+* [Closure](js/foundation/closure.md)
+* [建立物件 - Prototype](js/foundation/prototype.md)
+* [建立物件 - 函式建構子](js/foundation/function-constructors.md)
+* [建立物件 - Object.create](js/foundation/object-create.md)
+* [偽裝命名空間](js/foundation/fake-namespace.md)
+
+## JavaScript 補充課程
+
+* [delete](js/foundation/mise/delete.md)
+* [typeof vs instanceof](js/foundation/mise/typeof-and-instanceof.md)
+* [嚴謹模式](js/foundation/mise/strict-mode.md)
+* [Polyfill](js/foundation/mise/polyfill.md)
+* [JSON](js/foundation/mise/json.md)
+* [Promise](js/foundation/mise/promise.md)
+* [轉譯語言](js/foundation/mise/compiler.md)
+* [Reflection 和 Extend](js/foundation/mise/reflection-and-extend.md)
+* [private](js/foundation/mise/private.md)
+* [hook](js/foundation/mise/hook.md)
+* [Async](js/foundation/mise/async.md)
+* [傳值和傳址](js/foundation/mise/by-value-and-ref.md)
 
 <!--
+* [函數程式設計](js/foundation/functional-programming.md)
 * [物件](js/foundation/object.md)
-* [Promise](js/foundation/promise.md)
 -->
 
 

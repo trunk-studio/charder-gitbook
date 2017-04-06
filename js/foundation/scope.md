@@ -1,4 +1,4 @@
-# 變數作用域 (scope)
+# 範圍 (scope)
 
 * global scope
 * function scope
@@ -6,9 +6,6 @@
 ```
 // 顯式宣告變數
 var value = 1;
-```
-
-```
 // 未顯式宣告變數
 value = 1;
 ```
@@ -20,11 +17,10 @@ value = 1;
 **重點提醒**
 
 * 盡量減少使用全域變數，因為如果你使用很多 Javascript 函式庫，免不了使用到同樣名字的全域變數，將導致不可預期的副作用。
-<!--* 變數作用範圍是依照程式定義時的順序決定，而不是執行時的順序決定。-->
-
-<!--* 建立 vs. 實例化-->
 
 ### 範例
+
+**範例一**
 
 ```js
 var message = 'hi';
@@ -38,13 +34,9 @@ console.log(message);
 greet();
 console.log(message);
 ```
+<!-- hi, bye, hi -->
 
-<!-- 
-output:
-hi
-bye
-hi
--->
+**範例二**
 
 ```js
 message = 'hi';
@@ -58,13 +50,9 @@ console.log(message);
 greet();
 console.log(message);
 ```
+<!-- hi, bye, bye -->
 
-<!-- 
-output:
-hi
-bye
-bye
--->
+**範例三**
 
 ```js
 var message = 'hi';
@@ -77,15 +65,22 @@ var message = 'hi';
 
 console.log(message);
 ```
+<!-- bye, bye -->
 
-<!-- 只有包在 function 裡面，並且有用 var 來宣告的才算是區域變數。 -->
+**範例四**
+
+```js
+console.log(message);
+var message = 'hi';
+console.log(message);
+```
+
+<!-- undefined, hi -->
 
 <!-- 
-output:
-bye
-bye
+只有包在 function 裡面，並且有用 var 來宣告的才算是區域變數。
 -->
 
 ### 延伸閱讀
 
-* [CodeData - JavaScript 語言核心（13）在 Scope chain 查找變數](http://www.codedata.com.tw/javascript/essential-javascript-13-scope-chain/)
+* [JavaScript 語言核心（3）你的變數 var 了嗎？](http://www.codedata.com.tw/javascript/essential-javascript-variable/)

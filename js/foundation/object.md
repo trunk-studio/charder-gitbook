@@ -1,107 +1,54 @@
 # 物件 (Object)
 
-### 基礎概念
+* 除了基本型別，其他都是物件。
+* name / value pairs and object
 
-### 常用內建物件
+```js
+var person = new Object();
+var firstNameProperty = 'firstname';
 
-### 自訂物件
+console.log(person[firstname]);
+console.log(person.firstname);
+```
 
-### JavaScript 物件導向基礎
+### 物件實字 (object literals)
 
-### JavaScript 物件實字
+提供一種建立新物件值的便利註記方式，以一對大括號圍起 name 和 value，可以出現在任何地方。
 
-在 JavaScript 最常見也最容易產生一個物件的方式就是用物件實字，但他沒有 private、protected，所以就產生了一種撰碼風格，以 _ 代表 protected，__ 代表 private，當沒有 protected 時 _ 代表 private。
+```js
+var person = {};
+var dog = {
+  walk: function () {},
+  run: function () {}
+};
+```
 
-這是一個很簡單的物件實字
+```js
+function printMyName(person){
+  console.log(person.firstName + ' ' + person.lastName);
+}
 
-.. code-block:: js
+function getPerson(firstName, lastName){
+  return {
+    firstName: firstName,
+    lastName: lastName,
+    fullName: firstName + ' ' + lastName
+  };
+}
 
-    var dog = {
-      walk: function () {
-      },
-      run: function () {
-      }
-    };
+person({ firstName: 'ailin', lastName: 'liou'});
+console.log(getPerson())
+```
 
-實作 private
-============
+### 練習題
 
-在物件實字的地方如果有需要用 private 屬性、方法，那就要透過 closure、立即函式。
+* 新增 person object，物件可以包屬性、物件、函式
 
-寫法可能有許多不同的變化，但下面這個是我習慣的作法，用這種方法有幾點好處
+### 延伸閱讀
 
-    1. 方法寫在 return 的地方也可以透過 _this 去操作物件實字
-    2. 在定義時可以按照一般的物件實字寫法去寫，之後再來定義哪些是可公開的方法、屬性
-
-有好處當然也有壞處
-
-    1. 在物件實字內不能使用 this，必須用 _this，因為之後我們真正去操作的物件實字並不是 _this，而是後面回傳的物件實字。
-    2. 要建立兩個物件實字，好像有點麻煩...
-
-.. code-block:: js
-
-    var dog = (function () {
-      var _this = {
-        _name: 'Dog';
-        getName: function () {
-          return _this.name;
-        },
-        setName: function (name) {
-          _this.name = name;
-        }
-      };
-      return {
-        getName: _this.getName,
-        setName: _this.setName,
-        reset: function () {
-          _this.name = 'Dog';
-        }
-      };
-    })();
-
-自動化 private
-==============
-
-這裡提供一個方法讓大家方便建立有 private 屬性、方法的物件實字，這裡用之前提過的 _、__ 開頭代表 private 這種程式碼撰寫習慣
-
-.. code-block:: js
-
-    function objLiteral(_this) {
-      var i, obj = {}, regex = /^_{1,2}/, tmp;
-
-      function _method(method) {
-        return function () {
-          return method.apply(_this, arguments);
-        };
-      }
-
-      for (i in _this) {
-        if (_this.hasOwnProperty(i)) {
-          tmp = _this[i];
-          if (!regex.test(i)) {
-            obj[i] = (typeof tmp === 'function' ? _method(tmp) : tmp);
-          }
-        }
-      }
-
-      return obj;
-    }
-
-來建立一個物件實字試試看
-
-.. code-block:: js
-
-    var dog = objLiteral({
-      _name: 'Dog',
-      getName: function () {
-        return this._name;
-      },
-      setName: function (name) {
-        this._name = name;
-      }
-    });
-
-dog 底下有 getName、setName，沒有 _name，而且 method 裡可以使用 this！
+* [JavaScript 物件導向介紹 - JavaScript | MDN](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)
 
 
-[JavaScript 物件導向介紹 - JavaScript | MDN](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)
+<!--
+Javascript 包含 prototype linkage 功能，允許物件繼承其他物件的特性。若使用得宜，將可以減少物件初始化的時間，也減少記憶體的消耗。
+-->

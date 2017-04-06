@@ -1,8 +1,9 @@
 # 非數字 (NaN)
 
-* Not a Number
+* 全名叫 Not a Number
 * 常會發生在轉型的時候
 * 此值會先強制轉換到數字值，接著會測定此值是否為 NaN。
+* 零除以零的結果會是 NaN，但其他數字除以零則不是 NaN。
 
 <!-- Number.isNaN(Number(value)); -->
 
@@ -26,19 +27,19 @@ isNaN('2005/12/12')  | true
 isNaN(new Date())    | false
 isNaN({})            | true
 
-<!--零除以零的結果會是 NaN——不過把其他數字除以零則不是 NaN。-->
-
 ```js
 var a = "test";
 var b = parseInt(a) + 10;
 console.log(b);
 ```
+<!-- NaN -->
 
 ```js
 var a = NaN;
 var b = a + 10;
 console.log(b);
 ```
+<!-- NaN -->
 
 ### 延伸閱讀
 
