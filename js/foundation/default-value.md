@@ -9,3 +9,8 @@ function greet(name) {
 greet();
 greet('Leo');
 ```
+
+```js
+var a = 0;
+console.log(a || a === 0);	// true
+```

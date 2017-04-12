@@ -10,15 +10,45 @@ Javascript 是一個神奇的語言，很多人程式設計師都在不是很了
 
 ### 非它不可？
 
-Javascript 是所有瀏覽器共同支援的唯一語言。可以用來撰寫 Hybrid App 程式，Hybrid App 程式其實是被包裹在原生容器 (Native Container)，透過手機上的瀏覽器引擎來呈現 HTML 和執行 JavaScript。
+* Javascript 是所有瀏覽器唯一共同支援的語言。
+* 可以用來撰寫 Hybrid App 程式，Hybrid App 程式其實是被包裹在原生容器 (Native Container)，透過手機上的瀏覽器引擎來呈現 HTML 和執行 JavaScript。
+
+### 命名為 Javascript 並非偶然的
+
+javascript 創作者 Brendan Eich 主要方向和興趣是**函數式程式設計**，網景公司招聘他的目的是要他研究將 Scheme 語言作為網頁腳本語言的可能性。但網景和 Sun 聯手後，網景公司做出決策，未來的網頁腳本語言**必須看上去與 Java 相似**，但是比 Java 簡單，使得非專業人士也能快速上手。但是他對 Java 一點興趣也沒有，為了應付公司安排的任務，他只用 10 天時間就把 Javascript 設計出來。由於設計時間太短，語言的一些細節考慮得不夠嚴謹，導致 javascript 陷入一段很長的混亂期。
+
+### 設計風格主要受到什麼影響
+
+* Ｃ：基本語法
+* Java：
+  * new Boolean, new String
+* Scheme
+  * 一種函數 (function) 語言程式設計語言
+  * 設計原則：電腦語言不應該進行功能的堆砌，而應該儘可能減少弱點和限制，使剩下的功能顯得必要。[Scheme - 維基百科，自由的百科全書]
+* Self
+  * 一種基於原型 (prototype) 的物件導向程式設計語言
+  * 設計原則：精簡再精簡
+    * 它捨棄了類別的概念，只留下物件。
+    * 動態型別：依照資料內容來決定型別
+
+<!-- 
+它只有 var
+它沒有 public, protected, private
+-->
+
+### 完整的 JavaScript 包括以下幾個部分：
+
+* ECMAScript：語言核心、語言的語法、基本物件
+* DOM（Document Object Model）
+* BOM（Browser Object Model）
 
 ### 特色
 
 * 函式 (function)
-* 寬鬆型別 (loose typing)
+* 寬鬆型別 (loose typing) / 動態型別
 * 動態物件 (dynamic object)
 * 閉包 (closure)
-* 原型 (prototype)
+* 基於原型 (prototype) 的物件導向
 * 富表達性的物件實字註記 (expressive object literal notation)
 
 ### 應用領域
@@ -36,6 +66,7 @@ Javascript 是所有瀏覽器共同支援的唯一語言。可以用來撰寫 Hy
 
 ### 延伸閱讀
 
+* [Javascript誕生記 - C 和 Self 語言的產物 - 壹讀](https://read01.com/B8o3aK.html)
 * [Mozilla MDN - JavaScript 物件導向介紹](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)
 * [統一 JavaScript，只需一種樣式](http://standardjs.com/readme-zhtw): http://standardjs.com/readme-zhtw
 * [Eloquent JavaScript](http://eloquentjavascript.net/): http://eloquentjavascript.net/

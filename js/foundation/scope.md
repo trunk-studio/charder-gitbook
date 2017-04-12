@@ -1,5 +1,11 @@
 # 範圍 (scope)
 
+### 對類別語言而言 scope 是什麼？
+
+* global, block scope
+
+### 對 Javascript 而言 scope 是什麼？
+
 * global scope
 * function scope
 

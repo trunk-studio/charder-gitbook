@@ -1,18 +1,5 @@
 # 強制轉型 (coercion)
 
-如果需要將字串，轉換成 Number 的時候，可以使用 parseInt，parseFloat 的方法來進行轉換。
-
-```js
-var a = '11';
-console.log(typeof parseInt(a, 10)); // number
-console.log(parseInt(a, 10));        // 11
-console.log(parseInt(a, 8));         // 9
-```
-
-<!--
-要注意的是，記得 parseInt 後面要加上進位符號，以免造成遺憾，在這邊使用的是 10 進位。
--->
-
 **轉換成布林**
 
 輸入       | 結果      | 輸入     | 結果
@@ -32,13 +19,28 @@ null      | 0        | string   | 原來的值
 true      | 1        | object   | 表示此物件預設的代表數字
 false     | 0
 
+<!--
+**String 轉成 Number**
+
+如果需要將字串，轉換成 Number 的時候，可以使用 parseInt 或 parseFloat 的方法來進行轉換。
+
+```js
+var a = '11';
+console.log(typeof parseInt(a, 10)); // number
+console.log(parseInt(a, 10));        // 11
+console.log(parseInt(a, 8));         // 9
+```
+-->
+
+<!-- 記得 parseInt 後面要加上進位符號 -->
+
 ### 範例
 
 ```js
-console.log(3 < 2 < 1);	// ?
-console.log(false < 1);
-console.log(0 < 1);                                        
+console.log(false < 1);	// 猜猜看答案是什麼？
+console.log(0 < 1);     // true 
 ```
+<!-- false = 0 -->
 
 ### 延伸閱讀
 

@@ -8,3 +8,22 @@
 lexical environment 詞彙環境
 execution content 執行環境
 -->
+
+```js
+test();
+
+function test() {
+  console.log('hi');
+}
+```
+
+<!--
+
+```js
+test();
+
+var test = function () {
+  console.log('hi');
+}
+```
+-->
