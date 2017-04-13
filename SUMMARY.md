@@ -93,11 +93,15 @@
 * [NPM 實用補充](js/tools/npm/mise.md)
 * [Bower](js/tools/bower.md)
 
+## JavaScript 常用套件
+
+* [lodash](js/packages/lodash.md)
+* [moment](js/packages/moment.md)
+
 ## JavaScript 基礎課程
 
 * [介紹](js/foundation/README.md)
 * [基本型別](js/foundation/type.md)
-* [Nan](js/foundation/nan.md)
 * [typeof](js/foundation/typeof.md)
 * [強制轉型](js/foundation/coercion.md)
 * [比較](js/foundation/comparison.md)

@@ -13,21 +13,36 @@ console.log(person.firstname);
 
 ### 物件實字 (object literals)
 
-提供一種建立新物件值的便利註記方式，以一對大括號圍起 name 和 value，可以出現在任何地方。
+提供一種建立新物件值的便利宣告方式，以大括號圍起 name 和 value，可以出現在任何地方。
 
 ```js
-var person = {};
-var dog = {
+var person = {
+  firstName :'ailin',
+  lastName : 'liou',
   walk: function () {},
   run: function () {}
 };
 ```
 
 ```js
+var person = {};
+person.firstName = 'ailin';
+person.lastName = 'liou';
+person.run = function(){};
+```
+
+**出現在參數**
+
+```js
 function printMyName(person){
   console.log(person.firstName + ' ' + person.lastName);
 }
+printMyName({ firstName: 'ailin', lastName: 'liou'});
+```
 
+**出現在回傳值**
+
+```js
 function getPerson(firstName, lastName){
   return {
     firstName: firstName,
@@ -36,13 +51,19 @@ function getPerson(firstName, lastName){
   };
 }
 
-person({ firstName: 'ailin', lastName: 'liou'});
 console.log(getPerson())
 ```
 
-### 練習題
+```js
+var restaurant = {
+  brand: 'BBQ',
+  saySlogon: function(name){
+    console.log('hi ' + name + ', welcome to ' + this.brand + ' restaurant.');
+  }
+}
 
-* 新增 person object，物件可以包屬性、物件、函式
+restaurant.saySlogon('alincode');
+```
 
 ### 延伸閱讀
 
