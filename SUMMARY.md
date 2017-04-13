@@ -92,6 +92,7 @@
 * [NPM config](js/tools/npm/config.md)
 * [NPM 實用補充](js/tools/npm/mise.md)
 * [Bower](js/tools/bower.md)
+* [ESlint](js/tools/eslint/README.md)
 
 ## JavaScript 常用套件
 
