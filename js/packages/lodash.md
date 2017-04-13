@@ -27,17 +27,17 @@ var users = [
 ];
 
 _.find(users, function(o) { return o.age < 40; });
-// => 結果: 'barney'
+// => 結果: barney
 
-// 使用了 `_.matches` 的回調結果
+// 使用了 _.matches 的取回結果
 _.find(users, { 'age': 1, 'active': true });
 // => 結果: 'pebbles'
 
-// 使用了 `_.matchesProperty` 的回調結果
+// 使用了 _.matchesProperty 的取回結果
 _.find(users, ['active', false]);
 // => 結果: 'fred'
 
-// 使用了 `_.property` 的回調結果
+// 使用了 _.property 的取回結果
 _.find(users, 'active');
 // => 結果: 'barney'
 ```
