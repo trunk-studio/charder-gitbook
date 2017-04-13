@@ -2,6 +2,34 @@
 
 “use  strict”，必須要放在第一行
 
+```js
+"use strict";
+x = 3.14;
+// Uncaught ReferenceError: x is not defined
+```
+
+```js
+"use strict";
+myFunction();
+
+function myFunction() {
+    y = 3.14;
+}
+
+// Uncaught ReferenceError: y is not defined
+```
+
+```js
+x = 3.14;
+myFunction();
+
+function myFunction() {
+   "use strict";
+    y = 3.14;
+}
+// Uncaught ReferenceError: y is not defined
+```
+
 ### 延伸閱讀
 
 * [w3schools javascript - Strict mode](https://www.w3schools.com/js/js_strict.asp)
