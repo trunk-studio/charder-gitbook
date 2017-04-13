@@ -3,6 +3,7 @@
 * 具有 lexical scooping 的一級函式 (first class) 物件。
 * 是一種特殊型態的物件，可以被呼叫 (invocable)。
 * 函式也是物件的一種，所以函式可以有**屬性**跟**方法**。
+* 每個函式都有 arguments
 
 ```js
 function greet() {
@@ -13,7 +14,7 @@ console.log(greet);
 console.log(greet.language);
 ```
 
-**參數 (arguments / paremeters)**
+**參數 (arguments)**
 
 ```js
 function printMyName(firstname, lastname, language){
@@ -33,7 +34,7 @@ printMyName('ailin', 'liou', 'en');
 
 **匿名函示(anonymous function)**
 
-* 匿名函示指本身沒有直接宣告或命名過
+匿名函示指本身沒有直接宣告或命名過
 
 ```js
 // 匿名函數運算式（anonymous function expressions） 
@@ -53,6 +54,12 @@ var sayHi = function hi(){
 }
 ```
 
+```js
+function hi(){
+  console.log('hi');
+}
+```
+
 ## 建立函數的方式
 
 ```js
@@ -62,52 +69,28 @@ var namedFuncExpression = function named() {};
 var fnConstructor = new Function ();
 ```
 
-### 靜態函示 / 函式宣告 (function declaration)
+### 函數陳述句 (function statement) / 靜態函示 / 函式宣告 (function declaration)
 
+* 在 Create 階段時，被放入記憶體裡。
 * 必須有一個識別名稱（identifier）
 * 只會在載入的時候解析一次，之後每一次呼叫這個函示時，所使用的都是其解析後的結果。
-* 具名函數運算式對於在除錯時會非常有用
+<!--* 具名函數運算式對於在除錯時會非常有用 -->
 
 **使用情境**
 
-* 整個程式的區域範圍都可以使用
+* 會需要呼叫多次的情況下使用
+
+### 函數運算式 / 函數表示式（function expressions）
+
+* 在 Execute 階段時，被放入記憶體裡。
 
 ```js
-sayHi();  // 會發生什麼事？
-
-function sayHi(){
-  console.log('hi');
-}
-
-sayHi();
-```
-
-<!--
-不論函數本身在哪裡，都會被提升到最頂端。
-output:
-hi
-hi
--->
-
-### 函數運算式（function expressions）
-
-```js
-sayHi();
-
 var sayHi = function(){
   console.log('hi');
 }
 
 sayHi();
 ```
-
-<!--
-// TypeError: sayHi is not a function
--->
-
-**如何分辨是函數宣告，還是函數運算式？**
-
-* 函數宣告必須有一個識別名稱（identifier），所以說只要函數沒有識別名稱，那麼它就是一個函數運算式。
 
 ### 動態函式 (Function Constructor)
 
@@ -119,29 +102,27 @@ var add = new Function('a','b', 'return a + b');
 add(1,2);
 ```
 
-### 回傳值
+## 回傳值
+
+**沒有回傳值的函式**
 
 ```js
-// 沒有回傳值的函式
 function printFullName(firstName, lastName){
   console.log(firstName + ' ' + lastName);
 }
 
-// 有回傳值的函式
+printFullName('alin', 'liou');
+```
+
+**有回傳值的函式**
+
+```js
 function getFullName(firstName, lastName){
   return firstName + ' ' + lastName;
 }
 
-// 呼叫函式
-printFullName('alin', 'liou');
 console.log(getFullName('alin', 'liou'));
 ```
-
-<!--
-output:
-ailin liou
-ailin undefined
--->
 
 ### 延伸閱讀
 

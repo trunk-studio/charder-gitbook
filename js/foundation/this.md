@@ -32,7 +32,7 @@ public class CashCard extends Card {
 ### 當不清楚 this 指向哪裡，你將會遇到什麼問題？
 
 * 無意間宣告了全域變數
-* 和全域命名空間衝突
+* 發生偽命名空間衝突
 
 ### 範例
 
@@ -52,7 +52,7 @@ a();
 b();
 console.log(myValue);
 ```
-
+<!-- windown, windown, hello -->
 <!-- 兩個 this 都指向 global -->
 
 **範例二**
