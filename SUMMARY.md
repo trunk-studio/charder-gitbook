@@ -103,7 +103,6 @@
 
 * [介紹](js/foundation/README.md)
 * [基本型別](js/foundation/type.md)
-* [typeof](js/foundation/typeof.md)
 * [強制轉型](js/foundation/coercion.md)
 * [比較](js/foundation/comparison.md)
 * [提升](js/foundation/hoisting.md)
@@ -112,7 +111,6 @@
 * [陣列](js/foundation/array.md)
 * [預設值](js/foundation/default-value.md)
 * [物件](js/foundation/object.md)
-* [物件實體](js/foundation/object-literals.md)
 * [函式](js/foundation/function.md)
 * [函式陳述句 vs 函式表示式](js/foundation/function-statement-and-expression.md)
 * [call, apply, bind 函式](js/foundation/call-apply-bind-function.md)

@@ -1,7 +1,7 @@
 # 基本型別 / 純值 (primitive types)
 
-* 弱型別 / 動態型別 (dynamic typing)：不用先宣告是什麼型別，由程式在給值時才決定型別。
 * 不是物件
+* 弱型別 / 動態型別 (dynamic typing)：不用先宣告是什麼型別，由程式在給值時才決定型別。
 
 **基本型態種類**
 
@@ -31,11 +31,6 @@ var a = 1;
 var b = 1.0;
 console.log(a == b); // ?
 console.log(a === b); // ?
-```
-
-```js
-// Infinity: 正無窮大
-console.log(1/0 === Infinity); // true
 ```
 
 **非數字 (NaN)**
@@ -79,6 +74,16 @@ var b = a + 10;
 console.log(b);
 ```
 
+```js
+console.log(0 / 0);
+```
+
+```js
+// Infinity: 正無窮大
+console.log(1 / 0 === Infinity);
+console.log(-1 / 0 === -Infinity);
+```
+
 [MDN - isNan()](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/isNaN#描述)
 
 ### 字串 (String)
@@ -106,9 +111,23 @@ var a = null;
 console.log(a);
 ```
 
+```js
+var a = null;
+console.log(typeof null);
+
+var b;
+console.log(typeof undefined);
+```
+<!-- object, undefined -->
+
 ### undefined (未定義)
 
-* javascript 是在給值時才決定型態，所以在沒給值的情況下，就會現 `undefined`。
+* not set
+* Javascript 是在給值時才決定型態，所以在沒給值的情況下，就會現 `undefined`。
+
+如果是需要編譯的語言會出現，如下圖所示：
+
+![](assets/java-undefined-error.png)
 
 ```js
 var value;
@@ -116,8 +135,8 @@ console.log(value);
 ```
 
 ```js
-var a = {};
-delete a;
+// 但請不要這麼做
+var a = undefined;
 console.log(a);
 ```
 
@@ -131,3 +150,4 @@ printFullName('alin');
 <!--  alin undefined -->
 
 還有另一種情況是 not define，不要把它跟 undefined 搞混。
+<!-- console.log(aaaaaaaa); -->

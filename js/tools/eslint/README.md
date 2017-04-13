@@ -1,6 +1,6 @@
 # ESlint
 
-* JavaScript 程式碼檢查工具
+JavaScript 程式碼檢查工具
 
 **起源**
 

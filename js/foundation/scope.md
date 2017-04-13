@@ -1,18 +1,13 @@
 # 範圍 (scope)
 
-### 對類別語言而言 scope 是什麼？
+**顯式宣告變數**
 
-* global, block scope
-
-### 對 Javascript 而言 scope 是什麼？
-
-* global scope
-* function scope
-
-```
-// 顯式宣告變數
+```js
 var value = 1;
-// 未顯式宣告變數
+```
+**未顯式宣告變數**
+
+```js
 value = 1;
 ```
 
@@ -24,9 +19,49 @@ value = 1;
 
 * 盡量減少使用全域變數，因為如果你使用很多 Javascript 函式庫，免不了使用到同樣名字的全域變數，將導致不可預期的副作用。
 
+### 對類別語言而言 scope 是什麼？
+
+* global scope
+* block scope
+
+```java
+public class Main {
+    int c = 3;
+    public void demo(){
+        int a = 0;
+        if(true){
+            int b = 1;
+        }
+
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+    }
+}
+```
+
+### 對 Javascript 而言 scope 是什麼？
+
+* global scope
+* function scope
+
 ### 範例
 
 **範例一**
+
+```js
+var message = 'hi';
+
+if(true){
+  var message = 'bye';
+  console.log(message);
+}
+
+console.log(message);
+```
+<!-- bye, bye -->
+
+**範例二**
 
 ```js
 var message = 'hi';
@@ -58,34 +93,6 @@ console.log(message);
 ```
 <!-- hi, bye, bye -->
 
-**範例三**
-
-```js
-var message = 'hi';
-
-{
-  // 問題： 這是區域變數，還是全域變數？
-  var message = 'bye';
-  console.log(message);
-}
-
-console.log(message);
-```
-<!-- bye, bye -->
-
-**範例四**
-
-```js
-console.log(message);
-var message = 'hi';
-console.log(message);
-```
-
-<!-- undefined, hi -->
-
-<!-- 
-只有包在 function 裡面，並且有用 var 來宣告的才算是區域變數。
--->
 
 ### 延伸閱讀
 

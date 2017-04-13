@@ -30,17 +30,15 @@ console.log(typeof parseInt(a, 10)); // number
 console.log(parseInt(a, 10));        // 11
 console.log(parseInt(a, 8));         // 9
 ```
--->
 
-<!-- 記得 parseInt 後面要加上進位符號 -->
+記得 parseInt 後面要加上進位符號
+-->
 
 ### 範例
 
 ```js
-console.log(false < 1);	// 猜猜看答案是什麼？
-console.log(0 < 1);     // true 
+console.log(false < 1); // 答案是？
 ```
-<!-- false = 0 -->
 
 ### 延伸閱讀
 
