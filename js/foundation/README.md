@@ -46,6 +46,32 @@ javascript 創作者 Brendan Eich 主要方向和興趣是**函數式程式設�
 * DOM（Document Object Model）
 * BOM（Browser Object Model）
 
+### BOM
+
+- window
+  - document (DOM)
+    - document.createElement('div');
+  - [navigator](http://www.w3school.com.cn/jsref/dom_obj_navigator.asp)
+  - [screen](http://www.w3school.com.cn/jsref/dom_obj_screen.asp)
+  - [history](http://www.w3school.com.cn/jsref/dom_obj_history.asp)
+  - [location](http://www.w3school.com.cn/jsref/dom_obj_location.asp)
+
+### DOM
+
+Document 物件是 Window 物件的一部分
+
+- document
+- element
+  - id
+  - title
+  - className
+- attribute
+- event
+
+```js
+document.createElement('div');
+```
+
 ### 特色
 
 * 函式 (function)
