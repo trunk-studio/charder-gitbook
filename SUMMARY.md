@@ -102,7 +102,7 @@
 ## JavaScript 基礎課程
 
 * [介紹](js/foundation/README.md)
-* [基本型別](js/foundation/type.md)
+* [基本資料型別](js/foundation/type.md)
 * [強制轉型](js/foundation/coercion.md)
 * [比較](js/foundation/comparison.md)
 * [預設值](js/foundation/default-value.md)
@@ -137,8 +137,7 @@
 * [Promise](js/foundation/mise/promise.md)
 * [Reflection 和 Extend](js/foundation/mise/reflection-and-extend.md)
 * [Async](js/foundation/mise/async.md)
-* [傳值和傳址](js/foundation/mise/by-value-and-ref.md)
-
+* [Cascade](js/foundation/mise/cascade.md)
 <!--
 * [Hook](js/foundation/mise/hook.md)
 * [Private](js/foundation/mise/private.md)

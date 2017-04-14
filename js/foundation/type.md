@@ -1,4 +1,4 @@
-# 基本型別 / 純值 (primitive types)
+# 基本資料型別 / 簡單型別 / 純值 (primitive types)
 
 * 不是物件
 * 弱型別 / 動態型別 (dynamic typing)：不用先宣告是什麼型別，由程式在給值時才決定型別。

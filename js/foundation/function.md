@@ -14,7 +14,7 @@ console.log(greet);
 console.log(greet.language);
 ```
 
-**參數 (arguments)**
+**參數陣列 (arguments)**
 
 ```js
 function printMyName(firstname, lastname, language){

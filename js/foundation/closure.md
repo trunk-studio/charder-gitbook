@@ -25,3 +25,19 @@ console.log("fsub5(sub,8)()="+fsub5(8)());
 ```
 
 <!--Closure 不當的使用時，有可能會造成記憶體洩漏，主要是因為被參考的變數無法被垃圾收集機制處理，造成佔用的資源無法釋放，所以使用上必須考慮清楚-->
+
+```js
+var myObject = function(){
+  var value = 0;
+
+  return {
+    increment: function(inc){
+      value += inc;
+    },
+    getValue: function(){
+      return value;
+    }
+  }
+}
+
+```

@@ -1,7 +1,8 @@
 # 物件 (Object)
 
-* 除了基本型別，其他都是物件。
-* name / value pairs and object
+* 除了基本資料型別，其他都是物件。
+* 物件是有特性的容器，特性具有 name 與 value。
+* Javascript 具有原型聯繫 (prototype linkage) 功能，允許物件繼承其他物件的特性。
 
 ```js
 var person = new Object();
@@ -64,6 +65,13 @@ var restaurant = {
 
 restaurant.saySlogon('alincode');
 ```
+
+### 傳值 (by value) 和傳址 (by ref)
+
+<!--
+mutate: to change something
+immutable: it can’t be changed.
+-->
 
 ### 延伸閱讀
 

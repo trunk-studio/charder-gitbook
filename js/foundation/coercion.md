@@ -1,6 +1,6 @@
 # 強制轉型 (coercion)
 
-**轉換成布林**
+### 轉換成布林
 
 輸入       | 結果      | 輸入     | 結果
 ----------|----------|----------|----------
@@ -10,7 +10,7 @@ object    | true     | undefined| false
           |          | ""       | false     
           |          | null     | false
 
-**轉換成數字**
+### 轉換成數字
 
 輸入       | 結果      | 輸入     | 結果
 ----------|----------|----------|----------
@@ -36,8 +36,45 @@ console.log(parseInt(a, 8));         // 9
 
 ### 範例
 
+**範例一**
+
 ```js
 console.log(false < 1); // 答案是？
+```
+
+**範例二**
+
+```js
+// not good, why?
+var b = null;
+if(b == null || b == undefined || b == '') {
+  console.log('flow 1');
+} else{
+  console.log('flow 2');
+}
+```
+
+**範例三**
+
+```js
+// good job
+var b = null;
+if(b) {
+  console.log('flow 2');
+} else{
+  console.log('flow 1');
+}
+```
+
+**範例四**
+
+```js
+var a = {};
+if(a) {
+  console.log('flow 1');
+} else{
+  console.log('flow 2');
+}
 ```
 
 ### 延伸閱讀
