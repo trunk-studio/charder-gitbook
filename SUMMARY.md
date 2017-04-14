@@ -102,12 +102,11 @@
 ## JavaScript 基礎課程
 
 * [介紹](js/foundation/README.md)
-* [執行環境](js/foundation/execution-content.md)
-* [偽裝命名空間](js/foundation/fake-namespace.md)
 * [基本型別](js/foundation/type.md)
 * [強制轉型](js/foundation/coercion.md)
 * [比較](js/foundation/comparison.md)
 * [預設值](js/foundation/default-value.md)
+* [執行環境](js/foundation/execution-content.md)
 * [提升](js/foundation/hoisting.md)
 * [範圍](js/foundation/scope.md)
 * [範圍鏈](js/foundation/the-scope-chain.md)
@@ -124,6 +123,8 @@
 * [原型繼承](js/foundation/prototype.md)
 * [建立物件 - 函式建構子](js/foundation/function-constructors.md)
 * [建立物件 - Object.create](js/foundation/object-create.md)
+
+<!--* [偽裝命名空間](js/foundation/fake-namespace.md)-->
 
 ## JavaScript 補充課程
 

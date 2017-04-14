@@ -17,3 +17,18 @@
 * this 變數
 
 <!-- 在瀏覽器環境 windows = global -->
+
+<!--
+alin 住在 n 號房
+
+var room307 = {
+  customer: 'alin'
+};
+
+// undefined
+var room306;
+console.log(room306);
+
+// not defined
+console.log(room1001);
+-->

@@ -11,7 +11,7 @@ function b() {
 console.log(a);
 b();
 ```
-<!-- Hellow World, 呼叫 b -->
+<!-- Hello World, 呼叫 b -->
 
 ```js
 console.log(a);

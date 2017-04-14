@@ -12,11 +12,13 @@
 
 ### 範例
 
+![](assets/scope-chain.png)
+
 **範例一**
 
 ```js
 function b() {
-  console.log(myValue);
+  console.log(myVar);
 }
 
 function a() {

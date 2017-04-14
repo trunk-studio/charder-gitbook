@@ -77,7 +77,7 @@ console.log(message);
 ```
 <!-- hi, bye, hi -->
 
-**範例二**
+**範例三**
 
 ```js
 message = 'hi';
