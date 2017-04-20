@@ -108,6 +108,27 @@ var object = { 'a': { 'b': { 'c': 3 } } };
 _.has(object, 'a.b.c');
 ```
 
+**extend / assignIn**
+
+結合和組合物件
+
+```js
+function Foo() {
+  this.a = 1;
+}
+ 
+function Bar() {
+  this.c = 3;
+}
+ 
+Foo.prototype.b = 2;
+Bar.prototype.d = 4;
+ 
+_.assignIn({ 'a': 0 }, new Foo, new Bar);
+```
+
+<!-- Reflection：一個物件可以看到自己的東西，然後改變自己的屬性和方法-->
+
 ### String
 
 ```js

@@ -117,12 +117,11 @@
 * [呼叫模式](js/foundation/invocation-function.md)
 * [this](js/foundation/this.md)
 * [函式方法 - bind, call, apply](js/foundation/function-method.md)
-* [立即函式](js/foundation/llfe.md)
+* [立即呼叫函式表示式](js/foundation/llfe.md)
 * [Callback 函式](js/foundation/callback.md)
 * [Closure](js/foundation/closure.md)
 * [原型繼承](js/foundation/prototype.md)
-* [建立物件 - 函式建構子](js/foundation/function-constructors.md)
-* [建立物件 - Object.create](js/foundation/object-create.md)
+* [建立自訂物件](js/foundation/create-object.md)
 
 <!--* [偽裝命名空間](js/foundation/fake-namespace.md)-->
 
@@ -130,17 +129,16 @@
 
 * [嚴謹模式](js/foundation/mise/strict-mode.md)
 * [Polyfill](js/foundation/mise/polyfill.md)
+* [Cascade](js/foundation/mise/cascade.md)
 * [轉譯語言](js/foundation/mise/compiler.md)
 * [delete](js/foundation/mise/delete.md)
 * [typeof vs instanceof](js/foundation/mise/typeof-and-instanceof.md)
 * [JSON](js/foundation/mise/json.md)
 * [Promise](js/foundation/mise/promise.md)
-* [Reflection 和 Extend](js/foundation/mise/reflection-and-extend.md)
 * [Async](js/foundation/mise/async.md)
-* [Cascade](js/foundation/mise/cascade.md)
+
 <!--
 * [Hook](js/foundation/mise/hook.md)
-* [Private](js/foundation/mise/private.md)
 * [函數程式設計](js/foundation/functional-programming.md)
 -->
 

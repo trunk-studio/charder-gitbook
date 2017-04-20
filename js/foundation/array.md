@@ -4,20 +4,20 @@
 
 ```js
 var arr = [
-	2,
-	3.14,
+	1,
 	false,
-	’alincode’,
 	{
-		email: ‘alincode@gmail.com’
+		name: 'alincode'
 	},
 	function(name){
-		console.log('hello, ', name);
-	}
+		console.log('hello,', name);
+	},
+	'hi'
 ];
 
-arr[5](arr[3]);
+console.log(arr[3](arr[2].name));
 ```
+<!-- hello, alincode -->
 
 ### Array 和 for in
 
@@ -42,8 +42,15 @@ for (var prop in arr){
 <!--它並沒有先檢查型別在排序，而是把它當作字串排序。-->
 
 ```js
-var numbers = [4, 8, 15, 16, 34, 43];
+var arr = [4, 8, 15, 16, 34, 43];
 console.log(numbers.sort());	// ?
+```
+
+```js
+// lodash
+var arr = [8, 4, 16, 15, 43, 34];
+console.log(_.sortBy(arr, [function(o) { return o; }]));
+console.log(_.sortBy(arr, [function(o) { return -o; }]));
 ```
 
 ### forEach

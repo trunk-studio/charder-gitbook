@@ -1,7 +1,18 @@
-# 函數建構子 (function constructors)
+# 建立自訂物件
+
+### Object.create 與純粹的原型繼承
+
+* [Object.create() - JavaScript | MDN](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Object/create)
+
+
+```js
+var john = Object.create(person);
+console.log(john);
+```
+
+### 函數建構子 (function constructors)
 
 * 一個正常的函數**用來建立物件**，當你在呼叫函數前面放了 new 的關鍵字，在執行環境的 Create 階段被產生的 this 變數，會指向新的空物件。當函數結束執行時，該物件會被函數自動回傳。
-* 用來建立物件
 * new 運算子可以產生新的物件
 * 函數建構子是被用來增加新物件的屬性和方法
 

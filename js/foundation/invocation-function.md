@@ -67,8 +67,9 @@ console.log(myQuo.getStatus());
 
 呼叫建構式時，需要先用 new 來宣告才能呼叫，否則會出現 `not defined`。
 
+### 錯誤示範
+
 ```js
-// 錯誤示範
 var myQuo = Quo('confused');
 console.log(myQuo.getStatus());
 ```

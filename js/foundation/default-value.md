@@ -17,5 +17,8 @@ greet('Leo');
 var a = 0;
 console.log(a || a === 0);
 ```
-
 <!-- true -->
+
+### 延伸閱讀
+
+* [運算子優先等級 - JavaScript | MDN](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)

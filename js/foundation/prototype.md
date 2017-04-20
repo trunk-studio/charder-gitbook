@@ -24,3 +24,6 @@ Hello, I'm Alin
 Hello, I'm Leo
 Person { firstName: 'Alin' }
 -->
+
+
+<!--classical inheritance vs prototypal inheritance-->

@@ -1,6 +1,6 @@
 # this
 
-每當被呼叫新的執行環境，就會被創造
+每當被呼叫新的執行環境，就會被創造。
 
 ### 對類別語言而言 this 是什麼？
 
@@ -35,7 +35,6 @@ public class CashCard extends Card {
 ### 當不清楚 this 指向哪裡，你將會遇到什麼問題？
 
 * 無意間宣告了全域變數
-* 發生偽命名空間衝突
 
 ### 範例
 
@@ -89,16 +88,14 @@ var myObject = {
   log: function() {
     var setName = function(newname) {
       this.name = newname;	// 這裡的 this 代表的是？
-      // console.log(this);
+      console.log(this);
     }
     setName('daisy');
-    console.log(this);
   }
 }
 
 myObject.log();
 ```
-
 <!-- setName 函式並不是物件方法，所以這裡的 this 是指向 globel -->
 
 **範例四**

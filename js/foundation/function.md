@@ -7,9 +7,9 @@
 
 ```js
 function greet() {
-	console.log(‘哈囉’);
+	console.log('哈囉‘);
 }
-greet.language = ‘中文’;
+greet.language = '中文';
 console.log(greet);
 console.log(greet.language);
 ```
@@ -60,7 +60,7 @@ function hi(){
 }
 ```
 
-## 回傳值
+### 回傳值
 
 **沒有回傳值的函式**
 
