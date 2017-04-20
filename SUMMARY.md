@@ -112,6 +112,7 @@
 * [範圍鏈](js/foundation/the-scope-chain.md)
 * [陣列](js/foundation/array.md)
 * [物件](js/foundation/object.md)
+* [偽裝命名空間](js/foundation/fake-namespace.md)
 * [函式](js/foundation/function.md)
 * [建立函式模式](js/foundation/create-function.md)
 * [呼叫模式](js/foundation/invocation-function.md)
@@ -122,8 +123,6 @@
 * [Closure](js/foundation/closure.md)
 * [原型繼承](js/foundation/prototype.md)
 
-<!--* [偽裝命名空間](js/foundation/fake-namespace.md)-->
-
 ## JavaScript 補充課程
 
 * [嚴謹模式](js/foundation/mise/strict-mode.md)
@@ -132,7 +131,6 @@
 <!--
 * [Cascade](js/foundation/mise/cascade.md)
 * [轉譯語言](js/foundation/mise/compiler.md)
-* [delete](js/foundation/mise/delete.md)
 * [typeof vs instanceof](js/foundation/mise/typeof-and-instanceof.md)
 * [JSON](js/foundation/mise/json.md)
 * [Promise](js/foundation/mise/promise.md)

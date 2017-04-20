@@ -19,6 +19,21 @@ console.log(arr[3](arr[2].name));
 ```
 <!-- hello, alincode -->
 
+```js
+var people = [{
+    firstname: 'ailin',
+    lastname: 'liou'
+
+  },
+  {
+    firstname: 'Jane',
+    lastname: 'Doe'
+  }
+]
+
+console.log(people);
+```
+
 ### Array 和 for in
 
 ```js

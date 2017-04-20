@@ -1,6 +1,7 @@
 # ESlint
 
-JavaScript 程式碼檢查工具
+* JavaScript 程式碼檢查工具
+* ESLint 完全可以自行決定是否套用特定規則，以及套用到何種程度。
 
 **起源**
 

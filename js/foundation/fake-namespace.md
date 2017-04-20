@@ -1,38 +1,29 @@
 # 偽裝命名空間 (fake namespace)
 
-Javascript 沒有命名空間，偽裝命名空間只是用物件來做變數和函式的容器。
+* 偽裝命名空間只是用物件來做變數和函式的容器，Javascript 沒有真正的命名空間。
+* 使用情境：減少全域變數
 
 ```js
-var geek = geek || {};
-(function() {
-    var count = 0;
-    function drinkCoffee() {
-      console.log('drink coffee');
-    }
-    function reading(minute) {
-      count += minute;
-      console.log('reading ' + minute + ' minute');
-    }
-    function getReadTime() {
-      return count;
-    }
-    function coding() {
-      console.log('coding');
-    }
-    geek.drinkCoffee = drinkCoffee;
-    geek.reading = reading;
-    geek.getReadTime = getReadTime;
-    geek.coding = coding;
-})();
+var myApp = {};
 
-geek.reading(30);
-geek.reading(15);
-console.log(geek.getReadTime());
+myApp.info = {
+  maintainer: {
+    name: 'alincode',
+    email: 'alincode@gmail.com'
+  },
+  getVersion: function(){
+    return 1.01;
+  }
+}
+
+myApp.info.getVersion();
+
+myApp.member = {
+  register: function(){},
+  login: function(){},
+  logout: function(){}
+}
 ```
-
-### 練習題
-
-* 建立一個計算機的命名空間，有加減乘除，共四個函式。
 
 ### 延伸閱讀
 

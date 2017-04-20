@@ -2,8 +2,9 @@
 
 * 除了基本資料型別，其他都是物件。
 * 物件是有特性的容器，特性具有 name 與 value。
+* Javascript 包含 prototype linkage 功能，允許物件繼承其他物件的特性。若使用得宜，將可以減少物件初始化的時間，也減少記憶體的消耗。
 
-<!--* Javascript 具有原型聯繫 (prototype linkage) 功能，允許物件繼承其他物件的特性。-->
+<!-- 因為只是將物件連接起來，而不是每次都重新 new 一個消耗新的記憶體空間。-->
 
 **建構子**
 
@@ -158,8 +159,3 @@ console.log(getPerson())
 ### 延伸閱讀
 
 * [JavaScript 物件導向介紹 - JavaScript | MDN](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)
-
-
-<!--
-Javascript 包含 prototype linkage 功能，允許物件繼承其他物件的特性。若使用得宜，將可以減少物件初始化的時間，也減少記憶體的消耗。
--->

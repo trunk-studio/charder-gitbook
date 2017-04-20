@@ -73,6 +73,21 @@ _.sumBy(objects, function(o) { return o.n; });
 _.sumBy(objects, 'n');
 ```
 
+**round**
+
+四捨五入
+
+```js
+_.round(4.006);
+// => 4
+ 
+_.round(4.006, 2);
+// => 4.01
+ 
+_.round(4060, -2);
+// => 4100
+```
+
 ### Number
 
 ```js
