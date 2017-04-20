@@ -121,7 +121,6 @@
 * [Callback 函式](js/foundation/callback.md)
 * [Closure](js/foundation/closure.md)
 * [原型繼承](js/foundation/prototype.md)
-* [建立自訂物件](js/foundation/create-object.md)
 
 <!--* [偽裝命名空間](js/foundation/fake-namespace.md)-->
 
@@ -129,6 +128,8 @@
 
 * [嚴謹模式](js/foundation/mise/strict-mode.md)
 * [Polyfill](js/foundation/mise/polyfill.md)
+
+<!--
 * [Cascade](js/foundation/mise/cascade.md)
 * [轉譯語言](js/foundation/mise/compiler.md)
 * [delete](js/foundation/mise/delete.md)
@@ -136,8 +137,6 @@
 * [JSON](js/foundation/mise/json.md)
 * [Promise](js/foundation/mise/promise.md)
 * [Async](js/foundation/mise/async.md)
-
-<!--
 * [Hook](js/foundation/mise/hook.md)
 * [函數程式設計](js/foundation/functional-programming.md)
 -->

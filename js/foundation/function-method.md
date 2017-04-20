@@ -2,6 +2,7 @@
 
 ![](assets/function-method.png)
 
+* 指定 this 指向的位置
 * 每個函式都有 call, apply, bind 方法
 * bind：創造函數的拷貝，讓你設定 this 關鍵字，並設定永遠不會變的預設參數。
 * call, apply：讓你設定 this，並可傳入參數。
@@ -102,7 +103,7 @@ Que.prototype.getStatus = function() {
 var status = Quo.prototype.getStatus.apply(statusObject);
 ```
 
-### 重要觀念
+### 實際應用範例
 
 **function currying**
 
@@ -119,12 +120,27 @@ console.log(multipleByTwo(1));
 console.log(multipleByTwo(2));
 console.log(multipleByTwo(3));
 ```
+<!-- 2, 4, 6 -->
 
 **function borrowing (函式借用)**
 
 ```js
-person.getFullName.apply(person2);
+var person = {
+  firstname: 'default',
+  lastname: 'default',
+  getFullName: function(){
+    return this.firstname + ' ' + this.lastname;
+  }
+}
+
+var alin = {
+  firstname: 'ailin',
+  lastname: 'liou'
+}
+
+person.getFullName.apply(alin);
 ```
+<!-- ailin liou -->
 
 ### 延伸閱讀
 

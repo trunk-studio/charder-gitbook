@@ -1,14 +1,23 @@
 # 函示 (Function)
 
-<!--* 具有 lexical scooping 的一級函式 (first class) 物件。-->
+* 是 first class function
 * 是一種特殊型態的物件，可以被呼叫 (invocable)。
-* 函式也是物件的一種，所以函式也有**屬性**跟**方法**。
 * 每個函式都有兩個參數 this 和 argument
+
+**First Class Functions 的特性**
+
+* 物件可以被傳遞，函式只是物件的一種，所以函式也可以被傳遞。
+* 可以將 function 儲存成變數
+* 可以將 function 當成參數代入另一個 function 中
+* 可以在一個 function 中回傳另一個 function
+* function 跟物件一樣有屬性（property）
 
 ```js
 function greet() {
 	console.log('哈囉‘);
 }
+
+// 函式可以有屬性
 greet.language = '中文';
 console.log(greet);
 console.log(greet.language);

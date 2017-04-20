@@ -5,3 +5,6 @@
 ```js
 $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
 ```
+
+* 有些方法 (像是設定或改變某些狀態) 並不具有回傳值, 這時讓他 return this 來取代 undefined, 就可以實作 cascade.
+* cascade 可以製造富有表達性的介面, 避免單一介面一次做太多的事情.
