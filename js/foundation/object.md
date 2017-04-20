@@ -2,7 +2,10 @@
 
 * 除了基本資料型別，其他都是物件。
 * 物件是有特性的容器，特性具有 name 與 value。
-* Javascript 具有原型聯繫 (prototype linkage) 功能，允許物件繼承其他物件的特性。
+
+<!--* Javascript 具有原型聯繫 (prototype linkage) 功能，允許物件繼承其他物件的特性。-->
+
+**建構子**
 
 ```js
 var person = new Object();
@@ -12,9 +15,9 @@ console.log(person[firstname]);
 console.log(person.firstname);
 ```
 
-### 物件實字 (object literals)
+**物件實字 (object literals)**
 
-提供一種建立新物件值的便利宣告方式，以大括號圍起 name 和 value，可以出現在任何地方。
+提供一種便利的宣告方式來用來建立新物件，以大括號圍起 name 和 value，可以是任何形式，例如參數、回傳值。
 
 ```js
 var person = {
@@ -31,6 +34,103 @@ person.firstName = 'ailin';
 person.lastName = 'liou';
 person.run = function(){};
 ```
+
+### 傳值 (by value) 和傳址 (by ref)
+
+<!--
+mutate: to change something
+immutable: it can’t be changed.
+-->
+
+#### 簡單型別
+
+```js
+var a = 'alincode';
+b = a;
+b = 'eason';
+console.log(a);
+console.log(b);
+```
+<!-- alincode, eason -->
+
+#### 物件型別
+
+**範例一**
+
+```js
+var a = {
+  name: 'alincode'
+};
+
+var b = a;
+a.name = 'eason';
+// b.name = 'eason';
+
+console.log(a.name);
+console.log(b.name);
+```
+<!-- eason, eason -->
+
+**範例二**
+
+```js
+var a = {
+  name: 'alincode'
+};
+
+var b = a;
+
+function callMe(obj){
+  obj.name = 'eason';
+}
+
+callMe(b);
+
+console.log(a.name);
+console.log(b.name);
+```
+<!-- eason, eason -->
+
+**範例三**
+
+```js
+var a = {
+  name: 'alincode'
+};
+
+var b = a;
+
+b = {
+  name: 'eason'
+};
+
+console.log(a.name);
+console.log(b.name);
+```
+<!-- alincode, eason -->
+
+### 錯誤示範
+
+```js
+var a = {
+  name: 'alincode'
+};
+
+var b = a;
+
+function callMe(obj){
+  obj.name = 'eason';
+  return obj;
+}
+
+b = callMe(b);
+
+console.log(a.name);
+console.log(b.name);
+```
+<!-- eason, eason -->
+
+### 物件可以出現在任何地方
 
 **出現在參數**
 
@@ -54,24 +154,6 @@ function getPerson(firstName, lastName){
 
 console.log(getPerson())
 ```
-
-```js
-var restaurant = {
-  brand: 'BBQ',
-  saySlogon: function(name){
-    console.log('hi ' + name + ', welcome to ' + this.brand + ' restaurant.');
-  }
-}
-
-restaurant.saySlogon('alincode');
-```
-
-### 傳值 (by value) 和傳址 (by ref)
-
-<!--
-mutate: to change something
-immutable: it can’t be changed.
--->
 
 ### 延伸閱讀
 

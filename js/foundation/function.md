@@ -1,9 +1,9 @@
 # 函示 (Function)
 
-* 具有 lexical scooping 的一級函式 (first class) 物件。
+<!--* 具有 lexical scooping 的一級函式 (first class) 物件。-->
 * 是一種特殊型態的物件，可以被呼叫 (invocable)。
-* 函式也是物件的一種，所以函式可以有**屬性**跟**方法**。
-* 每個函式都有 arguments
+* 函式也是物件的一種，所以函式也有**屬性**跟**方法**。
+* 每個函式都有兩個參數 this 和 argument
 
 ```js
 function greet() {

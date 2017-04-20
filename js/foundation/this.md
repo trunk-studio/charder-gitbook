@@ -7,6 +7,8 @@
 * this
 * super
 
+<!-- 在 class 語言 this 往往指向 instance-->
+
 ```java
 public class CashCard extends Card {
 
@@ -20,14 +22,15 @@ public class CashCard extends Card {
 		this.bonus = bonus;
 	}
 
+  public getBalance() {
+		return this.balance;
+	}
+
 	public static void main(String[] args) {
 		CashCard cashcard = new CashCard();
 	}
 }
 ```
-
-<!-- 在 class 語言 this 往往指向 instance-->
-
 
 ### 當不清楚 this 指向哪裡，你將會遇到什麼問題？
 
@@ -39,11 +42,13 @@ public class CashCard extends Card {
 **範例一**
 
 ```js
+// function statement
 function a() {
   console.log(this);
   this.myValue = 'hello';
 }
 
+// function expressions
 var b = function() {
   console.log(this);
 }
@@ -52,7 +57,7 @@ a();
 b();
 console.log(myValue);
 ```
-<!-- windown, windown, hello -->
+<!-- window, window, hello -->
 <!-- 兩個 this 都指向 global -->
 
 **範例二**
@@ -68,7 +73,8 @@ var myObject = {
   }
 }
 
-myObject.log();	// 物件方法
+// 物件方法
+myObject.log();
 ```
 
 <!-- daisy 發 dayz -->
@@ -83,6 +89,7 @@ var myObject = {
   log: function() {
     var setName = function(newname) {
       this.name = newname;	// 這裡的 this 代表的是？
+      // console.log(this);
     }
     setName('daisy');
     console.log(this);
@@ -92,7 +99,7 @@ var myObject = {
 myObject.log();
 ```
 
-<!-- setName 函式並沒有連結到物件方法，所以這裡的 this 是指向 globel -->
+<!-- setName 函式並不是物件方法，所以這裡的 this 是指向 globel -->
 
 **範例四**
 

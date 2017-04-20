@@ -29,6 +29,14 @@ for (var prop in arr){
 }
 ```
 
+**輸出結果**
+
+```
+0: Alin
+1: Andy
+2: Leo
+```
+
 ### Sort
 
 <!--它並沒有先檢查型別在排序，而是把它當作字串排序。-->
@@ -46,7 +54,7 @@ console.log(numbers.sort());	// ?
 ```js
 var numbers = [65, 44, 12, 4];
 numbers.forEach(function(value, index, arr){
-	console.log(value);
+	console.log(index + ': ' + value);
 })
 ```
 

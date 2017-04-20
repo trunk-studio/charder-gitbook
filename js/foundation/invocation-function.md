@@ -1,10 +1,10 @@
 # 呼叫模式 (invocation pattern)
 
-每個函式都有兩個參數
-- this
-- argument
+* method invocation pattern
+* function invocation pattern
+* constructor invocation pattern
 
-### 方法呼叫模式 (method invocation pattern)
+**方法呼叫模式 (method invocation pattern)**
 
 ```js
 var myObject = {
@@ -18,7 +18,7 @@ myObject.increment(1);
 console.log(myObject.value);
 ```
 
-### 函式呼叫模式 (function invocation pattern)
+**函式呼叫模式 (function invocation pattern)**
 
 ```js
 var value = 0;
@@ -36,6 +36,7 @@ var myObject = {};
 myObject.double = function() {
   var that = this;
 
+  // look here...
   var helper = function (){
     that.value = add(that.value, that.value);
     helper();
@@ -46,10 +47,9 @@ myObject.double();
 console.log(myObject.getValue());
 ```
 
-### 建構式呼叫模式 (constructor invocation pattern)
+**建構式呼叫模式 (constructor invocation pattern)**
 
-* 如果呼叫建構式時，為附上字首詞 new，會產生非預期的 bug，所以名稱格式會命名為第一個字母大寫。
-* 這種風格並不建議
+不建議使用
 
 ```js
 var Que = function (status){
@@ -65,32 +65,13 @@ var myQuo = new Quo('confused');
 console.log(myQuo.getStatus());
 ```
 
-### apply 呼叫模式 (apply invocation pattern)
+呼叫建構式時，需要先用 new 來宣告才能呼叫，否則會出現 `not defined`。
 
 ```js
-var array = [3, 4];
-
-var add = function (a, b) {
-  return a + b;
-};
-
-var sum = add.apply(null, array);
-console.log(sum); // 7
-
+// 錯誤示範
+var myQuo = Quo('confused');
+console.log(myQuo.getStatus());
 ```
+<!-- Quo is not defined -->
 
-```js
-var statusObject = {
-  status: 'OK'
-}
-
-var Que = function (status){
-  this.status = status;
-};
-
-Que.prototype.getStatus = function() {
-  return this.status;
-}
-
-var status = Quo.prototype.getStatus.apply(statusObject);
-```
+為了避免這樣的情況，所以在命名時會特別將第一個字母大寫。
