@@ -27,8 +27,11 @@
 **常用指令**
 
 ```
+// 安裝
 npm install eslint -g
+// 初始化
 eslint --init
+// 掃描原始碼
 eslint demo.js
 eslint folder1
 eslint folder1 folder2 demo.js
@@ -138,7 +141,19 @@ var _ = require('lodash');
 
 ### Rules
 
-自訂 Code style guide 的規則，除了指定哪些規範要遵守之外，也可以去決定違反的 error level。
+* 啟用的規則，指定要遵守哪些規則及各自的錯誤層級 (error level)
+* [List of available rules - ESLint中文](http://eslint.cn/docs/rules/#best-practices)
+
+**每條規則:**
+
+* 各自獨立
+* 可以開啟或關閉（沒有什麼可以被認為 「太重要所以不能關閉」）
+* 可以將結果設置成警告或者錯誤
+
+另外:
+
+* ESLint 並不推薦任何編碼風格，規則是自由的
+* 所有內置規則都是泛化的
 
 ```json
 {
@@ -157,7 +172,21 @@ var _ = require('lodash');
 }
 ```
 
+**error level**
+
+* "off" or 0 - 關閉規則
+* "warn" or 1 - 將規則視為一個警告（不會影響退出碼）
+* "error" or 2 - 將規則視為一個錯誤 (退出碼為 1)
+
 ### Plugins
+
+**所有都是可拔插的**
+
+* 內置規則和自定義規則共用一套規則 API
+* 內置的格式化方法和自定義的格式化方法共用一套格式化 API
+* 額外的規則和格式化方法能夠在運行時指定
+* 規則和對應的格式化方法並不強制捆綁使用
+
 
 * <https://www.npmjs.com/search?q=eslint-plugin>
 * eslint-plugin-*
@@ -171,6 +200,7 @@ var _ = require('lodash');
     "promise"
   ],
   "rules": {
+    // 插件名稱 / 規則ID
     "promise/always-return": "error",
     "promise/no-return-wrap": "error",
     "promise/param-names": "error",
@@ -190,8 +220,19 @@ var _ = require('lodash');
 
 ```json
 {
+  "plugins": [
+    "promise"
+  ],
   "extends": [
     "plugin:promise/recommended"
+  ]
+}
+```
+
+```json
+{
+  "extends": [
+    "extends": "eslint:recommended"
   ]
 }
 ```
@@ -208,9 +249,13 @@ function greet(firstname, lastname){
 greet('ailin');
 ```
 
+### 工具
+
+* [ESLint - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+* [eslint - ATOM](https://atom.io/packages/eslint)
+
 ### 參考資料
 
 * <http://eslint.org/>
 * <http://eslint.cn/>
 * [List of available rules - ESLint - Pluggable JavaScript linter](http://eslint.org/docs/rules/)
-* [ESLint - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
