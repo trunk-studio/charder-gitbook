@@ -58,14 +58,7 @@ for (var prop in arr){
 
 ```js
 var arr = [4, 8, 15, 16, 34, 43];
-console.log(numbers.sort());	// ?
-```
-
-```js
-// lodash
-var arr = [8, 4, 16, 15, 43, 34];
-console.log(_.sortBy(arr, [function(o) { return o; }]));
-console.log(_.sortBy(arr, [function(o) { return -o; }]));
+console.log(arr.sort());	// ?
 ```
 
 ### forEach

@@ -122,21 +122,20 @@
 * [Callback 函式](js/foundation/callback.md)
 * [Closure](js/foundation/closure.md)
 * [原型繼承](js/foundation/prototype.md)
+* [非同步](js/foundation/async.md)
 
-## JavaScript 補充課程
+## JavaScript 進階課程
 
-* [嚴謹模式](js/foundation/mise/strict-mode.md)
+* [Promise](js/foundation/mise/promise.md)
 * [Polyfill](js/foundation/mise/polyfill.md)
+* [嚴謹模式](js/foundation/mise/strict-mode.md)
+* [Chain](js/foundation/mise/chain.md)
+* [函數程式設計](js/foundation/functional-programming.md)
 
 <!--
-* [Cascade](js/foundation/mise/cascade.md)
 * [轉譯語言](js/foundation/mise/compiler.md)
 * [typeof vs instanceof](js/foundation/mise/typeof-and-instanceof.md)
 * [JSON](js/foundation/mise/json.md)
-* [Promise](js/foundation/mise/promise.md)
-* [Async](js/foundation/mise/async.md)
-* [Hook](js/foundation/mise/hook.md)
-* [函數程式設計](js/foundation/functional-programming.md)
 -->
 
 <!--
