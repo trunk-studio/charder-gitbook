@@ -1,5 +1,14 @@
 # Promise
 
+* 比 callback 更好的表達程式的非同步邏輯
+* 預期它會回傳給我們的一種能力
+
+### 未來值
+
+<!-- 點餐的例子，取餐單據 -->
+
+### 完成的事件
+
 ```js
 function imgLoad(url) {
   return new Promise(function(resolve, reject) {

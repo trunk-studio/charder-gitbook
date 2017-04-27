@@ -46,41 +46,12 @@ console.log(greet);
 ```
 <!-- Hi, alincode -->
 
-### 經典範例
-
-**範例一**
+### 範例
 
 ```js
 (function ($){
 
 })(jQuery)
-```
-
-**範例二**
-
-```js
-var counter = (function(){
-  var i = 0;
-
-  return {
-    get: function(){
-      return i;
-    },
-    set: function( val ){
-      i = val;
-    },
-    increment: function() {
-      return ++i;
-    }
-  };
-})();
-
-// 'counter' is an object with properties, which in this case happen to be methods.
-
-counter.get(); // 0
-counter.set(3);
-counter.increment(); // 4
-counter.increment(); // 5
 ```
 
 ### 延伸閱讀

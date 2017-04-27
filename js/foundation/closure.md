@@ -113,14 +113,6 @@ function greet() {
 greet();
 ```
 
-<!--
-```js
-// jQuery uses function expressions and first-class functions!
-$("button").click(function() {
-
-});
-```-->
-
 **範例五**
 
 ```js

@@ -73,7 +73,7 @@
 * 函示
 * 物件
 
-<!--* this, call, apply, function, callback, closure, for-each …-->
+<!-- for-each …-->
 
 **JavaScript 進階課程**
 

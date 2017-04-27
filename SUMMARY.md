@@ -119,24 +119,29 @@
 * [this](js/foundation/this.md)
 * [函式方法 - bind, call, apply](js/foundation/function-method.md)
 * [立即呼叫函式表示式](js/foundation/llfe.md)
-* [Callback 函式](js/foundation/callback.md)
 * [Closure](js/foundation/closure.md)
 * [原型繼承](js/foundation/prototype.md)
 * [非同步](js/foundation/async.md)
+* [Callback 函式](js/foundation/callback.md)
 
 ## JavaScript 進階課程
 
 * [Promise](js/foundation/mise/promise.md)
 * [Polyfill](js/foundation/mise/polyfill.md)
 * [嚴謹模式](js/foundation/mise/strict-mode.md)
-* [Chain](js/foundation/mise/chain.md)
-* [函數程式設計](js/foundation/functional-programming.md)
+* [Module Pattern](js/foundation/mise/module-pattern.md)
+* [Chain Pattern](js/foundation/mise/chain-pattern.md)
 
 <!--
+* [函數程式設計](js/foundation/functional-programming.md)
 * [轉譯語言](js/foundation/mise/compiler.md)
 * [typeof vs instanceof](js/foundation/mise/typeof-and-instanceof.md)
-* [JSON](js/foundation/mise/json.md)
 -->
+
+## JavaScript ES6(ES2015)
+
+* [介紹](js/es6/README.md)
+* [var / const / let](js/es6/README.md)
 
 <!--
 * [XSS 攻擊](api-design/security/attack/xss.md)
