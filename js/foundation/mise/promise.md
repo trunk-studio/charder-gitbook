@@ -17,7 +17,7 @@ add(fetchX, fetchY, function(sum){
 });
 ```
 <!--如何確保 x, y 同時到達，再進行加法運算？-->
-
+<!-- Transaction -->
 <!--### 完成的事件-->
 
 ### 基本範例

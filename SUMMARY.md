@@ -126,7 +126,6 @@
 
 ## JavaScript 進階課程
 
-* [Polyfill](js/foundation/mise/polyfill.md)
 * [嚴謹模式](js/foundation/mise/strict-mode.md)
 * [Module Pattern](js/foundation/mise/module-pattern.md)
 * [Chain Pattern](js/foundation/mise/chain-pattern.md)
@@ -140,6 +139,7 @@
 ## JavaScript ES6(ES2015)
 
 * [介紹](js/es6/README.md)
+* [Polyfill](js/foundation/mise/polyfill.md)
 * [Promise](js/foundation/mise/promise.md)
 * [var / const / let](js/es6/README.md)
 
