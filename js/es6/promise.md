@@ -43,6 +43,41 @@ p1.then(
 );
 ```
 
+### 只能回傳一個參數
+
+```js
+var p1 = new Promise(
+  function(resolve, reject) {
+    resolve("Success!");
+  }
+);
+```
+<!-- 但可以把多個值，包成一個物件。 -->
+
+### Weird
+
+```js
+var p3 = new Promise(function(resolve, reject){
+  resolve('B');
+});
+
+var p1 = new Promise(function(resolve, reject){
+  resolve(p3);
+});
+
+var p2 = new Promise(function(resolve, reject){
+  resolve('A'); // immediate value
+});
+
+p1.then(function(v){
+  console.log(v);
+});
+
+p2.then(function(v){
+  console.log(v);
+});
+```
+<!-- A B -->
 
 ### 完整例子
 
@@ -126,9 +161,11 @@ getArticleList().then(function(articleList) {
 }).then(function(authorInfo) {
   console.log(authorInfo);
 });
+```
 
 **結果**
 
+```
 {
   "id": 2,
   "name": "alincode",

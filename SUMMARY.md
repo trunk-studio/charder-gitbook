@@ -5,6 +5,89 @@
 * [計畫內容](objective.md)
 * [培訓內容大綱](outline.md)
 
+## JavaScript ES2015 (ES6)
+
+* [介紹](js/es6/README.md)
+* [var / const](js/es6/const.md)
+* [block scoped](js/es6/block-scoped.md)
+* [模板字串](js/es6/template-literals.md)
+* [Spread / Rest](js/es6/spread-rest.md)
+* [解構](js/es6/destructuring.md)
+* [預設值](js/es6/default.md)
+* [Promise](js/es6/promise.md)
+
+<!--
+* [Arrow Functions]()
+* [forEach]()
+* [Enhanced Object Properties]()
+* [Extended Parameter Handling]()
+* [Modules]()
+* [Classes]()
+* [Generators]()
+* [Symbol Type]()
+* [Iterators]()
+* [Map/Set & WeakMap/WeakSet]()
+* [New Built-In Methods]()
+* [Typed Arrays]()
+* [Meta-Programming]()
+-->
+
+## JavaScript 基礎課程
+
+* [介紹](js/foundation/README.md)
+* [基本資料型別](js/foundation/type.md)
+* [強制轉型](js/foundation/coercion.md)
+* [比較](js/foundation/comparison.md)
+* [預設值](js/foundation/default-value.md)
+* [執行環境](js/foundation/execution-content.md)
+* [提升](js/foundation/hoisting.md)
+* [範圍](js/foundation/scope.md)
+* [範圍鏈](js/foundation/the-scope-chain.md)
+* [陣列](js/foundation/array.md)
+* [物件](js/foundation/object.md)
+* [偽裝命名空間](js/foundation/fake-namespace.md)
+* [函式](js/foundation/function.md)
+* [建立函式模式](js/foundation/create-function.md)
+* [呼叫模式](js/foundation/invocation-function.md)
+* [this](js/foundation/this.md)
+* [函式方法 - bind, call, apply](js/foundation/function-method.md)
+* [立即呼叫函式表示式](js/foundation/llfe.md)
+* [Closure](js/foundation/closure.md)
+* [原型繼承](js/foundation/prototype.md)
+* [非同步](js/foundation/async.md)
+* [Callback 函式](js/foundation/callback.md)
+
+## JavaScript 進階課程
+
+* [嚴謹模式](js/foundation/mise/strict-mode.md)
+* [Module Pattern](js/foundation/mise/module-pattern.md)
+* [Chain Pattern](js/foundation/mise/chain-pattern.md)
+* [Polyfill](js/foundation/mise/polyfill.md)
+
+<!--
+* [函數程式設計](js/foundation/functional-programming.md)
+* [轉譯語言](js/foundation/mise/compiler.md)
+* [typeof vs instanceof](js/foundation/mise/typeof-and-instanceof.md)
+-->
+
+## JavaScript 常用工具
+
+* [NPM 介紹](js/tools/npm/README.md)
+* [NPM 初始化專案](js/tools/npm/init.md)
+* [NPM Package.json](js/tools/npm/package.md)
+* [NPM 套件管理](js/tools/npm/install.md)
+* [NPM 版本管理](js/tools/npm/version.md)
+* [NPM script](js/tools/npm/script.md)
+* [NPM config](js/tools/npm/config.md)
+* [NPM 實用補充](js/tools/npm/mise.md)
+* [Bower](js/tools/bower.md)
+* [ESlint](js/tools/eslint/README.md)
+
+## JavaScript 常用套件
+
+* [lodash](js/packages/lodash.md)
+* [moment](js/packages/moment.md)
+
 ## 版本控制系統
 
 * [認識版本控制系統](vcs/README.md)
@@ -80,68 +163,6 @@
 
 * [Slack](tools/slack/README.md)
 * [Zoom 雲端視訊會議](tools/zoom/README.md)
-
-## JavaScript 常用工具
-
-* [NPM 介紹](js/tools/npm/README.md)
-* [NPM 初始化專案](js/tools/npm/init.md)
-* [NPM Package.json](js/tools/npm/package.md)
-* [NPM 套件管理](js/tools/npm/install.md)
-* [NPM 版本管理](js/tools/npm/version.md)
-* [NPM script](js/tools/npm/script.md)
-* [NPM config](js/tools/npm/config.md)
-* [NPM 實用補充](js/tools/npm/mise.md)
-* [Bower](js/tools/bower.md)
-* [ESlint](js/tools/eslint/README.md)
-
-## JavaScript 常用套件
-
-* [lodash](js/packages/lodash.md)
-* [moment](js/packages/moment.md)
-
-## JavaScript 基礎課程
-
-* [介紹](js/foundation/README.md)
-* [基本資料型別](js/foundation/type.md)
-* [強制轉型](js/foundation/coercion.md)
-* [比較](js/foundation/comparison.md)
-* [預設值](js/foundation/default-value.md)
-* [執行環境](js/foundation/execution-content.md)
-* [提升](js/foundation/hoisting.md)
-* [範圍](js/foundation/scope.md)
-* [範圍鏈](js/foundation/the-scope-chain.md)
-* [陣列](js/foundation/array.md)
-* [物件](js/foundation/object.md)
-* [偽裝命名空間](js/foundation/fake-namespace.md)
-* [函式](js/foundation/function.md)
-* [建立函式模式](js/foundation/create-function.md)
-* [呼叫模式](js/foundation/invocation-function.md)
-* [this](js/foundation/this.md)
-* [函式方法 - bind, call, apply](js/foundation/function-method.md)
-* [立即呼叫函式表示式](js/foundation/llfe.md)
-* [Closure](js/foundation/closure.md)
-* [原型繼承](js/foundation/prototype.md)
-* [非同步](js/foundation/async.md)
-* [Callback 函式](js/foundation/callback.md)
-
-## JavaScript 進階課程
-
-* [嚴謹模式](js/foundation/mise/strict-mode.md)
-* [Module Pattern](js/foundation/mise/module-pattern.md)
-* [Chain Pattern](js/foundation/mise/chain-pattern.md)
-
-<!--
-* [函數程式設計](js/foundation/functional-programming.md)
-* [轉譯語言](js/foundation/mise/compiler.md)
-* [typeof vs instanceof](js/foundation/mise/typeof-and-instanceof.md)
--->
-
-## JavaScript ES6(ES2015)
-
-* [介紹](js/es6/README.md)
-* [Polyfill](js/foundation/mise/polyfill.md)
-* [Promise](js/foundation/mise/promise.md)
-* [var / const / let](js/es6/README.md)
 
 <!--
 * [XSS 攻擊](api-design/security/attack/xss.md)
