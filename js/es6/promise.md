@@ -1,5 +1,7 @@
 # Promise
 
+![](https://mdn.mozillademos.org/files/8633/promises.png)
+
 * 比 callback 更好的表達程式的非同步邏輯
 * 是一種控制流程機制
 * 預期它會回傳給我們的一種能力
