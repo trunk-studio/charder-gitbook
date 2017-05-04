@@ -14,6 +14,8 @@
 * [Spread / Rest](js/es6/spread-rest.md)
 * [解構](js/es6/destructuring.md)
 * [預設值](js/es6/default.md)
+* [物件字面值擴充功能](js/es6/object-literal.md)
+* [實戰練習題一](js/es6/ex01.md)
 * [Promise](js/es6/promise.md)
 
 <!--
@@ -66,7 +68,6 @@
 
 <!--
 * [函數程式設計](js/foundation/functional-programming.md)
-* [轉譯語言](js/foundation/mise/compiler.md)
 * [typeof vs instanceof](js/foundation/mise/typeof-and-instanceof.md)
 -->
 
