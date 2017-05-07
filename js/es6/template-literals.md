@@ -20,6 +20,8 @@ console.log('Hi,' +
 
 ### 內插運算式
 
+**ES6**
+
 ```js
 let name = 'alincode';
 console.log(`Hi, ${name}`);
@@ -29,4 +31,17 @@ console.log(`Hi, ${name}`);
 let a = 1;
 let b = 1;
 console.log(`1 + 1 = ${ a + b}`);
+```
+
+**ES5**
+
+```js
+let name = 'alincode';
+console.log('Hi, ' + name);
+```
+
+```js
+let a = 1;
+let b = 1;
+console.log('1 + 1 = ' + (a + b));
 ```

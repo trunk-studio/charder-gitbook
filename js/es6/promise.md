@@ -1,7 +1,7 @@
 # Promise
 
 <!--callback 有兩個缺點，哪兩個缺點？Promise 的出現是為了修補哪一個缺點？-->
-<!--產生器 (generators) -->
+<!--產生器 (generator) -->
 
 ![](https://mdn.mozillademos.org/files/8633/promises.png)
 
@@ -9,7 +9,7 @@
 
 * 提供比 callback 更好的表達程式的非同步邏輯
 * 它是一種控制流程機制
-* Promise 的出現並沒有去除 callback，只是把這些 callback 的協調工作，轉交給了介於我們與其他工作之間的一種**可信任的中介機制**。
+* Promise 的出現並沒有去除 callback，只是把這些 callback 的協調工作，轉交給了介於我們與其他工作之間的一種「可信任的中介機制」。
 * 它是可以輕易重複用來封裝與合成未來值的一種機制。
 
 <!--將非同步的程式，用接近同步式的語法來撰寫。-->

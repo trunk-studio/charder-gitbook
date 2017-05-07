@@ -12,6 +12,8 @@ yo(...[1, 2, 3]);
 
 **Rest**
 
+* 只能用在最後一個參數
+
 ```js
 function yo(...val){
   console.log(val);
