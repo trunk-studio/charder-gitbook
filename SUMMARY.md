@@ -17,18 +17,18 @@
 * [物件字面值擴充功能](js/es6/object-literal.md)
 * [實戰練習題一](js/es6/ex01.md)
 * [Promise](js/es6/promise.md)
+* [箭頭函式](js/es6/arrow.md)
+* [群集](js/es6/collections.md)
+* [ES6 新的 API](js/es6/new-api.md)
+* [類別](js/es6/classes.md)
 
 <!--
-* [Arrow Functions]()
-* [forEach]()
+* [模組](js/es6/modules.md)
+* [Generators]()
 * [Enhanced Object Properties]()
 * [Extended Parameter Handling]()
-* [Modules]()
-* [Classes]()
-* [Generators]()
 * [Symbol Type]()
 * [Iterators]()
-* [Map/Set & WeakMap/WeakSet]()
 * [New Built-In Methods]()
 * [Typed Arrays]()
 * [Meta-Programming]()
@@ -58,6 +58,7 @@
 * [原型繼承](js/foundation/prototype.md)
 * [非同步](js/foundation/async.md)
 * [Callback 函式](js/foundation/callback.md)
+* [Array 方法](js/foundation/array-method.md)
 
 ## JavaScript 進階課程
 
