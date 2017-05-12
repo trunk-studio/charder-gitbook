@@ -1,5 +1,7 @@
 # 類別 (Class)
 
+基於原型提供更乾淨的語法，新增了 super 解決 ES5 的問題。
+
 ### 定義
 
 **ES5**
@@ -84,6 +86,23 @@ var myCar = new NiceCar();
 var yourCar = new Car();
 yourCar.go();
 ```
+
+### static
+
+```js
+class Person {
+  constructor(firstName) {
+   	this.firstName = firstName; 
+  }
+  static sayHello(){
+   console.log('Hello, everybody');
+  }
+}
+
+Person.sayHello();
+```
+
+* 練習題：class.js
 
 **注意**
 
