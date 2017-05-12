@@ -285,7 +285,7 @@ getArticleList(function(articleList) {
 getArticleList().then(function(articleList) {
   return getArticle(articleList[0].id);
 }).then(function(article) {
-  return getArticle(article.authorId);
+  return getAuthor(article.authorId);
 }).then(function(authorInfo) {
   console.log(authorInfo);
 });
@@ -302,6 +302,8 @@ getArticleList().then(function(articleList) {
 ```
 
 ### JQuery
+
+<https://jsfiddle.net/daronwolff/n10n17ag/>
 
 ```js
 (function() {
@@ -336,11 +338,34 @@ getArticleList().then(function(articleList) {
     $("h1").text("Lo lamento, no hay expreso :(");
   });
 })();
+```
 
+### 最簡單的範例
+
+<https://jsfiddle.net/richardcwc/qdjkreo5/>
+
+```js
+delay().then(function(response) {
+	alert('Promised!');
+});
+
+function delay() {
+	return new Promise(function(resolve,reject) {
+		setTimeout(function() {
+			resolve('success');
+			reject('error');
+		},2000);
+	});
+}
 ```
 
 ### 延伸閱讀
 
 * [Convert a callback to a promise - js Video Tutorial #free @eggheadio](https://egghead.io/lessons/javascript-convert-a-callback-to-a-promise)
 * [Promise - JavaScript | MDN](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+
+### 更多範例
+
 * [Javascript promise example - JSFiddle](https://jsfiddle.net/daronwolff/n10n17ag/)
+* <https://jsfiddle.net/jpsierens/5g0d0ww7/9/>
+* <https://github.com/mdn/fetch-examples>

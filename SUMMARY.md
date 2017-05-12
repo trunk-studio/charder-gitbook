@@ -17,6 +17,7 @@
 * [物件字面值擴充功能](js/es6/object-literal.md)
 * [實戰練習題一](js/es6/ex01.md)
 * [Promise](js/es6/promise.md)
+* [產生器](js/es6/generators.md)
 * [箭頭函式](js/es6/arrow.md)
 * [群集](js/es6/collections.md)
 * [ES6 新的 API](js/es6/new-api.md)
