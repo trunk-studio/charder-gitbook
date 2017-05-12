@@ -1,6 +1,36 @@
 # Array 方法
 
+### Array 和 for in
+
+```js
+var arr = ['Alin', 'Andy', 'Leo'];
+
+for (var prop in arr){
+	console.log(prop + ': ' + arr[prop]);
+}
+```
+
+**輸出結果**
+
+```
+0: Alin
+1: Andy
+2: Leo
+```
+
+### Sort
+
+<!--它並沒有先檢查型別在排序，而是把它當作字串排序。-->
+
+```js
+var arr = [4, 8, 15, 16, 34, 43];
+console.log(arr.sort());	// ?
+```
+
 ### forEach
+
+* value：陣列元素的值
+* index：陣列元素的數值索引
 
 **語法**
 
