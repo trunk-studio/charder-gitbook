@@ -301,7 +301,46 @@ getArticleList().then(function(articleList) {
 }
 ```
 
+### JQuery
+
+```js
+(function() {
+  var restante = 0;
+  'use strict';
+
+  function wait() {
+    return new Promise(function(done, reject) {
+      setTimeout(function() {
+        if (restante > 0) {
+          done();
+        } else {
+          reject();
+        }
+      }, 2000);
+    });
+  }
+  wait().
+  then(function() {
+    $("h1").text("Ok,Preparando expresso...");
+    return wait();
+  }).
+  then(function() {
+    $("h1").text("Listo, tenga su expresos");
+    return wait();
+  }).
+  then(function() {
+    restante -= 1;
+    $("h1").text("Gracias :)");
+  }).
+  catch(function() {
+    $("h1").text("Lo lamento, no hay expreso :(");
+  });
+})();
+
+```
+
 ### 延伸閱讀
 
 * [Convert a callback to a promise - js Video Tutorial #free @eggheadio](https://egghead.io/lessons/javascript-convert-a-callback-to-a-promise)
 * [Promise - JavaScript | MDN](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+* [Javascript promise example - JSFiddle](https://jsfiddle.net/daronwolff/n10n17ag/)
