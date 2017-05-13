@@ -14,6 +14,11 @@
 
 <!--將非同步的程式，用接近同步式的語法來撰寫。-->
 
+### Promise 相容性
+
+* [Promise 相容性測試](http://caniuse.com/#feat=promises)
+* [ES6 Promise Polyfill](https://github.com/stefanpenner/es6-promise)
+
 ### 未來值
 
 等值的承若 (vlue-promise)，例如取餐收據。
@@ -167,7 +172,9 @@ function func(cb) {
 
 <!--## all 與 race 的變體-->
 
-<!--## Promise 需注意的事項-->
+### Promise 需注意的事項
+
+* 不要忘最後面要接 `catch`
 
 ## 範例
 
@@ -180,7 +187,18 @@ var p1 = new Promise(
   }
 );
 ```
-<!-- 但可以把多個值，包成一個物件。 -->
+
+```js
+var p1 = new Promise(
+  function(resolve, reject) {
+    let obj = {
+      id: 1,
+      message: 'success'
+    }
+    resolve(obj);
+  }
+);
+```
 
 ### Weird
 
@@ -231,73 +249,45 @@ function imgLoad(url) {
 }
 ```
 
-```js
-function getArticleList(callback) {
-  return new Promise(function(resolve, reject) {
-      $.ajax({
-        url: "/article",
-        type: "get"
-      }).done(function(articleList) {
-        return resolve(articleList);
-      });
-    }
-  }
-}
-
-function getArticle(id, callback) {
-  return new Promise(function(resolve, reject) {
-      $.ajax({
-        url: "/articleInfo/" + id,
-        type: "get"
-      }).done(function(article) {
-        return resolve(article);
-      });
-    }
-  }
-}
-
-function getAuthor(authorId, callback) {
-  return new Promise(function(resolve, reject) {
-      $.ajax({
-        url: "/author/" + authorId,
-        type: "post"
-      }).done(function(authorInfo) {
-        return resolve(authorInfo);
-      });
-    }
-  }
-}
-```
+<http://jsfiddle.net/ddam2mof/3/>
 
 ```js
-// 原本
-getArticleList(function(articleList) {
-  getArticle(articleList[0].id, function(articleInfo) {
-    getAuthor(articleInfo.arthorId, function(arthorInfo) {
-      console.log(arthorInfo);
-    });
+getArticleList().then(function(articles){
+	return getArticle(articles[0].id);
+}).then(function(article){
+    return getAuthor(article);
+}).then(function(author){
+	alert(author.email);
+});
+
+function getAuthor(id){
+  return new Promise(function(resolve, reject){
+      $.ajax("http://beta.json-generator.com/api/json/get/E105pDLh",{
+          author: id
+      }).done(function(result){
+          resolve(result);
+      })
   });
-});
-```
+}
 
-```js
-// Promise ( ES6 )
-getArticleList().then(function(articleList) {
-  return getArticle(articleList[0].id);
-}).then(function(article) {
-  return getAuthor(article.authorId);
-}).then(function(authorInfo) {
-  console.log(authorInfo);
-});
-```
+function getArticle(id){
+    return new Promise(function(resolve, reject){
+        $.ajax("http://beta.json-generator.com/api/json/get/EkI02vUn",{
+            id: id
+        }).done(function(result){
+            resolve(result);
+        })
+    });
+}
 
-**結果**
-
-```
-{
-  "id": 2,
-  "name": "alincode",
-  "email": "alincode@gmail.com"
+function getArticleList(){
+    return new Promise(function(resolve, reject){
+       $.ajax(
+        "http://beta.json-generator.com/api/json/get/Ey8JqwIh")
+        .done(function(result){
+            resolve(result);
+        }); 
+    });
 }
 ```
 

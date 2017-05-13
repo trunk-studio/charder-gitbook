@@ -60,7 +60,20 @@ myMap.clear();
 ### WeakMap
 
 * 使用方法大致上與 Map / Set 相同，差異只在於記憶體配置方法，更易於 GC 回收。
+* 基本資料型態不能被當作是 key
 * 沒有 size 跟 clear()
+* GC: garbage collection
+
+**方法**
+
+```
+WeakMap.prototype.delete(key)
+WeakMap.prototype.get(key)
+WeakMap.prototype.has(key)
+WeakMap.prototype.set(key, value)
+```
+
+**範例**
 
 ```js
 var m = new WeakMap();
@@ -70,23 +83,12 @@ var a3 = { id: 3};
 var a4 = { id: 4};
 
 m.set(a1, a2);
-
-a1 = null;
-a2 = null;
-// ?
-
-m.set(a3, a4);
-a4 = null;
-// ?
-
-m.size // ?
-m.clear(); // ?
+m.set('a', 1); // 錯誤範例
 ```
-<!-- TypeError: m.clear is not a function -->
 
 ### Set
 
-<!--一個 Set 內，不會有重複的物件。-->
+一個 Set 內，不會有重複的物件。
 
 ```js
 var s = new Set();
@@ -113,7 +115,4 @@ var a2 = { id: 2};
 
 s.add(a1);
 s.add(a2);
-
-a1 = null;
-a2 = null;
 ```

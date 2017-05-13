@@ -16,12 +16,13 @@
 * [預設值](js/es6/default.md)
 * [物件字面值擴充功能](js/es6/object-literal.md)
 * [實戰練習題一](js/es6/ex01.md)
-* [Promise](js/es6/promise.md)
-* [產生器](js/es6/generators.md)
 * [箭頭函式](js/es6/arrow.md)
 * [群集](js/es6/collections.md)
 * [ES6 新的 API](js/es6/new-api.md)
 * [類別](js/es6/classes.md)
+* [Promise](js/es6/promise.md)
+* [產生器 (Generator)](js/es6/generators.md)
+* [ES7 await](js/es7/await.md)
 
 <!--
 * [模組](js/es6/modules.md)
@@ -31,7 +32,6 @@
 * [Symbol Type]()
 * [Iterators]()
 * [New Built-In Methods]()
-* [Typed Arrays]()
 * [Meta-Programming]()
 -->
 
@@ -113,6 +113,7 @@
 * [多媒體](html5/media/README.md)
 * [CSS3 入門](html5/css3/README.md)
 * [媒體查詢](html5/mediaqueries/README.md)
+* [Fetch API](html5/fetch/README.md)
 
 ## Bootstrap 框架
 

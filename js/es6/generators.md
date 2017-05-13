@@ -1,7 +1,8 @@
 # 產生器
 
-<!--
-為了解決 callback 表達非同步執行流程的方式，相當的非循序式，使得難以推理程式的運作邏輯。-->
+* 目的在於希望能將非同步的控制流程，閱讀起來像同步控制流程一般的直覺。
+
+### 新增的語法
 
 * 暫停點：yield
 * 下一步：it.next();
@@ -44,16 +45,16 @@ console.log(gen.next().value); // 2
 ### 提早放棄
 
 ```js
-function *counter(){
+function *flow(){
   yield 1;
   yield 2;
   yield 3;
 }
 
-var it = counter();
-it.next();
+var it = flow();
 
 try {
+  console.log(it.next());
   it.throw('Oops');
 } catch(err) {
   console.log(err);
@@ -61,3 +62,31 @@ try {
 
 it.next();
 ```
+
+```js
+var func1 = () => 1
+var func2 = () => new Error('Oops');
+var func3 = () => 3;
+
+function *flow(){
+  yield func1();
+  yield func2();
+  yield func3();
+}
+
+var it = flow();
+
+try {
+  console.log(it.next());
+  console.log(it.next());
+} catch(err) {
+  console.log(err);
+}
+
+console.log(it.next());
+console.log(it.next());
+```
+
+### Generators 與 Promises 整合 (Combining Promises and Generators)
+
+
