@@ -1,20 +1,17 @@
 # Promise
 
 <!--callback 有兩個缺點，哪兩個缺點？Promise 的出現是為了修補哪一個缺點？-->
-<!--產生器 (generator) -->
 
 ![](https://mdn.mozillademos.org/files/8633/promises.png)
 
-### Promise 是什麼？
+**Promise 是什麼？**
 
 * 提供比 callback 更好的表達程式的非同步邏輯
 * 它是一種控制流程機制
 * Promise 的出現並沒有去除 callback，只是把這些 callback 的協調工作，轉交給了介於我們與其他工作之間的一種「可信任的中介機制」。
 * 它是可以輕易重複用來封裝與合成未來值的一種機制。
 
-<!--將非同步的程式，用接近同步式的語法來撰寫。-->
-
-### Promise 相容性
+**Promise 相容性**
 
 * [Promise 相容性測試](http://caniuse.com/#feat=promises)
 * [ES6 Promise Polyfill](https://github.com/stefanpenner/es6-promise)
@@ -38,14 +35,14 @@ add(fetchX, fetchY, function(sum){
 * fulfilled：已實現，表示操作成功完成。
 * rejected：已拒絕，表示操作失敗。
 
-## 方法
+### 方法
 
 * Promise.reject(reason)
 * Promise.resolve(value)
 * Promise.all(iterable)
 * Promise.race(iterable)
 
-### Promise.reject(reason)
+**Promise.reject(reason)**
 
 只會代表發生拒絕的情況
 
@@ -57,7 +54,7 @@ var p1 = new Promise(function(resolve, reject)){
 var p2 = new Promise.reject('Oops');
 ```
 
-### Promise.resolve(value)
+**Promise.resolve(value)**
 
 有可能會發生在履行(fulfill) 或拒絕的 Promise，取決於傳入了什麼給它，如果傳入給 resolve 的是一個立即的非 Promise、非 thenable 的值，那麼 promise 就會以那個植被履行。
 
@@ -65,7 +62,7 @@ var p2 = new Promise.reject('Oops');
 // 缺範例待補
 ```
 
-### Promise.all(iterable)
+**Promise.all(iterable)**
 
 所傳入的所有 prmises 都必須履行 (fulfill)，所回傳的 promise 才會履行。
 
@@ -83,7 +80,7 @@ Promise.all([p1, p2, p3]).catch(function(err){
 });
 ```
 
-### Promise.race(iterable)
+**Promise.race(iterable)**
 
 只要第一個解析的 promise 會勝出，而無論哪個解析結果為何，都會成為所回傳的 promise 的解析結果。
 
@@ -98,9 +95,9 @@ Promise.race([p1, p2, p3]).then(function(msg){
 ```
 <!--執行結果為 p1，但未必每次都是 p1，因為是非同步競賽。-->
 
-## Promise 原型方法
+### Promise 原型方法
 
-### Promise.prototype.then(onFulfilled, onRejected)
+**Promise.prototype.then(onFulfilled, onRejected)**
 
 * fulfillment 履行
 * rejection 拒絕
@@ -132,7 +129,7 @@ p.then(fulfilled);
 p.then(fulfilled, rejected);
 ```
 
-### Promise.prototype.catch(onRejected)
+**Promise.prototype.catch(onRejected)**
 
 ```js
 p.catch(rejected);
@@ -169,8 +166,6 @@ function func(cb) {
   })
 }
 ```
-
-<!--## all 與 race 的變體-->
 
 ### Promise 需注意的事項
 
@@ -225,6 +220,8 @@ p2.then(function(v){
 ```
 <!-- A B -->
 
+<!--## all 與 race 的變體-->
+
 ### 完整例子
 
 ```js
@@ -262,32 +259,32 @@ getArticleList().then(function(articles){
 
 function getAuthor(id){
   return new Promise(function(resolve, reject){
-      $.ajax("http://beta.json-generator.com/api/json/get/E105pDLh",{
-          author: id
-      }).done(function(result){
-          resolve(result);
-      })
+    $.ajax("http://beta.json-generator.com/api/json/get/E105pDLh",{
+        author: id
+    }).done(function(result){
+        resolve(result);
+    })
   });
 }
 
 function getArticle(id){
-    return new Promise(function(resolve, reject){
-        $.ajax("http://beta.json-generator.com/api/json/get/EkI02vUn",{
-            id: id
-        }).done(function(result){
-            resolve(result);
-        })
-    });
+  return new Promise(function(resolve, reject){
+    $.ajax("http://beta.json-generator.com/api/json/get/EkI02vUn",{
+        id: id
+    }).done(function(result){
+        resolve(result);
+    })
+  });
 }
 
 function getArticleList(){
-    return new Promise(function(resolve, reject){
-       $.ajax(
-        "http://beta.json-generator.com/api/json/get/Ey8JqwIh")
-        .done(function(result){
-            resolve(result);
-        }); 
+  return new Promise(function(resolve, reject){
+    $.ajax(
+    "http://beta.json-generator.com/api/json/get/Ey8JqwIh")
+    .done(function(result){
+        resolve(result);
     });
+  });
 }
 ```
 
@@ -335,10 +332,6 @@ function getArticleList(){
 <https://jsfiddle.net/richardcwc/qdjkreo5/>
 
 ```js
-delay().then(function(response) {
-	alert('Promised!');
-});
-
 function delay() {
 	return new Promise(function(resolve,reject) {
 		setTimeout(function() {
@@ -347,6 +340,10 @@ function delay() {
 		},2000);
 	});
 }
+
+delay().then(function(response) {
+	alert('Promised!');
+});
 ```
 
 ### 延伸閱讀

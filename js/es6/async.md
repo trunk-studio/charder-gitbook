@@ -5,16 +5,17 @@
 
 
 ```js
-async function() {
-  var articleList = await getArticleList();
-  var article = await getArticle(articleList[0].id);
-  var authorInfo = await getAuthor(article.authorId);
-  console.log( arthorInfo );
+function getArticleList(){
+  return new Promise(function(resolve, reject){
+    $.ajax(
+    "http://beta.json-generator.com/api/json/get/Ey8JqwIh")
+    .done(function(result){
+        resolve(result);
+    }); 
+  });
 }
-```
 
-```js
-async () => {
+async function() {
   var articleList = await getArticleList();
   var article = await getArticle(articleList[0].id);
   var authorInfo = await getAuthor(article.authorId);
