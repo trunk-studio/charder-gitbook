@@ -2,13 +2,14 @@
 
 以自動化程度來劃分，可分成：
 
-**手動測試 (Manual Testing)**：一個步驟一個步驟的手動去執行
+* 手動測試 (Manual Testing)：一個步驟一個步驟的手動去執行
+* 自動化測試 (Automation Testing)
 
-**自動化測試 (Automation Testing)**：錄製測試步驟
+**錄製測試步驟**
 
 ![](http://www.seleniumhq.org/projects/ide/selenium-ide.gif)
 
-撰寫自動化程式
+**撰寫自動化程式**
 
 ```js
 var webdriver = require('selenium-webdriver'),
