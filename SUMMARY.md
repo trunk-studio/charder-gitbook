@@ -12,6 +12,13 @@
 * [測試金字塔](testing/test-pyramid.md)
 * [單元測試](testing/unit-test.md)
 * [手動測試 vs 自動化測試](testing/manual-vs-automation-testing.md)
+* [介紹 Selenium](testing/selenium-intro.md)
+* [Selenium IDE](testing/selenium-ide.md)
+
+<!--
+* [選取元素](element/selector.md)
+* [指令的種類](element/commend-type.md)
+-->
 
 ## JavaScript 常用套件
 
