@@ -35,7 +35,7 @@ Selenium IDE 是 Firefox 附加元件 (extension)，需要搭配 Firefox 瀏覽�
 
 在 Firefox 瀏覽器的**工具**選單，打開 **Selenium IDE** 會出現下面這個視窗畫面：
 
-![](assets/selenium-ide.png)
+![](http://www.seleniumhq.org/projects/ide/selenium-ide.gif)
 
 ### Selenium Remote Control
 
