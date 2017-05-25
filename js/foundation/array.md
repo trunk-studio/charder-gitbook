@@ -24,8 +24,7 @@ var people = [{
     firstname: 'ailin',
     lastname: 'liou'
 
-  },
-  {
+  },{
     firstname: 'Jane',
     lastname: 'Doe'
   }

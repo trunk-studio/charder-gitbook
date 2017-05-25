@@ -35,7 +35,7 @@ console.log(arr.sort());	// ?
 **語法**
 
 ```js
-array.forEach(function(currentValue, index, arr), thisValue)
+array.forEach(function(item, index, arr), item)
 ```
 
 ```js

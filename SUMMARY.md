@@ -5,86 +5,12 @@
 * [計畫內容](objective.md)
 * [培訓內容大綱](outline.md)
 
-## JavaScript ES2015 (ES6)
+## 測試
 
-* [介紹](js/es6/README.md)
-* [var / const](js/es6/const.md)
-* [block scoped](js/es6/block-scoped.md)
-* [模板字串](js/es6/template-literals.md)
-* [Spread / Rest](js/es6/spread-rest.md)
-* [解構](js/es6/destructuring.md)
-* [預設值](js/es6/default.md)
-* [物件字面值擴充功能](js/es6/object-literal.md)
-* [實戰練習題一](js/es6/ex01.md)
-* [箭頭函式](js/es6/arrow.md)
-* [群集](js/es6/collections.md)
-* [ES6 新的 API](js/es6/new-api.md)
-* [類別](js/es6/classes.md)
-* [Promise](js/es6/promise.md)
-* [產生器 (Generator)](js/es6/generators.md)
-* [ES7 await](js/es7/await.md)
-
-<!--
-* [模組](js/es6/modules.md)
-* [Generators]()
-* [Enhanced Object Properties]()
-* [Extended Parameter Handling]()
-* [Symbol Type]()
-* [Iterators]()
-* [New Built-In Methods]()
-* [Meta-Programming]()
--->
-
-## JavaScript 基礎課程
-
-* [介紹](js/foundation/README.md)
-* [基本資料型別](js/foundation/type.md)
-* [強制轉型](js/foundation/coercion.md)
-* [比較](js/foundation/comparison.md)
-* [預設值](js/foundation/default-value.md)
-* [執行環境](js/foundation/execution-content.md)
-* [提升](js/foundation/hoisting.md)
-* [範圍](js/foundation/scope.md)
-* [範圍鏈](js/foundation/the-scope-chain.md)
-* [陣列](js/foundation/array.md)
-* [物件](js/foundation/object.md)
-* [偽裝命名空間](js/foundation/fake-namespace.md)
-* [函式](js/foundation/function.md)
-* [建立函式模式](js/foundation/create-function.md)
-* [呼叫模式](js/foundation/invocation-function.md)
-* [this](js/foundation/this.md)
-* [函式方法 - bind, call, apply](js/foundation/function-method.md)
-* [立即呼叫函式表示式](js/foundation/llfe.md)
-* [Closure](js/foundation/closure.md)
-* [原型繼承](js/foundation/prototype.md)
-* [非同步](js/foundation/async.md)
-* [Callback 函式](js/foundation/callback.md)
-* [Array 方法](js/foundation/array-method.md)
-
-## JavaScript 進階課程
-
-* [嚴謹模式](js/foundation/mise/strict-mode.md)
-* [Module Pattern](js/foundation/mise/module-pattern.md)
-* [Chain Pattern](js/foundation/mise/chain-pattern.md)
-* [Polyfill](js/foundation/mise/polyfill.md)
-
-<!--
-* [函數程式設計](js/foundation/functional-programming.md)
-* [typeof vs instanceof](js/foundation/mise/typeof-and-instanceof.md)
--->
-
-## JavaScript 常用工具
-
-* [NPM 介紹](js/tools/npm/README.md)
-* [NPM 初始化專案](js/tools/npm/init.md)
-* [NPM Package.json](js/tools/npm/package.md)
-* [NPM 套件管理](js/tools/npm/install.md)
-* [NPM 版本管理](js/tools/npm/version.md)
-* [NPM script](js/tools/npm/script.md)
-* [NPM config](js/tools/npm/config.md)
-* [NPM 實用補充](js/tools/npm/mise.md)
-* [Bower](js/tools/bower.md)
-* [ESlint](js/tools/eslint/README.md)
+* [測試基礎](testing/README.md)
+* [測試環境](testing/env.md)
+* [測試金字塔](testing/test-pyramid.md)
+* [手動測試 vs 自動化測試](testing/manual-vs-automation-testing.md)
 
 ## JavaScript 常用套件
 
@@ -179,3 +105,69 @@
 * [補充](api-design/mise/README.md)
 * [GraphQL](api-design/graphql/README.md)
 -->
+
+## JavaScript 基礎課程
+
+* [介紹](js/foundation/README.md)
+* [基本資料型別](js/foundation/type.md)
+* [強制轉型](js/foundation/coercion.md)
+* [比較](js/foundation/comparison.md)
+* [預設值](js/foundation/default-value.md)
+* [執行環境](js/foundation/execution-content.md)
+* [提升](js/foundation/hoisting.md)
+* [範圍](js/foundation/scope.md)
+* [範圍鏈](js/foundation/the-scope-chain.md)
+* [陣列](js/foundation/array.md)
+* [物件](js/foundation/object.md)
+* [偽裝命名空間](js/foundation/fake-namespace.md)
+* [函式](js/foundation/function.md)
+* [建立函式模式](js/foundation/create-function.md)
+* [呼叫模式](js/foundation/invocation-function.md)
+* [this](js/foundation/this.md)
+* [函式方法 - bind, call, apply](js/foundation/function-method.md)
+* [立即呼叫函式表示式](js/foundation/llfe.md)
+* [Closure](js/foundation/closure.md)
+* [原型繼承](js/foundation/prototype.md)
+* [非同步](js/foundation/async.md)
+* [Callback 函式](js/foundation/callback.md)
+* [Array 方法](js/foundation/array-method.md)
+
+## JavaScript ES2015 (ES6)
+
+* [介紹](js/es6/README.md)
+* [var / const](js/es6/const.md)
+* [block scoped](js/es6/block-scoped.md)
+* [模板字串](js/es6/template-literals.md)
+* [Spread / Rest](js/es6/spread-rest.md)
+* [解構](js/es6/destructuring.md)
+* [預設值](js/es6/default.md)
+* [物件字面值擴充功能](js/es6/object-literal.md)
+* [實戰練習題一](js/es6/ex01.md)
+* [箭頭函式](js/es6/arrow.md)
+* [群集](js/es6/collections.md)
+* [ES6 新的 API](js/es6/new-api.md)
+* [類別](js/es6/classes.md)
+* [Promise](js/es6/promise.md)
+* [產生器 (Generator)](js/es6/generators.md)
+* [ES7 await](js/es7/await.md)
+
+## JavaScript 進階課程
+
+* [嚴謹模式](js/foundation/mise/strict-mode.md)
+* [Module Pattern](js/foundation/mise/module-pattern.md)
+* [Chain Pattern](js/foundation/mise/chain-pattern.md)
+* [Polyfill](js/foundation/mise/polyfill.md)
+
+## JavaScript 常用工具
+
+* [NPM 介紹](js/tools/npm/README.md)
+* [NPM 初始化專案](js/tools/npm/init.md)
+* [NPM Package.json](js/tools/npm/package.md)
+* [NPM 套件管理](js/tools/npm/install.md)
+* [NPM 版本管理](js/tools/npm/version.md)
+* [NPM script](js/tools/npm/script.md)
+* [NPM config](js/tools/npm/config.md)
+* [NPM 實用補充](js/tools/npm/mise.md)
+* [Bower](js/tools/bower.md)
+* [ESlint](js/tools/eslint/README.md)
+

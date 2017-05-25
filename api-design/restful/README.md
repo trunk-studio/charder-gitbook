@@ -34,6 +34,23 @@ PUT /users/1
 DELETE /users/1
 ```
 
+### 從字面上來上
+
+* REST 是 (Resources) Representational State Transfer 的縮寫
+
+**資源 (Resources)**
+
+* 資源表示一種實體，所以應該是名詞，動詞應該使用在 HTTP method。
+
+**表現層 (Representation)**
+
+* Content-Type：JSON 或 XML 格式
+* 例如可以用 HTML 格式、XML 格式、JSON 格式
+
+**狀態轉換 (State Transfer)**
+
+* 具體來說，就是 HTTP 協議裡面，四個表示操作方式的動詞：GET、POST、PUT、DELETE。
+
 ## 統一介面
 
 ### 唯一資源識別方法

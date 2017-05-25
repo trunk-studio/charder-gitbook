@@ -1,33 +1,26 @@
 # REST 的設計理念與架構
 
-### 什麼是 REST
-
-* 是一種架構風格，不是標準。
-* 是 `Roy Thomas Fielding` 在他 2000 年的博士論文中提出的。Fielding 是一開始 HTTP 協議的主要設計者，也是 Apache 基金會的第一任主席，所以一經發表後，馬上就引起了關注。
-
-### 從字面上來上
-
-* REST 是 (Resources) Representational State Transfer 的縮寫
-
-**資源 (Resources)**
-
-* 資源表示一種實體，所以應該是名詞，動詞應該使用在 HTTP method。
-
-**表現層 (Representation)**
-
-* Content-Type：JSON 或 XML 格式
-* 例如可以用 HTML 格式、XML 格式、JSON 格式
-
-**狀態轉換 (State Transfer)**
-
-* 具體來說，就是 HTTP 協議裡面，四個表示操作方式的動詞：GET、POST、PUT、DELETE。
-
 ### REST 不是什麼
 
 * REST is not pretty URLs
 * REST is not HTTP Verbs
 * REST is not CRUD
 * REST is not JSON
+
+### 什麼是 REST
+
+* 是一種架構風格，不是標準。
+* 是 `Roy Thomas Fielding` 在他 2000 年的博士論文中提出的。Fielding 是一開始 HTTP 協議的主要設計者，也是 Apache 基金會的第一任主席，所以一經發表後，馬上就引起了關注。
+* [Architectural Styles and
+the Design of Network-based Software Architectures](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm)
+
+### 從字面上來上看
+
+REST 是 (Resources) Representational State Transfer 的縮寫
+
+* 資源 (Resources)
+* 表現層 (Representation)
+* 狀態轉換 (State Transfer)
 
 ## REST 原則 (Constraints)
 

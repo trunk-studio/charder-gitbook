@@ -14,7 +14,7 @@
 
 ```js
 function greet() {
-	console.log('哈囉‘);
+	console.log('哈囉');
 }
 
 // 函式可以有屬性
