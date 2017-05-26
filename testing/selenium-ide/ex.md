@@ -16,11 +16,11 @@
 
 ![](assets/ex01.png)
 
-<!--
+
 ### 答案
 
 ![](assets/ex01-answer.png)
--->
+
 
 ### 練習三：新增帳號
 
@@ -30,11 +30,11 @@
 
 ![](assets/ex02_01.png)
 
-<!--
+
 ### 答案
 
 ![](assets/ex02-answer.png)
--->
+
 
 ### 延伸閱讀
 
