@@ -13,12 +13,9 @@
 * [單元測試](testing/unit-test.md)
 * [手動測試 vs 自動化測試](testing/manual-vs-automation-testing.md)
 * [介紹 Selenium](testing/selenium-intro.md)
-* [Selenium IDE](testing/selenium-ide.md)
-
-<!--
-* [選取元素](element/selector.md)
-* [指令的種類](element/commend-type.md)
--->
+* [Selenium IDE](testing/selenium-ide/README.md)
+* [Selenium IDE 練習題](testing/selenium-ide/ex.md)
+* [選取元素](testing/selector.md)
 
 ## JavaScript 常用套件
 

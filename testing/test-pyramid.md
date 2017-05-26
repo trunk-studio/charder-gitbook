@@ -4,7 +4,7 @@
 
 測試金字塔的概念是由 Mike Cohn 所提出的一個測試開發概念，被 [Martin Fowler](http://search.books.com.tw/search/query/key/Martin+Fowler/adv_author/1/) 大師轉述而聲名大噪，相關細節描述在 [Succeeding with Agile](https://www.tenlong.com.tw/products/9780321579362) 這本書中，其中很重要的一點是強調你應該擁有更多低階的單元測試。
 
-![](https://martinfowler.com/bliki/images/testPyramid/test-pyramid.png)
+![](assets/test-pyramid.png)
 
 層級 | 測試程式的數量 | 描述
 ---------|----------|---------
