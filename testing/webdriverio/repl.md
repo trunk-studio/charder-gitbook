@@ -7,7 +7,8 @@
 **啟動 REPL**
 
 ```
-node_modules/.bin/wdio repl firefox
+npm install webdriverio -g
+wdio repl firefox
 ```
 
 **實戰練習：取得 Dcard 的頭條**
