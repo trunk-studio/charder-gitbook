@@ -93,4 +93,4 @@ driver.quit();
 
 ### 延伸閱讀
 
-* [天瓏網路書店-Kent Beck 的實作模式 (Implementation Patterns)](https://www.tenlong.com.tw/products/9789862018088)
+* [The Deadline: 《軟體測試專案實作：技術、流程與管理》筆記](http://w1a2d3s4q5e6.blogspot.tw/2012/11/blog-post_7.html)

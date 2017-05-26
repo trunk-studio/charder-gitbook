@@ -8,11 +8,18 @@
 ## 測試
 
 * [測試基礎](testing/README.md)
-* [單元測試](testing/unit-test.md)
 * [介紹 Selenium](testing/selenium-intro.md)
 * [Selenium IDE](testing/selenium-ide/README.md)
 * [Selenium IDE 練習題](testing/selenium-ide/ex.md)
 * [選取元素](testing/selector.md)
+* [介紹 WebdriverIO](testing/webdriverio/README.md)
+* [啟動 Selenium Server](testing/selenium-server.md)
+* [用 REPL 來練習撰寫自動化程式](testing/webdriverio/repl.md)
+
+<!--
+* [TDD / BDD]()
+* [單元測試]()
+-->
 
 ## JavaScript 常用套件
 
