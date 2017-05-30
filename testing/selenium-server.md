@@ -7,7 +7,7 @@
 
 至 http://www.seleniumhq.org/download/ 下載
 
-![](assets/browser-drivers.png.png)
+![](assets/browser-drivers.png)
 
 ### 安裝 Selenium Server
 
