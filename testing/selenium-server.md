@@ -5,7 +5,9 @@
 
 ### 安裝瀏覽器驅動程式 (driver)
 
-![](assets/browser-drivers.png)
+至 http://www.seleniumhq.org/download/ 下載
+
+![](assets/browser-drivers.png.png)
 
 ### 安裝 Selenium Server
 
