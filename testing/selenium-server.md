@@ -1,17 +1,21 @@
-# 啟動 Selenium Server
+# 設定 Selenium Server 環境
 
-**執行 Selenium Server**
+* 下載並設定，各種版本的瀏覽器與 selenium 對應的驅動程式。
+* 下載並執行，Selenium Server。
+
+### 安裝瀏覽器驅動程式 (driver)
+
+![](assets/browser-drivers.png)
+
+### 安裝 Selenium Server
+
+#### 方法一
 
 至 <http://www.seleniumhq.org/download/> 下載 selenium-server-standalone-3.4.0.jar 檔
 
-```
-cd Downloads
-java -jar selenium-server-standalone-3.4.0.jar
-```
+![](assets/selenium-standalone-server-download.png)
 
-<http://127.0.0.1:4444/wd/hub>
-
-**或**
+#### 方法二
 
 ```
 // 安裝 webdriver-manager 模組到全域環境
@@ -19,7 +23,21 @@ npm install webdriver-manager -g
 
 // 更新 driver
 webdriver-manager update
+```
 
+### 執行 Selenium Server
+
+#### 方法一
+
+```
+java -jar selenium-server-standalone-3.4.0.jar
+```
+
+<http://127.0.0.1:4444/wd/hub>
+
+#### 方法二
+
+```
 // 啟動 selenium server
 webdriver-manager start
 

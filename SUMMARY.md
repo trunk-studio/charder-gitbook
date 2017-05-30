@@ -13,7 +13,7 @@
 * [Selenium IDE 練習題](testing/selenium-ide/ex.md)
 * [選取元素](testing/selector.md)
 * [介紹 WebdriverIO](testing/webdriverio/README.md)
-* [啟動 Selenium Server](testing/selenium-server.md)
+* [設定 Selenium Server 環境](testing/selenium-server.md)
 * [用 REPL 來練習撰寫自動化程式](testing/webdriverio/repl.md)
 * [測試驅動開發 (TDD)](testing/tdd.md)
 * [單元測試](testing/unit-test.md)
