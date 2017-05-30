@@ -13,10 +13,19 @@ java -jar selenium-server-standalone-3.4.0.jar
 
 **或**
 
-![](https://raw.githubusercontent.com/vvo/selenium-standalone/master/screencast.gif)
-
 ```
-npm install selenium-standalone -g
-selenium-standalone install
-selenium-standalone start
+// 安裝 webdriver-manager 模組到全域環境
+npm install webdriver-manager -g
+
+// 更新 driver
+webdriver-manager update
+
+// 啟動 selenium server
+webdriver-manager start
+
+// 查看 driver 狀態
+webdriver-manager status
+
+// 清除 driver
+webdriver-manager clean
 ```

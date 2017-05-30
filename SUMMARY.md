@@ -15,11 +15,8 @@
 * [介紹 WebdriverIO](testing/webdriverio/README.md)
 * [啟動 Selenium Server](testing/selenium-server.md)
 * [用 REPL 來練習撰寫自動化程式](testing/webdriverio/repl.md)
-
-<!--
-* [TDD / BDD]()
-* [單元測試]()
--->
+* [測試驅動開發 (TDD)](testing/tdd.md)
+* [單元測試](testing/unit-test.md)
 
 ## JavaScript 常用套件
 
