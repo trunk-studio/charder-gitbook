@@ -5,20 +5,27 @@
 * [計畫內容](objective.md)
 * [培訓內容大綱](outline.md)
 
-## 測試
+## 測試基礎
 
 * [測試基礎](testing/README.md)
 * [介紹 Selenium](testing/selenium-intro.md)
 * [Selenium IDE](testing/selenium-ide/README.md)
 * [Selenium IDE 練習題](testing/selenium-ide/ex.md)
 * [選取元素](testing/selector.md)
-* [介紹 WebdriverIO](testing/webdriverio/README.md)
-* [設定 Selenium Server 環境](testing/selenium-server.md)
-* [用 REPL 來練習撰寫自動化程式](testing/webdriverio/repl.md)
-* [單元測試](testing/unit-test.md)
 * [測試驅動開發 (TDD)](testing/tdd.md)
 * [行為驅動開發 (BDD)](testing/bdd.md)
+* [斷言函式庫](testing/assertion-library.md)
+* [單元測試](testing/unit-test.md)
 
+## 測試框架
+
+* [設定 Selenium Server 環境](testing/selenium-server.md)
+* [用 REPL 來練習撰寫自動化程式](testing/webdriverio/repl.md)
+* [介紹 WebdriverIO](testing/webdriverio/README.md)
+* [初始化測試的專案](testing/webdriverio/init.md)
+* [WebdriverIO 設定檔](testing/webdriverio/conf.md)
+* [WebdriverIO 常用指令語法](testing/webdriverio/commend.md)
+* [實戰練習 - 登入和登出](testing/webdriverio/ex01.md)
 
 ## JavaScript 常用套件
 
