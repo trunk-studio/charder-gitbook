@@ -10,8 +10,9 @@
     └── specs
 ```
 
+**test/pageobjects/page.js**
+
 ```js
-// test/pageobjects/page.js
 function Page () {
     this.title = 'My Page';
 }
@@ -21,8 +22,9 @@ Page.prototype.open = function (path) {
 module.exports = new Page()
 ```
 
+**test/pageobjects/login.page.js**
+
 ```js
-// test/pageobjects/login.page.js
 var Page = require('./page')
 var LoginPage = Object.create(Page, {
     /**
@@ -44,9 +46,9 @@ var LoginPage = Object.create(Page, {
 module.exports = LoginPage;
 ```
 
+**test/specs/login.spec.js**
 
 ```js
-// test/specs/login.spec.js
 var expect = require('chai').expect;
 var LoginPage = require('../pageobjects/login.page');
 describe('登入流程', function () {
