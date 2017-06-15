@@ -16,7 +16,7 @@
 * [行為驅動開發 (BDD)](testing/bdd.md)
 * [斷言函式庫](testing/assertion-library.md)
 * [單元測試](testing/unit-test.md)
-* [瀏覽器](testing/browser.md)
+* [跨瀏覽器測試](testing/cross-browser-testing.md)
 
 ## 測試框架
 
@@ -28,6 +28,7 @@
 * [WebdriverIO 常用指令語法](testing/webdriverio/commend.md)
 * [實戰練習 - 登入和登出](testing/webdriverio/ex01.md)
 * [Page Object 模式](testing/webdriverio/page-object.md)
+
 
 ## JavaScript 常用套件
 

@@ -1,4 +1,4 @@
-# 瀏覽器
+#  跨瀏覽器測試 (Cross Browser Testing)
 
 ```
 ANDROID = {'platform': 'ANDROID', 'browserName': 'android', 'version': ''}
@@ -14,3 +14,11 @@ OPERA = {'platform': 'ANY', 'browserName': 'opera', 'version': ''}
 PHANTOMJS = {'platform': 'ANY', 'browserName': 'phantomjs', 'version': '','javascriptEnabled': True}
 SAFARI = {'platform': 'MAC', 'browserName': 'safari', 'version': ''}
 ```
+
+### 雲端瀏覽器測試
+
+![](assets/cross-browser-testing.png)
+
+* SauceLabs: <https://saucelabs.com/>
+* BrowserStack: <https://www.browserstack.com/>
+* TestingBot: <https://testingbot.com/>
