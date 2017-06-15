@@ -26,6 +26,7 @@
 * [WebdriverIO 設定檔](testing/webdriverio/conf.md)
 * [WebdriverIO 常用指令語法](testing/webdriverio/commend.md)
 * [實戰練習 - 登入和登出](testing/webdriverio/ex01.md)
+* [Page Object 模式](testing/webdriverio/page-object.md)
 
 ## JavaScript 常用套件
 
