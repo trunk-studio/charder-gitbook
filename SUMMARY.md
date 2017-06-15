@@ -16,6 +16,7 @@
 * [行為驅動開發 (BDD)](testing/bdd.md)
 * [斷言函式庫](testing/assertion-library.md)
 * [單元測試](testing/unit-test.md)
+* [瀏覽器](testing/browser.md)
 
 ## 測試框架
 
