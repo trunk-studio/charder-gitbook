@@ -1,8 +1,6 @@
 # Page Object 模式
 
-**為了解決什麼問題？**
-
-**解法**
+### 為了解決什麼問題？
 
 ![](assets/simon-stewart-said.png)
 
@@ -13,7 +11,6 @@
 ![](https://martinfowler.com/bliki/images/pageObject/pageObject.png)
 
 圖片來自： [Martin Fowler - PageObject](https://martinfowler.com/bliki/PageObject.html)
-
 
 **目錄結構**
 
@@ -77,13 +74,6 @@ describe('登入流程', function () {
     });
 });
 ```
-
-### 如何開始實作
-
-1. 先寫一個抽象的 page.js
-1. 分析測試程式碼
-1. 建立 Page Object
-1. 改寫測試程式
 
 ### 注意事項
 

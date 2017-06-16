@@ -28,6 +28,8 @@
 * [WebdriverIO 常用指令語法](testing/webdriverio/commend.md)
 * [實戰練習 - 登入和登出](testing/webdriverio/ex01.md)
 * [Page Object 模式](testing/webdriverio/page-object.md)
+* [實戰練習 - 改寫登入和登出](testing/webdriverio/ex02.md)
+* [實戰練習 - 雲端瀏覽器測試](testing/webdriverio/ex03.md)
 
 
 ## JavaScript 常用套件
