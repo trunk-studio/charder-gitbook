@@ -51,3 +51,17 @@ page.open(url, function (status) {
 * TestingBot: <https://testingbot.com/>
 
 ![](assets/price.png)
+
+### 注意 timeout 的問題
+
+```js
+// wdio.conf.js
+exports.config = {
+    // ...
+    framework: 'mocha',
+    mochaOpts: {
+        timeout: 20000
+    },
+    // ...
+}
+```

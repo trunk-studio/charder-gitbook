@@ -2,11 +2,6 @@
 
 <!-- 預估時間 1.5 小時 -->
 
-<svg viewBox="0 0 18 7">
-	<path fill="#CB3837" d="M0,0v6h5v1h4v-1h9v-6"></path>
-	<path fill="#FFF" d="M1,1v4h2v-3h1v3h1v-4h1v5h2v-4h1v2h-1v1h2v-4h1v4h2v-3h1v3h1v-3h1v3h1v-4"></path>
-</svg>
-
 * [npm - 維基百科，自由的百科全書](https://zh.wikipedia.org/wiki/Npm)
 * [NPM - npm is the package manager for JavaScript ](https://www.npmjs.com/)
 * 全名叫 Node Package Manager 是 Node.js 預設的軟體套件管理系統。但現在不只有 Node.js 的套件會放在上面（例如 [Pure](https://www.npmjs.com/package/purecss) ），基本已經變成了 JS Open Source 軟體套件集散地。

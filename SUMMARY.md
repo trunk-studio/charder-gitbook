@@ -14,7 +14,7 @@
 * [選取元素](testing/selector.md)
 * [測試驅動開發 (TDD)](testing/tdd.md)
 * [行為驅動開發 (BDD)](testing/bdd.md)
-* [斷言函式庫](testing/assertion-library.md)
+* [斷言函式庫 Chai](testing/assertion-library.md)
 * [單元測試](testing/unit-test.md)
 * [跨瀏覽器測試](testing/cross-browser-testing.md)
 
@@ -30,7 +30,6 @@
 * [Page Object 模式](testing/webdriverio/page-object.md)
 * [實戰練習 - 改寫登入和登出](testing/webdriverio/ex02.md)
 * [實戰練習 - 雲端瀏覽器測試](testing/webdriverio/ex03.md)
-
 
 ## JavaScript 常用套件
 
