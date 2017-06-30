@@ -5,25 +5,55 @@
 SuperTest 提供的是抽象化的 HTTP 測試模組，它把 superagent 在包過一層，若之後有需要用到比較低層級的 API，還是可以在替換成 superagent。
 
 ```js
-import request from 'supertest';
+var request = require('supertest')('http://jsonplaceholder.typicode.com');
+```
+
+**body**
+
+```js
+request
+  .post('/posts')
+  .send(data)
+```
+
+**query 參數**
+
+```js
+request
+  .get('/api/user')
+  .query({userId: 1})
+  .query({title: 'test123'})
 ```
 
 ```js
-import { expect, assert } from 'chai';
-import request from 'supertest';
+request
+  .get('/api/user')
+  .query({
+      userId: 1,
+      title: 'test123'
+  })
+```
 
-request(sails.hooks.http.app)
-  .post('/user')
+**request type**
+
+HTTP Header
+
+```
+request.post('/user').type('application/json')
+request.post('/user').type('json')
+request.post('/user').type('png')
+```
+
+```js
+request
+  .get('/api/user')
   .set('Accept', 'application/json')
-  .send({ key1: vaule1, key2: vaule2})
   .expect('Content-Type', /json/)
-  .expect(201)
-  .end(function(err, res) {
+  .expect(200, done);
+  .end(function(err, res){
     if (err) return done(err);
-    assert.equal(res.body.key1, "value1");
-    assert.equal(res.body.key2, "value2");
-    done();
-  });
+      done();
+    });
 ```
 
 ### Stub Object
@@ -45,7 +75,6 @@ describe("#fight", function () {
 ### Mock Object
 
 * 目的：用來驗證目標物件與相依物件互動的情況是否符合預期。
-* 使用時機：
 
 ```js
 describe("#fight", function () {
@@ -77,6 +106,28 @@ describe("#fight", function () {
 before(function(){
   global.fixtures['user'].sort(alphaSortFunction);
 });
+```
+
+**with Saials**
+
+```js
+import request from 'supertest';
+var queryString = require('queryString');
+import { expect, assert } from 'chai';
+import request from 'supertest';
+
+request(sails.hooks.http.app)
+  .post('/api/users')
+  .set('Accept', 'application/json')
+  .send({ key1: vaule1, key2: vaule2})
+  .expect('Content-Type', /json/)
+  .expect(201)
+  .end(function(err, res) {
+    if (err) return done(err);
+    assert.equal(res.body.key1, "value1");
+    assert.equal(res.body.key2, "value2");
+    done();
+  });
 ```
 
 ## 實戰練習
