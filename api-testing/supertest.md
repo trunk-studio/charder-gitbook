@@ -1,5 +1,7 @@
 # SuperTest
 
+<https://github.com/visionmedia/supertest>
+
 > The motivation with this module is to provide a high-level abstraction for testing HTTP, while still allowing you to drop down to the lower-level API provided by superagent.
 
 SuperTest 提供的是抽象化的 HTTP 測試模組，它把 superagent 在包過一層，若之後有需要用到比較低層級的 API，還是可以在替換成 superagent。
@@ -112,9 +114,8 @@ before(function(){
 
 ```js
 import request from 'supertest';
-var queryString = require('queryString');
-import { expect, assert } from 'chai';
-import request from 'supertest';
+var chai = require('chai');
+chai.should();
 
 request(sails.hooks.http.app)
   .post('/api/users')
@@ -165,6 +166,7 @@ after((done) => {
 * <http://visionmedia.github.io/superagent/>
 * <https://eugenechen.gitbooks.io/javascript/content/best-practices-for-spies-stubs-and-mocks-in-sinonjs.html>
 * <http://blog.gejiawen.com/2015/08/14/read-superagent-doc/>
+* <http://visionmedia.github.io/superagent/>
 
 <!--
 http://blog.gejiawen.com/2015/08/14/read-superagent-doc/
@@ -177,4 +179,6 @@ http://visionmedia.github.io/superagent/#test-documentation
 
 [API Testing Examples | Getting Started with API Testing](https://www.soapui.org/tutorials.html)
 
+
+https://eugenechen.gitbooks.io/javascript/content/best-practices-for-spies-stubs-and-mocks-in-sinonjs.html
 -->
