@@ -18,7 +18,7 @@
 * [單元測試](testing/unit-test.md)
 * [跨瀏覽器測試](testing/cross-browser-testing.md)
 
-## 測試框架
+## 前端測試
 
 * [設定 Selenium Server 環境](testing/selenium-server.md)
 * [用 REPL 來練習撰寫自動化程式](testing/webdriverio/repl.md)
@@ -30,6 +30,13 @@
 * [Page Object 模式](testing/webdriverio/page-object.md)
 * [實戰練習 - 改寫登入和登出](testing/webdriverio/ex02.md)
 * [實戰練習 - 雲端瀏覽器測試](testing/webdriverio/ex03.md)
+
+## API 測試
+
+* [API 測試基礎](api-testing/README.md)
+* [Supertest](api-testing/supertest.md)
+* [Postman](api-testing/postman.md)
+* [JMeter](api-testing/jmeter.md)
 
 ## JavaScript 常用套件
 
