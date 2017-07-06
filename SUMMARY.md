@@ -5,6 +5,15 @@
 * [計畫內容](objective.md)
 * [培訓內容大綱](outline.md)
 
+## Laravel
+
+* [介紹](laravel/README.md)
+* [安裝 C9 環境 for PHP](laravel/setup.md)
+* [初始化專案](laravel/init.md)
+* [介紹](laravel/README.md)
+* [介紹](laravel/README.md)
+* [介紹](laravel/README.md)
+
 ## 測試基礎
 
 * [測試基礎](testing/README.md)
@@ -35,8 +44,8 @@
 
 * [API 測試基礎](api-testing/README.md)
 * [Supertest](api-testing/supertest.md)
-* [Postman](api-testing/postman.md)
-* [JMeter](api-testing/jmeter.md)
+<!--* [Postman](api-testing/postman.md)-->
+<!--* [JMeter](api-testing/jmeter.md)-->
 
 ## JavaScript 常用套件
 
