@@ -12,8 +12,6 @@ Route::get('/', function () {
 php artisan route:list
 ```
 
-練習題：新增另一個 html 頁面
-
 <!-- 示範換成 /example -->
 
 <!--
@@ -53,5 +51,20 @@ Route::get('/users/{id}/{name}', function($id, $name){
 });
 -->
 
+```php
+Route::get('users/{name?}', function ($name = null) {
+    return $name;
+});
+
+Route::get('users/{name?}', function ($name = 'alincode') {
+    return $name;
+});
+```
+
 
 <!--[Laravel 5 測試起手式 · GitHub](https://gist.github.com/jaceju/c415c1b42daf4c589f2a)-->
+
+
+----------------------------------------
+
+* Route 登入驗證

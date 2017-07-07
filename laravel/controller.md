@@ -26,6 +26,10 @@ class ArticleController extends Controller
 
 ### 設定 Controller 的 Route
 
+```
+php artisan route:list
+```
+
 ```php
 // 練習一
 Route::get('/article', 'ArticleController@index');

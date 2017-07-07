@@ -14,7 +14,6 @@
 * 發送 email
 * Cache
 
-
 **thinking over**
 
 在沒有框架的情況下，我們是怎麼做的？結果會是？ 
@@ -32,3 +31,6 @@
 
 * 約定大於配置 (convention over configuration)
 * 簡化學習曲線
+
+
+<!--* [Laravel 5 Fundamentals](https://laracasts.com/series/laravel-5-fundamentals/)-->
