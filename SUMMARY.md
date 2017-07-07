@@ -11,8 +11,9 @@
 * [環境安裝](laravel/setup.md)
 * [初始化專案](laravel/init.md)
 * [目錄結構](laravel/folder.md)
+* [Artisan](laravel/artisan.md)
 * [路由 (Route)](laravel/route.md)
-* [介紹](laravel/README.md)
+* [Controller](laravel/controller.md)
 
 ## 測試基礎
 

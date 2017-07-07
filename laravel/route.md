@@ -8,6 +8,12 @@ Route::get('/', function () {
 });
 ```
 
+```
+php artisan route:list
+```
+
+練習題：新增另一個 html 頁面
+
 <!-- 示範換成 /example -->
 
 <!--
@@ -25,26 +31,27 @@ Route::get('/', function(){});
 Route::post('/', function(){});
 Route::put('/', function(){});
 Route::delete('/', function(){});
+
 Route::any('/', function(){});
+
 Route::match(['get', 'post'], '/', function(){});
 ```
+
+練習題：建立 article 的 CRUD
 
 ### 路由參數
 
 ```php
 Route::get('/users/{id}', function($id){
-  return view('welcome');
+  return 'this is user id: ' . $id;
 });
 ```
 
-### 強制走 https
+<!--
+Route::get('/users/{id}/{name}', function($id, $name){
+  return 'this is user id: ' . $id . $name;
+});
+-->
 
-```php
-Route::get('foo', array('https', function(){
-    return 'Must be over HTTPS';
-}));
-```
 
-### 練習題
-
-*  新增另一個 html 頁面
+<!--[Laravel 5 測試起手式 · GitHub](https://gist.github.com/jaceju/c415c1b42daf4c589f2a)-->
