@@ -1,4 +1,4 @@
-# 安裝 C9 環境 for PHP
+# 環境安裝
 
 <https://c9.io/>
 
@@ -15,11 +15,25 @@ php composer.phar
 sudo composer update
 ```
 
+**Composer 常用指令**
+
+```
+composer install
+```
+
 **安裝 laravel**
 
 ```
 composer global require "laravel/installer"
 ```
+
+**vi ~/.bashrc**
+
+```
+export PATH="~/.composer/vendor/bin:$PATH"
+```
+
+**laravel**
 
 ### 延伸閱讀
 

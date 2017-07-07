@@ -8,10 +8,10 @@
 ## Laravel
 
 * [介紹](laravel/README.md)
-* [安裝 C9 環境 for PHP](laravel/setup.md)
+* [環境安裝](laravel/setup.md)
 * [初始化專案](laravel/init.md)
-* [介紹](laravel/README.md)
-* [介紹](laravel/README.md)
+* [目錄結構](laravel/folder.md)
+* [路由 (Route)](laravel/route.md)
 * [介紹](laravel/README.md)
 
 ## 測試基礎
