@@ -9,4 +9,6 @@ php artisan make:model Article -m
 
 
 ----------------------------------------
-* ORM
+* ORM(Object Relational Mapping)
+* Eloquent
+* Migrateion
