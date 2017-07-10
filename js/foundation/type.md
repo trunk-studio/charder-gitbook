@@ -1,7 +1,8 @@
-# 基本資料型別 / 簡單型別 / 純值 (primitive types)
+# 基本資料型別
 
-* 不是物件
-* 弱型別 / 動態型別 (dynamic typing)：不用先宣告是什麼型別，由程式在給值時才決定型別。
+* 又稱「簡單型別」或純值 (primitive types)
+* 它不是物件
+* 弱型別：又名「動態型別」 (dynamic typing)，不用先宣告是什麼型別，型別是由程式賦予值時才決定型別。
 
 **基本型態種類**
 
@@ -113,10 +114,7 @@ console.log(a);
 
 ```js
 var a = null;
-console.log(typeof null);
-
-var b;
-console.log(typeof undefined);
+console.log(typeof a);
 ```
 <!-- object, undefined -->
 
@@ -130,14 +128,17 @@ console.log(typeof undefined);
 ![](assets/java-undefined-error.png)
 
 ```js
-var value;
-console.log(value);
+var b;
+console.log('1 ===>');
+console.log(b);
+console.log('2 ===>');
+console.log(typeof b);
 ```
 
 ```js
 // 但請不要這麼做
-var a = undefined;
-console.log(a);
+var b = undefined;
+console.log(b);
 ```
 
 ```js

@@ -19,11 +19,13 @@ composer create-project laravel/laravel laravel-sandbox --prefer-dist
 laravel new laravel-sandbox
 ```
 
-**修改 apache 設定檔**
+### 修改 apache 設定檔
 
 ```
 sudo vi /etc/apache2/sites-enabled/001-cloud9.conf
 ```
+
+**Mac**
 
 ```
 // 將這行
@@ -33,7 +35,13 @@ DocumentRoot /home/ubuntu/workspace
 DocumentRoot /home/ubuntu/workspace/laravel-sandbox/public
 ```
 
-**設定 MySQL**
+**Window**
+
+```
+DocumentRoot "C:\xampp\htdocs\laravel-sandbox\public"
+```
+
+### 設定 MySQL
 
 ```
 mysql-ctl cli

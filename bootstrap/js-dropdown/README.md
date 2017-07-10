@@ -74,7 +74,7 @@ $('.dropdown-toggle').dropdown();
 
 ![](./assets/button-dropdown.png)
 
-```
+```html
 <div class="dropdown">
     <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Dropdown Example
     <span class="caret"></span></button>
@@ -96,7 +96,7 @@ $('.dropdown-toggle').dropdown();
 
 [w3cschool bootstrap - navbar dropdown demo](http://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_navbar_dropdown&stacked=h)
 
-```
+```html
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">

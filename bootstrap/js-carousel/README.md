@@ -9,7 +9,7 @@
 
 ![](./assets/carousel.png)
 
-```
+```html
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
