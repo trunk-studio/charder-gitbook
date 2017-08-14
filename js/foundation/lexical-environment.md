@@ -1,1 +1,0 @@
-# 詞彙環境 (lexical environment)

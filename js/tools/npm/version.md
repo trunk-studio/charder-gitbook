@@ -1,5 +1,8 @@
 # NPM 套件版本
 
+[主版本號].[次版本號].[修訂版本號]
+
+
 ```
 "dependencies": {
   "nodemon": "1.11.0",
@@ -42,3 +45,7 @@
 * <version
 * <=version
 ```
+
+### 延伸閱讀
+
+* [語意化版本 2.0.0 | Semantic Versioning](http://semver.org/lang/zh-TW/)

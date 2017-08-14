@@ -14,8 +14,9 @@
 * [Artisan](laravel/artisan.md)
 * [路由 (Route)](laravel/route.md)
 * [Controller](laravel/controller.md)
+* [Model - Eloquent ORM](laravel/model.md)
 * [View](laravel/view.md)
-* [Model](laravel/model.md)
+
 
 ## 測試基礎
 

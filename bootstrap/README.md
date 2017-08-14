@@ -15,10 +15,16 @@
 ![2016 popular project](./assets/risingstars2016.png)
 
 * Twitter 在 2010 年 8 月已開發原始碼的方式，釋出 Bootstrap。
-* 是一個行動優先設計的前端框架 (RWD frontend framework)
-* RWD (Responsive Web Design)
+* 是一個行動優先設計的前端框架
+* RWD：響應式網頁設計，英文全名 Responsive Web Design。
 * 總體結構包含：CSS、元件、Javascript、自訂架構
-* 其他類似的框架：[Pure](http://purecss.io/)
+
+**其他類似的框架**
+
+* [Foundation](http://foundation.zurb.com/)
+* [Pure](http://purecss.io/)
+* [Semantic UI](https://semantic-ui.com/)
+* [Materialize CSS](http://materializecss.com/)
 
 **課前提醒**
 

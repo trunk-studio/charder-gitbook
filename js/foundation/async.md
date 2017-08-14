@@ -20,12 +20,16 @@ function now() {
 }
 
 function later() {
+ console.log('step2');
   message += 'World';
   console.log(message);
 }
 
+console.log('step1');
 var message = now();
+console.log(message);
 setTimeout(later, 5000);
+console.log('step3');
 ```
 
 ```js

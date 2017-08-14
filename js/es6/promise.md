@@ -56,7 +56,7 @@ var p2 = new Promise.reject('Oops');
 
 **Promise.resolve(value)**
 
-有可能會發生在履行(fulfill) 或拒絕的 Promise，取決於傳入了什麼給它，如果傳入給 resolve 的是一個立即的非 Promise、非 thenable 的值，那麼 promise 就會以那個植被履行。
+有可能會發生在履行(fulfill) 或拒絕的 Promise，取決於傳入了什麼給它，如果傳入給 resolve 的是一個立即的非 Promise、非 thenable 的值，那麼 promise 就會以那個值被履行。
 
 ```
 // 缺範例待補
