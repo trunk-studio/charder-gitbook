@@ -15,6 +15,7 @@
 * [路由 (Route)](laravel/route.md)
 * [Controller](laravel/controller.md)
 * [Model - Eloquent ORM](laravel/model.md)
+* [Model - Eloquent 關聯](laravel/relationships.md)
 * [View](laravel/view.md)
 
 
