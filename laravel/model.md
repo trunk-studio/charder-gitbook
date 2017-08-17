@@ -8,6 +8,8 @@
 * Seed
 * query builder
 
+### Model 產生器
+
 **artisan 指令**
 
 ```
@@ -16,14 +18,11 @@ php artisan make:model Article -m
 
 * -m / --migration
 
-### app/Article.php
-
+**app/Article.php**
 
 ```php
 <?php
-
 namespace App;
-
 use Illuminate\Database\Eloquent\Model;
 
 class Article extends Model
@@ -32,7 +31,9 @@ class Article extends Model
 }
 ```
 
-### app/database/migrations/2017_08_14_085927_create_articles_table.php
+**migration file**
+
+app/database/migrations/2017_08_14_085927_create_articles_table.php
 
 ```php
 <?php
@@ -43,11 +44,6 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateArticlesTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         Schema::create('articles', function (Blueprint $table) {
@@ -56,11 +52,6 @@ class CreateArticlesTable extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('articles');
@@ -69,29 +60,47 @@ class CreateArticlesTable extends Migration
 
 ```
 
-### Timestamps
-
-* created_at
-* updated_at
+### Model 預設屬性
 
 ```php
 <?php
-
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Article extends Model
+class User extends Model
 {
+    // 指定 connection 名稱
     protected $connection = 'connection-name';
 
+    // 指定 table 名稱
+    protected $table = 'u_user';
+
+    // 可以被批量賦值的屬性的白名單
+    protected $fillable = [ 'userName', 'fullName', 'email', , 'password' ];
+
+    protected $hidden = [ 'password'];
+
+    private $rules = [
+        'userName' => 'unique:users,userName',
+        'email' => 'unique:users,email'
+    ];
+
+    // 時間戳
     public $timestamps = false; // 預設是 true
 }
+```
+
+**時間戳 (Timestamps)**
+
+* created_at
+* updated_at
 
 
 ### 建立資料 (Create)
 
 ```php
+
 <?php
 
 namespace App\Http\Controllers;
@@ -200,6 +209,18 @@ App\Article::destroy(1, 2, 3);
 $deletedRows = App\Article::where('active', 0)->delete();
 ```
 
+**軟刪除**
+
+```php
+Schema::table('users', function ($table) {
+    $table->softDeletes();
+});
+```
+
+```php
+$users = App\User::withTrashed()->get();
+```
+
 ### 序列化
 
 ```php
@@ -221,14 +242,7 @@ Route::get('/api/articles/{id}', function ($id) {
 });
 ```
 
-## Eloquent 關係
-
-
-### 一對一
-
-### 一對多
-
-### 多對多
+## 事件
 
 
 **其他相關檔案**
@@ -238,3 +252,4 @@ Route::get('/api/articles/{id}', function ($id) {
 ----------------------------------------
 * 虛刪除
 * Scope
+* withTimestamps
