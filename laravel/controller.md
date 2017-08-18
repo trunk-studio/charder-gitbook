@@ -38,7 +38,9 @@ Route::get('/article', 'ArticleController@index');
 Route::resource('/article', 'ArticleController');
 ```
 
-### 傳參數
+### request 參數
+
+**Path 參數**
 
 ```php
 Route::get('/article/{author}', 'ArticleController@index');
@@ -48,4 +50,34 @@ Route::get('/article/{author}', 'ArticleController@index');
 public function index($author){
   return '文章的作者是：' . $author;
 }
+```
+
+**Query 參數**
+
+```php
+$message = $request -> get('message');
+```
+
+**Body**
+
+```php
+$user = new User;
+$user -> username = $request -> username;
+```
+
+### response
+
+```php
+$createdUser = User::create([
+  'name' => $user["name"], 
+  'email' => $user["email"],
+  'password' => bcrypt('123456'),
+  'remember_token' => 1
+]);
+
+return response()->json($createdUser);
+```
+
+```php
+return response()->json(['result' => false, 'message' => '信箱已被註冊，無法使用']);
 ```

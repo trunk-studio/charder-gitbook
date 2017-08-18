@@ -16,7 +16,7 @@ php artisan route:list
 
 <!--
 ```php
-Route::get('/api/article', function(){
+Route::get('/article', function(){
     return 'article post';
 });
 ```
@@ -61,6 +61,11 @@ Route::get('users/{name?}', function ($name = 'alincode') {
 });
 ```
 
+### API Route
+
+```
+Route::middleware('api')->get('/user', 'UserController@index');
+```
 
 <!--[Laravel 5 測試起手式 · GitHub](https://gist.github.com/jaceju/c415c1b42daf4c589f2a)-->
 

@@ -2,6 +2,8 @@
 
 是一種快速的應用程式開發架構
 
+[API 文件](https://laravel.com/api/5.4/index.html)
+
 **網站開發常見的元件**
 
 * 身份驗證
@@ -34,3 +36,18 @@
 
 
 <!--* [Laravel 5 Fundamentals](https://laracasts.com/series/laravel-5-fundamentals/)-->
+
+
+
+empty($request->username)
+
+if(Auth::check()){
+
+error_log("=== $id ===" . $id);
+
+protected $roleService;
+
+public function __construct(RoleService $roleService)
+{
+    $this-> roleService = $roleService;
+}

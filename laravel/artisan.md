@@ -13,7 +13,7 @@ php artisan route:list
 php artisan make:controller
 php artisan make:controller --resource ArticleController
 php artisan make:model Article -m
-
+php artisan make:test ArticleControllerTest
 php artisan help route
 
 ```
