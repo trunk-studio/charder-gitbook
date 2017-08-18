@@ -17,6 +17,7 @@
 * [Model - Migration](laravel/migration.md)
 * [Model - Eloquent ORM](laravel/model.md)
 * [Model - Eloquent 關聯](laravel/relationships.md)
+* [Model - CRUD](laravel/crud.md)
 * [練習題](laravel/ex.md)
 * [測試](laravel/test.md)
 * [View](laravel/view.md)
