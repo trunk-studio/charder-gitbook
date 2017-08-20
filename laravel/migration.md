@@ -99,3 +99,42 @@ Schema::create('role_user', function (Blueprint $table) {
 ```
 
 ### Seed
+
+```
+php artisan make:seeder UsersTableSeeder
+```
+
+```php
+<?php
+
+use Illuminate\Database\Seeder;
+use Illuminate\Database\Eloquent\Model;
+
+class DatabaseSeeder extends Seeder
+{
+    public function run()
+    {
+        DB::table('users')->insert([
+            'username' => 'alincode',
+            'email' => 'alincode@gmail.com'
+        ]);
+    }
+}
+```
+
+**DatabaseSeeder**
+
+```php
+public function run()
+{
+    $this->call(UsersTableSeeder::class);
+}
+```
+
+### 執行
+
+```
+php artisan db:seed
+php artisan db:seed --class=UsersTableSeeder
+php artisan migrate:refresh --seed
+```

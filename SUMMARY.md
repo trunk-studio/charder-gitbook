@@ -14,14 +14,13 @@
 * [Artisan](laravel/artisan.md)
 * [路由 (Route)](laravel/route.md)
 * [Controller](laravel/controller.md)
-* [Model - Migration](laravel/migration.md)
+* [Migration](laravel/migration.md)
 * [Model - Eloquent ORM](laravel/model.md)
 * [Model - Eloquent 關聯](laravel/relationships.md)
-* [Model - CRUD](laravel/crud.md)
+* [CRUD](laravel/crud.md)
 * [練習題](laravel/ex.md)
 * [測試](laravel/test.md)
 * [View](laravel/view.md)
-
 
 ## 測試基礎
 
