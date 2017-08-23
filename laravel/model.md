@@ -73,12 +73,36 @@ Route::get('/api/articles/{id}', function ($id) {
 });
 ```
 
+### 虛刪除
+
+```php
+public function up()
+{
+    Schema::create('articles', function (Blueprint $table) {
+        $table->softDeletes();
+    });
+}
+```
+
+```php
+namespace App;
+
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+class Article extends Model
+{
+    use SOftDeletes;
+
+    protected $dates = ['deleted_at'];
+}
+```
+
+
 **其他相關檔案**
 
 * config/database.php
 
 ----------------------------------------
-* 虛刪除
 * Scope
 * withTimestamps
 * 事件
