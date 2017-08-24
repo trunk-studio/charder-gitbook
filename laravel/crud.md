@@ -119,15 +119,52 @@ Article::destroy(1, 2, 3);
 
 $deletedRows = Article::where('active', 0)->delete();
 ```
-<!-- 
-**軟刪除**
+
+### 虛刪除
 
 ```php
-Schema::table('users', function ($table) {
-    $table->softDeletes();
-});
+public function up()
+{
+    Schema::create('articles', function (Blueprint $table) {
+        $table->softDeletes();
+    });
+}
 ```
 
 ```php
-$users = App\User::withTrashed()->get();
-``` -->
+namespace App;
+
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+class Article extends Model
+{
+    use SOftDeletes;
+
+    protected $dates = ['deleted_at'];
+}
+```
+
+**取得被刪除的值**
+
+```php
+Article::withTrashed()->get();
+
+if($article->trashed()) {
+
+}
+
+Article::onlyTrashed()->get();
+```
+
+**恢復刪除的值**
+
+```php
+$article.restore();
+```
+
+**強制刪除**
+
+```php
+$article.forceDelete();
+Article::onlyTrashed().forceDelete();
+```

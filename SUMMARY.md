@@ -18,6 +18,7 @@
 * [Model - Eloquent ORM](laravel/model.md)
 * [Model - Eloquent 關聯](laravel/relationships.md)
 * [CRUD](laravel/crud.md)
+* [查詢產生器](laravel/query-builder.md)
 * [練習題](laravel/ex.md)
 * [測試](laravel/test.md)
 * [View](laravel/view.md)

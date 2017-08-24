@@ -148,3 +148,8 @@ return $this->belongsToMany('App\Role')->withTimestamps();
  * [資料庫：查詢建構器](https://laravel.tw/docs/5.1/queries)  
  -->
 
+### 關聯查詢
+
+```php
+$user->posts()->where('active', 1)->get();
+```
