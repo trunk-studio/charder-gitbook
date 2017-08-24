@@ -97,6 +97,31 @@ class Article extends Model
 }
 ```
 
+**取得被刪除的值**
+
+```php
+Article::withTrashed()->get();
+
+if($article->trashed()) {
+
+}
+
+Article::onlyTrashed()->get();
+```
+
+**恢復刪除的值**
+
+```php
+$article.restore();
+```
+
+**強制刪除**
+
+```php
+$article.forceDelete();
+Article::onlyTrashed().forceDelete();
+```
+
 
 **其他相關檔案**
 
