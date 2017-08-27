@@ -113,6 +113,7 @@ select * from users
 ```
 
 Inner Join
+取得多篇文章匹配的單筆作者內兩表所有欄位資料
 ```php
 DB::table('articles')
      ->join('users', 'users.id', '=', 'articles.user_id')
