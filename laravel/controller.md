@@ -81,3 +81,6 @@ return response()->json($createdUser);
 ```php
 return response()->json(['result' => false, 'message' => '信箱已被註冊，無法使用']);
 ```
+
+
+
