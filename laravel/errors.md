@@ -19,5 +19,11 @@ try {
 return parent::render($request,$e);
 ```
 
+例外
+
+```
+abort(403, 'Unauthorized action.');
+```
+
 
 
