@@ -28,7 +28,7 @@ abort(403, 'Unauthorized action.');
 客製
 
 ```
-return response()->view('error.404', [], 404);
+return response()->view('errors.503', [], 503);
 ```
 
 
