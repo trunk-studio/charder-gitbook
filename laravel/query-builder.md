@@ -112,6 +112,7 @@ select * from users
     )
 ```
 
+Inner Join
 ```php
 DB::table('articles')
      ->join('users', 'users.id', '=', 'articles.user_id')
