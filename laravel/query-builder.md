@@ -121,7 +121,7 @@ DB::table('articles')
 
 ```sql
 select *
-FROM articles
+from articles
 inner join users
 ON users.id=articles.user_id;
 ```
