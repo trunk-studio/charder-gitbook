@@ -1,5 +1,7 @@
 # Errors
 
+Try&Catch
+
 ```
 use Exception;
 use Log;
@@ -13,7 +15,9 @@ try {
 
 客製Errors回應
 
-return parent::render\($request,$e\);
+```
+return parent::render($request,$e);
+```
 
 
 
