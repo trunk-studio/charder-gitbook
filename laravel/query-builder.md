@@ -111,11 +111,10 @@ select * from users
         select 1 from orders where orders.user_id = users.id
     )
 ```
-多對多
 
 ```php
 DB::table('users')
-     ->join('contacts', 'users.id', '=', 'contacts.user_id')
+     ->join('role', 'users.id', '=', 'contacts.user_id')
     ->get();
 ```
 
