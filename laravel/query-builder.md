@@ -114,7 +114,7 @@ select * from users
 
 ```php
 DB::table('articles')
-     ->join('role', 'users.id', '=', 'role.user_id')
+     ->join('role', 'articles.id', '=', 'role.user_id')
     ->get();
 ```
 
