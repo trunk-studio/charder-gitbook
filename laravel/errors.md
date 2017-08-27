@@ -13,19 +13,19 @@ try {
     }
 ```
 
-客製Errors回應
+跳轉客製Errors回應
 
 ```
 return parent::render($request,$e);
 ```
 
-客製Http例外
+跳轉客製Http例外
 
 ```
-abort(403, 'Unauthorized action.');
+return abort(403, 'Unauthorized action.');
 ```
 
-客製Errors Html樣板
+跳轉客製Errors Html樣板
 
 ```
 return response()->view('errors.503', [], 503);
