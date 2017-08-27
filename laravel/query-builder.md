@@ -122,6 +122,6 @@ DB::table('articles')
 ```sql
 select * from articles
     where exists (
-        select 1 from orders where orders.user_id = users.id
+        select * from orders where orders.user_id = users.id
     )
 ```
