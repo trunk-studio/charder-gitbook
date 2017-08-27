@@ -28,7 +28,7 @@ abort(403, 'Unauthorized action.');
 客製
 
 ```
-return view('');
+return view('errors.404');
 ```
 
 
