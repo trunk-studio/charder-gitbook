@@ -8,7 +8,9 @@ use Log;
 
 try {
         Log::info('Showing Error Exception');
-    } catch (Exception $e) {
+    } 
+catch (Exception $e) 
+    {
         throw e;
     }
 ```
