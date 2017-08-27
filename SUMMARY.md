@@ -21,7 +21,8 @@
 * [CRUD](laravel/crud.md)
 * [查詢產生器](laravel/query-builder.md)
 * [練習題](laravel/ex.md)
-* [Errors & Logging](laravel/errors-and-logging.md)
+* [Logging](laravel/errors-and-logging.md)
+* [Errors](laravel/errors.md)
 * [測試](laravel/test.md)
 * [View](laravel/view.md)
 
