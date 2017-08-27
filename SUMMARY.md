@@ -2,6 +2,7 @@
 
 ## 課程規劃
 
+* [Introduction](README.md)
 * [計畫內容](objective.md)
 * [培訓內容大綱](outline.md)
 
@@ -12,7 +13,7 @@
 * [初始化專案](laravel/init.md)
 * [目錄結構](laravel/folder.md)
 * [Artisan](laravel/artisan.md)
-* [路由 (Route)](laravel/route.md)
+* [路由 \(Route\)](laravel/route.md)
 * [Controller](laravel/controller.md)
 * [Migration](laravel/migration.md)
 * [Model - Eloquent ORM](laravel/model.md)
@@ -20,6 +21,7 @@
 * [CRUD](laravel/crud.md)
 * [查詢產生器](laravel/query-builder.md)
 * [練習題](laravel/ex.md)
+* [Errors & Logging](laravel/errors-and-logging.md)
 * [測試](laravel/test.md)
 * [View](laravel/view.md)
 
@@ -30,8 +32,8 @@
 * [Selenium IDE](testing/selenium-ide/README.md)
 * [Selenium IDE 練習題](testing/selenium-ide/ex.md)
 * [選取元素](testing/selector.md)
-* [測試驅動開發 (TDD)](testing/tdd.md)
-* [行為驅動開發 (BDD)](testing/bdd.md)
+* [測試驅動開發 \(TDD\)](testing/tdd.md)
+* [行為驅動開發 \(BDD\)](testing/bdd.md)
 * [斷言函式庫 Chai](testing/assertion-library.md)
 * [單元測試](testing/unit-test.md)
 * [跨瀏覽器測試](testing/cross-browser-testing.md)
@@ -53,8 +55,6 @@
 
 * [API 測試基礎](api-testing/README.md)
 * [Supertest](api-testing/supertest.md)
-<!--* [Postman](api-testing/postman.md)-->
-<!--* [JMeter](api-testing/jmeter.md)-->
 
 ## JavaScript 常用套件
 
@@ -89,26 +89,26 @@
 
 * [Bootstrap 入門](bootstrap/README.md)
 * [工具 - Visual Studio Code](tools/vscode/README.md)
-* [排版 (Typography)](bootstrap/typography/README.md)
-* [網格 (Grid)](bootstrap/grid/README.md)
-* [佈局 (Layout)](bootstrap/layout/README.md)
-* [元件 (Component)](bootstrap/components/README.md)
+* [排版 \(Typography\)](bootstrap/typography/README.md)
+* [網格 \(Grid\)](bootstrap/grid/README.md)
+* [佈局 \(Layout\)](bootstrap/layout/README.md)
+* [元件 \(Component\)](bootstrap/components/README.md)
 * [Navbar Fixed Top](bootstrap/navbar-fixed-top/README.md)
-* [圖片 (Image)](bootstrap/image/README.md)
-* [圖示字型 (Glyphicons)](bootstrap/glyphicons/README.md)
+* [圖片 \(Image\)](bootstrap/image/README.md)
+* [圖示字型 \(Glyphicons\)](bootstrap/glyphicons/README.md)
 * [JS 概念](bootstrap/js/README.md)
 * [JS 下拉選單](bootstrap/js-dropdown/README.md)
 * [JS 輪播效果](bootstrap/js-carousel/README.md)
 * [JS 互動視窗](bootstrap/js-modal/README.md)
-* [佈景主題 (Theme)](bootstrap/theme/README.md)
+* [佈景主題 \(Theme\)](bootstrap/theme/README.md)
 * [實用補充](bootstrap/tips/README.md)
 
-<!--
+---
+
 * [JS 折疊與手風琴效果](bootstrap/js-collapse/README.md)
 * [JS 頁籤](bootstrap/js-tab/README.md)
--->
 
-## CSS 預處理器 (CSS Preprocessor)
+## CSS 預處理器 \(CSS Preprocessor\)
 
 * [物件導向 CSS](preprocessor/oocss/README.md)
 * [概念](preprocessor/README.md)
@@ -131,24 +131,22 @@
 * [補充 - HTTP methods](api-design/mise/http-methods.md)
 * [補充 - 原子 / 無狀態](api-design/mise/README.md)
 
-<!-- * [API 安全](api-design/security/README.md) -->
-
 ## 團隊協作工具
 
 * [Slack](tools/slack/README.md)
 * [Zoom 雲端視訊會議](tools/zoom/README.md)
 
-<!--
+---
+
 * [XSS 攻擊](api-design/security/attack/xss.md)
 * [DOS 攻擊](api-design/security/attack/dos.md)
 * [CSRF 攻擊](api-design/security/attack/csrf.md)
 * [SQL Injection](api-design/security/attack/sql-injection.md)
- -->
 
-<!--
+---
+
 * [補充](api-design/mise/README.md)
 * [GraphQL](api-design/graphql/README.md)
--->
 
 ## JavaScript 基礎課程
 
@@ -176,7 +174,7 @@
 * [Callback 函式](js/foundation/callback.md)
 * [Array 方法](js/foundation/array-method.md)
 
-## JavaScript ES2015 (ES6)
+## JavaScript ES2015 \(ES6\)
 
 * [介紹](js/es6/README.md)
 * [var / const](js/es6/const.md)
@@ -192,7 +190,7 @@
 * [ES6 新的 API](js/es6/new-api.md)
 * [類別](js/es6/classes.md)
 * [Promise](js/es6/promise.md)
-* [產生器 (Generator)](js/es6/generators.md)
+* [產生器 \(Generator\)](js/es6/generators.md)
 * [ES7 await](js/es7/await.md)
 
 ## JavaScript 進階課程
