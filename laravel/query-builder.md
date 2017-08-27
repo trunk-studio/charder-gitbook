@@ -111,3 +111,21 @@ select * from users
         select 1 from orders where orders.user_id = users.id
     )
 ```
+
+```php
+DB::table('users')
+    ->whereExists(function ($query) {
+        $query->select(DB::raw(1))
+                ->from('orders')
+                ->whereRaw('orders.user_id = users.id');
+    })
+    ->get();
+```
+
+
+```sql
+select * from users
+    where exists (
+        select 1 from orders where orders.user_id = users.id
+    )
+```

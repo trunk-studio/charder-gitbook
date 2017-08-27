@@ -32,13 +32,15 @@ articles_tags
     user_id - integer
 ```
 
-
 1. 新增一個 One to One
-    * User
-    * Profile
-1. 新增一個 One to Many
-    * User
-    * Article
-1. 新增一個 Many to Many
-    * Article
-    * Tag
+   * User
+   * Profile
+2. 新增一個 One to Many
+   * User
+   * Article
+3. 新增一個 Many to Many
+   * Article
+   * Tag
+
+
+
