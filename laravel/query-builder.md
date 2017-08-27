@@ -124,5 +124,5 @@ DB::table('articles')
 select *
 from articles
 inner join users
-ON users.id=articles.user_id;
+ON users.id = articles.user_id;
 ```
