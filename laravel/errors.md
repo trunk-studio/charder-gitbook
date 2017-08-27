@@ -25,7 +25,7 @@ return parent::render($request,$e);
 abort(403, 'Unauthorized action.');
 ```
 
-客製
+客製Errors Html樣板
 
 ```
 return response()->view('errors.503', [], 503);
