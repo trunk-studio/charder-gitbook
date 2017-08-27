@@ -19,10 +19,16 @@ try {
 return parent::render($request,$e);
 ```
 
-例外
+客製Http例外
 
 ```
 abort(403, 'Unauthorized action.');
+```
+
+客製
+
+```
+return view('');
 ```
 
 
