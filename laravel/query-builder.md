@@ -113,14 +113,14 @@ select * from users
 ```
 
 ```php
-DB::table('users')
+DB::table('articles')
      ->join('role', 'users.id', '=', 'role.user_id')
     ->get();
 ```
 
 
 ```sql
-select * from users
+select * from articles
     where exists (
         select 1 from orders where orders.user_id = users.id
     )
