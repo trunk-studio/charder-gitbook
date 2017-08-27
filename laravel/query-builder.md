@@ -120,8 +120,8 @@ DB::table('articles')
 
 
 ```sql
-select * from articles
-    where exists (
-        select * from orders where orders.user_id = users.id
-    )
+select *
+FROM articles
+INNER JOIN users
+ON customers.C_Id=orders.C_Id;
 ```
