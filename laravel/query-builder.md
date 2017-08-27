@@ -122,6 +122,6 @@ DB::table('articles')
 ```sql
 select *
 FROM articles
-INNER JOIN users
-ON customers.C_Id=orders.C_Id;
+inner join users
+ON users.id=articles.user_id;
 ```
