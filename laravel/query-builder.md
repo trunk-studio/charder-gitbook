@@ -115,7 +115,8 @@ select * from users
 ```php
 DB::table('articles')
      ->join('users', 'users.id', '=', 'articles.user_id')
-    ->get();
+     ->where('FEEDS.USER_ID', 1)
+     ->get();
 ```
 
 
