@@ -22,6 +22,7 @@
 * [查詢產生器](laravel/query-builder.md)
 * [練習題](laravel/ex.md)
 * [Errors&Logging](laravel/errors-and-logging.md)
+* [Auth](laravel/auth.md)
 * [測試](laravel/test.md)
 * [View](laravel/view.md)
 
