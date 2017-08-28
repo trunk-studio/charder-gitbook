@@ -53,12 +53,6 @@ class RegisterController extends Controller
             return Redirect::to('/');
         }
 
-        //判斷是否曾註冊過
-        $has_user = DB::table('users')->where('EMAIL', $request->email)->get();
-        if ($has_user != null || !empty($has_user)){
-            return Redirect::to('/');
-        }
-
         //新建會員資料
         return User::create([
             'name' => $data['name'],
