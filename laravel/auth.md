@@ -35,9 +35,7 @@ class RegisterController extends Controller
 
     //驗證會員
     protected function validator(array $data)
-    {user_name full_name email password
-
-
+    {
         return Validator::make($data, [
             'user_name' => 'required|string|max:255',
             'full_name' => 'required|string|max:255',
