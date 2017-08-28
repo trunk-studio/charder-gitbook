@@ -73,7 +73,7 @@ class RegisterController extends Controller
     }
 ```
 
-Route會員登入中 加入Auth
+Route會員登入
 
 ```
 Route::middleware('auth:api')->get('/user', 'UserController@login');
