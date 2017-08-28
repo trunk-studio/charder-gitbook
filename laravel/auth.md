@@ -12,7 +12,7 @@ Route會員註冊
 Route::middleware('web')->get('/user', 'RegisterController@create');
 ```
 
-RegisterController會員註冊
+RegisterController顯示會員註冊Blade
 
 ```
 namespace App\Http\Controllers\Auth;
@@ -36,6 +36,7 @@ class RegisterController extends Controller
     {
         $this->middleware('guest');
     }
+    
 }
 ```
 
