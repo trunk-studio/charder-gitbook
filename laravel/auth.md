@@ -47,7 +47,7 @@ class RegisterController extends Controller
             'password' => 'required|string|min:6|confirmed',
         ]);
 
-        //如果資料防呆驗證不通過
+        //如果資料防呆驗證不通過，則跳回首頁
         if (!$validator->passes()) 
         {
             return Redirect::to('/');
