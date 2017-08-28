@@ -6,7 +6,7 @@
 php artisan make:auth
 ```
 
-Route會員註冊
+### Route會員註冊
 
 ```
 Route::middleware('web')->get('/user', 'RegisterController@create');
@@ -73,10 +73,24 @@ class RegisterController extends Controller
     }
 ```
 
-Route會員登入
+### Route會員登入
 
 ```
 Route::middleware('auth:api')->get('/user', 'UserController@login');
+```
+
+
+
+```
+namespace App\Http\Controllers\Auth;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
+
+class LoginController extends Controller
+{
+
+    protected $redirectTo = '/home';
 ```
 
 
