@@ -72,7 +72,7 @@ class RegisterController extends Controller
 Route中加入
 
 ```
-Route::middleware('api', 'auth')->get('/user', 'UserController@index');
+Route::middleware('api', 'auth')->delete('/user', 'UserController@index');
 ```
 
 
