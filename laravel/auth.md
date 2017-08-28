@@ -58,12 +58,13 @@ class RegisterController extends Controller
         if ($has_user != null || !empty($has_user)){
             return Redirect::to('/');
         }
-        
+
         //新建會員資料
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
+            'active' => 'empoyee'
         ]);
     }
 ```
