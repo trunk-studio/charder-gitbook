@@ -58,7 +58,7 @@ class RegisterController extends Controller
             return Redirect::to('/');
         }
 
-        $has_user = DB::table('MEMBER')->where('EMAIL', $request->email)->get();
+        $has_user = DB::table('users')->where('EMAIL', $request->email)->get();
         if ($has_user != null || !empty($has_user)){
             return Redirect::to('/');
         }
