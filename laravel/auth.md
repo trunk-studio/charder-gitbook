@@ -45,7 +45,7 @@ class RegisterController extends Controller
     {
         if (!$validator->passes()) 
         {
-            return Redirect::to('/register/1');
+            return Redirect::to('/');
             return "error0";
         }
         return User::create([
