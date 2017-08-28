@@ -72,8 +72,7 @@ class RegisterController extends Controller
 Route中加入
 
 ```
-Route::group(['prefix' => 'users', 'middleware' => 'adminlogin'], function () {
-});
+Route::middleware('api', 'auth')->get('/user', 'UserController@index');
 ```
 
 
