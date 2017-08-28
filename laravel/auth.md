@@ -32,17 +32,6 @@ class RegisterController extends Controller
     {
         $this->middleware('guest');
     }
-
-    //驗證會員
-    protected function validator(array $data)
-    {
-        return Validator::make($data, [
-            'user_name' => 'required|string|max:255',
-            'full_name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:6|confirmed',
-        ]);
-    }
 }
 ```
 
