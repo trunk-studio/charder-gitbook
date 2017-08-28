@@ -21,8 +21,8 @@ class RegisterController extends Controller
     use RegistersUsers;
 
     protected $redirectTo = '/home';
-    
-    //默認導入中間層guest
+
+    //默認導入中間層guest，確認是否登入過
     public function __construct()
     {
         $this->middleware('guest');
