@@ -9,7 +9,7 @@ php artisan make:auth
 Route會員註冊
 
 ```
-Route::middleware('web')->get('/user', 'UserController@index');
+Route::middleware('web')->get('/user', 'RegisterController@index');
 ```
 
 RegisterController會員註冊
