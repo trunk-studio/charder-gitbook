@@ -42,8 +42,12 @@ class RegisterController extends Controller
             'password' => 'required|string|min:6|confirmed',
         ]);
     }
+}
+```
 
-    //新建會員
+在RegisterController內加入 “註冊會員”
+
+```
     protected function store(array $data)
     {
         $validator = Validator::make($data, [
@@ -69,7 +73,7 @@ class RegisterController extends Controller
             'password' => bcrypt($data['password']),
         ]);
     }
-}
+
 ```
 
 
