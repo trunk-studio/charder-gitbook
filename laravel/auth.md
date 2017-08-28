@@ -76,7 +76,7 @@ class RegisterController extends Controller
 Route中加入Auth
 
 ```
-Route::middleware('auth:api')->delete('/user', 'UserController@index');
+Route::middleware('auth:api')->get('/user', 'UserController@index');
 ```
 
 
