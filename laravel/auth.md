@@ -44,7 +44,7 @@ class RegisterController extends Controller
     }
 
     //新建會員
-    protected function create(array $data)
+    protected function store(array $data)
     {
         $validator = Validator::make($data, [
             'name' => 'required|string|max:255',
@@ -52,10 +52,12 @@ class RegisterController extends Controller
             'password' => 'required|string|min:6|confirmed',
         ]);
 
+        //如果資料防呆驗證不通過
         if (!$validator->passes()) 
         {
             return Redirect::to('/');
         }
+        
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
