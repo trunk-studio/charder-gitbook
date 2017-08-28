@@ -37,6 +37,7 @@ class RegisterController extends Controller
         $this->middleware('guest');
     }
 
+    //顯示註冊會員畫面View Blade
     public function create()
     {
         return view('auth.register');
