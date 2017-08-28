@@ -23,6 +23,7 @@
 * [練習題](laravel/ex.md)
 * [Errors&Logging](laravel/errors-and-logging.md)
 * [Auth](laravel/auth.md)
+* [Auth練習題](laravel/authlian-xi-ti.md)
 * [測試](laravel/test.md)
 * [View](laravel/view.md)
 
