@@ -72,7 +72,7 @@ class RegisterController extends Controller
 Route中加入
 
 ```
-Route::group(['prefix' => 'admin/pages', 'middleware' => 'adminlogin'], function () {
+Route::group(['prefix' => 'users', 'middleware' => 'adminlogin'], function () {
 });
 ```
 
