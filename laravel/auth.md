@@ -46,6 +46,12 @@ class RegisterController extends Controller
     //新建會員
     protected function create(array $data)
     {
+        $validator = Validator::make($data, [
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users',
+            'password' => 'required|string|min:6|confirmed',
+        ]);
+
         if (!$validator->passes()) 
         {
             return Redirect::to('/');
