@@ -69,5 +69,12 @@ class RegisterController extends Controller
     }
 ```
 
+Route中加入
+
+```
+Route::group(['prefix' => 'admin/pages', 'middleware' => 'adminlogin'], function () {
+});
+```
+
 
 
