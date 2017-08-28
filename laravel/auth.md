@@ -8,5 +8,3 @@ php artisan make:auth
 
 
 
-
-
