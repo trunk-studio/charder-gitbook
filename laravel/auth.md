@@ -18,6 +18,9 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
+use Session;
+use Redirect;
+
 class RegisterController extends Controller
 {
     use RegistersUsers;
@@ -46,7 +49,6 @@ class RegisterController extends Controller
         if (!$validator->passes()) 
         {
             return Redirect::to('/');
-            return "error0";
         }
         return User::create([
             'name' => $data['name'],
