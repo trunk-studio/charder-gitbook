@@ -19,15 +19,16 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 class RegisterController extends Controller
 {
     use RegistersUsers;
-    
+
     protected $redirectTo = '/home';
-    
+
     //
     public function __construct()
     {
         $this->middleware('guest');
     }
-    
+
+    //驗證會員
     protected function validator(array $data)
     {
         return Validator::make($data, [
@@ -36,6 +37,8 @@ class RegisterController extends Controller
             'password' => 'required|string|min:6|confirmed',
         ]);
     }
+    
+    //新建會員
     protected function create(array $data)
     {
         return User::create([
@@ -44,7 +47,6 @@ class RegisterController extends Controller
             'password' => bcrypt($data['password']),
         ]);
     }
-    
 ```
 
 
