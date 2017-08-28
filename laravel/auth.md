@@ -8,8 +8,6 @@ php artisan make:auth
 
 Route會員註冊
 
-
-
 RegisterController會員註冊
 
 ```
@@ -47,9 +45,9 @@ class RegisterController extends Controller
     {
         if (!$validator->passes()) 
         {
-			return Redirect::to('/register/1');
-			return "error0";
-	}
+            return Redirect::to('/register/1');
+            return "error0";
+        }
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
