@@ -17,7 +17,7 @@ $id = DB::table('users')->insertGetId(
 ### 取得資料 \(Read\)
 
 ```
-DB::table('users')->get();
+DB::table('users')->value('email');
 ```
 
 ### 更新 \(Update\)
