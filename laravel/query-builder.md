@@ -132,5 +132,8 @@ ON users.id = articles.user_id;
 
 觀察ORM與查詢產生器的差別，試試看使用這兩行打印出來
 ```sql
+
+//dd($methods) = var_dump($methods); die();
+return dd(User::all());
 return dd(User::all());
 ```
