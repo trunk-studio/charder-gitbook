@@ -24,7 +24,7 @@ DB::table('users')->orderBy('id', 'desc');
 ### 更新 \(Update\)
 
 ```
-DB::table('users')->where('id', 1)->update(['name' => 'john']);
+DB::table('users')->where('id', 1)->update(['name' => 'John']);
 ```
 
 ### 刪除 \(Delete\)
