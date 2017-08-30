@@ -40,11 +40,23 @@ return dd($diff->all());
 
 ### take\(\)：
 
-**取得所有集合中給定鍵的值**
+**回傳有著指定數量項目的集合**
 
 ```
-return dd(User::all()->take(2));
+$collection = collect([0, 1, 2, 3, 4, 5]);
+
+$chunk = $collection->take(2);
 ```
+
+也可以傳入負整數以取得從集合倒數來算指定數量的項目
+
+```
+$collection = collect([0, 1, 2, 3, 4, 5]);
+
+$chunk = $collection->take(-2);
+```
+
+
 
 
 
