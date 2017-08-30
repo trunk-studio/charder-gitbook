@@ -18,7 +18,7 @@
 * [Migration](laravel/migration.md)
 * [Model - Eloquent ORM](laravel/model.md)
 * [Model - Eloquent 關聯](laravel/relationships.md)
-* [Model - Eloquent ORM](laravel/model.md)
+* [CRUD](laravel/crud.md) 
 * [練習題](laravel/ex.md)
 * [查詢產生器](laravel/query-builder.md)
 * [查詢產生器：CRUD](laravel/cha-xun-chan-sheng-qi-ff1a-crud.md)
