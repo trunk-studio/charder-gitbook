@@ -141,6 +141,6 @@ Route::middleware('api')->get('/dd/orm', function (Request $request)
 
 Route::middleware('api')->get('/dd/db', function (Request $request) 
 {
-return dd(DB::table('users')->get());
+    return dd(DB::table('users')->get());
 }
 ```
