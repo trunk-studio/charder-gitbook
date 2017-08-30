@@ -5,8 +5,7 @@ UserController.php
 **撈出資料後，以兩筆為一分頁**
 
 ```
-$users = User::all()->paginate(2);
-return $usersl
+return User::all()->paginate(2);
 ```
 
 
