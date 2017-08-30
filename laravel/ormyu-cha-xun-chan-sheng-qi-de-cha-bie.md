@@ -28,8 +28,6 @@ $diff = $collection->diff([2, 4, 6, 8]);
 return dd($diff->all());
 ```
 
-### 
-
 ### plunk\(\)：
 
 **方法取得所有集合中給定鍵的值**
