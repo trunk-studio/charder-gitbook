@@ -22,6 +22,8 @@ return dd(User::all()->toJson());
 
 ```
 return dd(User::all()->pluck('id'));
+//or 
+return dd(User::all()->pluck('id','email'));
 ```
 
 ### diff\(\)：
