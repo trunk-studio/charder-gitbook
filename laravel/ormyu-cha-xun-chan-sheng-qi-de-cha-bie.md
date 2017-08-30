@@ -2,3 +2,9 @@
 
 plunk
 
+```
+$plucked = User::all()->pluck('id');
+```
+
+
+
