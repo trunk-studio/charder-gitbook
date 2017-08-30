@@ -8,6 +8,14 @@
 return dd(User::all()->toArray());
 ```
 
+### toJson\(\)：
+
+**將集合轉換成 JSON**
+
+```
+return dd(User::all()->toJson());
+```
+
 ### plunk\(\)：
 
 **取得所有集合中給定鍵的值**
@@ -28,13 +36,7 @@ $diff = $collection->diff([2, 4, 6, 8]);
 return dd($diff->all());
 ```
 
-### toJson\(\)：
-
-**將集合轉換成 JSON**
-
-```
-return dd(User::all()->toJson());
-```
+### 
 
 
 
