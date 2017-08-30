@@ -128,10 +128,9 @@ inner join users
 ON users.id = articles.user_id;
 ```
 
-**有發現結果不同了嗎**
+**dd() 與 var_dump($methods); die();**
 
-觀察ORM與查詢產生器的差別，試試看使用這兩行打印出來
+觀察把查詢結果試試看使用dd()打印出來
 ```sql
-//dd($methods) = var_dump($methods); die();
 return dd(DB::table('users')->get());
 ```
