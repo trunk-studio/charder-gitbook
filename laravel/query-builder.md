@@ -81,20 +81,6 @@ $users = User::where('name', 'alincode')->get();
 
 觀察ORM與查詢產生器的差別，試試看使用這兩行打印出來
 
-```php
-DB::table('users')
-->where('name', '=', 'alincode')
-->orWhere(function ($query) {
-$query->where('votes', '>', 100)
-->where('title', '<>', 'Admin');
-})
-->get();
-```
-
-
-
-
-
 **進階**
 
 ```php
