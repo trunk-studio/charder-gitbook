@@ -18,7 +18,7 @@ $id = DB::table('users')->insertGetId(
 
 ```
 DB::table('users')->value('email');
-DB::table('users')->orderBy('name', 'desc');
+DB::table('users')->orderBy('id', 'desc');
 ```
 
 ### 更新 \(Update\)
