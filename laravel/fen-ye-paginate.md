@@ -27,7 +27,7 @@ $html = json_encode($user->items()[0]).'<br><br>
 return $html;
 ```
 
-**使用內建render\(\)視圖產生**
+**使用內建render\(\)視圖產生分頁控制**
 
 ```
 return $user->render();
