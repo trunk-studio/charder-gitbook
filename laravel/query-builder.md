@@ -131,3 +131,10 @@ from articles
 inner join users
 ON users.id = articles.user_id;
 ```
+
+```sql
+select *
+from articles
+inner join users
+ON users.id = articles.user_id;
+```
