@@ -138,6 +138,7 @@ Route::middleware('api')->get('/dd/orm', function (Request $request)
 {
     return dd(User::all());
 }
+
 Route::middleware('api')->get('/dd/db', function (Request $request) 
 {
 return dd(DB::table('users')->get());
