@@ -77,9 +77,7 @@ $map = $collection->map(function ($item, $key) {
         return $item * 2;
     });
 
-return dd($collection.$map
-
-);
+return dd($collection.$map);
 ```
 
 
