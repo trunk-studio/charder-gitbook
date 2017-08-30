@@ -6,6 +6,7 @@ UserController.php
 
 ```
 $users = User::all()->paginate(2);
+return $usersl
 ```
 
 
