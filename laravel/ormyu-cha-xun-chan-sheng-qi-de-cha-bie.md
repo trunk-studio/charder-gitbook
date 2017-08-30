@@ -53,13 +53,29 @@ $collection = collect([0, 1, 2, 3, 4, 5]);
 return dd($collection->take(-2));
 ```
 
+### transform\(\)：
 
+**拿該集合與其他集合或純 PHP**`陣列`**進行比較**
 
+```
+$collection = collect([1, 2, 3, 4, 5]);
 
+return dd(
+    $collection->->transform(function ($item, $key) {
+    return $item * 2;
+    })
+));
+```
 
+### diff\(\)：
 
+**拿該集合與其他集合或純 PHP**`陣列`**進行比較**
 
+```
+$collection = collect([1, 2, 3, 4, 5]);
 
+return dd($collection->diff([2, 4, 6, 8]));
+```
 
 
 
