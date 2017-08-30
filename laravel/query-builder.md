@@ -77,10 +77,6 @@ $users = DB::table('users')->whereNotNull('updated_at')->get();
 $users = User::where('name', 'alincode')->get();
 ```
 
-**有發現結果不同了嗎**
-
-觀察ORM與查詢產生器的差別，試試看使用這兩行打印出來
-
 **進階**
 
 ```php
@@ -132,9 +128,9 @@ inner join users
 ON users.id = articles.user_id;
 ```
 
+**有發現結果不同了嗎**
+
+觀察ORM與查詢產生器的差別，試試看使用這兩行打印出來
 ```sql
-select *
-from articles
-inner join users
-ON users.id = articles.user_id;
+retrun dd();
 ```
