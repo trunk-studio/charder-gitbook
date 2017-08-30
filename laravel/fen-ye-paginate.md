@@ -18,10 +18,12 @@ http://XXXX.com?page=1
 **使用「上一頁」、「下一頁」控制分頁**
 
 ```
-$html = "
-<a href="/?page=".$user->perPage()."></a>
-
-";
+$user = User::all()->paginate(2);
+$html = '
+    <a href="/?page='.$user->previousPageUrl().'">Prev</a>
+    <font color="red">'.$user->currentPage().'</font>
+    <a href="/?page='.$user->nextPageUrl().'">Next</a>
+';
 return $html;
 ```
 
