@@ -56,6 +56,8 @@ return dd($chunk->all());
 $collection = collect([0, 1, 2, 3, 4, 5]);
 
 $chunk = $collection->take(-2);
+
+return dd($chunk->all());
 ```
 
 
