@@ -5,7 +5,8 @@ UserController.php
 **撈出資料後，以兩筆為一分頁**
 
 ```
-return User::all()->paginate(2);
+$user = User::all()->paginate(2);
+return 
 ```
 
 **在URL中加入GET page參數切換分頁**
@@ -14,5 +15,18 @@ return User::all()->paginate(2);
 http://XXXX.com?page=1
 ```
 
-使用「上一頁」、「頁碼」、「下一頁」控制分頁
+**使用「上一頁」、「下一頁」控制分頁**
+
+```
+$html = "
+<a href="/?page=".perPage()."></a>
+
+";
+```
+
+
+
+
+
+
 
