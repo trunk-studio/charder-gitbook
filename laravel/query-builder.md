@@ -134,7 +134,8 @@ ON users.id = articles.user_id;
 ```sql
 
 //dd($methods) = var_dump($methods); die();
-Route::middleware('api')->get('/dd/orm', function (Request $request) {
+Route::middleware('api')->get('/dd/orm', function (Request $request) 
+{
 return dd(User::all());
 }
 return dd(DB::table('users')->get());
