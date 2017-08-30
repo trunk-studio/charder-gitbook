@@ -22,6 +22,7 @@ $html = "
 <a href="/?page=".$user->perPage()."></a>
 
 ";
+return $html;
 ```
 
 
