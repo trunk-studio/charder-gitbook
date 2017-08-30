@@ -24,7 +24,7 @@ $html = '
 <font color="red">'.$user->currentPage().'</font>
 <a href="'.$user->nextPageUrl().'">Next</a>
 ';
-return $html;
+return $user."<br>".$html;
 ```
 
 
