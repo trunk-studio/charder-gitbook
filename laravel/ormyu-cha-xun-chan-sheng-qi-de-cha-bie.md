@@ -30,10 +30,10 @@ return dd($diff->all());
 
 ### toJson\(\)：
 
-**方法取得所有集合中給定鍵的值**
+**將集合轉換成 JSON**
 
 ```
-return dd(User::all()->toJson('id'));
+return dd(User::all()->toJson());
 ```
 
 
