@@ -45,14 +45,14 @@ return dd($diff->all());
 ```
 $collection = collect([0, 1, 2, 3, 4, 5]);
 
-$chunk = $collection->take(2);
+return dd($collection->take(2));
 ```
 
 也可以傳入負整數以取得從集合倒數來算指定數量的項目
 
 ```
 $collection = collect([0, 1, 2, 3, 4, 5]);
-return dd($collection->take(-2)->all());
+return dd($collection->take(-2));
 ```
 
 
