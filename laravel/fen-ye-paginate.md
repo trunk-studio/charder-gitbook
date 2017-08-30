@@ -15,7 +15,7 @@ return $user;
 http://XXXX.com?page=1
 ```
 
-**使用「上一頁」、「當前頁碼」、「下一頁」控制分頁**
+**使用「**previousPageUrl\(\)**上一頁」、「**currentPage\(\)**當前頁碼」、「**nextPageUrl\(\)**下一頁」控制分頁**
 
 ```
 $user = User::paginate(1);
