@@ -21,6 +21,7 @@
 * [CRUD](laravel/crud.md)
 * [查詢產生器](laravel/query-builder.md)
 * [練習題](laravel/ex.md)
+* 分頁 Paginate
 * [集合 Collection](laravel/ormyu-cha-xun-chan-sheng-qi-de-cha-bie.md)
 * [Errors&Logging](laravel/errors-and-logging.md)
 * [Auth](laravel/auth.md)
