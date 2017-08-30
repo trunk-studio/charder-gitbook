@@ -33,7 +33,7 @@ return dd(User::all()->pluck('email','id'));
 ```
 $collection = collect(["0":1, "1":2, "2":3, "3":4, "4":5]);
 
-$diff = $collection->diff([2, 4, 6, 8]);
+$diff = $collection->diff(["0":2, "1":4, "2":6, "3":8]);
 
 return dd($diff->all());
 ```
