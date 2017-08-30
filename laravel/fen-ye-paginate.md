@@ -18,13 +18,13 @@ http://XXXX.com?page=1
 **使用「**previousPageUrl\(\)**上一頁」、「**currentPage\(\)**當前頁碼」、「**nextPageUrl\(\)**下一頁」控制分頁**
 
 ```
-$user = User::paginate(2);
-$html = '
+$user = User::paginate(1);
+$html = json_encode($user->items()[0]).'<br><br>
 <a href="'.$user->previousPageUrl().'">Prev</a>
 <font color="red">'.$user->currentPage().'</font>
 <a href="'.$user->nextPageUrl().'">Next</a>
 ';
-return $user."<br>".$html;
+return $html;
 ```
 
 **使用內建render\(\)視圖產生**
