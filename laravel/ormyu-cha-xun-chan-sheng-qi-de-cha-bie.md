@@ -67,14 +67,19 @@ return dd(
 );
 ```
 
-### diff\(\)：
+### map\(\)：
 
 **拿該集合與其他集合或純 PHP**`陣列`**進行比較**
 
 ```
 $collection = collect([1, 2, 3, 4, 5]);
 
-return dd($collection->diff([2, 4, 6, 8]));
+return dd(
+    $collection->map(function ($item, $key) {
+        return $item * 2;
+    })
+);
+
 ```
 
 
