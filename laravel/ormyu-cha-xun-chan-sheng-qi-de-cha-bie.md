@@ -52,7 +52,7 @@ $chunk = $collection->take(2);
 
 ```
 $collection = collect([0, 1, 2, 3, 4, 5]);
-return $collection->take(-2);
+return dd($collection->take(-2)->all());
 ```
 
 
