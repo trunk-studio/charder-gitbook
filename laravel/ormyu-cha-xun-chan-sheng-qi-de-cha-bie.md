@@ -3,7 +3,7 @@
 plunk
 
 ```
-$plucked = User::all()->pluck('id');
+return dd(User::all()->pluck('id'));
 ```
 
 
