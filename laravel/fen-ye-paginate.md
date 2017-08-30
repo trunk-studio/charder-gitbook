@@ -19,7 +19,7 @@ http://XXXX.com?page=1
 
 ```
 $html = "
-<a href="/?page=".perPage()."></a>
+<a href="/?page=".$user->perPage()."></a>
 
 ";
 ```
