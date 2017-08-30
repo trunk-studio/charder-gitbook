@@ -61,10 +61,10 @@ return dd($collection->take(-2));
 $collection = collect([1, 2, 3, 4, 5]);
 
 return dd(
-    $collection->->transform(function ($item, $key) {
-    return $item * 2;
+    $collection->transform(function ($item, $key) {
+        return $item * 2;
     })
-));
+);
 ```
 
 ### diff\(\)：
