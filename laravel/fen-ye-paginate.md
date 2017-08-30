@@ -20,9 +20,9 @@ http://XXXX.com?page=1
 ```
 $user = User::all()->paginate(2);
 $html = '
-    <a href="/?page='.$user->previousPageUrl().'">Prev</a>
-    <font color="red">'.$user->currentPage().'</font>
-    <a href="/?page='.$user->nextPageUrl().'">Next</a>
+<a href="/?page='.$user->previousPageUrl().'">Prev</a>
+<font color="red">'.$user->currentPage().'</font>
+<a href="/?page='.$user->nextPageUrl().'">Next</a>
 ';
 return $html;
 ```
