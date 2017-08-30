@@ -27,7 +27,7 @@ $html = '
 return $user."<br>".$html;
 ```
 
-使用內建render\(\)視圖產生
+**使用內建render\(\)視圖產生**
 
 ```
 return $user->render();
