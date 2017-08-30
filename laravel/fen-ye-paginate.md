@@ -18,7 +18,7 @@ http://XXXX.com?page=1
 **使用「**previousPageUrl\(\)**上一頁」、「**currentPage\(\)**當前頁碼」、「**nextPageUrl\(\)**下一頁」控制分頁**
 
 ```
-$user = User::paginate(1);
+$user = User::paginate(2);
 $html = '
 <a href="'.$user->previousPageUrl().'">Prev</a>
 <font color="red">'.$user->currentPage().'</font>
