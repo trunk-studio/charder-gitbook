@@ -55,7 +55,7 @@ return dd($collection->take(-2));
 
 ### transform\(\)：
 
-**拿該集合與其他集合或純 PHP`陣列`的項目將會被回呼函式回傳的數值取代掉**
+**拿該集合與其他集合或純 PHP**`陣列`**的項目將會被回呼函式回傳的數值取代掉**
 
 ```
 $collection = collect([1, 2, 3, 4, 5]);
@@ -73,11 +73,12 @@ return dd(
 
 ```
 $collection = collect([1, 2, 3, 4, 5]);
+$map = $collection->map(function ($item, $key) {
+        return $item * 2;
+    });
 
 return dd(
-    $collection->map(function ($item, $key) {
-        return $item * 2;
-    })
+    
 );
 ```
 
