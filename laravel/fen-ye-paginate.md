@@ -6,7 +6,7 @@ UserController.php
 
 ```
 $user = User::all()->paginate(2);
-return 
+return $user;
 ```
 
 **在URL中加入GET page參數切換分頁**
@@ -23,10 +23,6 @@ $html = "
 
 ";
 ```
-
-
-
-
 
 
 
