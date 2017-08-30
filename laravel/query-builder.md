@@ -127,6 +127,7 @@ inner join users
 ON users.id = articles.user_id;
 ```
 
+** 練習題：把上週練習題的ORM 改成 查詢產生器方式 **
 **dd() 與 var_dump($methods); die();**
 
 觀察把查詢結果試試看使用dd()打印出來
