@@ -14,5 +14,5 @@ return User::all()->paginate(2);
 http://XXXX.com?page=1
 ```
 
-
+使用「上一頁」、「頁碼」、「下一頁」控制分頁
 
