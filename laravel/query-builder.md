@@ -92,7 +92,7 @@ DB::table('users')
 ```sql
 select * from users where name = 'alincode' or (votes > 100 and title <> 'Admin')
 ```
-
+直接輸入SQL Raw
 
 ```php
 DB::table('users')
@@ -126,6 +126,7 @@ from articles
 inner join users
 ON users.id = articles.user_id;
 ```
+
 
 ** 練習題：把上週練習題的ORM 改成 查詢產生器方式 **
 **dd() 與 var_dump($methods); die();**
