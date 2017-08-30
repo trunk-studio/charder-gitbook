@@ -135,5 +135,5 @@ ON users.id = articles.user_id;
 
 //dd($methods) = var_dump($methods); die();
 return dd(User::all());
-return dd(User::all());
+return dd(DB::table('users')->get());
 ```
