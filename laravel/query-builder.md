@@ -120,7 +120,6 @@ DB::table('articles')
      ->get();
 ```
 
-
 ```sql
 select *
 from articles
