@@ -3,6 +3,7 @@
 ### 建立資料 \(Create\)
 
 ```
+//insert 方法接受一個陣列，包含要插入的欄位名稱及值
 DB::table('users')->insert(
     ['email' => 'john@example.com', 'votes' => 0]
 );
