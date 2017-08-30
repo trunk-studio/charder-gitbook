@@ -30,7 +30,7 @@ DB::table('users')->where('id', 1)->update(['name' => 'John']);
 ### 刪除 \(Delete\)
 
 ```
-
+DB::table('users')->where('id', '=', 1)->delete();
 ```
 
 
