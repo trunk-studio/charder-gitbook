@@ -65,7 +65,7 @@ Route::post('register', [ 'as' => 'register', 'uses' => 'RegisterController@stor
         ]);
     }
 
-    protected function store(array $data)
+    protected function store(Request $request)
     {
         //新建會員資料
         return User::create([
