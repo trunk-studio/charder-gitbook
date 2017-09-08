@@ -2,6 +2,8 @@
 
 ### Route會員註冊
 
+在routes的web.php加入
+
 ```
 Route::get('/user', 'RegisterController@create');
 ```
@@ -43,7 +45,13 @@ class RegisterController extends Controller
 protected $redirectTo = '/home';
 ```
 
-在RegisterController內加入 “註冊會員”function store，且在資料庫users資料表新建 型別var\_char\(191\) 的active權限欄位
+處理當會員註冊頁的表單送出post時，在routes的web.php加入
+
+```
+Route::post('register', 'RegisterController@store');
+```
+
+在RegisterController內加入 “註冊會員”store function，且在資料庫users資料表新建 型別var\_char\(191\) 的active權限欄位
 
 ```
     protected function store(array $data)
