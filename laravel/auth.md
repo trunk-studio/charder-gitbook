@@ -32,7 +32,7 @@ class RegisterController extends Controller
     //顯示註冊會員畫面View Blade
     public function create()
     {
-        return view('auth.register');
+        return view('register');
     }
 }
 ```
@@ -71,7 +71,7 @@ protected $redirectTo = '/home';
     }
 ```
 
-到resources/views資料夾內新增auth資料夾裡面新增register.blade.php
+到resources/views資料夾內新增register.blade.php
 
 ```
 <form class="form-horizontal" method="POST" action="{{ route('register') }}">
@@ -135,7 +135,6 @@ protected $redirectTo = '/home';
         </div>
     </div>
 </form>
-
 ```
 
 ### Route會員登入
