@@ -1,10 +1,6 @@
 # Auth 身份驗證
 
-產生Auth的Views Blade在`resources/views/auth`路徑內 和 Controller：RegisterController會員註冊、LoginController會員登入、ForgotPasswordController忘記密碼、ResetPasswordController重置密碼
 
-```
-php artisan make:auth
-```
 
 ### Route會員註冊
 
@@ -77,6 +73,8 @@ protected $redirectTo = '/home';
     }
 ```
 
+到resources/views資料夾內新增auth資料夾裡面新增register.blade.php
+
 ### Route會員登入
 
 ```
@@ -100,6 +98,12 @@ class LoginController extends Controller
     }
 
 }
+```
+
+產生Auth的Views Blade在`resources/views/auth`路徑內 和 Controller：RegisterController會員註冊、LoginController會員登入、ForgotPasswordController忘記密碼、ResetPasswordController重置密碼
+
+```
+php artisan make:auth
 ```
 
 
