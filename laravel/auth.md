@@ -63,10 +63,9 @@ Route::post('register', [ 'as' => 'register', 'uses' => 'RegisterController@stor
             'password' => 'required|string|min:6|confirmed',
         ]);
     }
-    
+
     protected function store(array $data)
     {
-
         //新建會員資料
         return User::create([
             'name' => $data['name'],
