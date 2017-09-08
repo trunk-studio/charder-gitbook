@@ -5,7 +5,7 @@
 在routes的web.php加入
 
 ```
-Route::get('/user', 'RegisterController@create');
+Route::get('register', [ 'as' => 'register', 'uses' => 'RegisterController@create']);
 ```
 
 RegisterController顯示會員註冊View Blade
