@@ -166,7 +166,7 @@ Route::post('register', [ 'as' => 'register', 'uses' => 'RegisterController@stor
 Route::get('login', [ 'as' => 'login', 'uses' => 'LoginController@index']);
 ```
 
-RegisterController顯示會員登入View Blade
+LoginController顯示會員登入View Blade
 
 ```
 namespace App\Http\Controllers;
