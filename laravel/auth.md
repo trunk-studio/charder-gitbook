@@ -49,7 +49,7 @@ class RegisterController extends Controller
 protected $redirectTo = '/home';
 ```
 
-在RegisterController內加入 “註冊會員”function store，且在資料庫users資料表新建 型別var\_char\(255\) 的active權限欄位
+在RegisterController內加入 “註冊會員”function store，且在資料庫users資料表新建 型別var\_char\(191\) 的active權限欄位
 
 ```
     protected function store(array $data)
