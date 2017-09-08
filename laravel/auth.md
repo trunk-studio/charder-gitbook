@@ -46,7 +46,7 @@ class RegisterController extends Controller
 加入此行在RegisterController類別下的全域變數內，在登入成功後會自動跳轉到此路徑
 
 ```
-protected $redirectTo = '/';
+protected $redirectTo = '/home';
 ```
 
 在RegisterController內加入 “註冊會員”function store，且在資料庫users資料表新建 型別var\_char\(255\) 的active權限欄位
