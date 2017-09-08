@@ -58,7 +58,7 @@ protected $redirectTo = '/home';
         //如果資料防呆驗證不通過，則跳回首頁
         if (!$validator->passes()) 
         {
-            return Redirect::to('/');
+            return Redirect::to('/register');
         }
 
         //新建會員資料
@@ -97,8 +97,6 @@ class LoginController extends Controller
 
 }
 ```
-
-
 
 此指令會自動產生Auth的Views Blade在`resources/views/auth`路徑內 和 Controller：RegisterController會員註冊、LoginController會員登入、ForgotPasswordController忘記密碼、ResetPasswordController重置密碼
 
