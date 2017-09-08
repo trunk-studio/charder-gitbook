@@ -11,12 +11,13 @@ Route::get('register', [ 'as' => 'register', 'uses' => 'RegisterController@creat
 RegisterController顯示會員註冊View Blade
 
 ```
-namespace App\Http\Controllers\Auth;
+namespace App\Http\Controllers;
 
 use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Http\Request;
 
 use Session;
 use Redirect;
