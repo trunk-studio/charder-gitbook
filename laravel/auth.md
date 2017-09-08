@@ -57,7 +57,7 @@ protected $redirectTo = '/home';
 處理當會員註冊頁的表單送出post時，在routes的web.php加入
 
 ```
-Route::post('register', 'RegisterController@store');
+Route::post('register', [ 'as' => 'register', 'uses' => 'RegisterController@store']);
 ```
 
 在RegisterController內加入 “註冊會員”store function，且在資料庫users資料表新建 型別var\_char\(191\) 的active權限欄位
@@ -154,7 +154,6 @@ Route::post('register', 'RegisterController@store');
         </div>
     </div>
 </form>
-
 ```
 
 ### Route會員登入
