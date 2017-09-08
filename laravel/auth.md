@@ -160,7 +160,7 @@ Route::post('register', [ 'as' => 'register', 'uses' => 'RegisterController@stor
 Route::get('login', [ 'as' => 'login', 'uses' => 'LoginController@index']);
 ```
 
-LoginController顯示會員登入View Blade
+LoginController加入顯示會員登入View Blade
 
 ```
 namespace App\Http\Controllers;
@@ -198,9 +198,11 @@ protected $redirectTo = '/home';
 ```
 Route::post('login', [ 'as' => 'login', 'uses' => 'LoginController@login']);
 Route::get('/home', function () {
-    return dd('你已經成功登入，'.'<a href="/logout"></a>');
+    return dd('你已經成功登入，'.'<a href="/logout">點此登出</a>');
 });
 ```
+
+LoginController加入判斷會員登入資料是否正確
 
 此指令會自動產生Auth的Views Blade在`resources/views/auth`路徑內 和 Controller：RegisterController會員註冊、LoginController會員登入、ForgotPasswordController忘記密碼、ResetPasswordController重置密碼
 
