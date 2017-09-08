@@ -202,7 +202,7 @@ Route::get('/home', function () {
 });
 ```
 
-LoginController加入判斷會員登入資料是否正確
+LoginController加入login判斷會員登入資料是否正確
 
 ```
 protected function login(Request $request)
@@ -259,6 +259,18 @@ protected function login(Request $request)
         </div>
     </div>
 </form>
+```
+
+### Route會員登出
+
+
+
+```
+protected function logout()
+{
+    Auth::logout();
+    return Redirect::to('/login');
+}
 ```
 
 此指令會自動產生Auth的Views Blade在`resources/views/auth`路徑內 和 Controller：RegisterController會員註冊、LoginController會員登入、ForgotPasswordController忘記密碼、ResetPasswordController重置密碼
