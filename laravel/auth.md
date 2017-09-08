@@ -204,6 +204,19 @@ Route::get('/home', function () {
 
 LoginController加入判斷會員登入資料是否正確
 
+```
+protected function login(Request $request)
+{
+    if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
+        // Authentication passed...
+        return Redirect::to('/home');
+    }
+    return Redirect::to('/login')->withErrors([
+        'fail' => '登入失敗',
+    ]);
+}
+```
+
 此指令會自動產生Auth的Views Blade在`resources/views/auth`路徑內 和 Controller：RegisterController會員註冊、LoginController會員登入、ForgotPasswordController忘記密碼、ResetPasswordController重置密碼
 
 ```
