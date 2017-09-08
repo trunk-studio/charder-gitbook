@@ -9,7 +9,7 @@ php artisan make:auth
 ### Route會員註冊
 
 ```
-Route::middleware('web')->get('/user', 'RegisterController@create');
+Route::get('/user', 'RegisterController@create');
 ```
 
 RegisterController顯示會員註冊View Blade
@@ -29,8 +29,6 @@ class RegisterController extends Controller
 {
     use RegistersUsers;
 
-    protected $redirectTo = '/home';
-
     //默認導入中間層guest，確認是否登入過
     public function __construct()
     {
@@ -43,6 +41,12 @@ class RegisterController extends Controller
         return view('auth.register');
     }
 }
+```
+
+加入此行在RegisterController類別下的全域變數內，在登入成功後會自動跳轉到此路徑
+
+```
+protected $redirectTo = '/';
 ```
 
 在RegisterController內加入 “註冊會員”function store，且在資料庫users資料表新建 型別var\_char\(255\) 的active權限欄位
