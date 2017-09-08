@@ -30,6 +30,15 @@ class RegisterController extends Controller
     {
         $this->middleware('guest');
     }
+    
+    protected function validator(array $data)
+    {
+        return Validator::make($data, [
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users',
+            'password' => 'required|string|min:6|confirmed',
+        ]);
+    }
 
     //顯示註冊會員畫面View Blade
     public function create()
@@ -56,18 +65,6 @@ Route::post('register', 'RegisterController@store');
 ```
     protected function store(array $data)
     {
-        $validator = Validator::make($data, [
-            'user_name' => 'required|string|max:255',
-            'full_name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:6|confirmed',
-        ]);
-
-        //如果資料防呆驗證不通過，則跳回首頁
-        if (!$validator->passes()) 
-        {
-            return Redirect::to('/register');
-        }
 
         //新建會員資料
         return User::create([
