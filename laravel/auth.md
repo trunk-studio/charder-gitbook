@@ -41,12 +41,6 @@ class RegisterController extends Controller
 }
 ```
 
-加入此行在RegisterController類別下的全域變數內，在登入成功後會自動跳轉到此路徑
-
-```
-protected $redirectTo = '/home';
-```
-
 處理當會員註冊頁的表單送出post時，在routes的web.php加入
 
 ```
@@ -193,6 +187,12 @@ class LoginController extends Controller
         return view('layouts.login');
     }
 }
+```
+
+加入此行在RegisterController類別下的全域變數內，在登入成功後會自動跳轉到此路徑
+
+```
+protected $redirectTo = '/home';
 ```
 
 此指令會自動產生Auth的Views Blade在`resources/views/auth`路徑內 和 Controller：RegisterController會員註冊、LoginController會員登入、ForgotPasswordController忘記密碼、ResetPasswordController重置密碼
