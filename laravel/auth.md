@@ -69,10 +69,10 @@ Route::post('register', [ 'as' => 'register', 'uses' => 'RegisterController@stor
     {
         //新建會員資料
         return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => bcrypt($data['password']),
-            'active' => 'employee',
+            'user_name' => $request->user_name,
+            'full_name' => $request->full_name,
+            'email' => $request->email,
+            'password' => bcrypt($request->password)
         ]);
     }
 ```
