@@ -174,8 +174,6 @@ use Auth;
 class LoginController extends Controller
 {
 
-    protected $redirectTo = '/home';
-
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
@@ -189,7 +187,7 @@ class LoginController extends Controller
 }
 ```
 
-加入此行在RegisterController類別下的全域變數內，在登入成功後會自動跳轉到此路徑
+加入此行在LoginController類別下的全域變數內，在登入成功後會自動跳轉到此路徑
 
 ```
 protected $redirectTo = '/home';
