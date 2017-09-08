@@ -263,7 +263,7 @@ protected function login(Request $request)
 
 ### Route會員登出
 
-LoginController加入判斷會員登入資料是否正確
+LoginController加入logout利用Auth把此會員登出
 
 ```
 protected function logout()
