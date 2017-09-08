@@ -198,7 +198,7 @@ protected $redirectTo = '/home';
 ```
 Route::post('login', [ 'as' => 'login', 'uses' => 'LoginController@login']);
 Route::get('/home', function () {
-    return '你已經成功登入，'.'<a href="/logout">點此登出</a>';
+    return Auth::user()->email.'你已經成功登入，'.'<a href="/logout">點此登出</a>';
 });
 ```
 
