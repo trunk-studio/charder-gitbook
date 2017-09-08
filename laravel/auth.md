@@ -30,7 +30,7 @@ class RegisterController extends Controller
     {
         $this->middleware('guest');
     }
-    
+
     protected function validator(array $data)
     {
         return Validator::make($data, [
@@ -82,15 +82,29 @@ Route::post('register', 'RegisterController@store');
 <form class="form-horizontal" method="POST" action="{{ route('register') }}">
     {{ csrf_field() }}
 
-    <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-        <label for="name" class="col-md-4 control-label">Name</label>
+    <div class="form-group{{ $errors->has('user_name') ? ' has-error' : '' }}">
+        <label for="user_name" class="col-md-4 control-label">user_name</label>
 
         <div class="col-md-6">
-            <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
+            <input id="user_name" type="text" class="form-control" name="user_name" value="{{ old('user_name') }}" required autofocus>
 
-            @if ($errors->has('name'))
+            @if ($errors->has('user_name'))
                 <span class="help-block">
-                    <strong>{{ $errors->first('name') }}</strong>
+                    <strong>{{ $errors->first('user_name') }}</strong>
+                </span>
+            @endif
+        </div>
+    </div>
+
+    <div class="form-group{{ $errors->has('full_name') ? ' has-error' : '' }}">
+        <label for="full_name" class="col-md-4 control-label">full_name</label>
+
+        <div class="col-md-6">
+            <input id="full_name" type="text" class="form-control" name="full_name" value="{{ old('full_name') }}" required autofocus>
+
+            @if ($errors->has('full_name'))
+                <span class="help-block">
+                    <strong>{{ $errors->first('full_name') }}</strong>
                 </span>
             @endif
         </div>
@@ -140,6 +154,7 @@ Route::post('register', 'RegisterController@store');
         </div>
     </div>
 </form>
+
 ```
 
 ### Route會員登入
