@@ -193,6 +193,15 @@ class LoginController extends Controller
 protected $redirectTo = '/home';
 ```
 
+在routes的web.php加入
+
+```
+Route::post('login', [ 'as' => 'login', 'uses' => 'LoginController@login']);
+Route::get('/home', function () {
+    return dd('你已經成功登入，'.'<a href="/logout"></a>');
+});
+```
+
 此指令會自動產生Auth的Views Blade在`resources/views/auth`路徑內 和 Controller：RegisterController會員註冊、LoginController會員登入、ForgotPasswordController忘記密碼、ResetPasswordController重置密碼
 
 ```
