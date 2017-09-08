@@ -179,16 +179,12 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
-    
-    protected function login(Request $request)
-    {
-        if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
-            // Authentication passed...
-            return '你已成功登入<a href="/logout">按此登出</a>';
-        }
-        return '登入失敗';
-    }
 
+    //顯示登入會員畫面View Blade
+    protected function index()
+    {
+        return view('layouts.login');
+    }
 }
 ```
 
