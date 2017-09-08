@@ -160,9 +160,13 @@ Route::post('register', [ 'as' => 'register', 'uses' => 'RegisterController@stor
 
 ### Route會員登入
 
+在routes的web.php加入
+
 ```
-Route::middleware('auth:api')->get('/user', 'UserController@login');
+Route::get('login', [ 'as' => 'login', 'uses' => 'LoginController@index']);
 ```
+
+RegisterController顯示會員註冊View Blade
 
 ```
 namespace App\Http\Controllers;
