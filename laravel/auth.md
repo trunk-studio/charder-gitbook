@@ -222,7 +222,7 @@ protected function login(Request $request)
 ```
 <form class="form-horizontal" method="POST" action="{{ route('login') }}">
     {{ csrf_field() }}
-    <font color="red">{{ $errors->has('fail') ? '登入失敗' : '' }}</font>
+    <font color="red">{{ $errors->has('fail') ? $errors->first('fail') : '' }}</font>
     <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
         <label for="email" class="col-md-4 control-label">E-Mail Address</label>
 
