@@ -22,3 +22,26 @@ protected function login(Request $request)
 
 3.如果你是被記住的使用者，你可以使用 viaRemember 方法來確認這個使用者是否使用「記住我」 cookie 來做認證：
 
+```
+protected function login(Request $request)
+{
+    if (Auth::viaRemember()) {
+        //
+        $remember = Auth::viaRemember();
+    }
+    else{
+        $remember = $request->remember;
+    }
+    
+    if (Auth::attempt(['email' => $request->email, 'password' => $request->password], $remember)) {
+        // Authentication passed... and 這個使用者被記住了...
+        return Redirect::to('/home');
+    }
+    return Redirect::to('/login')->withErrors([
+        'fail' => '登入失敗',
+    ]);
+}
+```
+
+
+
