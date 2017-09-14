@@ -84,18 +84,12 @@ Laravel 的視圖是放在 `resource/views`目錄內
 ```
 <!-- 引用 -->
 @extend('article.app')
-@extend('partials/_other')
+@extend('article/app')
 
 <!-- 載入 -->
 @include('partials._other')
 @include('partials/_other')
 ```
-
-
-
-
-
-
 
 
 
