@@ -79,5 +79,23 @@ Laravel 的視圖是放在 `resource/views`目錄內
 @stop
 ```
 
+### View子資料夾取用方式
+
+```
+<!-- 引用 -->
+@extend('article.app')
+@extend('partials/_other')
+
+<!-- 載入 -->
+@include('partials._other')
+@include('partials/_other')
+```
+
+
+
+
+
+
+
 
 
