@@ -98,7 +98,7 @@ Laravel 的視圖是放在 `resource/views`目錄內
 在`routes/web.php`內新增
 
 ```
-Route::get('welcome', function () {
+Route::get('htmlcode', function () {
     return view('article', ['html_code' => '<font color="red">html_code</font>']);
 });
 ```
