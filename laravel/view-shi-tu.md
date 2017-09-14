@@ -169,13 +169,13 @@ Route::get('htmlcode', function () {
 @section('content')
 
     @isset($records)
-    // $records is defined and is not null...
+        isset any records!
     @endisset
-    
+
     @empty($records)
-    // $records is "empty"...
+        empty any records!
     @endempty
-    
+
 @stop
 
 
