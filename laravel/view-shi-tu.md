@@ -81,7 +81,7 @@ Laravel 的視圖是放在 `resource/views`目錄內
 
 ### View子資料夾取用方式
 
-如果你想要取用`resource/views/article/app.blade.php`
+如果你想要取用`resource/views/article/app.blade.php` 有以下方式
 
 ```
 <!-- 引用 -->
