@@ -26,7 +26,7 @@ Laravel 的視圖是放在 `resource/views`目錄內
 </html>
 ```
 
-2.在`resource/views`建立article.blade.php後，載入共用視圖app.blade.php
+2.在`resource/views`建立article.blade.php後，extends共用視圖app.blade.php
 
 ```
 <!-- resource/view/article.blade.php -->
@@ -49,10 +49,6 @@ Laravel 的視圖是放在 `resource/views`目錄內
 ```
 
 ## include共用的視圖 {#引入共用的視圖}
-
-
-
-
 
 
 
