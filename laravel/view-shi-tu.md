@@ -190,7 +190,7 @@ Route::get('htmlcode', function () {
 
 ```
 Route::get('htmlcode', function () {
-    return view('article', ['users' => User::all();]);
+    return view('article', ['users' => User::all()]);
 });
 ```
 
