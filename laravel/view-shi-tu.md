@@ -151,7 +151,7 @@ Route::get('htmlcode', function () {
     @unless ($user)
         I don't have any records!
     @endunless
-    
+
 @stop
 
 
@@ -163,9 +163,29 @@ Route::get('htmlcode', function () {
 ### empty如果為空值、is
 
 ```
-@isset($records)
-    // $records is defined and is not null...
-@endisset
+<!-- resource/view/article.blade.php -->
+@extend('app')
+
+@section('content')
+
+    @if ($user == "blade")
+        I have blade!
+    @elseif ($user == "laravel")
+        I have laravel!
+    @else
+        I don't have any records!
+    @endif
+
+    @unless ($user)
+        I don't have any records!
+    @endunless
+
+@stop
+
+
+@section('other_info')
+    其他資訊
+@stop
 ```
 
 
