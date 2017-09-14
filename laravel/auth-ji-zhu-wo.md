@@ -7,8 +7,15 @@
 2.
 
 ```
-if (Auth::attempt(['email' => $email, 'password' => $password], $remember)) {
-    // 這個使用者被記住了...
+protected function login(Request $request)
+{
+    if (Auth::attempt(['email' => $request->email, 'password' => $request->password], $remember)) {
+        // Authentication passed... and 這個使用者被記住了...
+        return Redirect::to('/home');
+    }
+    return Redirect::to('/login')->withErrors([
+        'fail' => '登入失敗',
+    ]);
 }
 ```
 
