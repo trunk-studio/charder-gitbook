@@ -134,5 +134,19 @@ Route::get('htmlcode', function () {
 
 ### 迴圈
 
+```
+@if ($user == "blade")
+    I have blade!
+@elseif ($user == "laravel")
+    I have laravel!
+@else
+    I don't have any records!
+@endif
+
+@unless ($user)
+    I don't have any records!
+@endunless
+```
+
 
 
