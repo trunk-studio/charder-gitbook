@@ -186,6 +186,16 @@ Route::get('htmlcode', function () {
 
 ### 迴圈
 
+1.在`routes/web.php`內新增
+
+```
+Route::get('htmlcode', function () {
+    return view('article', ['html_code' => '<font color="red">html_code</font>']);
+});
+```
+
+2.在`resource/views/article.blade.php`內新增
+
 ```
 <!-- resource/view/article.blade.php -->
 @extend('app')
@@ -195,17 +205,17 @@ Route::get('htmlcode', function () {
     @for ($i = 0; $i < 10; $i++)
         The current value is {{ $i }}
     @endfor
-    
+
     @foreach ($users as $user)
         <p>This is user {{ $user->id }}</p>
     @endforeach
-    
+
     @forelse ($users as $user)
         <li>{{ $user->name }}</li>
     @empty
         <p>No users</p>
     @endforelse
-    
+
     @while (true)
         <p>I'm looping forever.</p>
     @endwhile
