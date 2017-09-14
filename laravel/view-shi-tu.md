@@ -189,6 +189,7 @@ Route::get('htmlcode', function () {
 1.在`routes/web.php`內新增
 
 ```
+use App\User;
 Route::get('htmlcode', function () {
     return view('article', ['users' => User::all()]);
 });
