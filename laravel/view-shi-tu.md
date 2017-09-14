@@ -99,7 +99,7 @@ Laravel 的視圖是放在 `resource/views`目錄內
 
 ```
 Route::get('welcome', function () {
-    return view('article', ['name' => 'Samantha']);
+    return view('article', ['html_code' => '<font color="red">html_code</font>']);
 });
 ```
 
