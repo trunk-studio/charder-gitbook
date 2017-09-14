@@ -132,7 +132,7 @@ Route::get('htmlcode', function () {
 @stop
 ```
 
-### If如果 else否則 unless除非
+### If如果、else否則、unless除非
 
 ```
 @if ($user == "blade")
@@ -147,6 +147,10 @@ Route::get('htmlcode', function () {
     I don't have any records!
 @endunless
 ```
+
+### empty如果為空值 
+
+
 
 
 
