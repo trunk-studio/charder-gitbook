@@ -25,6 +25,7 @@
 * [分頁 Paginate](laravel/fen-ye-paginate.md)
 * [集合 Collection](laravel/ormyu-cha-xun-chan-sheng-qi-de-cha-bie.md)
 * [Errors&Logging](laravel/errors-and-logging.md)
+* [View 視圖](laravel/view-shi-tu.md)
 * [Auth 身份驗證](laravel/auth.md)
 * [Auth & Middleware練習題](laravel/authlian-xi-ti.md)
 * [測試](laravel/test.md)

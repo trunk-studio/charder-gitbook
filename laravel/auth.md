@@ -2,7 +2,7 @@
 
 ### Route會員註冊
 
-在routes的web.php加入
+在`routes/web.php`加入
 
 ```
 Route::get('register', [ 'as' => 'register', 'uses' => 'RegisterController@create']);
@@ -41,7 +41,7 @@ class RegisterController extends Controller
 }
 ```
 
-處理當會員註冊頁的表單送出post時，在routes的web.php加入
+處理當會員註冊頁的表單送出post時，在`routes/web.php`加入
 
 ```
 Route::post('register', [ 'as' => 'register', 'uses' => 'RegisterController@store']);
@@ -72,7 +72,7 @@ Route::post('register', [ 'as' => 'register', 'uses' => 'RegisterController@stor
     }
 ```
 
-到resources/views資料夾內新增register.blade.php
+到`resources/views`資料夾內新增register.blade.php
 
 ```
 <form class="form-horizontal" method="POST" action="{{ route('register') }}">
@@ -154,7 +154,7 @@ Route::post('register', [ 'as' => 'register', 'uses' => 'RegisterController@stor
 
 ### Route會員登入
 
-在routes的web.php加入
+在`routes/web.php`加入
 
 ```
 Route::get('login', [ 'as' => 'login', 'uses' => 'LoginController@index']);
@@ -193,7 +193,7 @@ class LoginController extends Controller
 protected $redirectTo = '/home';
 ```
 
-在routes的web.php加入
+在`routes/web.php`加入
 
 ```
 Route::post('login', [ 'as' => 'login', 'uses' => 'LoginController@login']);
@@ -217,7 +217,7 @@ protected function login(Request $request)
 }
 ```
 
-到resources/views資料夾內新增login.blade.php
+到`resources/views`資料夾內新增login.blade.php
 
 ```
 <form class="form-horizontal" method="POST" action="{{ route('login') }}">
