@@ -184,5 +184,29 @@ Route::get('htmlcode', function () {
 @stop
 ```
 
+### 迴圈
+
+```
+<!-- resource/view/article.blade.php -->
+@extend('app')
+
+@section('content')
+
+    @isset($records)
+        isset any records!
+    @endisset
+
+    @empty($records)
+        empty any records!
+    @endempty
+
+@stop
+
+
+@section('other_info')
+    其他資訊
+@stop
+```
+
 
 
