@@ -160,7 +160,7 @@ Route::get('htmlcode', function () {
 @stop
 ```
 
-### empty如果為空值、isset是否有此值
+### empty如果為空值、isset是否有此參數
 
 ```
 <!-- resource/view/article.blade.php -->
