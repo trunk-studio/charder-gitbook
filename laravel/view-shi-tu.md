@@ -190,7 +190,7 @@ Route::get('htmlcode', function () {
 
 ```
 Route::get('htmlcode', function () {
-    return view('article', ['html_code' => '<font color="red">html_code</font>']);
+    return view('article', ['users' => User::all();]);
 });
 ```
 
