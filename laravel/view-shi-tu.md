@@ -48,5 +48,11 @@ Laravel 的視圖是放在 `resource/views`目錄內
 @stop
 ```
 
+## include共用的視圖 {#引入共用的視圖}
+
+
+
+
+
 
 
