@@ -134,6 +134,8 @@ Route::get('htmlcode', function () {
 
 ### If如果、else否則、unless除非
 
+在`resource/views/article.blade.php`內新增
+
 ```
 <!-- resource/view/article.blade.php -->
 @extend('app')
