@@ -56,7 +56,7 @@ Laravel 的視圖是放在 `resource/views`目錄內
 <p>作者：{{ $full_name }}</p>
 ```
 
-2.在`resource/views/article.blade.php`內，include共用視圖user.blade.php
+2.在`resource/views/article.blade.php`內，include共用視圖user.blade.php並給予回傳參數full\_name
 
 ```
 <!-- resource/view/article.blade.php -->
