@@ -27,6 +27,7 @@
 * [Errors&Logging](laravel/errors-and-logging.md)
 * [View 視圖-Blade 模板](laravel/view-shi-tu.md)
 * [Auth 身份驗證](laravel/auth.md)
+* [Auth  記住我](laravel/auth-ji-zhu-wo.md)
 * [Auth & Middleware練習題](laravel/authlian-xi-ti.md)
 * [測試](laravel/test.md)
 * [View](laravel/view.md)
