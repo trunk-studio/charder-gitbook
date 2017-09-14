@@ -1,4 +1,4 @@
-# View 視圖
+# Blade 模板
 
 Laravel 的視圖是放在 `resource/views`目錄內
 
