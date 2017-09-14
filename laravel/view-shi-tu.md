@@ -147,10 +147,11 @@ Route::get('htmlcode', function () {
     @else
         I don't have any records!
     @endif
-    
+
     @unless ($user)
         I don't have any records!
     @endunless
+    
 @stop
 
 
