@@ -70,7 +70,7 @@ Laravel 的視圖是放在 `resource/views`目錄內
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
         consequat.
     </p>
-    @include('user', ['full_name' => 'hihi'])
+    @include('user', ['full_name' => 'hi blade'])
 @stop
 
 
