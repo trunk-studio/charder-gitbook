@@ -132,7 +132,7 @@ Route::get('htmlcode', function () {
 @stop
 ```
 
-### 迴圈
+### If如果 else否則 unless除非
 
 ```
 @if ($user == "blade")
