@@ -168,18 +168,14 @@ Route::get('htmlcode', function () {
 
 @section('content')
 
-    @if ($user == "blade")
-        I have blade!
-    @elseif ($user == "laravel")
-        I have laravel!
-    @else
-        I don't have any records!
-    @endif
-
-    @unless ($user)
-        I don't have any records!
-    @endunless
-
+    @isset($records)
+    // $records is defined and is not null...
+    @endisset
+    
+    @empty($records)
+    // $records is "empty"...
+    @endempty
+    
 @stop
 
 
