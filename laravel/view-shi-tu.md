@@ -95,6 +95,8 @@ Laravel 的視圖是放在 `resource/views`目錄內
 
 ### Controller回傳參數給View呈現在 Blade
 
+在`routes/web.php`內新增
+
 ```
 Route::get('welcome', function () {
     return view('article', ['name' => 'Samantha']);
@@ -102,8 +104,6 @@ Route::get('welcome', function () {
 ```
 
 ### 迴圈
-
-
 
 
 
