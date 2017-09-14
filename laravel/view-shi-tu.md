@@ -119,7 +119,10 @@ Route::get('htmlcode', function () {
     </p>
     @include('user', ['full_name' => 'hi blade'])
 
+    <!-- 顯示純字串 -->
     {{ $html_code or ''}}
+    
+    <!-- 可顯示html tag -->
     {!! $html_code or '' !!}
 @stop
 
