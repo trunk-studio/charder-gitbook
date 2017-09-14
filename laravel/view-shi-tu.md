@@ -135,22 +135,37 @@ Route::get('htmlcode', function () {
 ### If如果、else否則、unless除非
 
 ```
-@if ($user == "blade")
-    I have blade!
-@elseif ($user == "laravel")
-    I have laravel!
-@else
-    I don't have any records!
-@endif
+<!-- resource/view/article.blade.php -->
+@extend('app')
 
-@unless ($user)
-    I don't have any records!
-@endunless
+@section('content')
+
+    @if ($user == "blade")
+        I have blade!
+    @elseif ($user == "laravel")
+        I have laravel!
+    @else
+        I don't have any records!
+    @endif
+    
+    @unless ($user)
+        I don't have any records!
+    @endunless
+@stop
+
+
+@section('other_info')
+    其他資訊
+@stop
 ```
 
-### empty如果為空值 
+### empty如果為空值、is
 
-
+```
+@isset($records)
+    // $records is defined and is not null...
+@endisset
+```
 
 
 
