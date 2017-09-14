@@ -50,5 +50,5 @@ Laravel 的視圖是放在 `resource/views`目錄內
 
 ## include共用的視圖 {#引入共用的視圖}
 
-1.在`resource/views/article.blade.php`內，extends共用視圖app.blade.php
+1.在`resource/views/article.blade.php`內，include共用視圖css.blade.php
 
