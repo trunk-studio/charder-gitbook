@@ -118,9 +118,9 @@ Route::get('htmlcode', function () {
         consequat.
     </p>
     @include('user', ['full_name' => 'hi blade'])
-    
+
     {{ $html_code or ''}}
-    {!! $html_code !!}
+    {!! $html_code or '' !!}
 @stop
 
 
