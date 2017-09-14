@@ -162,6 +162,8 @@ Route::get('htmlcode', function () {
 
 ### empty如果為空值、isset是否此參數存在
 
+在`resource/views/article.blade.php`內新增
+
 ```
 <!-- resource/view/article.blade.php -->
 @extend('app')
