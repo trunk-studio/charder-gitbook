@@ -213,7 +213,7 @@ Route::get('htmlcode', function () {
     @endforeach
 
     @forelse ($users as $user)
-        <li>{{ $user->name }}</li>
+        <li>{{ $user->email }}</li>
     @empty
         <p>No users</p>
     @endforelse
