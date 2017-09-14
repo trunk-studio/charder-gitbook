@@ -95,7 +95,7 @@ Laravel 的視圖是放在 `resource/views`目錄內
 
 ### Controller回傳參數給View呈現在 Blade
 
-在`routes/web.php`內新增
+1.在`routes/web.php`內新增
 
 ```
 Route::get('htmlcode', function () {
@@ -103,7 +103,31 @@ Route::get('htmlcode', function () {
 });
 ```
 
-### 
+2.在`resource/views/article.blade.php`內新增
+
+```
+<!-- resource/view/article.blade.php -->
+@extend('app')
+
+@section('content')
+    <h1>文章標題</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+    </p>
+    @include('user', ['full_name' => 'hi blade'])
+    
+    {{ $html_code or ''}}
+    {!! $html_code !!}
+@stop
+
+
+@section('other_info')
+    其他資訊
+@stop
+```
 
 ### 迴圈
 
