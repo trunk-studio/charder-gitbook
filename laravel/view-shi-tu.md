@@ -242,6 +242,10 @@ Route::get('htmlcode', function () {
 
 @section('content')
 
+    @php
+        $detail = 'detail'l
+    @endphp
+
     @for ($i = 0; $i < 10; $i++)
         The current value is {{ $i }}
     @endfor
