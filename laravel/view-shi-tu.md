@@ -93,5 +93,17 @@ Laravel 的視圖是放在 `resource/views`目錄內
 @include('article/app')
 ```
 
+### Controller回傳參數給View呈現在 Blade
+
+```
+Route::get('welcome', function () {
+    return view('article', ['name' => 'Samantha']);
+});
+```
+
+### 迴圈
+
+
+
 
 
