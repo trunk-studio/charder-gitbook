@@ -234,5 +234,39 @@ Route::get('htmlcode', function () {
 @stop
 ```
 
+### 使用原生php區塊
+
+```
+<!-- resource/view/article.blade.php -->
+@extend('app')
+
+@section('content')
+
+    @for ($i = 0; $i < 10; $i++)
+        The current value is {{ $i }}
+    @endfor
+
+    @foreach ($users as $user)
+        <p>This is user {{ $user->id }}</p>
+    @endforeach
+
+    @forelse ($users as $user)
+        <li>{{ $user->email }}</li>
+    @empty
+        <p>No users</p>
+    @endforelse
+
+    @while (true)
+        <p>I'm looping forever.</p>
+    @endwhile
+
+@stop
+
+
+@section('other_info')
+    其他資訊
+@stop
+```
+
 
 
