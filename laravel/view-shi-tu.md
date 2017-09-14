@@ -4,7 +4,7 @@ Laravel 的視圖是放在 `resource/views`目錄內
 
 ### 建立共用的視圖
 
-1.建立共用視圖取名為app.blade.php
+1.在`resource/views`建立共用視圖取名為app.blade.php
 
 ```
 <!-- resource/view/app.blade.php -->
@@ -47,8 +47,6 @@ Laravel 的視圖是放在 `resource/views`目錄內
     其他資訊
 @stop
 ```
-
-
 
 
 
