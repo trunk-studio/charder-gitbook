@@ -53,8 +53,31 @@ Laravel 的視圖是放在 `resource/views`目錄內
 1.在`resource/views`建立user.blade.php
 
 ```
-<p>{{ $full_name }}</p>
+<p>作者：{{ $full_name }}</p>
 ```
 
 2.在`resource/views/article.blade.php`內，include共用視圖user.blade.php
+
+```
+<!-- resource/view/article.blade.php -->
+@extend('app')
+
+@section('content')
+    <h1>文章標題</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+    </p>
+    @include('user', ['full_name' => 'hihi'])
+@stop
+
+
+@section('other_info')
+    其他資訊
+@stop
+```
+
+
 
