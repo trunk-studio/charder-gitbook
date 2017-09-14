@@ -4,7 +4,7 @@
 
 1.確認User 是否擁有remember\_token欄位
 
-2.
+2.LoginController加入
 
 ```
 protected function login(Request $request)
