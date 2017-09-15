@@ -51,6 +51,8 @@ cacls storage/ /g everyone:f
 php artisan migrate
 ```
 
+如果是使用xampp之類的懶人架站包，請記得在，unique索引的欄位內給予191長度限制
+
 5.使用db:seed建立預設資料
 
 ```
