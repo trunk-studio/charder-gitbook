@@ -12,6 +12,12 @@
 composer global require "laravel/installer=~1.1"
 ```
 
+注意！不可使用` laravel new blog` 來創建專案會模組遺失，必須使用下列指令
+
+```
+composer create-project --prefer-dist laravel/laravel blog
+```
+
 1.檢查.env的DB是否設定
 
 ```
