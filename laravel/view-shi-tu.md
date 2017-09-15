@@ -288,5 +288,11 @@ Route::get('htmlcode', function () {
 @stop
 ```
 
+### 註解方式
+
+```
+{{-- This comment will not be present in the rendered HTML --}}
+```
+
 
 
