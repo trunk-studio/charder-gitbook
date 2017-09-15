@@ -45,5 +45,17 @@ cacls public/ /g everyone:f
 cacls storage/ /g everyone:f
 ```
 
+4.使用migrate建立資料庫
+
+```
+php artisan migrate
+```
+
+5.使用db:seed建立預設資料
+
+```
+php artisan db:seed
+```
+
 
 
