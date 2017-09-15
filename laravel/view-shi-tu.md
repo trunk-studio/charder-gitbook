@@ -236,6 +236,8 @@ Route::get('htmlcode', function () {
 
 ### 使用foreach的 Loop循環變量
 
+[https://laravel.com/docs/5.4/blade\#loops](https://laravel.com/docs/5.4/blade#loops)
+
 ```
 <!-- resource/view/article.blade.php -->
 @extend('app')
