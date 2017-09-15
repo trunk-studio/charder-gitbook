@@ -10,8 +10,8 @@ Laravel 在做「加密與解密」演算法時，會使用 config/app.php 中�
 
 ```
 Route::get('/crypt', function () {
-    // 加密
     $original_data = 'crypt detail';
+    // 加密
     $encrypt_data = Crypt::encrypt($original_data);
     // 解密
     $decrypted = Crypt::decrypt($encrypt_data);
@@ -21,6 +21,27 @@ Route::get('/crypt', function () {
     ];
 });
 ```
+
+### md5 比較密文 {#使用-md5-比較密文}
+
+```
+Route::get('/crypt', function () {
+    $original_data = 'crypt detail';
+    // 第 1 次使用 md5 加密的資料
+    $md5_hash_data1 = md5($original_data);
+    // 第 2 次使用 md5 加密的資料
+    $md5_hash_data2 = md5($original_data);
+    // 資料相同
+    // true
+    var_dump($md5_hash_data1 === $md5_hash_data2);
+});
+```
+
+
+
+
+
+
 
 
 
