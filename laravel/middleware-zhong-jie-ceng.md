@@ -27,6 +27,7 @@ php artisan make:middleware ArticleVerifyMiddleware
 // app\Http\Middleware\ArticleVerifyMiddleware.php
 
 use Closure;
+use App\Article;
 
 class ArticleVerifyMiddleware {
 
