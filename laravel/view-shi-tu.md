@@ -71,12 +71,17 @@ Laravel 的視圖是放在 `resource/views`目錄內
         consequat.
     </p>
     @include('user', ['full_name' => 'hi blade'])
-    @includeWhen(true, 'user', ['full_name' => 'hi blade'])
 @stop
 
 
 @section('other_info')
     其他資訊
+@stop
+```
+
+```
+@section('content')
+    @includeWhen(true, 'user', ['full_name' => 'hi blade'])
 @stop
 ```
 
