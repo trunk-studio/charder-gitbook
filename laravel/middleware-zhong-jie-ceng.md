@@ -40,6 +40,10 @@ class ArticleVerifyMiddleware {
             {
                 return $next($request);
             }
+            else
+            {
+                return dd('此文章未審核通過');
+            }
         }
         return false;
     }
