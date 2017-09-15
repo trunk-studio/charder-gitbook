@@ -285,13 +285,15 @@ Route::get('htmlcode', function () {
 
 ### forelse迴圈
 
-```
-use App\User;
+1.在`routes/web.php`內新增
 
+```
 Route::get('htmlcode', function () {
     return view('article', ['users' => ["user1","","user3"]);
 });
 ```
+
+2.在`resource/views/article.blade.php`內新增
 
 ```
 @section('content')
