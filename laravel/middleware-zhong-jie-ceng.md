@@ -1,21 +1,11 @@
 # Middleware 中介層
 
-
-
 ```
-Route::get('about', [
+Route::get('/article/create', [
     'middleware'  => 'auth',
-    'uses'=> 'HomeController@about'
+    'uses'=> 'ArticleController@store'
 ]);
 ```
-
-
-
-
-
-
-
-
 
 
 
