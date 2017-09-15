@@ -174,18 +174,8 @@ Route::get('htmlcode', function () {
 
 ### unless除非
 
-
-
 ```
 @section('content')
-
-    @if ($user == "blade")
-        I have blade!
-    @elseif ($user == "laravel")
-        I have laravel!
-    @else
-        I don't have any records!
-    @endif
 
     @unless ($user)
         I don't have any records!
