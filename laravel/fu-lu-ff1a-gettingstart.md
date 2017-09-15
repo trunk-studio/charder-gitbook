@@ -1,5 +1,17 @@
 # 附錄：Getting started
 
+0.如果是第一次新建專案
+
+確定是否安裝過composer套件
+
+[https://getcomposer.org/doc/00-intro.md](https://getcomposer.org/doc/00-intro.md)
+
+用composer下載laravel框架
+
+```
+composer global require "laravel/installer=~1.1"
+```
+
 1.檢查.env的DB是否設定
 
 ```
@@ -78,11 +90,7 @@ php artisan db:seed
 'cipher' => 'AES-256-CBC',
 ```
 
-7.安裝composer套件
-
-[https://getcomposer.org/doc/00-intro.md](https://getcomposer.org/doc/00-intro.md)
-
-8.安裝專案套件
+7.安裝專案套件
 
 ```
 composer install
@@ -94,15 +102,13 @@ composer install
 composer update
 ```
 
-9.啟動localhost
+8.啟動localhost
 
 記得要啟動web server 和 db server
 
 ```
 php artisan serve
 ```
-
-
 
 
 
