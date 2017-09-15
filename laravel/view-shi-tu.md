@@ -223,7 +223,7 @@ Route::get('htmlcode', function () {
 @stop
 ```
 
-### 迴圈
+### For迴圈
 
 1.在`routes/web.php`內新增
 
@@ -247,16 +247,6 @@ Route::get('htmlcode', function () {
         The current value is {{ $i }}
     @endfor
 
-    @foreach ($users as $user)
-        <p>This is user {{ $user->id }}</p>
-    @endforeach
-
-    @forelse ($users as $user)
-        <li>{{ $user->email }}</li>
-    @empty
-        <p>No users</p>
-    @endforelse
-
     @while (true)
         <p>I'm looping forever.</p>
     @endwhile
@@ -266,6 +256,66 @@ Route::get('htmlcode', function () {
 
 @section('other_info')
     其他資訊
+@stop
+```
+
+### Foreach迴圈
+
+```
+@section('content')
+
+    @foreach ($users as $user)
+        <p>This is user {{ $user->id }}</p>
+    @endforeach
+
+@stop
+```
+
+### Foreach迴圈
+
+```
+@section('content')
+
+    @foreach ($users as $user)
+        <p>This is user {{ $user->id }}</p>
+    @endforeach
+
+@stop
+```
+
+### forelse迴圈
+
+```
+use App\User;
+
+Route::get('htmlcode', function () {
+    return view('article', ['users' => ["user1","","user3"]);
+});
+```
+
+```
+@section('content')
+
+    @forelse ($users as $user)
+        <li>{{ $user }}</li>
+    @empty
+        <p>No users</p>
+    @endforelse
+
+@stop
+```
+
+### Foreach迴圈
+
+```
+@section('content')
+
+    @forelse ($users as $user)
+        <li>{{ $user->email }}</li>
+    @empty
+        <p>No users</p>
+    @endforelse
+
 @stop
 ```
 
