@@ -25,7 +25,7 @@ Route::get('/crypt', function () {
 ### md5 比較密文 {#使用-md5-比較密文}
 
 ```
-Route::get('/crypt', function () {
+Route::get('/md5', function () {
     $original_data = 'crypt detail';
     // 第 1 次使用 md5 加密的資料
     $md5_hash_data1 = md5($original_data);
@@ -36,12 +36,6 @@ Route::get('/crypt', function () {
     var_dump($md5_hash_data1 === $md5_hash_data2);
 });
 ```
-
-
-
-
-
-
 
 
 
