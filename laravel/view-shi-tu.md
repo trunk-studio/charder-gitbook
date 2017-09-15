@@ -40,12 +40,12 @@ Laravel 的視圖是放在 `resource/views`目錄內
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
         consequat.
     </p>
-@stop
+@endsection
 
 
 @section('other_info')
     其他資訊
-@stop
+@endsection
 ```
 
 ## include共用的視圖 {#引入共用的視圖}
@@ -71,12 +71,12 @@ Laravel 的視圖是放在 `resource/views`目錄內
         consequat.
     </p>
     @include('user', ['full_name' => 'hi blade'])
-@stop
+@endsection
 
 
 @section('other_info')
     其他資訊
-@stop
+@endsection
 ```
 
 ### 使用布爾條件來判斷顯示include
@@ -84,7 +84,7 @@ Laravel 的視圖是放在 `resource/views`目錄內
 ```
 @section('content')
     @includeWhen(true, 'user', ['full_name' => 'hi blade'])
-@stop
+@endsection
 ```
 
 ### Blade取用方式
@@ -129,12 +129,12 @@ Route::get('htmlcode', function () {
 
     <!-- 顯示純字串 -->
     {{ $html_code or ''}}
-@stop
+@endsection
 
 
 @section('other_info')
     其他資訊
-@stop
+@endsection
 ```
 
 3.可改用 {!! $value !!} 顯示出html tag
@@ -144,7 +144,7 @@ Route::get('htmlcode', function () {
 
     <!-- 可顯示為html tag -->
     {!! $html_code or '' !!}
-@stop
+@endsection
 ```
 
 ### If如果、else否則
@@ -165,12 +165,12 @@ Route::get('htmlcode', function () {
         I don't have any records!
     @endif
 
-@stop
+@endsection
 
 
 @section('other_info')
     其他資訊
-@stop
+@endsection
 ```
 
 ### unless除非
@@ -182,7 +182,7 @@ Route::get('htmlcode', function () {
         I don't have any records!
     @endunless
 
-@stop
+@endsection
 ```
 
 ### empty如果為空值
@@ -203,12 +203,12 @@ Route::get('htmlcode', function () {
         empty any records!
     @endempty
 
-@stop
+@endsection
 
 
 @section('other_info')
     其他資訊
-@stop
+@endsection
 ```
 
 ### isset是否此參數存在
@@ -220,7 +220,7 @@ Route::get('htmlcode', function () {
         isset any records!
     @endisset
 
-@stop
+@endsection
 ```
 
 ### For迴圈
@@ -251,12 +251,12 @@ Route::get('htmlcode', function () {
         <p>I'm looping forever.</p>
     @endwhile
 
-@stop
+@endsection
 
 
 @section('other_info')
     其他資訊
-@stop
+@endsection
 ```
 
 ### Foreach迴圈
@@ -268,7 +268,7 @@ Route::get('htmlcode', function () {
         <p>This is user {{ $user->id }}</p>
     @endforeach
 
-@stop
+@endsection
 ```
 
 ### Foreach迴圈
@@ -280,7 +280,7 @@ Route::get('htmlcode', function () {
         <p>This is user {{ $user->id }}</p>
     @endforeach
 
-@stop
+@endsection
 ```
 
 ### forelse迴圈
@@ -304,7 +304,7 @@ Route::get('htmlcode', function () {
         <p>No users</p>
     @endforelse
 
-@stop
+@endsection
 ```
 
 ### Foreach迴圈
@@ -318,7 +318,7 @@ Route::get('htmlcode', function () {
         <p>No users</p>
     @endforelse
 
-@stop
+@endsection
 ```
 
 ### 使用foreach的 Loop循環變量
