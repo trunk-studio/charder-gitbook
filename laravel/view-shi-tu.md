@@ -79,11 +79,15 @@ Laravel 的視圖是放在 `resource/views`目錄內
 @stop
 ```
 
+### 使用布爾條件來判斷include
+
 ```
 @section('content')
     @includeWhen(true, 'user', ['full_name' => 'hi blade'])
 @stop
 ```
+
+
 
 ### Blade取用方式
 
