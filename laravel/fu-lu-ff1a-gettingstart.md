@@ -31,10 +31,11 @@ php artisan key:generate
 
 3.開放public、storage資料夾755以上的權限
 
-Linux / Unix /  Mac
+Linux / Unix / Mac
 
 ```
-
+sudo chmod 777 public/
+sudo chmod 777 storage/
 ```
 
 Windows
