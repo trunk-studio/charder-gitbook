@@ -45,7 +45,7 @@ class ArticleVerifyMiddleware {
                 return dd('此文章未審核通過');
             }
         }
-        return false;
+        return dd('此文章未審核通過');
     }
 
 }
