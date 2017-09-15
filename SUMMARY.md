@@ -29,6 +29,7 @@
 * [Auth 身份驗證](laravel/auth.md)
 * [Middleware 中介層](laravel/middleware-zhong-jie-ceng.md)
 * [Auth & Middleware練習題](laravel/authlian-xi-ti.md)
+* [Crypt 加密解密](laravel/crypt-jia-mi-jie-mi.md)
 * [測試](laravel/test.md)
 * [View](laravel/view.md)
 
