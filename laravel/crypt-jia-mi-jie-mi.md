@@ -39,3 +39,18 @@ Route::get('/md5', function () {
 
 
 
+```
+Route::get('/md5', function () {
+    $original_data = 'crypt detail';
+    // 第 1 次使用加密演算法加密的資料
+    $encrypt_data1 = Crypt::encrypt($original_data);
+    // 第 2 次使用加密演算法加密的資料
+    $encrypt_data2 = Crypt::encrypt($original_data);
+    // 資料不相同
+    // false
+    var_dump($encrypt_data1 === $encrypt_data2);
+});
+```
+
+
+
