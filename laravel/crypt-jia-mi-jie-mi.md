@@ -3,7 +3,8 @@
 在routes/web.php內加入
 
 ```
-Route::get('/', function () {
+use Crypt;
+Route::get('/crypt', function () {
     // 加密
     $original_data = '需要加密的資料';
     $encrypt_data = Crypt::encrypt($original_data);
