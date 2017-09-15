@@ -38,10 +38,9 @@ class ArticleVerifyMiddleware {
             if($article->Verify)
             {
                 return $next($request);
-
             }
         }
-        
+
     }
 
 }
