@@ -67,7 +67,7 @@ php artisan db:seed
 
 6.檢查config/app.php設定
 
-[https://scriptmarks.com/php-%E6%99%82%E9%96%93%E6%B6%B5%E6%95%B8/](https://scriptmarks.com/php-%E6%99%82%E9%96%93%E6%B6%B5%E6%95%B8/)
+[https://scriptmarks.com/php-%E6%99%82%E9%96%93%E6%B6%B5%E6%95%B8/](https://scriptmarks.com/php-時間涵數/)
 
 ```
 //預設為UTC
@@ -76,6 +76,12 @@ php artisan db:seed
 //laravel5以下預設為AES-128-CB
 //laravel5以上預設為AES-256-CB
 'cipher' => 'AES-256-CBC',
+```
+
+7.啟動localhost
+
+```
+php artisan serve
 ```
 
 
