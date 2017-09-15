@@ -341,12 +341,12 @@ Route::get('htmlcode', function () {
         @endif
     @endforeach
 
-@endsection
+@stop
 
 
 @section('other_info')
     其他資訊
-@endsection
+@stop
 ```
 
 ### 使用原生php區塊
@@ -367,12 +367,12 @@ Route::get('htmlcode', function () {
         I don't have any detail!
     @endif
 
-@endsection
+@stop
 
 
 @section('other_info')
     其他資訊
-@endsection
+@stop
 ```
 
 ### 註解方式
