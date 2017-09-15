@@ -32,6 +32,7 @@
 * [Crypt 加密解密](laravel/crypt-jia-mi-jie-mi.md)
 * [測試](laravel/test.md)
 * [View](laravel/view.md)
+* [附錄：Getting started](laravel/fu-lu-ff1a-gettingstart.md)
 
 ## 測試基礎
 
