@@ -32,6 +32,9 @@ class ArticleVerifyMiddleware {
 
     public function handle($request, Closure $next)
     {
+        $article = Article::find();
+        if()
+        {}
         return $next($request);
     }
 
@@ -67,7 +70,6 @@ class Kernel extends HttpKernel
         'article.verify' => App\Http\Middleware\ArticleVerifyMiddleware::class,
     ];
 }
-
 ```
 
 
