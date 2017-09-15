@@ -88,5 +88,12 @@ class Kernel extends HttpKernel
 verify | string(191)
 ```
 
+記得設定幾筆articles資料verify欄位值
+
+```
+open <審核通過>
+close <未審核>
+```
+
 
 
