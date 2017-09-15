@@ -54,7 +54,7 @@ php artisan migrate
 如果是使用xampp之類的懶人架站包，請記得在database/migrations中，所有有使用到primary、index、unique索引的欄位內給予191長度限制
 
 ```
-$table->string('email',191)->index();
+$table->string('email',191)->primary();
 $table->string('email',191)->index();
 $table->string('email', 191)->unique();
 ```
