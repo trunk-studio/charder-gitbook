@@ -137,16 +137,13 @@ Route::get('htmlcode', function () {
 @stop
 ```
 
-3.可改用
+3.可改用 {!! $value !!} 顯示出html tag
 
 ```
 @section('content')
     <!-- 可顯示為html tag -->
     {!! $html_code or '' !!}
 @stop
-
-
-
 ```
 
 ### If如果、else否則、unless除非
