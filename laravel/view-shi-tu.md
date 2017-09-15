@@ -141,6 +141,7 @@ Route::get('htmlcode', function () {
 
 ```
 @section('content')
+
     <!-- 可顯示為html tag -->
     {!! $html_code or '' !!}
 @stop
@@ -184,7 +185,7 @@ Route::get('htmlcode', function () {
 @stop
 ```
 
-### empty如果為空值、isset是否此參數存在
+### empty如果為空值
 
 在`resource/views/article.blade.php`內新增
 
@@ -207,6 +208,18 @@ Route::get('htmlcode', function () {
 
 @section('other_info')
     其他資訊
+@stop
+```
+
+### isset是否此參數存在
+
+```
+@section('content')
+
+    @isset($records)
+        isset any records!
+    @endisset
+
 @stop
 ```
 
