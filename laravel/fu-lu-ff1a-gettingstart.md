@@ -78,7 +78,23 @@ php artisan db:seed
 'cipher' => 'AES-256-CBC',
 ```
 
-7.啟動localhost
+7.安裝composer套件
+
+[https://getcomposer.org/doc/00-intro.md](https://getcomposer.org/doc/00-intro.md)
+
+8.安裝專案套件
+
+```
+composer install
+```
+
+如安裝過程出現套件錯誤，可嘗試更新看看套件是否有最新版
+
+```
+composer update
+```
+
+9.啟動localhost
 
 ```
 php artisan serve
