@@ -67,6 +67,8 @@ php artisan db:seed
 
 6.檢查config/app.php設定
 
+[https://scriptmarks.com/php-%E6%99%82%E9%96%93%E6%B6%B5%E6%95%B8/](https://scriptmarks.com/php-%E6%99%82%E9%96%93%E6%B6%B5%E6%95%B8/)
+
 ```
 //預設為UTC
 'timezone' => 'Asia/Taipei',
