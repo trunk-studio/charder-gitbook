@@ -146,7 +146,7 @@ Route::get('htmlcode', function () {
 @stop
 ```
 
-### If如果、else否則、unless除非
+### If如果、else否則
 
 在`resource/views/article.blade.php`內新增
 
@@ -164,15 +164,33 @@ Route::get('htmlcode', function () {
         I don't have any records!
     @endif
 
-    @unless ($user)
-        I don't have any records!
-    @endunless
-
 @stop
 
 
 @section('other_info')
     其他資訊
+@stop
+```
+
+### unless除非
+
+
+
+```
+@section('content')
+
+    @if ($user == "blade")
+        I have blade!
+    @elseif ($user == "laravel")
+        I have laravel!
+    @else
+        I don't have any records!
+    @endif
+
+    @unless ($user)
+        I don't have any records!
+    @endunless
+
 @stop
 ```
 
