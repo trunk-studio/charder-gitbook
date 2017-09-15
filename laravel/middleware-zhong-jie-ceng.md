@@ -38,5 +38,13 @@ class ArticleVerifyMiddleware {
 }
 ```
 
+建立好自訂的中介層之後，到 app\Http\Kernel.php 註冊中介層後即可使用
+
+```
+
+```
+
+
+
 
 
