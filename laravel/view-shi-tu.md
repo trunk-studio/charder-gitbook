@@ -71,7 +71,7 @@ Laravel 的視圖是放在 `resource/views`目錄內
         consequat.
     </p>
     @include('user', ['full_name' => 'hi blade'])
-    @includeWhen(true, 'view.name', ['some' => 'data'])
+    @includeWhen(true, 'user', ['full_name' => 'hi blade'])
 @stop
 
 
