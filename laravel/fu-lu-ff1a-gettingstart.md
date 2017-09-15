@@ -68,6 +68,7 @@ php artisan db:seed
 6.檢查config/app.php設定
 
 ```
+//預設為UTC
 'timezone' => 'Asia/Taipei',
 
 //laravel5以下預設為AES-128-CB
