@@ -37,6 +37,10 @@ Route::get('/md5', function () {
 });
 ```
 
+### Crypt加密演算法比較密文 {#使用加密演算法比較密文}
+
+重複加密相同的資料得到的密文不會一樣，所以別使用像 md5 的方式去比對密文資料是否相同
+
 ```
 Route::get('/crypt', function () {
     $original_data = 'crypt detail';
