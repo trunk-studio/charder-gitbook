@@ -33,11 +33,15 @@ class ArticleVerifyMiddleware {
     public function handle($request, Closure $next)
     {
         $article = Article::find($request->id);
-        if($article)
+        if(!empty($article))
         {
-            
+            if($article->Verify)
+            {
+                return $next($request);
+
+            }
         }
-        return $next($request);
+        
     }
 
 }
