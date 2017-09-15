@@ -7,7 +7,7 @@
 ```
 Route::get('/article/view', [
     'middleware'  => 'article.verify',
-    'uses'=> 'ArticleController@store'
+    'uses'=> 'ArticleController@index'
 ]);
 ```
 
