@@ -18,9 +18,13 @@ composer global require "laravel/installer=~1.1"
 composer create-project --prefer-dist laravel/laravel 專案名稱
 ```
 
+可特定laravel框架版本創建
+
 ```
 composer create-project --prefer-dist laravel/laravel 專案名稱 5.1.*
 ```
+
+composer create-project --prefer-dist laravel/laravel 專案名稱 5.1.\*
 
 1.檢查.env的DB是否設定
 
