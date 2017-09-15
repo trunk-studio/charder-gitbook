@@ -5,8 +5,8 @@
 在`routes\api.php` 加入
 
 ```
-Route::get('/article/create', [
-    'middleware'  => 'auth',
+Route::get('/article/view', [
+    'middleware'  => 'article.verify',
     'uses'=> 'ArticleController@store'
 ]);
 ```
@@ -33,7 +33,7 @@ class ArticleVerifyMiddleware {
 
     public function handle($request, Closure $next)
     {
-        $article = Article::find($request->id);
+        $article = Article::find($request->input('id',''));
         if(!empty($article))
         {
             if($article->Verify)
