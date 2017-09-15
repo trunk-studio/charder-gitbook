@@ -78,5 +78,19 @@ class Kernel extends HttpKernel
 }
 ```
 
-在articles資料表內加入
+在articles資料表內加入verify欄位
+
+```
+verify | string(191)
+```
+
+
+
+
+
+
+
+
+
+
 
