@@ -36,7 +36,7 @@ class ArticleVerifyMiddleware {
         $article = Article::find($request->input('id',''));
         if(!empty($article))
         {
-            if($article->Verify)
+            if($article->verify)
             {
                 return $next($request);
             }
@@ -78,5 +78,5 @@ class Kernel extends HttpKernel
 }
 ```
 
-
+在articles資料表內加入
 
