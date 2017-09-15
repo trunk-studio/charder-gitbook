@@ -96,9 +96,13 @@ composer update
 
 9.啟動localhost
 
+記得要啟動web server 和 db server
+
 ```
 php artisan serve
 ```
+
+
 
 
 
