@@ -129,15 +129,24 @@ Route::get('htmlcode', function () {
 
     <!-- 顯示純字串 -->
     {{ $html_code or ''}}
-
-    <!-- 可顯示為html tag -->
-    {!! $html_code or '' !!}
 @stop
 
 
 @section('other_info')
     其他資訊
 @stop
+```
+
+3.可改用
+
+```
+@section('content')
+    <!-- 可顯示為html tag -->
+    {!! $html_code or '' !!}
+@stop
+
+
+
 ```
 
 ### If如果、else否則、unless除非
