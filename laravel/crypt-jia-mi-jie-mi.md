@@ -37,10 +37,8 @@ Route::get('/md5', function () {
 });
 ```
 
-
-
 ```
-Route::get('/md5', function () {
+Route::get('/crypt', function () {
     $original_data = 'crypt detail';
     // 第 1 次使用加密演算法加密的資料
     $encrypt_data1 = Crypt::encrypt($original_data);
