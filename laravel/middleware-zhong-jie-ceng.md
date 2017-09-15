@@ -7,7 +7,7 @@
 ```
 Route::get('/article/view', [
     'middleware'  => 'article.verify',
-    'uses'=> 'ArticleController@index'
+    'uses'=> 'ArticleController@findOne'
 ]);
 ```
 
@@ -83,14 +83,6 @@ class Kernel extends HttpKernel
 ```
 verify | string(191)
 ```
-
-
-
-
-
-
-
-
 
 
 
