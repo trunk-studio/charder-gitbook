@@ -40,7 +40,7 @@ class ArticleVerifyMiddleware {
                 return $next($request);
             }
         }
-
+        return false;
     }
 
 }
