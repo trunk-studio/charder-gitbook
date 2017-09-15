@@ -234,6 +234,32 @@ Route::get('htmlcode', function () {
 @stop
 ```
 
+使用
+
+```
+<!-- resource/view/article.blade.php -->
+@extend('app')
+
+@section('content')
+
+    @foreach ($users as $key => $user)
+        <p>This is user {{ $user->id }}</p>
+        @if ($loop->first)
+            This is the first user.{{$key}}
+        @endif
+        @if ($loop->last)
+            This is the last user.{{$key}}
+        @endif
+    @endforeach
+    
+@stop
+
+
+@section('other_info')
+    其他資訊
+@stop
+```
+
 ### 使用原生php區塊
 
 ```
