@@ -11,5 +11,9 @@ Route::get('/article/create', [
 ]);
 ```
 
+## 建立自己的中介層 {#建立自己的中介層}
+
+可以使用指令建立自己的 Middleware，假如我建立一個 ArticleVerifyMiddleware 為名稱的中介層，可以在命令列輸入：
+
 
 
