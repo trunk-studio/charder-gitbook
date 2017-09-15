@@ -19,9 +19,24 @@ Route::get('/article/create', [
 php artisan make:middleware ArticleVerifyMiddleware
 ```
 
+建立的中介層會放在 app\Http\Middleware\ArticleVerifyMiddleware.php 中
 
+```
+<?php namespace App\Http\Middleware;
 
+// app\Http\Middleware\ArticleVerifyMiddleware.php
 
+use Closure;
+
+class ArticleVerifyMiddleware {
+
+    public function handle($request, Closure $next)
+    {
+        return $next($request);
+    }
+
+}
+```
 
 
 
