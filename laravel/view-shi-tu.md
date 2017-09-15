@@ -234,7 +234,7 @@ Route::get('htmlcode', function () {
 @stop
 ```
 
-使用
+### 使用foreach的 Loop循環變量
 
 ```
 <!-- resource/view/article.blade.php -->
@@ -251,7 +251,7 @@ Route::get('htmlcode', function () {
             This is the last user.{{$key}}
         @endif
     @endforeach
-    
+
 @stop
 
 
