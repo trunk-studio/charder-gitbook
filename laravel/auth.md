@@ -4,13 +4,13 @@
 
 在`routes/web.php`加入
 
-```
+```php
 Route::get('register', [ 'as' => 'register', 'uses' => 'RegisterController@create']);
 ```
 
-RegisterController顯示會員註冊View Blade
+RegisterController 顯示會員註冊 View Blade
 
-```
+```php
 namespace App\Http\Controllers;
 
 use App\User;
@@ -41,27 +41,25 @@ class RegisterController extends Controller
 }
 ```
 
-處理當會員註冊頁的表單送出post時，在`routes/web.php`加入
+處理當會員註冊頁的表單送出post時，在 `routes/web.php` 加入
 
-```
+```php
 Route::post('register', [ 'as' => 'register', 'uses' => 'RegisterController@store']);
 ```
 
-在RegisterController內加入 “註冊會員”store function，且在資料庫users資料表新建 型別var\_char\(191\) 的active權限欄位
+在 RegisterController 內加入 “註冊會員”store function，且在資料庫users資料表新建 型別var\_char\(191\) 的active權限欄位
 
-```
-    protected function validator(array $data)
+```php
+    protected function store(Request $request)
     {
-        return Validator::make($data, [
+
+        $this->validate($request, [
             'user_name' => 'required|string|max:255',
             'full_name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
         ]);
-    }
 
-    protected function store(Request $request)
-    {
         //新建會員資料
         return User::create([
             'user_name' => $request->user_name,
@@ -74,7 +72,7 @@ Route::post('register', [ 'as' => 'register', 'uses' => 'RegisterController@stor
 
 到`resources/views`資料夾內新增register.blade.php
 
-```
+```html
 <form class="form-horizontal" method="POST" action="{{ route('register') }}">
     {{ csrf_field() }}
 
@@ -156,13 +154,13 @@ Route::post('register', [ 'as' => 'register', 'uses' => 'RegisterController@stor
 
 在`routes/web.php`加入
 
-```
+```php
 Route::get('login', [ 'as' => 'login', 'uses' => 'LoginController@index']);
 ```
 
-LoginController加入顯示會員登入View Blade
+LoginController 加入顯示會員登入 View Blade
 
-```
+```php
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
@@ -187,24 +185,24 @@ class LoginController extends Controller
 }
 ```
 
-加入此行在LoginController類別下的全域變數內，在登入成功後會自動跳轉到此路徑
+加入此行在 LoginController 類別下的全域變數內，在登入成功後會自動跳轉到此路徑
 
-```
+```php
 protected $redirectTo = '/home';
 ```
 
-在`routes/web.php`加入
+在 `routes/web.php` 加入
 
-```
+```php
 Route::post('login', [ 'as' => 'login', 'uses' => 'LoginController@login']);
 Route::get('/home', function () {
     return Auth::user()->email.'你已經成功登入，'.'<a href="/logout">點此登出</a>';
 });
 ```
 
-LoginController加入login判斷會員登入資料是否正確
+LoginController 加入 login 判斷會員登入資料是否正確
 
-```
+```php
 protected function login(Request $request)
 {
     if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
@@ -217,9 +215,9 @@ protected function login(Request $request)
 }
 ```
 
-到`resources/views`資料夾內新增login.blade.php
+到 `resources/views` 資料夾內新增 `login.blade.php`
 
-```
+```html
 <form class="form-horizontal" method="POST" action="{{ route('login') }}">
     {{ csrf_field() }}
     <font color="red">{{ $errors->has('fail') ? $errors->first('fail') : '' }}</font>
@@ -261,11 +259,11 @@ protected function login(Request $request)
 </form>
 ```
 
-### Route會員登出
+### Route 會員登出
 
-LoginController加入logout利用Auth把此會員登出
+LoginController 加入 logout 利用 Auth 把此會員登出
 
-```
+```php
 protected function logout()
 {
     Auth::logout();
@@ -273,7 +271,7 @@ protected function logout()
 }
 ```
 
-此指令會快速自動產生Auth的Views Blade在`resources/views/auth`路徑內 和 Controller：RegisterController會員註冊、LoginController會員登入、ForgotPasswordController忘記密碼、ResetPasswordController重置密碼
+此指令會快速自動產生 Auth 的 Views Blade 在`resources/views/auth`路徑內和 Controller：RegisterController 會員註冊、LoginController 會員登入、ForgotPasswordController 忘記密碼、ResetPasswordController 重置密碼
 
 ```
 php artisan make:auth
