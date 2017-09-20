@@ -41,6 +41,3 @@ articles_tags
 3. 新增一個 Many to Many
    * Article
    * Tag
-
-
-

@@ -13,6 +13,3 @@ permission | string(191)
 manager  <管理員權限>
 staff    <一般權限>
 ```
-
-
-

@@ -1,6 +1,6 @@
-# View 視圖-Blade 模板
+# View 視圖 - Blade 模板
 
-Laravel 的視圖是放在 `resource/views`目錄內
+Laravel 的視圖是放在 `resource/views` 目錄內
 
 **app/routes.php**
 
@@ -14,7 +14,7 @@ Route::get('/about', function () {
 
 ### 建立共用的視圖
 
-1.在 `resource/views` 建立共用視圖取名為 app.blade.php
+1.在 `resource/views` 建立共用視圖取名為 `app.blade.php`
 
 ```php
 <!-- resource/view/app.blade.php -->
@@ -36,7 +36,7 @@ Route::get('/about', function () {
 </html>
 ```
 
-2.在 `resource/views` 建立 article.blade.php 後，extends 共用視圖 app.blade.php
+2.在 `resource/views` 建立 `article.blade.php` 後，extends 共用視圖 `app.blade.php`
 
 ```php
 <!-- resource/view/article.blade.php -->
