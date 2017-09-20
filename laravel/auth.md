@@ -1,11 +1,25 @@
 # Auth 身份驗證
 
+* 註冊頁 & 註冊動作
+* 登入頁 & 登入動作
+* 首頁
+* 登入動作
+
 ### Route會員註冊
 
 在`routes/web.php`加入
 
 ```php
 Route::get('register', [ 'as' => 'register', 'uses' => 'RegisterController@create']);
+Route::post('register', [ 'as' => 'register', 'uses' => 'RegisterController@store']);
+
+Route::get('login', [ 'as' => 'login', 'uses' => 'LoginController@index']);
+Route::post('login', [ 'as' => 'login', 'uses' => 'LoginController@login']);
+Route::post('logout', [ 'as' => 'login', 'uses' => 'LoginController@logout']);
+
+Route::get('/home', function () {
+    return Auth::user()->email.'你已經成功登入，'.'<a href="/logout">點此登出</a>';
+});
 ```
 
 RegisterController 顯示會員註冊 View Blade
@@ -150,7 +164,7 @@ Route::post('register', [ 'as' => 'register', 'uses' => 'RegisterController@stor
 </form>
 ```
 
-### Route會員登入
+### Route 會員登入
 
 在`routes/web.php`加入
 
@@ -271,11 +285,10 @@ protected function logout()
 }
 ```
 
-此指令會快速自動產生 Auth 的 Views Blade 在`resources/views/auth`路徑內和 Controller：RegisterController 會員註冊、LoginController 會員登入、ForgotPasswordController 忘記密碼、ResetPasswordController 重置密碼
+### 補充
+
+此指令會快速自動產生 Auth 的 Views Blade 在 `resources/views/auth` 路徑內和 Controller：RegisterController 會員註冊、LoginController 會員登入、ForgotPasswordController 忘記密碼、ResetPasswordController 重置密碼
 
 ```
 php artisan make:auth
 ```
-
-
-
