@@ -9,6 +9,7 @@
 ## Laravel
 
 * [介紹](laravel/README.md)
+* [Getting started](laravel/getting-started.md)
 * [環境安裝](laravel/setup.md)
 * [初始化專案](laravel/init.md)
 * [目錄結構](laravel/folder.md)
@@ -21,18 +22,16 @@
 * [CRUD](laravel/crud.md)
 * [練習題](laravel/ex.md)
 * [查詢產生器](laravel/query-builder.md)
-* [查詢產生器：CRUD](laravel/cha-xun-chan-sheng-qi-ff1a-crud.md)
-* [分頁 Paginate](laravel/fen-ye-paginate.md)
-* [集合 Collection](laravel/ormyu-cha-xun-chan-sheng-qi-de-cha-bie.md)
+* [查詢產生器：CRUD](laravel/query-builder-crud.md)
+* [分頁 Paginate](laravel/paginate.md)
+* [集合 Collection](laravel/collection.md)
 * [Errors&Logging](laravel/errors-and-logging.md)
-* [View 視圖-Blade 模板](laravel/view-shi-tu.md)
+* [View 視圖 - Blade 模板](laravel/view.md)
 * [Auth 身份驗證](laravel/auth.md)
-* [Middleware 中介層](laravel/middleware-zhong-jie-ceng.md)
-* [Auth & Middleware練習題](laravel/authlian-xi-ti.md)
-* [Crypt 加密解密](laravel/crypt-jia-mi-jie-mi.md)
+* [Middleware 中介層](laravel/middleware.md)
+* [Auth & Middleware練習題](laravel/auth-ex.md)
+* [Crypt 加密解密](laravel/crypt.md)
 * [測試](laravel/test.md)
-* [View](laravel/view.md)
-* [附錄：Getting started](laravel/fu-lu-ff1a-gettingstart.md)
 
 ## 測試基礎
 
