@@ -4,7 +4,7 @@
 
 在`routes\api.php` 加入
 
-```
+```php
 Route::get('/article/view', [
     'middleware'  => 'article.verify',
     'uses'=> 'ArticleController@findOne'
@@ -21,7 +21,7 @@ php artisan make:middleware ArticleVerifyMiddleware
 
 建立的中介層會放在 app\Http\Middleware\ArticleVerifyMiddleware.php 中
 
-```
+```php
 <?php namespace App\Http\Middleware;
 
 // app\Http\Middleware\ArticleVerifyMiddleware.php
@@ -53,7 +53,7 @@ class ArticleVerifyMiddleware {
 
 建立好自訂的中介層之後，到 app\Http\Kernel.php 註冊中介層後即可使用
 
-```
+```php
 namespace App\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;

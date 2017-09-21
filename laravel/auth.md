@@ -287,7 +287,7 @@ protected function logout()
 
 ### 補充
 
-此指令會快速自動產生 Auth 的 Views Blade 在 `resources/views/auth` 路徑內和 Controller：RegisterController 會員註冊、LoginController 會員登入、ForgotPasswordController 忘記密碼、ResetPasswordController 重置密碼
+此指令會快速自動產生 Auth 的 Views 在 `resources/views/auth` 路徑內和 Controller：RegisterController 會員註冊、LoginController 會員登入、ForgotPasswordController 忘記密碼、ResetPasswordController 重置密碼
 
 ```
 php artisan make:auth
