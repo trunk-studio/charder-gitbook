@@ -30,6 +30,7 @@
 * [Auth 身份驗證](laravel/auth.md)
 * [寄信](laravel/mail.md)
 * [Middleware 中介層](laravel/middleware.md)
+* [靜態資源管理](laravel/mix.md)
 
 <!-- * [Crypt 加密解密](laravel/crypt.md) -->
 <!-- * [測試](laravel/test.md) -->

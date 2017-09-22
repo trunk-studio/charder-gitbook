@@ -292,3 +292,30 @@ protected function logout()
 ```
 php artisan make:auth
 ```
+
+### 手動驗證
+
+<https://laravel.com/docs/5.4/validation>
+
+```php
+$validator = Validator::make($request->all(), [
+    'title' => 'required|unique:posts|max:255',
+    'body' => 'required',
+]);
+
+if ($validator->fails()) {
+    return redirect('post/create')
+                ->withErrors($validator)
+                ->withInput();
+}
+```
+
+### 客製化錯誤訊息
+
+```php
+$messages = [
+    'required' => 'The :attribute field is required.',
+];
+
+$validator = Validator::make($input, $rules, $messages);
+```
