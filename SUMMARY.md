@@ -30,9 +30,9 @@
 * [Auth 身份驗證](laravel/auth.md)
 * [寄信](laravel/mail.md)
 * [Middleware 中介層](laravel/middleware.md)
-* [Auth & Middleware練習題](laravel/auth-ex.md)
-* [Crypt 加密解密](laravel/crypt.md)
-* [測試](laravel/test.md)
+
+<!-- * [Crypt 加密解密](laravel/crypt.md) -->
+<!-- * [測試](laravel/test.md) -->
 
 ## 測試基礎
 
