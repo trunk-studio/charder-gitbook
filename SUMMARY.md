@@ -33,9 +33,9 @@
 * [靜態資源管理](laravel/mix.md)
 * [整合 JWT](laravel/jwt.md)
 * [Service](laravel/service.md)
+* [測試](laravel/test.md)
 
 <!-- * [Crypt 加密解密](laravel/crypt.md) -->
-<!-- * [測試](laravel/test.md) -->
 
 ## 測試基礎
 
