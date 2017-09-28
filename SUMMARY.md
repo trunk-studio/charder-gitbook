@@ -32,6 +32,7 @@
 * [Middleware 中介層](laravel/middleware.md)
 * [靜態資源管理](laravel/mix.md)
 * [整合 JWT](laravel/jwt.md)
+* [Service](laravel/service.md)
 
 <!-- * [Crypt 加密解密](laravel/crypt.md) -->
 <!-- * [測試](laravel/test.md) -->
