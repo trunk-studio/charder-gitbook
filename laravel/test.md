@@ -30,9 +30,15 @@ class ArticleController extends TestCase
 
 ```
 ./vendor/bin/phpunit
+
+./vendor/bin/phpunit tests/Feature/ExampleTest
 ```
 
 ### HTTP 測試
+
+```php
+$response = $this->json('POST', '/user', ['name' => 'Sally']);
+```
 
 ```php
 <?php

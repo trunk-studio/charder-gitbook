@@ -12,8 +12,12 @@ composer require tymon/jwt-auth
 **config/app.php**
 
 ```
+// providers
+Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
+
 // aliases
 
+'JWTAuth' => 'Tymon\JWTAuth\Facades\JWTAuth',
 'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
 ```
 
@@ -36,6 +40,12 @@ php artisan jwt:generate
 **AuthenticateController**
 
 ```php
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use Tymon\JWTAuth\Facades\JWTAuth;
+use App\User;
+
 public function authenticate(Request $request)
 {
     // 從 request 中取得 email 跟 password 參數值
@@ -70,6 +80,10 @@ Route::post('/login', 'AuthenticateController@authenticate');
 
 Route::middleware('jwt.auth')->post('/jwt/check', function (Request $request) {
     return 'token is correct';
+});
+
+Route::middleware('jwt.refresh')->post('/jwt/refresh', function (Request $request) {
+    return 'refresh ok';
 });
 ```
 
