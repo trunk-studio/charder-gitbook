@@ -30,7 +30,6 @@ class ArticleController extends TestCase
 
 ```
 ./vendor/bin/phpunit
-
 ./vendor/bin/phpunit tests/Feature/ExampleTest
 ```
 
@@ -133,3 +132,4 @@ $response->assertViewHas($key, $value = null);
 * [Mocking - Laravel - The PHP Framework For Web Artisans](https://laravel.com/docs/5.4/mocking)
 * [Getting Started with PHPUnit in Laravel - Semaphore](https://semaphoreci.com/community/tutorials/getting-started-with-phpunit-in-laravel)
 * [PHPUnit – The PHP Testing Framework](https://phpunit.de/)
+
