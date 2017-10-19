@@ -27,22 +27,25 @@ $ react-native run-android
 ## 專案結構
 ```
 .
-├── __tests__
 ├── android
-├── index.android.js
-├── index.ios.js
+├── App.js
+├── app.json
+├── index.js
 ├── ios
 ├── node_modules
-└── package.json
+├── npm-debug.log
+├── package.json
+├── __tests__
+└── yarn.lock
 ```
 
 App 名稱位置 : `./android/app/src/main/res/values/strings.xml`  
 App icon: `./android/app/src/main/res/mipmap-*`
 
 ## 進入點
-- index
+- index.js
+- App.js
 - .ios、.android
-- AppRegistry
 
 ## Debug 選單 
 - Debug JS Remote
@@ -51,10 +54,3 @@ App icon: `./android/app/src/main/res/mipmap-*`
 - touchable
 - Hot reload
 - Live Reload
-
-## 常見問題
-
-```
-Packager can't listen on port 8081
-```
-解法: 有其他 React Native Bundle server 正在執行
