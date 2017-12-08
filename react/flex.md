@@ -12,7 +12,7 @@ Flexbox，就可以在不同屏幕尺寸上提供一致的佈局結構。
 - row 水平排列
 
 **justifyContent**
-可以決定其子元素沿着 `主軸` 的排列方式
+可以決定其子元素沿着 `主軸` 的排列方式
 - flex-start 主軸起始位置
 - center 主軸中心
 - flex-end 主軸末端

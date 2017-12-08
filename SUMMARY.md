@@ -232,11 +232,15 @@
 * [Component](react/component.md)
 * [State](react/state.md)
 * [Props](react/props.md)
-* [React Native 模擬器開發環境](react/environment.md)
+* [React Native 模擬器開發環境](react/environment.md)
 * [React Native 基本開發環境介紹](react/start.md)
 * [Style](react/style.md)
 * [Flex](react/flex.md)
+* [View](react/view.md)
+* [Text](react/text.md)
 * [Button](react/button.md)
 * [Image](react/image.md)
 * [ListItem](react/practice1.md)
+* [List](react/listview.md)
+* [Fetch](react/fetch.md)
 
