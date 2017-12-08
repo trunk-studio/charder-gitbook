@@ -6,12 +6,12 @@
 color: 顏色
 fontSize: 字型大小
 fontWeight: 字型寬度，'normal', 'bold', '100'~'900'(切記是字串)
-textAlign: 對齊方式
+textAlign: 對齊方式
 ```
 常用 props:
 ```
 allowFontScaling: 是否根據系統字型大小調整字型大小
-numberOfLines: 根據 View 佈局換行最多行數，超過行數變為...
+numberOfLines: 根據 View 佈局換行最多行數，超過行數變為...
 ```
 
 ```
