@@ -242,6 +242,8 @@
 * [Image](react/image.md)
 * [ListItem](react/practice1.md)
 * [List](react/listview.md)
-* [TextInput](react/textInput)
+* [TextInput](react/textInput.md)
 * [Fetch](react/fetch.md)
+* [Libraries](react/libraries.md)
+* [Router](react/router.md)
 
