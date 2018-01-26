@@ -1,7 +1,7 @@
 # Router
 - 切換頁面
-- Darwer
-- Tab
+- Darwer
+- Tab
 
 ## Sample 
 
