@@ -2,8 +2,40 @@
 - 跟 Server 獲取、提交資料的方法
 - 提供了和 web 標準一至的 Fetch API
 - 有用過 ajax 使用起來就會很上手
+- iOS 9、10、11 不支援 http，要使用 https，或是在 Info.plist 設定例外網域
+  ```
+  <key>NSAppTransportSecurity</key>
+  <dict>
+    <key>NSExceptionDomains</key>
+    <dict>
+      <key>codepush.azurewebsites.net</key>
+      <dict>
+        <key>NSExceptionAllowsInsecureHTTPLoads</key>
+        <true/>
+      </dict>
+      <key>codepush.blob.core.windows.net</key>
+      <dict>
+        <key>NSExceptionAllowsInsecureHTTPLoads</key>
+        <true/>
+      </dict>
+      <key>codepushupdates.azureedge.net</key>
+      <dict>
+        <key>NSExceptionAllowsInsecureHTTPLoads</key>
+        <true/>
+      </dict>
+      <key>localhost</key>
+      <dict>
+        <key>NSExceptionAllowsInsecureHTTPLoads</key>
+        <true/>
+      </dict>
+    </dict>
+  </dict>
+  ```
+  ![](./assets/fetch.png)
 
 ## 使用教學
+
+get
 ```
 const IP ='192.168.2.101';
 let response = await fetch(`http://${IP}:1337/users/1`);
@@ -13,6 +45,21 @@ this.setState({
   name: responseJson.name
 })
 return responseJson;
+```
+
+post
+```
+fetch('https://mywebsite.com/endpoint/', {
+  method: 'POST',
+  headers: {
+    Accept: 'application/json',
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({
+    firstParam: 'yourValue',
+    secondParam: 'yourOtherValue',
+  }),
+});
 ```
 
 ## 延伸閱讀
