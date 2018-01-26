@@ -4,7 +4,7 @@
   - 使用 `react-native link` 設定套件，rnpm link 已棄用
   - 使用 `yarn add` 內建 `react-native link` 
   - 移除套件需要 `react-native unlink 套件名稱`，在移除 node module
-  - link 套件後需 `react-native run-android` 重新編譯
+  - link 套件後需 `react-native run-android` 重新編譯
 
 ## Sample 
 
