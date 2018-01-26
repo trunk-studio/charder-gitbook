@@ -244,6 +244,7 @@
 * [List](react/listview.md)
 * [TextInput](react/textInput.md)
 * [Fetch](react/fetch.md)
+* [AsyncStorage](react/asyncstorage.md)
 * [Libraries](react/libraries.md)
 * [Router](react/router.md)
 
