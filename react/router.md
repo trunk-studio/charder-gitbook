@@ -45,13 +45,13 @@ Actions.key()
 切換到其他頁面，並且帶入 props
 
 ```
-Actions.key({ title: '新的標題' })
+Actions.key({ title: '新的標題' })
 ```
 
 回到上一個頁面
 
 ```
-Actions.pop()
+Actions.pop()
 ```
 
 回到上一個頁面，並且更新 props
@@ -105,7 +105,7 @@ AndroidManifest.xml 設定
 
 如果連結為 `app://test/button` 將會打開 button 頁面  
 如果連結為 `app://test/list/a` 將會打開 list 頁面，並帶入參數 a 
-可以用 this.props.search 拿到 **a** 字串
+可以用 this.props.search 拿到 **a** 字串
 
 ### 測試方法
 
