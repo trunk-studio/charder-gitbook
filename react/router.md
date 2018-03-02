@@ -1,7 +1,7 @@
 # Router、Navigation
 - 切換頁面
 - Tab
-- Darwer
+- Darwer
 
 ![](https://f8-app.liaohuqiu.net/static/images/iOS%20vs.%20Android@3x.png)
 
@@ -16,7 +16,7 @@ npm install react-native-router-flux --save
 
 key - 切換頁面時要呼叫的 key  
 component - 該頁面 Component  
-title - 預設標題  
+title - 預設標題  
 initial - 預設頁面  
 
 ```
@@ -72,11 +72,10 @@ Actions.refresh({ title: '刷新標題' })
 
 
 ## Deep Link
-從網頁跳轉到 APP 的功能，可帶入預設值，像是網頁的 Get 參數一樣
-`/user/1` 代表會跳轉到頁面 user id 1 的使用者，在 RNRF 也能使用類似的功能  
+從網頁跳轉到 APP 的功能，可帶入預設值，像是網頁的 Get 參數一樣 `/user/1` 代表會跳轉到頁面 user id 1 的使用者，在 RNRF 也能使用類似的功能  
 
 常見使用情境
-- Email 認證驗證碼跳轉
+- Email 認證驗證碼跳轉
 - 電商 APP 跳轉到特定商品下單頁面
 
 
@@ -92,8 +91,8 @@ AndroidManifest.xml 設定
     <data android:scheme="app" android:host="test" />
 </intent-filter>
 ```
-根據 scheme 跟 host 的設定，如果網頁連結是 `app://test` 將會打開該 APP
-
+根據 scheme 跟 host 的設定，如果網頁連結是 `app://test` 將會打開該 APP
+
 程式碼
 ```
 <Router uriPrefix={'test'}>
@@ -104,8 +103,8 @@ AndroidManifest.xml 設定
 </Router>
 ```
 
-如果連結為 `app://test/button` 將會打開 button 頁面  
-如果連結為 `app://test/list/a` 將會打開 list 頁面，並帶入參數 a 
+如果連結為 `app://test/button` 將會打開 button 頁面  
+如果連結為 `app://test/list/a` 將會打開 list 頁面，並帶入參數 a 
 可以用 this.props.search 拿到 **a** 字串
 
 ### 測試方法
