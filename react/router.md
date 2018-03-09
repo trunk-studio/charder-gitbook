@@ -187,6 +187,135 @@ export default class CustomNavBar extends React.Component {
 }
 ```
 
+## LightBox
+
+Route
+```
+<Router uriPrefix={'test'} navBar={CustomNavBar}>
+  <Lightbox>
+    <Stack key="root">
+      <Scene key="button" component={ButtonSample} title="按鈕"/>
+      <Scene key="list" path={"/list/:search"} component={List} title="List"/>
+      <Scene key="detail" path={"/user/:id"} component={Detail} rightTitle="編輯"/>
+      <Scene key="update" component={Update} />
+    </Stack>
+    <Scene key="modal" component={ErrorBox} />
+  </Lightbox>
+</Router>
+```
+
+BaseLightbox
+```
+
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { View, StyleSheet, Animated, Dimensions, Button } from 'react-native';
+import { Actions } from 'react-native-router-flux';
+
+const { height: deviceHeight, width: deviceWidth } = Dimensions.get('window');
+
+export default class BaseLightbox extends Component {
+  static propTypes = {
+    children: PropTypes.any,
+    horizontalPercent: PropTypes.number,
+    verticalPercent: PropTypes.number,
+  }
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      opacity: new Animated.Value(0),
+    };
+  }
+
+  componentDidMount() {
+    Animated.timing(this.state.opacity, {
+      duration: 100,
+      toValue: 1,
+    }).start();
+  }
+
+  closeModal = () => {
+    Animated.timing(this.state.opacity, {
+      duration: 100,
+      toValue: 0,
+    }).start(Actions.pop);
+  }
+
+  _renderLightBox = () => {
+    const { children, horizontalPercent = 1, verticalPercent = 1 } = this.props;
+    const height = verticalPercent ? deviceHeight * verticalPercent : deviceHeight;
+    const width = horizontalPercent ? deviceWidth * horizontalPercent : deviceWidth;
+    return (
+      <View
+        style={{
+          width,
+          height,
+          justifyContent: 'center',
+          alignItems: 'center',
+          backgroundColor: 'white',
+          paddingBottom: 30,
+        }}
+      >
+        {children}
+        <Button title="Close" onPress={this.closeModal}  />
+      </View>
+    );
+  }
+
+  render() {
+    return (
+      <Animated.View style={[styles.container, { opacity: this.state.opacity }]}>
+        {this._renderLightBox()}
+      </Animated.View >
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: 'rgba(52,52,52,0.5)',
+    position: 'absolute',
+    top: 0,
+    bottom: 0,
+    left: 0,
+    right: 0,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
+```
+
+ErrorModal
+```
+import React from 'react';
+import {
+  StyleSheet,
+  Text,
+  View,
+  Button,
+} from 'react-native';
+import { Actions } from 'react-native-router-flux';
+import Modal from './BaseLightbox.js';
+
+const ErrorModal = () => (
+  <Modal hideClose verticalPercent={0.5} horizontalPercent={0.5}>
+    <View flex={1} style={{ justifyContent: 'center', alignItems: 'center', marginHorizontal: 20 }}>
+      <Text>Error</Text>
+      <Text>Slides up from the bottom, and covers the entire screen with no transparency</Text>
+    </View>
+  </Modal>
+);
+
+const styles = StyleSheet.create({
+
+});
+
+
+export default ErrorModal;
+```
+
 ## [Tabs](https://github.com/aksonov/react-native-router-flux/blob/master/docs/API.md#tabs-tabs-or-scene-tabs)
 
 ```
