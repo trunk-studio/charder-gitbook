@@ -70,6 +70,24 @@ Actions.pop({
 Actions.refresh({ title: '刷新標題' })
 ```
 
+## Route 切換動畫
+
+```
+npm install --save react-navigation
+```
+
+```
+import CardStackStyleInterpolator from 'react-navigation/src/views/CardStack/CardStackStyleInterpolator';
+
+<Router
+  transitionConfig={() => ({ screenInterpolator: CardStackStyleInterpolator.forHorizontal })}
+>
+  <Stack key="root">
+    <Scene key="button" component={ButtonSample} title="按鈕"/>
+    <Scene key="list" component={List} title="List"/>
+  </Stack>
+</Router>
+```
 
 ## Deep Link
 從網頁跳轉到 APP 的功能，可帶入預設值，像是網頁的 Get 參數一樣 `/user/1` 代表會跳轉到頁面 user id 1 的使用者，在 RNRF 也能使用類似的功能  
@@ -353,6 +371,9 @@ export default ErrorModal;
 
 ## Drawer
 
+```
+Action.drawerOpen();
+```
 
 ```
 <Router>
@@ -392,12 +413,7 @@ class DrawerContent extends React.Component {
   render() {
       return (
         <View style={styles.container}>
-            <TouchableOpacity onPress={Actions.list}>
-              <Text>清單</Text>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={Actions.button}>
-              <Text>按鈕</Text>
-            </TouchableOpacity>
+          {/* 樣式 */}
         </View >
       );
   }
