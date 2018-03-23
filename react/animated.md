@@ -1,10 +1,10 @@
 # 動畫
-流暢、有意義的動畫對於移動應用用戶體驗來說是非常重要的。
-現實生活中的物體在開始移動和停下來的時候都具有一定的慣性
-React Native提供了兩個互補的動畫系統：用於全局的佈局動畫LayoutAnimation
-和用於創建更精細的交互控制的動畫Animated。
-
-React Native 使用動畫上跟 React 網頁有顯著的差異
+流暢、有意義的動畫對於移動應用用戶體驗來說是非常重要的。  
+現實生活中的物體在開始移動和停下來的時候都具有一定的慣性  
+React Native提供了兩個互補的動畫系統：用於全局的佈局動畫LayoutAnimation  
+和用於創建更精細的交互控制的動畫Animated。  
+  
+React Native 使用動畫上跟 React 網頁有顯著的差異  
 
 ## React - 使用 react-addons-css-transition-group
 
@@ -161,7 +161,7 @@ const rotate = this.state.rotate.interpolate({
 })
 ```
 
-
+練習四: 做一個簡單的旋轉 loading 動畫
 ```javascript
 transform: [
   {
@@ -169,4 +169,3 @@ transform: [
   },
 ]
 ```
-練習四: 做一個簡單的旋轉 loading 動畫
