@@ -113,17 +113,17 @@ transform: [
 
 ### timing
 
-duration: 動畫持續時間，預設 500 ms
-easing: 動畫過度曲線，預設值: Easing.inOut(Easing.ease)，[支援曲線](https://reactnative.cn/docs/0.51/easing.html#content)，[曲線參考](http://xaedes.de/dev/transitions/)
-delay: 動畫持續時間
+duration: 動畫持續時間，預設 500 ms  
+easing: 動畫過度曲線，預設值: Easing.inOut(Easing.ease)，[支援曲線](https://reactnative.cn/docs/0.51/easing.html#content)，[曲線參考](http://xaedes.de/dev/transitions/)  
+delay: 動畫持續時間  
 
 練習三: 使用 MoveRightView 嘗試不同的過度曲線
 
 ### decay
-推動一個值以一個初始的速度和一個衰減係數逐漸變為0。
-像是摩擦力的感覺。
-velocity: 初始速度，必填
-deceleration: 衰減係數，默認值0.997
+推動一個值以一個初始的速度和一個衰減係數逐漸變為0。  
+像是摩擦力的感覺。  
+velocity: 初始速度，必填  
+deceleration: 衰減係數，默認值0.997  
 
 ## 組合動畫
 多個動畫可以通過 sequence（順序執行）、parallel（同時執行）來組合使用。它們中的每一個都接受一個要執行的動畫數組，並且自動在適當的時候調用 start / stop。舉個例子：
