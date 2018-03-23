@@ -247,4 +247,5 @@
 * [Libraries](react/libraries.md)
 * [Router](react/router.md)
 * [Websocket](react/websocket.md)
+* [Animated](react/animated.md)
 
