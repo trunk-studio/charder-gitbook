@@ -46,8 +46,8 @@ android/app/build.gradle
 
 # Configure Firebase Console
 
-- Firebase 新增專案  
-- 下載 google-services.json 放置 'android/app'  
+- Firebase 新增專案  
+- 下載 google-services.json 放置 'android/app'  
 
 # Usage
 
