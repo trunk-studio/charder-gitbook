@@ -257,8 +257,8 @@ export default class Hello extends Component {
 
 效果二
 
-![](https://media.giphy.com/media/27qO8YYbt3pluY8o33/giphy.gif)
-
+![](https://media.giphy.com/media/27qO8YYbt3pluY8o33/giphy.gif)
+
 
 ## Shared Element Transition 功能實作
 
@@ -266,7 +266,7 @@ export default class Hello extends Component {
 
 ![](https://cdn-images-1.medium.com/max/2000/1*XCEKJiE3H9p-dI__KpFdxg.png)
   
-2. 複製一個圖片 Component 並且縮放到指定的位置
+2. 複製一個圖片 Component 並且縮放到指定的位置
 
 ![](https://cdn-images-1.medium.com/max/2000/1*shY4DhIdKKZka2FjCEPjfw.png)
 
@@ -280,7 +280,7 @@ transform: [{
 }]
 ```
 
-![](./assets/animated1.png)
+![](./assets/animated1.png)
 
 4. 縮放 image 到跟 detail 內 image 一樣寬高
 
